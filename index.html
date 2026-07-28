@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ibrahim M Elznad — ERP / Odoo Techno-Functional</title>
+<meta name="description" content="ERP / Odoo techno-functional developer. I turn payroll, attendance and operations processes into native Odoo modules that run in production.">
+<meta name="theme-color" content="#0f6e7e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ibrahim M Elznad — ERP / Odoo Techno-Functional">
+<meta property="og:description" content="Payroll, attendance and operations, built as native Odoo modules and run in production.">
+<meta property="og:url" content="https://znad-odoo-dev.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230f6e7e'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='58' font-weight='700' fill='%23fff' text-anchor='middle'%3EIE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ground: #f2f5f5;
+    --raise: #ffffff;
+    --ink: #0f1e26;
+    --ink-soft: #45585f;
+    --ink-mute: #6b7f87;
+    --rule: #ccd8db;
+    --rule-soft: #dfe7e9;
+    --accent: #0f6e7e;
+    --accent-ink: #0b5361;
+    --accent-wash: rgba(15, 110, 126, .07);
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+    --pad: clamp(1.25rem, 4vw, 3.5rem);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0b1418;
+      --raise: #101e23;
+      --ink: #e7eef0;
+      --ink-soft: #b3c3c8;
+      --ink-mute: #879aa1;
+      --rule: #21353b;
+      --rule-soft: #1a2b30;
+      --accent: #57c6da;
+      --accent-ink: #8fdcea;
+      --accent-wash: rgba(87, 198, 218, .10);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0b1418;
+    --raise: #101e23;
+    --ink: #e7eef0;
+    --ink-soft: #b3c3c8;
+    --ink-mute: #879aa1;
+    --rule: #21353b;
+    --rule-soft: #1a2b30;
+    --accent: #57c6da;
+    --accent-ink: #8fdcea;
+    --accent-wash: rgba(87, 198, 218, .10);
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --ground: #f2f5f5;
+    --raise: #ffffff;
+    --ink: #0f1e26;
+    --ink-soft: #45585f;
+    --ink-mute: #6b7f87;
+    --rule: #ccd8db;
+    --rule-soft: #dfe7e9;
+    --accent: #0f6e7e;
+    --accent-ink: #0b5361;
+    --accent-wash: rgba(15, 110, 126, .07);
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .label {
+    font-family: var(--mono);
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+
+  /* ---- shell: title block on the left, register on the right ---- */
+  .shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: var(--pad);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(2.5rem, 5vw, 4.5rem);
+  }
+  @media (min-width: 920px) {
+    .shell { grid-template-columns: 17rem minmax(0, 1fr); gap: clamp(3rem, 6vw, 6rem); }
+    .spine { position: sticky; top: var(--pad); align-self: start; }
+  }
+
+  /* ---- title block ---- */
+  .spine { display: flex; flex-direction: column; gap: 1.75rem; }
+  .mark {
+    display: flex; align-items: baseline; gap: .6rem;
+    font-family: var(--mono); font-size: .78rem; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--ink-mute);
+  }
+  .mark b { color: var(--accent); font-weight: 500; }
+  .nav { display: flex; flex-wrap: wrap; gap: .15rem 1.25rem; flex-direction: row; }
+  @media (min-width: 920px) { .nav { flex-direction: column; gap: .15rem; } }
+  .nav a {
+    font-family: var(--mono); font-size: .8rem; letter-spacing: .06em;
+    text-decoration: none; color: var(--ink-soft); padding: .3rem 0;
+    border-bottom: 1px solid transparent; transition: color .18s ease, border-color .18s ease;
+  }
+  .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .spine-foot { display: flex; flex-direction: column; gap: .5rem; }
+  .toggle {
+    align-self: flex-start;
+    font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+    background: transparent; color: var(--ink-mute);
+    border: 1px solid var(--rule); border-radius: 999px;
+    padding: .4rem .85rem; cursor: pointer;
+    transition: color .18s ease, border-color .18s ease;
+  }
+  .toggle:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* ---- sections ---- */
+  main { display: flex; flex-direction: column; gap: clamp(3.5rem, 7vw, 6rem); min-width: 0; }
+  .head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.75rem; }
+  .head::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+  h2 { font: 500 .78rem/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; margin: 0; color: var(--ink-mute); }
+
+  /* ---- hero ---- */
+  .hero { position: relative; padding-top: .5rem; }
+  .hero::before {
+    content: ""; position: absolute; inset: -1.5rem -1rem auto -1rem; height: 22rem;
+    background-image: linear-gradient(var(--rule-soft) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--rule-soft) 1px, transparent 1px);
+    background-size: 30px 30px;
+    -webkit-mask-image: linear-gradient(to bottom, #000, transparent 78%);
+    mask-image: linear-gradient(to bottom, #000, transparent 78%);
+    pointer-events: none;
+  }
+  .hero > * { position: relative; }
+  h1 {
+    font-family: var(--display); font-weight: 700;
+    font-size: clamp(2.5rem, 7vw, 4.35rem); line-height: 1.02; letter-spacing: -.028em;
+    margin: .35rem 0 0; text-wrap: balance;
+  }
+  .role {
+    font-family: var(--display); font-weight: 600;
+    font-size: clamp(1.05rem, 2.4vw, 1.4rem); letter-spacing: -.01em;
+    color: var(--accent); margin: .7rem 0 0;
+  }
+  .lede { max-width: 34rem; margin: 1.4rem 0 0; color: var(--ink-soft); font-size: 1.06rem; }
+
+  .specs {
+    margin-top: 2.5rem; border-top: 1px solid var(--rule);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  }
+  .spec { padding: 1rem 1.25rem 1.1rem 0; border-bottom: 1px solid var(--rule-soft); }
+  .spec b {
+    display: block; margin-top: .35rem;
+    font-family: var(--display); font-weight: 600; font-size: 1.02rem;
+    font-variant-numeric: tabular-nums; letter-spacing: -.01em; color: var(--ink);
+  }
+
+  /* ---- prose ---- */
+  .prose { max-width: 40rem; display: flex; flex-direction: column; gap: 1.1rem; }
+  .prose p { margin: 0; color: var(--ink-soft); }
+  .prose strong { color: var(--ink); font-weight: 500; }
+
+  /* ---- work register ---- */
+  .register { display: flex; flex-direction: column; border-top: 1px solid var(--rule); }
+  .entry {
+    display: grid; grid-template-columns: minmax(0, 1fr); gap: .55rem;
+    padding: 1.5rem 0 1.6rem; border-bottom: 1px solid var(--rule-soft);
+    text-decoration: none; position: relative;
+    transition: background-color .2s ease;
+  }
+  a.entry::after {
+    content: "↗"; position: absolute; top: 1.55rem; right: .2rem;
+    font-family: var(--mono); font-size: .95rem; color: var(--ink-mute);
+    transition: transform .2s ease, color .2s ease;
+  }
+  a.entry:hover { background: var(--accent-wash); }
+  a.entry:hover::after { color: var(--accent); transform: translate(2px, -2px); }
+  a.entry:hover .entry-name { color: var(--accent); }
+  @media (min-width: 700px) {
+    .entry { grid-template-columns: 8.5rem minmax(0, 1fr); gap: 0 2rem; padding-left: .1rem; }
+    .entry > .label { padding-top: .3rem; }
+  }
+  .entry-name {
+    font-family: var(--display); font-weight: 600; font-size: 1.22rem;
+    letter-spacing: -.015em; color: var(--ink); padding-right: 2rem;
+    transition: color .2s ease;
+  }
+  .entry p { margin: .4rem 0 0; color: var(--ink-soft); font-size: .95rem; max-width: 44rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .85rem; }
+  .tags span {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .06em;
+    color: var(--ink-mute); border: 1px solid var(--rule); border-radius: 999px;
+    padding: .15rem .55rem;
+  }
+
+  /* ---- stack ---- */
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1.75rem 2.5rem; }
+  .col ul { list-style: none; margin: .7rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .3rem; }
+  .col li { color: var(--ink-soft); font-size: .95rem; }
+  .col li::before { content: "—"; color: var(--accent); margin-right: .55rem; }
+
+  /* ---- contact ---- */
+  .contact { display: flex; flex-direction: column; gap: 1.1rem; align-items: flex-start; }
+  .big-link {
+    font-family: var(--display); font-weight: 600;
+    font-size: clamp(1.35rem, 4vw, 2.1rem); letter-spacing: -.02em;
+    text-decoration: none; color: var(--ink);
+    border-bottom: 2px solid var(--rule); padding-bottom: .15rem;
+    transition: color .2s ease, border-color .2s ease;
+    word-break: break-word;
+  }
+  .big-link:hover { color: var(--accent); border-color: var(--accent); }
+  .side-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+  .side-links a {
+    font-family: var(--mono); font-size: .82rem; letter-spacing: .06em;
+    color: var(--ink-soft); text-decoration: none;
+    border-bottom: 1px solid var(--rule); padding-bottom: .1rem;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .side-links a:hover { color: var(--accent); border-color: var(--accent); }
+
+  footer {
+    margin-top: clamp(3rem, 6vw, 5rem); padding-top: 1.25rem;
+    border-top: 1px solid var(--rule-soft);
+    font-family: var(--mono); font-size: .7rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-mute);
+    display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between;
+  }
+
+  /* ---- reveal ---- */
+  .rise { opacity: 0; transform: translateY(14px); transition: opacity .55s ease, transform .55s ease; }
+  .rise.seen { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .rise { opacity: 1; transform: none; transition: none; }
+    a.entry:hover::after { transform: none; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <header class="spine">
+    <div class="mark"><b>IE</b> <span>Ibrahim M Elznad</span></div>
+    <nav class="nav" aria-label="Sections">
+      <a href="#approach">Approach</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="spine-foot">
+      <span class="label">Theme</span>
+      <button class="toggle" id="theme" type="button" aria-pressed="false">Switch</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="top">
+      <span class="label">Portfolio</span>
+      <h1>Ibrahim M&nbsp;Elznad</h1>
+      <p class="role">ERP / Odoo Techno-Functional</p>
+      <p class="lede">
+        I build the systems that pay people and track their work. Three years of
+        sitting with the teams who do the job, modelling what they actually do,
+        and shipping it as native Odoo modules that run in production.
+      </p>
+
+      <div class="specs">
+        <div class="spec"><span class="label">Experience</span><b>3 years</b></div>
+        <div class="spec"><span class="label">Platform</span><b>Odoo 18 / 19</b></div>
+        <div class="spec"><span class="label">Focus</span><b>Payroll · HR · Ops</b></div>
+        <div class="spec"><span class="label">Code</span><b>Python · OWL · SQL</b></div>
+      </div>
+    </section>
+
+    <section id="approach" class="rise">
+      <div class="head"><h2>Approach</h2></div>
+      <div class="prose">
+        <p>
+          <strong>Techno-functional means both halves of the job.</strong> I gather the
+          requirements and push back on them, design the data model and the flows —
+          then write the Python, XML, OWL and SQL that make them real. No handover
+          gap between what was promised and what got built.
+        </p>
+        <p>
+          Most of my work starts with a process already running on spreadsheets or an
+          Odoo Studio customisation that has outgrown itself. I replace it with native
+          modules: proper models, computed fields that recompute, security groups and
+          multi-company record rules, and migration scripts so nothing is lost on the
+          way over — while payroll still has to go out on time.
+        </p>
+        <p>
+          I care about the details that only show up in month two: figures that agree
+          across every screen, an audit trail in the chatter, and reports the finance
+          team can hand to an auditor without editing.
+        </p>
+      </div>
+    </section>
+
+    <section id="work" class="rise">
+      <div class="head"><h2>Selected work</h2></div>
+      <div class="register">
+
+        <a class="entry" href="https://github.com/Znad-Odoo-DEV/ssc_payroll">
+          <span class="label">Odoo 18</span>
+          <div>
+            <div class="entry-name">Construction payroll</div>
+            <p>
+              Payroll for a multi-company construction group. Payslips driven by daily
+              attendance, overtime split into regular and off-day hours priced at their
+              own rates, per-project labour cost distribution, WPS and cash salary
+              batches, salary attachments, advances, loans, fines and end-of-service —
+              with an OWL dashboard and PDF payslips on top.
+            </p>
+            <div class="tags"><span>Python</span><span>OWL</span><span>QWeb</span><span>Multi-company</span></div>
+          </div>
+        </a>
+
+        <a class="entry" href="https://github.com/Znad-Odoo-DEV/ssc_attendance">
+          <span class="label">Odoo 18</span>
+          <div>
+            <div class="entry-name">Biometric attendance</div>
+            <p>
+              Pulls punches from BioCloud fingerprint devices over REST, turns them into
+              daily worked hours and overtime, maps each device to the project it stands
+              on, mirrors everything to native hr.attendance, and feeds the payroll
+              engine — with a dashboard and pivot analysis for the site managers.
+            </p>
+            <div class="tags"><span>REST integration</span><span>Cron jobs</span><span>Reporting</span></div>
+          </div>
+        </a>
+
+        <a class="entry" href="https://github.com/Znad-Odoo-DEV/ems_app">
+          <span class="label">Odoo 19</span>
+          <div>
+            <div class="entry-name">Electronics repair workshop</div>
+            <p>
+              A modular app that follows a device from the counter to the customer:
+              reception, diagnosis, parts, repair, billing, delivery and reporting —
+              each stage its own installable module, so the workshop can adopt them
+              one at a time.
+            </p>
+            <div class="tags"><span>Modular design</span><span>Workflows</span><span>Billing</span></div>
+          </div>
+        </a>
+
+        <a class="entry" href="https://github.com/Znad-Odoo-DEV/estate">
+          <span class="label">Odoo 19</span>
+          <div>
+            <div class="entry-name">Real-estate listings</div>
+            <p>
+              Property management with types and tags, an offer workflow that enforces
+              who can accept what, and availability and pricing rules that keep sold
+              stock out of the pipeline.
+            </p>
+            <div class="tags"><span>Business logic</span><span>Access rules</span></div>
+          </div>
+        </a>
+
+        <a class="entry" href="https://github.com/Znad-Odoo-DEV/estate_accounts">
+          <span class="label">Odoo 19</span>
+          <div>
+            <div class="entry-name">Estate accounting bridge</div>
+            <p>
+              A thin module that raises the customer invoice the moment a property is
+              sold, keeping the sales flow and the ledger in step without anyone
+              re-typing a figure.
+            </p>
+            <div class="tags"><span>Accounting</span><span>Module inheritance</span></div>
+          </div>
+        </a>
+
+        <div class="entry">
+          <span class="label">WordPress</span>
+          <div>
+            <div class="entry-name">Corporate themes</div>
+            <p>
+              Two bespoke enterprise themes for holding groups working across real
+              estate, construction, engineering and MEP: custom post types,
+              page-builder blocks the marketing team can drive themselves, bilingual
+              Arabic and English, and a performance pass on every template.
+            </p>
+            <div class="tags"><span>PHP</span><span>ACF</span><span>AR / EN</span><span>Client work</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="stack" class="rise">
+      <div class="head"><h2>Stack</h2></div>
+      <div class="cols">
+        <div class="col">
+          <span class="label">Odoo</span>
+          <ul>
+            <li>Odoo 18 &amp; 19</li>
+            <li>Models, computed &amp; stored fields</li>
+            <li>Security groups, record rules</li>
+            <li>Migration scripts, Studio replacement</li>
+          </ul>
+        </div>
+        <div class="col">
+          <span class="label">Backend</span>
+          <ul>
+            <li>Python</li>
+            <li>PostgreSQL</li>
+            <li>REST integrations</li>
+            <li>Scheduled actions &amp; queues</li>
+          </ul>
+        </div>
+        <div class="col">
+          <span class="label">Frontend</span>
+          <ul>
+            <li>OWL components</li>
+            <li>QWeb &amp; XML views</li>
+            <li>JavaScript, SCSS</li>
+            <li>Chart.js dashboards</li>
+          </ul>
+        </div>
+        <div class="col">
+          <span class="label">Delivery</span>
+          <ul>
+            <li>Git, GitHub</li>
+            <li>Odoo.sh deployments</li>
+            <li>PDF reporting</li>
+            <li>WordPress / PHP</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="rise">
+      <div class="head"><h2>Contact</h2></div>
+      <div class="contact">
+        <a class="big-link" href="mailto:id7sp22@gmail.com">id7sp22@gmail.com</a>
+        <div class="side-links">
+          <a href="https://github.com/Znad-Odoo-DEV">GitHub — Znad-Odoo-DEV</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Ibrahim M Elznad</span>
+      <span>ERP / Odoo Techno-Functional</span>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById("theme");
+    var stored = null;
+    try { stored = localStorage.getItem("theme"); } catch (e) {}
+    if (stored) { root.setAttribute("data-theme", stored); }
+
+    function isDark() {
+      var set = root.getAttribute("data-theme");
+      if (set) { return set === "dark"; }
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+    function sync() { btn.setAttribute("aria-pressed", isDark() ? "true" : "false"); }
+    sync();
+
+    btn.addEventListener("click", function () {
+      var next = isDark() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      sync();
+    });
+
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var items = document.querySelectorAll(".rise");
+    if (reduce || !("IntersectionObserver" in window)) {
+      items.forEach(function (el) { el.classList.add("seen"); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add("seen"); io.unobserve(entry.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
