@@ -461,8 +461,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 .grid-work { display: grid; gap: clamp(1rem, 2vw, 1.4rem); }
 @media (min-width: 860px) { .grid-work { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .card {
+  --pad-card: clamp(1.5rem, 3vw, 2rem);
   position: relative; display: flex; flex-direction: column;
-  padding: clamp(1.5rem, 3vw, 2rem);
+  padding: var(--pad-card);
   border: 1px solid var(--line); border-radius: var(--r-lg);
   background: linear-gradient(180deg, var(--panel), var(--panel-2));
   box-shadow: var(--shadow-1); overflow: hidden;
@@ -476,6 +477,26 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 .card:hover { transform: translateY(-5px); box-shadow: var(--shadow-2); border-color: var(--accent-line); }
 .card:hover::before { opacity: 1; }
 .card > * { position: relative; }
+/* full-bleed preview at the head of a card */
+.shot {
+  position: relative; margin: calc(-1 * var(--pad-card)) calc(-1 * var(--pad-card)) var(--pad-card);
+  border-bottom: 1px solid var(--line); overflow: hidden;
+  border-radius: calc(var(--r-lg) - 1px) calc(var(--r-lg) - 1px) 0 0;
+  background: var(--bg-deep);
+}
+.shot img {
+  width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 0;
+  transition: transform .6s var(--ease-out), filter .4s var(--ease);
+}
+.shot::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, .18));
+  opacity: 0; transition: opacity .4s var(--ease);
+}
+.card:hover .shot img { transform: scale(1.035); }
+.card:hover .shot::after { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .card:hover .shot img { transform: none; } }
+
 .card-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.35rem; }
 .card-ico {
   width: 2.9rem; height: 2.9rem; border-radius: 14px; display: grid; place-items: center;
@@ -534,6 +555,28 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 .pill-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .55rem; }
 .pill-card li { display: flex; align-items: flex-start; gap: .55rem; font-size: .92rem; color: var(--tx-soft); }
 .pill-card li svg { width: 14px; height: 14px; margin-top: .3rem; color: var(--accent); flex: none; }
+
+/* functional coverage */
+.coverage {
+  margin-top: clamp(1rem, 2vw, 1.4rem);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 1px solid var(--line); border-radius: var(--r-md);
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  box-shadow: var(--shadow-1);
+}
+.coverage-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem 1rem; margin-bottom: 1.2rem; }
+.coverage-head h3 { font-size: 1rem; letter-spacing: -.02em; }
+.coverage-head span { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .06em; color: var(--tx-mute); }
+.domains { display: flex; flex-wrap: wrap; gap: .5rem; }
+.domains li {
+  list-style: none;
+  font-size: .88rem; color: var(--tx-soft);
+  border: 1px solid var(--line); border-radius: var(--r-pill);
+  padding: .38rem .85rem; background: var(--panel-2);
+  transition: color .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease);
+}
+.domains li:hover { color: var(--accent); border-color: var(--accent-line); transform: translateY(-1px); }
+.domains ul { display: contents; }
 
 /* contact */
 .contact-card {
@@ -671,7 +714,7 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
       <dl class="stats">
         <div class="stat"><dt>Experience</dt><dd>3 years</dd></div>
         <div class="stat"><dt>Platform</dt><dd>Odoo 18 / 19</dd></div>
-        <div class="stat"><dt>Focus</dt><dd>Payroll · HR · Ops</dd></div>
+        <div class="stat"><dt>Focus</dt><dd>All apps but Accounting</dd></div>
         <div class="stat"><dt>Code</dt><dd>Python · OWL · SQL</dd></div>
       </dl>
     </div>
@@ -851,6 +894,10 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
         </article>
 
         <article class="card reveal" style="--d:80ms">
+          <figure class="shot">
+            <img src="assets/site-group.jpg" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Homepage of the investment group site: hero image with the group name and the numbered registry of subsidiary companies below it.">
+          </figure>
           <div class="card-top">
             <div class="card-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.8" width="6" height="4.4" rx="1.2"/><rect x="2.8" y="16.8" width="6" height="4.4" rx="1.2"/><rect x="15.2" y="16.8" width="6" height="4.4" rx="1.2"/><path d="M12 7.2v4.3M5.8 16.8v-3.1a1.2 1.2 0 0 1 1.2-1.2h10a1.2 1.2 0 0 1 1.2 1.2v3.1"/></svg>
@@ -891,6 +938,10 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
         </article>
 
         <article class="card reveal" style="--d:0ms">
+          <figure class="shot">
+            <img src="assets/site-construction.jpg" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Homepage of the construction company site: full-width hero with the company name, statistics counters and project cards.">
+          </figure>
           <div class="card-top">
             <div class="card-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 21V3.8h13"/><path d="M2.8 21h5.4"/><path d="M14.5 3.8v4.4"/><rect x="12.6" y="8.2" width="3.9" height="3.2" rx=".8"/><path d="M5.5 7.4 9.6 3.8"/></svg>
@@ -1001,6 +1052,30 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
         </article>
 
       </div>
+
+      <section class="coverage reveal" aria-labelledby="coverage-title">
+        <div class="coverage-head">
+          <h3 id="coverage-title">Functional coverage</h3>
+          <span>Every Odoo app except Accounting</span>
+        </div>
+        <ul class="domains">
+          <li>Payroll</li>
+          <li>HR</li>
+          <li>Attendance</li>
+          <li>Recruitment</li>
+          <li>Inventory</li>
+          <li>Purchase</li>
+          <li>Sales</li>
+          <li>CRM</li>
+          <li>Manufacturing</li>
+          <li>Projects</li>
+          <li>Field Service</li>
+          <li>Maintenance</li>
+          <li>Fleet</li>
+          <li>Helpdesk</li>
+          <li>Website</li>
+        </ul>
+      </section>
     </div>
   </section>
 
