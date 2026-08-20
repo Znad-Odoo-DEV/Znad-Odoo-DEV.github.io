@@ -278,7 +278,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 .nav-cta { display: none; }
 #burger { display: grid; }
 
-@media (min-width: 880px) {
+@media (min-width: 1000px) {
   .links { display: flex; }
   #burger { display: none; }
   .nav-cta {
@@ -537,6 +537,32 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
   .grid-work > .card:last-child:nth-child(odd) > p { max-width: 68ch; }
 }
 
+/* upgrade phases */
+.phases { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(1rem, 2vw, 1.4rem); }
+@media (min-width: 700px)  { .phases { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1060px) { .phases { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.phase {
+  position: relative; padding: 1.6rem 1.5rem;
+  border: 1px solid var(--line); border-radius: var(--r-md);
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  box-shadow: var(--shadow-1);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+}
+.phase:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); border-color: var(--accent-line); }
+.phase-no {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 2.1rem; height: 2.1rem; padding-inline: .35rem; border-radius: 8px;
+  font-family: var(--font-mono); font-size: .78rem; font-variant-numeric: tabular-nums;
+  color: var(--accent); background: var(--accent-wash); border: 1px solid var(--accent-line);
+}
+.phase h3 { font-size: 1.08rem; letter-spacing: -.022em; margin: 1rem 0 .55rem; }
+.phase p { color: var(--tx-soft); font-size: .93rem; line-height: 1.66; }
+.phase code, .card code {
+  font-family: var(--font-mono); font-size: .86em;
+  background: var(--accent-wash); border: 1px solid var(--line);
+  border-radius: 5px; padding: .05em .35em;
+}
+
 /* stack */
 .grid-stack { display: grid; gap: clamp(1rem, 2vw, 1.4rem); }
 @media (min-width: 620px) { .grid-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -656,6 +682,8 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
     <nav class="links" id="links" aria-label="Sections">
       <a href="#approach">Approach</a>
       <a href="#work">Work</a>
+      <a href="#upgrade">Upgrade</a>
+      <a href="#config">Config</a>
       <a href="#stack">Stack</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -679,8 +707,10 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
 <div class="sheet" id="sheet" aria-hidden="true">
   <a href="#approach">Approach <span>01</span></a>
   <a href="#work">Work <span>02</span></a>
-  <a href="#stack">Stack <span>03</span></a>
-  <a href="#contact">Contact <span>04</span></a>
+  <a href="#upgrade">Upgrade <span>03</span></a>
+  <a href="#config">Config <span>04</span></a>
+  <a href="#stack">Stack <span>05</span></a>
+  <a href="#contact">Contact <span>06</span></a>
 </div>
 
 <main id="main">
@@ -1022,6 +1052,174 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
               Code
             </a>
           </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= UPGRADE ================= -->
+  <section class="section" id="upgrade">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Platform upgrade</span>
+        <h2>Odoo 18 to 19, on a live production database</h2>
+        <p>
+          A multi-company database with payroll running on it every month, moved
+          a major version without a day of downtime and without moving the data
+          by hand. Most of the work is what happens before and after the jump.
+        </p>
+      </div>
+
+      <ol class="phases">
+        <li class="phase reveal" style="--d:0ms">
+          <span class="phase-no" aria-hidden="true">01</span>
+          <h3>Inventory first</h3>
+          <p>
+            Crawl every menu and window action to find the ones that open
+            nothing, list the models no group can actually read, and record what
+            each custom model still holds — so nothing is deleted on a hunch.
+          </p>
+        </li>
+
+        <li class="phase reveal" style="--d:80ms">
+          <span class="phase-no" aria-hidden="true">02</span>
+          <h3>Prepare production, not staging</h3>
+          <p>
+            The upgrade platform works from production's own nightly backup, so
+            the preparation has to land there. Whatever blocks the jump is
+            switched off rather than dropped, in SQL so a broken registry cannot
+            stop it, and switched straight back on once the backup is taken.
+          </p>
+        </li>
+
+        <li class="phase reveal" style="--d:160ms">
+          <span class="phase-no" aria-hidden="true">03</span>
+          <h3>Port the modules</h3>
+          <p>
+            Drop what 19 removed — <code>numbercall</code> on <code>ir.cron</code>,
+            the version prefix that made a module unloadable — and follow the
+            contract into <code>hr.version</code>. The version-specific parts are
+            chosen at import time, so the same branch boots on 18 and on 19 and
+            the rollback stays real until the last minute.
+          </p>
+        </li>
+
+        <li class="phase reveal" style="--d:240ms">
+          <span class="phase-no" aria-hidden="true">04</span>
+          <h3>Prove it, then open the doors</h3>
+          <p>
+            The same inventory runs again on the upgraded database and is
+            compared line by line with the one taken before: menus, actions,
+            record counts and the figures that pay people. Nobody logs in until
+            the two agree.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= CONFIGURATION ================= -->
+  <section class="section" id="config">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Configuration</span>
+        <h2>Standard Odoo, wired to how the business actually runs</h2>
+        <p>
+          Not every problem needs a custom module. These are the four areas
+          configured on standard Odoo — read first, then set up so the figures
+          come out right on their own.
+        </p>
+      </div>
+
+      <div class="grid-work">
+
+        <article class="card reveal" style="--d:0ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="5.8" width="18.8" height="12.4" rx="2.2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.6v4.8M18 9.6v4.8"/></svg>
+            </div>
+            <span class="platform">Payroll</span>
+          </div>
+          <h3>Payroll</h3>
+          <p>
+            Salary structures and rules on standard Payroll, one set per company.
+            The rules live in git and are written into the structure from there,
+            with a checker that reports every place the rules on screen and the
+            ones in the repository disagree — the net rule included, so an edit to
+            it cannot pass unseen.
+          </p>
+          <p>
+            An overtime hour is priced off the basic at its ruleset's multiplier,
+            rules may only use the names <code>safe_eval</code> allows, and a rule
+            that cannot compute fails loudly instead of quietly paying zero.
+          </p>
+          <div class="badges"><span>Salary structures</span><span>Salary rules</span><span>Overtime rulesets</span><span>safe_eval</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:80ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.6V12l3.6 2.2"/></svg>
+            </div>
+            <span class="platform">Attendance</span>
+          </div>
+          <h3>Attendance</h3>
+          <p>
+            The attendance engine reproduced as a salary rule, with a test that
+            proves the payslip and the punches agree. Each employee's weekly off
+            day is read from their own punch history rather than assumed, and
+            badges are compared in the shape <code>hr.employee</code> actually
+            stores them.
+          </p>
+          <p>
+            Punches also become timesheet hours on the right project, written in
+            batches so a backfill of a whole period can finish in one run.
+          </p>
+          <div class="badges"><span>Work entries</span><span>Timesheets</span><span>Overtime</span><span>Tested rules</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:0ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.4" r="3.4"/><path d="M2.8 20a6.2 6.2 0 0 1 12.4 0"/><path d="M16.4 5.4a3.4 3.4 0 0 1 0 6.4M17.6 14.6a6.2 6.2 0 0 1 3.6 5.4"/></svg>
+            </div>
+            <span class="platform">HR</span>
+          </div>
+          <h3>HR &amp; working schedules</h3>
+          <p>
+            The working schedules are the ground payroll computes on, so they are
+            straightened first: the broken ones repaired, the merely unusual ones
+            held back for a human decision instead of being overwritten.
+          </p>
+          <p>
+            Public holidays are loaded per company — one row each, because that is
+            what the rule reads — and the employee record, badge and photo are
+            carried through to the payslip they belong to.
+          </p>
+          <div class="badges"><span>resource.calendar</span><span>Public holidays</span><span>Employee master</span><span>Multi-company</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:80ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.4 2.8h7.4l4.8 4.8v13.6H6.4z"/><path d="M13.4 2.8v5h5"/><path d="M9.4 16.6c1.6-.9 2.4-2 2.4-3.2 0-.8-.5-1.3-1.1-1.1-.7.2-.9 1.2-.5 2.6.5 1.6 1.3 2.4 2.1 2.2.6-.2.9-.8 1.1-1.5.5.9 1.1 1.3 2 1.2"/></svg>
+            </div>
+            <span class="platform">Contracts</span>
+          </div>
+          <h3>Contracts</h3>
+          <p>
+            Contracts carry the money, so they carry the settings too: the daily
+            rate is taken from the contract rather than from a parallel employee
+            record, every running contract gets the analytic account of the site
+            it belongs to, and each one is moved onto its company's overtime
+            ruleset in slices small enough to check as they go.
+          </p>
+          <p>
+            On 19 they follow the model into <code>hr.version</code>, and a salary
+            can finally be split across the sites the person actually worked on.
+          </p>
+          <div class="badges"><span>hr.version</span><span>Analytic accounts</span><span>Rate per day</span><span>Cost split</span></div>
         </article>
 
       </div>
