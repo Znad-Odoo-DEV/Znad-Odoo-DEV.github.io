@@ -12,13 +12,15 @@
 <meta property="og:title" content="Ibrahim M Elznad — ERP / Odoo Techno-Functional">
 <meta property="og:description" content="Payroll, attendance and operations, built as native Odoo modules and run in production.">
 <meta property="og:url" content="https://znad-odoo-dev.github.io/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://znad-odoo-dev.github.io/assets/profile.jpg">
+<meta property="og:image:alt" content="Ibrahim M Elznad">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230a0b0e'/%3E%3Cpath d='M28 28h8v44h-8z' fill='%23f0a73a'/%3E%3Cpath d='M46 28h8v30a14 14 0 0 1-14 14v-8a6 6 0 0 0 6-6z' fill='%23f0a73a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Ibrahim M Elznad","jobTitle":"ERP / Odoo Techno-Functional","email":"mailto:id7sp22@gmail.com","telephone":"+971525691003","url":"https://znad-odoo-dev.github.io/","sameAs":["https://github.com/Znad-Odoo-DEV","https://www.linkedin.com/in/ibrahim-elzand/"],"knowsAbout":["Odoo","Python","PostgreSQL","ERP","Payroll","OWL"]}
+{"@context":"https://schema.org","@type":"Person","name":"Ibrahim M Elznad","jobTitle":"ERP / Odoo Techno-Functional","image":"https://znad-odoo-dev.github.io/assets/profile.jpg","email":"mailto:id7sp22@gmail.com","telephone":"+971525691003","url":"https://znad-odoo-dev.github.io/","sameAs":["https://github.com/Znad-Odoo-DEV","https://www.linkedin.com/in/ibrahim-elzand/"],"knowsAbout":["Odoo","Python","PostgreSQL","ERP","Payroll","OWL"]}
 </script>
 <style>
 /* ============================================================
@@ -328,6 +330,25 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
 }
 .hero:hover .spot { opacity: 1; }
 .hero .wrap { position: relative; z-index: 1; }
+.hero-grid { display: grid; gap: clamp(2.25rem, 5vw, 3.5rem); }
+.hero-copy { min-width: 0; }
+.hero-photo {
+  margin: 0; justify-self: center; width: min(100%, 22rem);
+  border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden;
+  background: var(--panel);
+  box-shadow: var(--shadow-2), 0 40px 90px -50px var(--glow-a);
+}
+.hero-photo img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.hero .stats { margin-top: 0; }
+@media (min-width: 1000px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) clamp(17rem, 27vw, 22rem);
+    align-items: center;
+  }
+  .hero-copy { grid-column: 1; }
+  .hero-photo { grid-column: 2; justify-self: end; width: 100%; }
+  .hero .stats { grid-column: 1 / -1; }
+}
 
 .chip {
   display: inline-flex; align-items: center; gap: .55rem;
@@ -715,7 +736,8 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
   <!-- ================= HERO ================= -->
   <section class="hero" id="top">
     <div class="spot" aria-hidden="true"></div>
-    <div class="wrap">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
       <span class="chip"><span class="dot" aria-hidden="true"></span>Odoo 18 / 19 · Python · PostgreSQL</span>
 
       <h1>Ibrahim M<br><em>Elznad</em></h1>
@@ -741,6 +763,12 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
           WhatsApp
         </a>
       </div>
+      </div>
+
+      <figure class="hero-photo">
+        <img src="assets/profile.jpg" width="560" height="700" fetchpriority="high" decoding="async"
+             alt="Ibrahim M Elznad standing in front of the Odoo lettering in an Odoo office.">
+      </figure>
 
       <dl class="stats">
         <div class="stat"><dt>Experience</dt><dd>3 years</dd></div>
