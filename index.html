@@ -702,6 +702,7 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
       <a href="#work">Work</a>
       <a href="#upgrade">Upgrade</a>
       <a href="#config">Config</a>
+      <a href="#method">Method</a>
       <a href="#stack">Stack</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -727,8 +728,9 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
   <a href="#work">Work <span>02</span></a>
   <a href="#upgrade">Upgrade <span>03</span></a>
   <a href="#config">Config <span>04</span></a>
-  <a href="#stack">Stack <span>05</span></a>
-  <a href="#contact">Contact <span>06</span></a>
+  <a href="#method">Method <span>05</span></a>
+  <a href="#stack">Stack <span>06</span></a>
+  <a href="#contact">Contact <span>07</span></a>
 </div>
 
 <main id="main">
@@ -844,7 +846,7 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
             <div class="card-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.8h12v18.4l-2-1.4-2 1.4-2-1.4-2 1.4-2-1.4-2 1.4z"/><path d="M9.2 8h5.6M9.2 12h5.6M9.2 16h3"/></svg>
             </div>
-            <span class="platform">Odoo 18</span>
+            <span class="platform">Odoo 19</span>
           </div>
           <h3>Construction payroll</h3>
           <p>
@@ -868,16 +870,24 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
             <div class="card-ico" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10a7.5 7.5 0 0 1 15 0"/><path d="M8 10.5a4 4 0 0 1 8 0v2.2c0 1.6.4 3.1 1.2 4.4"/><path d="M12 10.5v3.2c0 2.6.8 5.1 2.3 7.2"/><path d="M6.6 20.6A9.4 9.4 0 0 1 4.6 15"/></svg>
             </div>
-            <span class="platform">Odoo 18</span>
+            <span class="platform">Odoo 19</span>
           </div>
           <h3>Biometric attendance</h3>
           <p>
             Pulls punches from BioCloud fingerprint devices over REST, turns them into
             daily worked hours and overtime, maps each device to the project it stands
-            on, mirrors everything to native hr.attendance, and feeds the payroll
-            engine — with a dashboard and pivot analysis for the site managers.
+            on, mirrors everything to native <code>hr.attendance</code>, and feeds the
+            payroll engine — with a dashboard and pivot analysis for the site managers.
           </p>
-          <div class="badges"><span>REST integration</span><span>Cron jobs</span><span>Reporting</span></div>
+          <p>
+            A day off is a dated fact rather than a tick: leave is read from an
+            approved <code>hr.leave</code> covering that day, so the mark expires when
+            the leave does. It used to be a permanent checkbox on the employee card,
+            which spared whoever carried it from absence every day for ever. Each line
+            resolves its Odoo employee as it is created, because a link written later
+            marks the leave a day after the day it describes.
+          </p>
+          <div class="badges"><span>REST integration</span><span>Cron jobs</span><span>hr.leave</span><span>Reporting</span></div>
           <div class="card-foot">
             <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/ssc_attendance">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
@@ -1078,6 +1088,93 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
           </div>
         </article>
 
+        <article class="card reveal" style="--d:0ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.2 20.2h17.6"/><path d="M5.5 20.2V9.4l6.5-4.6 6.5 4.6v10.8"/><path d="M9.4 20.2v-5.2h5.2v5.2"/><path d="M9.4 11.2h5.2"/></svg>
+            </div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Construction project control</h3>
+          <p>
+            Five modules that hold a construction job to its own numbers. The bill of
+            quantities carries what the work was priced at, item by item and revision
+            by revision. The programme says when each priced item is meant to happen.
+            Progress records what was actually built, and measures it against both.
+          </p>
+          <p>
+            The comparison is the point: priced, programmed and measured are three
+            different figures for one item, and a project is in trouble the moment
+            they stop agreeing. Zones and trades sit on the project itself, so an item
+            can be read by where it is as well as by what it is.
+          </p>
+          <div class="badges"><span>BOQ &amp; revisions</span><span>Programme</span><span>Progress measurement</span><span>Analytic accounts</span></div>
+          <div class="card-foot">
+            <span class="ghost-link" aria-label="Source lives in a private client repository">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
+              SSC_LLC · private client repository
+            </span>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--d:80ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.8h9l4 4v14.4H6z"/><path d="M14.6 2.8v4.4H19"/><path d="M9 12.6h6M9 16.4h4"/></svg>
+            </div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Subcontracting &amp; payment certificates</h3>
+          <p>
+            Four modules covering the money going out. A subcontract carries its own
+            bill of quantities beside ours, so what an item was sold for sits next to
+            what is being paid for it, and the margin is a fact on the record rather
+            than a calculation somebody does later. Call-offs raised against the
+            agreement become LPOs.
+          </p>
+          <p>
+            Payment certificates close the loop: what a subcontractor claims, against
+            what was agreed and what the site actually measured. A claim that outruns
+            the measurement is visible before it is approved, not after it is paid.
+          </p>
+          <div class="badges"><span>Subcontract BOQ</span><span>Call-offs &amp; LPO</span><span>Payment certificates</span><span>Margin</span></div>
+          <div class="card-foot">
+            <span class="ghost-link" aria-label="Source lives in a private client repository">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
+              SSC_LLC · private client repository
+            </span>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--d:0ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5h16M4 12h16M4 17.5h10"/><circle cx="18.4" cy="17.5" r="3.1"/><path d="m17.1 17.5 1 1 2-2.2"/></svg>
+            </div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Internal requests</h3>
+          <p>
+            One request model for what the sites and the office actually ask for —
+            leave, salary advance, material, payment — each with its own approval
+            route and its own record.
+          </p>
+          <p>
+            The second module is the half that usually goes missing: what an approved
+            request <em>produces</em>. An approved leave, advance or resignation
+            becomes the payroll document it implies, so the approval and its
+            consequence cannot drift apart. Granted but never paid, or paid but never
+            granted, is a state the data will not hold.
+          </p>
+          <div class="badges"><span>Approval routes</span><span>Payroll documents</span><span>Audit trail</span><span>Record rules</span></div>
+          <div class="card-foot">
+            <span class="ghost-link" aria-label="Source lives in a private client repository">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
+              SSC_LLC · private client repository
+            </span>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -1244,6 +1341,118 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
             can finally be split across the sites the person actually worked on.
           </p>
           <div class="badges"><span>hr.version</span><span>Analytic accounts</span><span>Rate per day</span><span>Cost split</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= METHOD ================= -->
+  <section class="section" id="method">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Method</span>
+        <h2>How a change reaches a live payroll</h2>
+        <p>
+          These systems pay people. A wrong figure is not a bug report, it is
+          somebody's salary — so what follows is not process for its own sake. It
+          is what makes a change to a running database safe to make.
+        </p>
+      </div>
+
+      <div class="grid-work">
+
+        <article class="card reveal" style="--d:0ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 4.4 6.6v5.2c0 4.4 3.1 8.2 7.6 9.4 4.5-1.2 7.6-5 7.6-9.4V6.6z"/><path d="m9.2 12 2 2 3.6-4"/></svg>
+            </div>
+            <span class="platform">Before production</span>
+          </div>
+          <h3>Run it on a real database first</h3>
+          <p>
+            Every module change is installed and exercised on a local Odoo 19 with
+            PostgreSQL before it is pushed, because the branch builds production
+            directly. Claims about how the framework behaves are verified by running
+            them, not by recollection.
+          </p>
+          <p>
+            That pass catches what a reading does not: a model absent from the registry
+            because the manifest never declared it, a flag that flipped the wrong way
+            when its value was cleared, a constraint that only fires on a non-working
+            day. Each would have arrived in production as a failed build or a silently
+            wrong number.
+          </p>
+          <div class="badges"><span>Local Odoo 19</span><span>PostgreSQL</span><span>Upgrade on a copy</span><span>AST checks</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:80ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 3.4h13v17.2H5.5z"/><path d="M8.6 8h6.8M8.6 11.6h6.8M8.6 15.2h4"/></svg>
+            </div>
+            <span class="platform">Tooling</span>
+          </div>
+          <h3>Report first, write only when asked</h3>
+          <p>
+            A hundred-odd shell tools sit beside the modules, and every one reports by
+            default. Writing is armed by an environment variable on the single run that
+            needs it, so the copy in the repository is never the loaded one and no tool
+            can change anything merely by being executed.
+          </p>
+          <p>
+            Anything that moves money prices what it would move before it moves it, and
+            names the people it would move it for. The figure worth arguing over is the
+            one in the dry run, not the one in the audit afterwards.
+          </p>
+          <div class="badges"><span>Dry run by default</span><span>Priced before applied</span><span>Named, not counted</span><span>Idempotent</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:0ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5" width="17.6" height="16" rx="2.2"/><path d="M3.2 9.6h17.6M8.2 3v4M15.8 3v4"/><path d="M8.6 14.4h6.8"/></svg>
+            </div>
+            <span class="platform">Blast radius</span>
+          </div>
+          <h3>A fix that cannot reach a paid month</h3>
+          <p>
+            When a rule changes, the days it governs are bounded in the code rather
+            than in anybody's intention. A repair carries the date it takes effect
+            from, and rows before it keep what they were given — because approving
+            something backdated next month must not rewrite attendance that has already
+            been paid.
+          </p>
+          <p>
+            The same care runs upward. A payslip that has been issued stops listening
+            to the employee master; one that has been paid stops listening to
+            everything. Recalculating a closed month is not a recalculation, it is a
+            change to a settled account.
+          </p>
+          <div class="badges"><span>Effective-from dates</span><span>State-bounded writes</span><span>Frozen snapshots</span><span>Reversible</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:80ms">
+          <div class="card-top">
+            <div class="card-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m16.2 16.2 4.3 4.3"/><path d="M11 7.6v4M11 14.2v.1"/></svg>
+            </div>
+            <span class="platform">Diagnosis</span>
+          </div>
+          <h3>Measure the thing, not its shadow</h3>
+          <p>
+            A count is easy to read and easy to misread. Filtering on a column that a
+            background job fills measures how far that job has got, not what the rule
+            would do — and the two are indistinguishable, because both answers are
+            numbers.
+          </p>
+          <p>
+            So a probe resolves what it is testing the way the code resolves it, and
+            says which of the possible causes actually holds. Losing an exemption is
+            not the same as becoming absent. A missing link is not a missing person.
+          </p>
+          <div class="badges"><span>Evidence-gated</span><span>Cause named</span><span>Read-only probes</span><span>Reconciliation</span></div>
         </article>
 
       </div>
