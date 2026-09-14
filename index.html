@@ -905,23 +905,24 @@ footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; }
           </div>
           <h3>AI product finder</h3>
           <p>
-            A site engineer types <span dir="rtl">بدي كبل نحاس 4 كور 10 ملم</span> or
-            <em>PVC elbow 2 inch</em> or a mix of both, and gets the products that
-            already exist in the catalogue, ranked, with the reason each one matched.
-            Arabic-Indic digits, spoken Syrian numbers, unit spellings, dimensions and
-            thread sizes are normalised the same way on both sides, and a terminology
-            model of two hundred concepts makes cable, wire, كبل and سلك one thing.
+            A conversational product search built into Odoo 19 for a multi-company
+            construction and MEP group. Users describe a material in Arabic or English
+            and get the matching products from the existing catalogue, ranked and
+            explained. Delivered as a native module: OWL components in the web client,
+            the ORM and PostgreSQL for retrieval, security groups and record rules for
+            access, a configurable terminology model, and an audit log with retention.
           </p>
           <p>
-            The database is searched first; a language model only re-ranks the
-            handful of candidates it is handed and cannot invent a code, a price or a
-            quantity. Upload a supplier quotation as a photo or PDF and every line
-            finds its three closest products in one model call. Anthropic and Google
-            Gemini sit behind one provider interface, access is a security group
-            rather than a setting, and eighty-five tests include a headless browser
-            tour of the real panel.
+            The AI architecture keeps the language model out of the database. A
+            deterministic engine understands the request, retrieves a bounded set of
+            candidates, and scores them; the model only re-ranks that set through a
+            strict JSON schema the server validates, so it can never invent a product
+            or bypass a rule. Document reading follows the same pattern for supplier
+            quotations. Providers are an interface, not a dependency: Anthropic and
+            Google Gemini today, another vendor tomorrow, with token use, timeouts and
+            failure modes handled so the assistant always answers.
           </p>
-          <div class="badges"><span>OWL</span><span>LLM integration</span><span>Arabic NLP</span><span>Multi-company</span></div>
+          <div class="badges"><span>OWL</span><span>LLM architecture</span><span>Provider abstraction</span><span>Multi-company</span></div>
           <div class="card-foot">
             <span class="ghost-link" aria-label="Source lives in a private repository">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
