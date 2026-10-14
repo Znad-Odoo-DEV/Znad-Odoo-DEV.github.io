@@ -1,0 +1,14 @@
+{
+  "name": "Ibrahim M Elznad | Odoo techno-functional and AI for Odoo",
+  "short_name": "I. Elznad",
+  "description": "Payroll, attendance and operations built as native Odoo modules, and Nudge, an AI companion inside Odoo.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#f6f7f9",
+  "theme_color": "#0a0b0e",
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
