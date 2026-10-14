@@ -333,6 +333,25 @@
           </div>
         </article>
 
+        <article class="card wide" id="studio-retirement" data-cats="data">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="3.8" width="7.6" height="7.6" rx="1.4"/><rect x="13.6" y="12.6" width="7.6" height="7.6" rx="1.4"/><path d="M6.6 11.4v3.4a2 2 0 0 0 2 2h5"/><path d="m11.6 14.6 2 1.8-2 1.8"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Case study: retiring Odoo Studio apps into native modules</h3>
+          <p class="sum">A construction group ran attendance, payroll, stores, requests, projects and contractor agreements on Odoo Studio. I carried each app into the native model Odoo already has for it, reconciled every figure against the source, then deleted the Studio models.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Studio kept its logic in automations, server actions, computed fields and related paths, and stored totals that had drifted from their own lines. Every app was in daily use, and payroll still had to go out each month.</dd></div>
+            <div><dt>What I built</dt><dd>One re-runnable tool per app, a dry run by default, carrying data into <code>hr.attendance</code>, Inventory, Purchase Agreements and <code>hr.employee</code>; reconciliation against the source&rsquo;s live figures; then deletion the way Odoo deletes a module&rsquo;s models, committed phase by phase.</dd></div>
+            <div><dt>Result</dt><dd><strong>105,376 attendance rows</strong> rebuilt; every store matches Studio&rsquo;s balance with 0 differences at unit rounding; 5,479 payslips moved onto <code>hr.employee</code> with no orphans. Over 300 Studio models deleted from production.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>105,376</b><span>attendance rows rebuilt</span></li><li><b>1,338</b><span>stocked products carried</span></li><li><b>4,910</b><span>links repointed to hr.employee</span></li><li><b>300+</b><span>Studio models deleted</span></li></ul>
+          <div class="badges"><span>Data migration</span><span>Reconciliation</span><span>hr.attendance</span><span>Inventory</span><span>Purchase agreements</span><span>hr.employee</span><span>Dry run by default</span></div>
+          <div class="card-foot">
+            <span class="ghost-link is-static"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>Private client repository</span>
+          </div>
+        </article>
+
         <article class="card" id="repair-workshop" data-cats="odoo">
           <div class="card-top">
             <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7.5" y="7.5" width="9" height="9" rx="1.6"/><path d="M10.5 3.5v3M13.5 3.5v3M10.5 17.5v3M13.5 17.5v3M3.5 10.5h3M3.5 13.5h3M17.5 10.5h3M17.5 13.5h3"/></svg></div>
