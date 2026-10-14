@@ -38,7 +38,11 @@
       document.body.classList.toggle("nav-open", open);
     };
     setMenu(false);
-    burger.addEventListener("click", function () { setMenu(!sheet.classList.contains("open")); });
+    burger.addEventListener("click", function () {
+      var open = !sheet.classList.contains("open");
+      setMenu(open);
+      if (open) { var first = sheet.querySelector("a"); if (first) { first.focus(); } }
+    });
     sheet.addEventListener("click", function (e) { if (e.target.closest("a")) { setMenu(false); } });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && sheet.classList.contains("open")) { setMenu(false); burger.focus(); }
@@ -53,7 +57,7 @@
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) { return; }
         links.forEach(function (a, i) {
-          a.setAttribute("aria-current", sections[i] === entry.target ? "true" : "false");
+          if (sections[i] === entry.target) { a.setAttribute("aria-current", "location"); } else { a.removeAttribute("aria-current"); }
         });
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
