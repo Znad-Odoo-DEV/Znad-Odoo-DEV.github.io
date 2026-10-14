@@ -307,7 +307,7 @@ code {
 }
 a.ghost-link:hover, .copy-link:hover { color: var(--accent); border-color: var(--accent-line); background: var(--accent-wash); }
 .ghost-link svg, .copy-link svg { width: 15px; height: 15px; flex: none; }
-.ghost-link.is-static { color: var(--tx-mute); background: transparent; cursor: default; }
+.ghost-link.is-static { color: var(--tx-mute); background: transparent; border-color: transparent; padding-inline: .15rem; cursor: default; }
 .read-link { background: var(--tx); color: var(--bg); border-color: var(--tx); }
 a.read-link:hover { background: var(--tx); color: var(--bg); border-color: var(--tx); opacity: .88; }
 .copy-link .ok { display: none; }

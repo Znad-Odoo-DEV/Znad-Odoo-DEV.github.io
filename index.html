@@ -204,6 +204,264 @@
     </div>
   </section>
 
+  <!-- ================= WORK ================= -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Selected work</span>
+        <h2>Systems, modules and sites</h2>
+        <p>
+          Each project says what the problem was, what I built and what came of
+          it. The figures are counted on the systems themselves; client names are
+          left out.
+        </p>
+      </div>
+
+      <div class="grid-work" data-filterable>
+
+        <article class="card" id="product-finder" data-cats="ai odoo">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.2"/><path d="m15.2 15.2 5 5"/><path d="M10.5 7.4v6.2M7.4 10.5h6.2"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>AI product finder</h3>
+          <p class="sum">Product search for a construction and MEP catalogue: describe a material in Arabic or English, or hand over a supplier quotation, and get the matching products from the existing catalogue, ranked and explained.</p>
+          <p class="state">On the staging database; production install pending</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Product names in a construction catalogue are short spec strings, typed by many people in two languages. Searching them by exact words misses what is already there.</dd></div>
+            <div><dt>What I built</dt><dd>A deterministic engine reads the request, retrieves a bounded set of candidates through the ORM as the person asking, and scores them. An AI model, when one is configured, only re-ranks that set through a JSON schema the server checks; any product it was not sent is dropped. A photo or PDF of a quotation becomes its lines, each with three matches.</dd></div>
+            <div><dt>Result</dt><dd><strong>85 automated tests</strong>, a headless browser tour among them. It works with no AI key at all, and on Gemini&rsquo;s free tier when one is added.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>85</b><span>automated tests</span></li><li><b>197</b><span>trade terms seeded</span></li><li><b>3</b><span>matches per quotation line</span></li></ul>
+          <div class="badges"><span>OWL</span><span>LLM re-ranking</span><span>JSON schema</span><span>Provider interface</span><span>Gemini</span><span>Anthropic</span><span>Multi-company</span></div>
+          <div class="card-foot">
+            <span class="ghost-link is-static"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>Private repository</span>
+          </div>
+        </article>
+
+        <article class="card" id="payroll" data-cats="odoo">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.8h12v18.4l-2-1.4-2 1.4-2-1.4-2 1.4-2-1.4-2 1.4z"/><path d="M9.2 8h5.6M9.2 12h5.6M9.2 16h3"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Construction payroll</h3>
+          <p class="sum">Payroll for a multi-company construction group: payslips driven by daily attendance, overtime priced at its own rates, labour cost split per project, and every deduction and settlement a site workforce produces.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Site workers and office staff across four companies were paid from Studio screens: end-of-service settlements typed by hand, and the salary run booked as a supplier bill, so payroll never showed as its own liability.</dd></div>
+            <div><dt>What I built</dt><dd>Native modules for payslips, overtime split into regular and off-day hours at their own rates, per-project cost distribution, WPS and cash salary batches, salary attachments, advances, loans, fines and end of service, with an OWL dashboard and PDF payslips.</dd></div>
+            <div><dt>Result</dt><dd>Pays <strong>380 active employees</strong> every month. <strong>5,479 payslips</strong> moved onto the standard employee record with no orphans.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>380</b><span>active employees paid</span></li><li><b>5,479</b><span>payslips carried, 0 orphans</span></li><li><b>4</b><span>companies</span></li></ul>
+          <div class="badges"><span>Python</span><span>OWL</span><span>QWeb</span><span>Multi-company</span></div>
+          <div class="card-foot">
+            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/ssc_payroll" aria-label="View on GitHub: Construction payroll"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card" id="attendance" data-cats="odoo">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 10a7.5 7.5 0 0 1 15 0"/><path d="M8 10.5a4 4 0 0 1 8 0v2.2c0 1.6.4 3.1 1.2 4.4"/><path d="M12 10.5v3.2c0 2.6.8 5.1 2.3 7.2"/><path d="M6.6 20.6A9.4 9.4 0 0 1 4.6 15"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Biometric attendance</h3>
+          <p class="sum">Fingerprint punches from every site turned into daily hours, overtime and the project each hour belongs to, feeding payroll and the standard attendance app.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Workers clock in on fingerprint devices on each site. Payroll needs worked hours and overtime per person per day, and costing needs the project each hour was worked on.</dd></div>
+            <div><dt>What I built</dt><dd>Pulls punches from BioCloud devices over REST, turns them into daily worked hours and overtime, maps each device to the project it stands on, mirrors everything to native <code>hr.attendance</code>, and feeds the payroll engine.</dd></div>
+            <div><dt>Result</dt><dd>A day off is read from an approved <code>hr.leave</code> covering that day, so it expires when the leave does, instead of a permanent checkbox that spared its holder from absence for ever.</dd></div>
+          </dl>
+          <div class="badges"><span>REST integration</span><span>Cron jobs</span><span>hr.leave</span><span>Reporting</span></div>
+          <div class="card-foot">
+            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/ssc_attendance" aria-label="View on GitHub: Biometric attendance"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card" id="planning" data-cats="odoo data">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 20.2h17.6"/><path d="M5.5 20.2V9.4l6.5-4.6 6.5 4.6v10.8"/><path d="M9.4 20.2v-5.2h5.2v5.2"/><path d="M9.4 11.2h5.2"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Construction progress &amp; planning suite</h3>
+          <p class="sum">Eight modules that hold a construction job to its own numbers: what each item was priced at, when it is meant to happen, what has been built, and what it is being bought for.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>The original was a Studio app: a bill of quantities spread over 29 identical line models named after trades, 12 bill totals typed by hand, and a percent-complete that never agreed with the quantity done recorded elsewhere.</dd></div>
+            <div><dt>What I built</dt><dd>One application in the order a construction office works: projects and zones, bill of quantities, programme, progress measurement and subcontracts. A site engineer enters one number, a quantity, and item value, bill total, earned value and project percentage all follow, because none of them is stored twice.</dd></div>
+            <div><dt>Result</dt><dd>Live on production. <strong>6 bills and 782 items</strong> migrated with totals rebuilt from their lines, with 105 work types, 98 zones and 387 zone splits; 88 Studio models retired.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>8</b><span>modules, one menu</span></li><li><b>782</b><span>bill items migrated</span></li><li><b>281</b><span>automated checks</span></li><li><b>88</b><span>Studio models retired</span></li></ul>
+          <div class="badges"><span>BOQ &amp; revisions</span><span>Programme</span><span>Earned value</span><span>Progress measurement</span><span>Analytic accounts</span></div>
+          <div class="card-foot">
+            <span class="ghost-link is-static"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>Private client repository</span>
+          </div>
+        </article>
+
+        <article class="card" id="subcontracting" data-cats="odoo data">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.8h9l4 4v14.4H6z"/><path d="M14.6 2.8v4.4H19"/><path d="M9 12.6h6M9 16.4h4"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Subcontracting &amp; payment certificates</h3>
+          <p class="sum">The money going out: a subcontract carries its own bill of quantities beside ours, and payment certificates set what is claimed against what was agreed and measured.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Studio stored its certificate totals instead of computing them, from a field its lines no longer had, so 40 of 206 certificates no longer matched their own items.</dd></div>
+            <div><dt>What I built</dt><dd>A subcontract carries its own bill of quantities beside ours, so the margin is a fact on the record. Certificates set the claim against what was agreed and what the site measured. Contractor agreements became standard Purchase Agreements.</dd></div>
+            <div><dt>Result</dt><dd><strong>203 of 206</strong> certificates reconcile to quantity times rate; the other three differ by under 0.30. 64 agreements, 181 certificates and 177 vendor bills linked.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>203 / 206</b><span>certificates reconcile</span></li><li><b>64</b><span>agreements carried</span></li><li><b>177</b><span>vendor bills linked</span></li></ul>
+          <div class="badges"><span>Subcontract BOQ</span><span>Purchase agreements</span><span>Payment certificates</span><span>Margin</span><span>Reconciliation</span></div>
+          <div class="card-foot">
+            <span class="ghost-link is-static"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>Private client repository</span>
+          </div>
+        </article>
+
+        <article class="card" id="requests" data-cats="odoo data">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h10"/><circle cx="18.4" cy="17.5" r="3.1"/><path d="m17.1 17.5 1 1 2-2.2"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Internal requests &amp; approvals</h3>
+          <p class="sum">One request model for what the sites and the office ask for (leave, salary advance, material, payment), each with its own approval route, and the document an approval implies.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Requests lived in a Studio app with 27 automations and 50 server actions. Five of its eight reports printed a blank page, and deleting it would have cut every purchase order off from the request that asked for it.</dd></div>
+            <div><dt>What I built</dt><dd>A native request model with an approval route per type. An approved leave, advance or resignation becomes the payroll document it implies, and a purchase bridge keeps the trail from request to order, bill and payment.</dd></div>
+            <div><dt>Result</dt><dd>Live on production with <strong>1,150 requests</strong> carried. 578 of 582 purchase orders, 189 of 191 bills and 136 of 137 payments still trace back to their request.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>1,150</b><span>requests carried</span></li><li><b>578 / 582</b><span>orders still traced</span></li><li><b>430</b><span>automated checks</span></li></ul>
+          <div class="badges"><span>Approval routes</span><span>Payroll documents</span><span>Purchase trace</span><span>Audit trail</span><span>Record rules</span></div>
+          <div class="card-foot">
+            <span class="ghost-link is-static"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>Private client repository</span>
+          </div>
+        </article>
+
+        <article class="card" id="repair-workshop" data-cats="odoo">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7.5" y="7.5" width="9" height="9" rx="1.6"/><path d="M10.5 3.5v3M13.5 3.5v3M10.5 17.5v3M13.5 17.5v3M3.5 10.5h3M3.5 13.5h3M17.5 10.5h3M17.5 13.5h3"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Electronics repair workshop</h3>
+          <p class="sum">A modular app that follows a device from the counter to the customer.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>A repair workshop needs to follow each device from reception to delivery, without having to adopt every stage on the first day.</dd></div>
+            <div><dt>What I built</dt><dd>Reception, diagnosis, parts, repair, billing, delivery and reporting, each stage its own installable module.</dd></div>
+            <div><dt>Result</dt><dd>The workshop can adopt the stages one at a time.</dd></div>
+          </dl>
+          <div class="badges"><span>Modular design</span><span>Workflows</span><span>Billing</span></div>
+          <div class="card-foot">
+            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/ems_app" aria-label="View on GitHub: Electronics repair workshop"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card" id="real-estate" data-cats="odoo">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5h17"/><path d="M5.5 20.5V9.2l6.5-4.7 6.5 4.7v11.3"/><path d="M10 20.5v-4.8h4v4.8"/><path d="M9.6 11.4h1.2M13.2 11.4h1.2"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Real-estate listings</h3>
+          <p class="sum">Property management with types and tags, an offer workflow and pricing rules.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Offers on a property need rules about who can accept what, and a sold property has to leave the pipeline.</dd></div>
+            <div><dt>What I built</dt><dd>Property types and tags, an offer workflow that enforces who can accept what, and availability and pricing rules.</dd></div>
+            <div><dt>Result</dt><dd>Sold stock stays out of the pipeline by rule, not by habit.</dd></div>
+          </dl>
+          <div class="badges"><span>Business logic</span><span>Access rules</span></div>
+          <div class="card-foot">
+            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/estate" aria-label="View on GitHub: Real-estate listings"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card" id="estate-accounting" data-cats="odoo">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.8a4 4 0 0 0 5.7 0l2.8-2.8a4 4 0 1 0-5.7-5.7L11.6 6.7"/><path d="M13.8 10.2a4 4 0 0 0-5.7 0l-2.8 2.8a4 4 0 1 0 5.7 5.7l1.4-1.4"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Estate accounting bridge</h3>
+          <p class="sum">A thin module between a property sale and the ledger.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>When a sale is re-typed as an invoice, the sales flow and the ledger drift apart.</dd></div>
+            <div><dt>What I built</dt><dd>A module that inherits the sale and raises the customer invoice the moment a property is sold.</dd></div>
+            <div><dt>Result</dt><dd>The sales flow and the ledger stay in step without anyone re-typing a figure.</dd></div>
+          </dl>
+          <div class="badges"><span>Accounting</span><span>Module inheritance</span></div>
+          <div class="card-foot">
+            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/estate_accounts" aria-label="View on GitHub: Estate accounting bridge"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card" id="investment-group-site" data-cats="web">
+          <figure class="shot">
+            <img src="assets/site-group.jpg" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Homepage of the investment group site: hero image with the group name and the numbered registry of subsidiary companies below it.">
+          </figure>
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2.8" width="6" height="4.4" rx="1.2"/><rect x="2.8" y="16.8" width="6" height="4.4" rx="1.2"/><rect x="15.2" y="16.8" width="6" height="4.4" rx="1.2"/><path d="M12 7.2v4.3M5.8 16.8v-3.1a1.2 1.2 0 0 1 1.2-1.2h10a1.2 1.2 0 0 1 1.2 1.2v3.1"/></svg></div>
+            <span class="platform">WordPress</span>
+          </div>
+          <h3>Investment group site</h3>
+          <p class="sum">A bespoke enterprise theme for a holding group spanning real-estate development, construction, engineering, MEP, natural stone and wood manufacturing.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>The group needed one site where a subsidiary or a development is added without a developer, and the parent-to-subsidiary relationship reads at a glance.</dd></div>
+            <div><dt>What I built</dt><dd>Companies, projects, insights and careers as custom post types; taxonomies driving the homepage filter and related projects; a numbered group registry; a one-click importer; every setting in one Customizer panel.</dd></div>
+            <div><dt>Result</dt><dd>Six companies and eighteen developments seeded in one click, with no page builder and no third-party plugin.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>6</b><span>companies seeded</span></li><li><b>18</b><span>developments seeded</span></li><li><b>0</b><span>third-party plugins</span></li></ul>
+          <div class="badges"><span>PHP</span><span>Custom post types</span><span>Taxonomies</span><span>Customizer</span><span>Accessibility</span></div>
+          <div class="card-foot">
+            <a class="ghost-link" href="https://malakalreem.com" aria-label="Visit the live site: Investment group site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14.5v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6h4"/></svg>Visit the live site</a>
+            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/malak-al-reem" aria-label="Code: Investment group site"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>Code</a>
+          </div>
+        </article>
+
+        <article class="card" id="construction-site" data-cats="web">
+          <figure class="shot">
+            <img src="assets/site-construction.jpg" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Homepage of the construction company site: full-width hero with the company name, statistics counters and project cards.">
+          </figure>
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 21V3.8h13"/><path d="M2.8 21h5.4"/><path d="M14.5 3.8v4.4"/><rect x="12.6" y="8.2" width="3.9" height="3.2" rx=".8"/><path d="M5.5 7.4 9.6 3.8"/></svg></div>
+            <span class="platform">WordPress</span>
+          </div>
+          <h3>Construction company site</h3>
+          <p class="sum">The contracting arm of the same group, on its own theme built from the group design system.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>The contracting company needed its own logo, imagery and voice while still reading as part of the group, in Arabic and in English.</dd></div>
+            <div><dt>What I built</dt><dd>A theme built from the group design system: projects with galleries and a lightbox, news and events, an accessible dropdown menu with a language switch, statistic counters, newsletter and contact forms.</dd></div>
+            <div><dt>Result</dt><dd>Arabic is fully right to left, with the Arabic face swapped in automatically, and every setting sits in one Customizer panel.</dd></div>
+          </dl>
+          <div class="badges"><span>PHP</span><span>RTL / AR and EN</span><span>Design system</span><span>Galleries</span><span>Customizer</span></div>
+          <div class="card-foot">
+            <a class="ghost-link" href="https://saudconstruction.com" aria-label="Visit the live site: Construction company site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14.5v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6h4"/></svg>Visit the live site</a>
+            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/saud-shehatha" aria-label="Code: Construction company site"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>Code</a>
+          </div>
+        </article>
+
+        <article class="card" id="joinery-site" data-cats="web">
+          <figure class="shot">
+            <img src="assets/site-royal-wooden.jpg" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="Homepage of the wooden joinery manufacturer site: full-screen photograph of a lit timber entrance behind the headline Crafted for Architecture.">
+          </figure>
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5.2" y="2.8" width="13.6" height="18.4" rx="1.2"/><path d="M12 2.8v18.4"/><path d="M9.4 12.6h.01M14.6 12.6h.01"/></svg></div>
+            <span class="platform">Astro</span>
+          </div>
+          <h3>Wooden joinery manufacturer site</h3>
+          <p class="sum">An editorial site for a UAE manufacturer of wooden doors, windows and bespoke architectural woodwork.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>A manufacturer selling craft to architects needs a site that is fast and photographic, and copy that can be edited without touching layout.</dd></div>
+            <div><dt>What I built</dt><dd>A static Astro site: content in typed data files, photography optimised to WebP with responsive srcsets at build time, one IntersectionObserver for the motion, structured data and a generated sitemap.</dd></div>
+            <div><dt>Result</dt><dd>The homepage is 53&nbsp;KB of HTML over 34&nbsp;KB of CSS, with 2&nbsp;KB of JavaScript and no framework behind it.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>53 KB</b><span>homepage HTML</span></li><li><b>34 KB</b><span>CSS</span></li><li><b>2 KB</b><span>JavaScript</span></li></ul>
+          <div class="badges"><span>Astro</span><span>TypeScript</span><span>Static output</span><span>Image optimisation</span><span>SEO</span><span>Accessibility</span></div>
+          <div class="card-foot">
+            <a class="ghost-link" href="https://znad-odoo-dev.github.io/royal-wooden/" aria-label="View live site: Wooden joinery manufacturer site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14.5v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6h4"/></svg>View live site</a>
+            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/royal-wooden" aria-label="Code: Wooden joinery manufacturer site"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>Code</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ================= APPROACH ================= -->
   <section class="section" id="approach">
     <div class="wrap">
@@ -250,390 +508,6 @@
             its second month, not in the demo.
           </p>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= WORK ================= -->
-  <section class="section" id="work">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Selected work</span>
-        <h2>Systems running in production</h2>
-      </div>
-
-      <div class="grid-work">
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.8h12v18.4l-2-1.4-2 1.4-2-1.4-2 1.4-2-1.4-2 1.4z"/><path d="M9.2 8h5.6M9.2 12h5.6M9.2 16h3"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>Construction payroll</h3>
-          <p>
-            Payroll for a multi-company construction group. Payslips driven by daily
-            attendance, overtime split into regular and off-day hours priced at their
-            own rates, per-project labour cost distribution, WPS and cash salary
-            batches, salary attachments, advances, loans, fines and end-of-service —
-            with an OWL dashboard and PDF payslips on top.
-          </p>
-          <div class="badges"><span>Python</span><span>OWL</span><span>QWeb</span><span>Multi-company</span></div>
-          <div class="card-foot">
-            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/ssc_payroll">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-              View on GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10a7.5 7.5 0 0 1 15 0"/><path d="M8 10.5a4 4 0 0 1 8 0v2.2c0 1.6.4 3.1 1.2 4.4"/><path d="M12 10.5v3.2c0 2.6.8 5.1 2.3 7.2"/><path d="M6.6 20.6A9.4 9.4 0 0 1 4.6 15"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>Biometric attendance</h3>
-          <p>
-            Pulls punches from BioCloud fingerprint devices over REST, turns them into
-            daily worked hours and overtime, maps each device to the project it stands
-            on, mirrors everything to native <code>hr.attendance</code>, and feeds the
-            payroll engine — with a dashboard and pivot analysis for the site managers.
-          </p>
-          <p>
-            A day off is a dated fact rather than a tick: leave is read from an
-            approved <code>hr.leave</code> covering that day, so the mark expires when
-            the leave does. It used to be a permanent checkbox on the employee card,
-            which spared whoever carried it from absence every day for ever. Each line
-            resolves its Odoo employee as it is created, because a link written later
-            marks the leave a day after the day it describes.
-          </p>
-          <div class="badges"><span>REST integration</span><span>Cron jobs</span><span>hr.leave</span><span>Reporting</span></div>
-          <div class="card-foot">
-            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/ssc_attendance">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-              View on GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.2"/><path d="m15.2 15.2 5 5"/><path d="M10.5 7.4v6.2M7.4 10.5h6.2"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>AI product finder</h3>
-          <p>
-            A conversational product search built into Odoo 19 for a multi-company
-            construction and MEP group. Users describe a material in Arabic or English
-            and get the matching products from the existing catalogue, ranked and
-            explained. Delivered as a native module: OWL components in the web client,
-            the ORM and PostgreSQL for retrieval, security groups and record rules for
-            access, a configurable terminology model, and an audit log with retention.
-          </p>
-          <p>
-            The AI architecture keeps the language model out of the database. A
-            deterministic engine understands the request, retrieves a bounded set of
-            candidates, and scores them; the model only re-ranks that set through a
-            strict JSON schema the server validates, so it can never invent a product
-            or bypass a rule. Document reading follows the same pattern for supplier
-            quotations. Providers are an interface, not a dependency: Anthropic and
-            Google Gemini today, another vendor tomorrow, with token use, timeouts and
-            failure modes handled so the assistant always answers.
-          </p>
-          <div class="badges"><span>OWL</span><span>LLM architecture</span><span>Provider abstraction</span><span>Multi-company</span></div>
-          <div class="card-foot">
-            <span class="ghost-link" aria-label="Source lives in a private repository">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
-              ssc_product_finder · private repository
-            </span>
-          </div>
-        </article>
-
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7.5" y="7.5" width="9" height="9" rx="1.6"/><path d="M10.5 3.5v3M13.5 3.5v3M10.5 17.5v3M13.5 17.5v3M3.5 10.5h3M3.5 13.5h3M17.5 10.5h3M17.5 13.5h3"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>Electronics repair workshop</h3>
-          <p>
-            A modular app that follows a device from the counter to the customer:
-            reception, diagnosis, parts, repair, billing, delivery and reporting —
-            each stage its own installable module, so the workshop can adopt them
-            one at a time.
-          </p>
-          <div class="badges"><span>Modular design</span><span>Workflows</span><span>Billing</span></div>
-          <div class="card-foot">
-            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/ems_app">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-              View on GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5h17"/><path d="M5.5 20.5V9.2l6.5-4.7 6.5 4.7v11.3"/><path d="M10 20.5v-4.8h4v4.8"/><path d="M9.6 11.4h1.2M13.2 11.4h1.2"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>Real-estate listings</h3>
-          <p>
-            Property management with types and tags, an offer workflow that enforces
-            who can accept what, and availability and pricing rules that keep sold
-            stock out of the pipeline.
-          </p>
-          <div class="badges"><span>Business logic</span><span>Access rules</span></div>
-          <div class="card-foot">
-            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/estate">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-              View on GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 13.8a4 4 0 0 0 5.7 0l2.8-2.8a4 4 0 1 0-5.7-5.7L11.6 6.7"/><path d="M13.8 10.2a4 4 0 0 0-5.7 0l-2.8 2.8a4 4 0 1 0 5.7 5.7l1.4-1.4"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>Estate accounting bridge</h3>
-          <p>
-            A thin module that raises the customer invoice the moment a property is
-            sold, keeping the sales flow and the ledger in step without anyone
-            re-typing a figure.
-          </p>
-          <div class="badges"><span>Accounting</span><span>Module inheritance</span></div>
-          <div class="card-foot">
-            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/estate_accounts">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-              View on GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <figure class="shot">
-            <img src="assets/site-group.jpg" width="1200" height="900" loading="lazy" decoding="async"
-                 alt="Homepage of the investment group site: hero image with the group name and the numbered registry of subsidiary companies below it.">
-          </figure>
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.8" width="6" height="4.4" rx="1.2"/><rect x="2.8" y="16.8" width="6" height="4.4" rx="1.2"/><rect x="15.2" y="16.8" width="6" height="4.4" rx="1.2"/><path d="M12 7.2v4.3M5.8 16.8v-3.1a1.2 1.2 0 0 1 1.2-1.2h10a1.2 1.2 0 0 1 1.2 1.2v3.1"/></svg>
-            </div>
-            <span class="platform">WordPress</span>
-          </div>
-          <h3>Investment group site</h3>
-          <p>
-            A bespoke enterprise theme for a holding group spanning real-estate
-            development, construction, engineering, MEP, natural stone and wood
-            manufacturing. Group companies, projects, insights and careers are all
-            custom post types, so the group adds a subsidiary or a development
-            without touching code — and taxonomies for status, location, type and
-            sector drive the homepage filter and the related-project logic.
-          </p>
-          <p>
-            Its signature element is the group registry: a numbered, hairline-ruled
-            index that makes the parent-to-subsidiary relationship read at a glance.
-            A one-click, idempotent importer seeds the full company profile — six
-            companies, eighteen developments, taxonomies, core pages, the primary
-            menu and the bundled photography — and every brand, hero, contact and
-            section toggle lives in a single Customizer panel. No page builder and
-            no third-party plugin: accessible navigation, reduced-motion support,
-            lazy-loaded imagery, and an enquiry form that validates and stores
-            nothing.
-          </p>
-          <div class="badges"><span>PHP</span><span>Custom post types</span><span>Taxonomies</span><span>Customizer</span><span>Accessibility</span></div>
-          <div class="card-foot">
-            <a class="ghost-link" href="https://malakalreem.com">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14.5v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6h4"/></svg>
-              Visit malakalreem.com
-            </a>
-            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/malak-al-reem">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-              Code
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <figure class="shot">
-            <img src="assets/site-construction.jpg" width="1200" height="900" loading="lazy" decoding="async"
-                 alt="Homepage of the construction company site: full-width hero with the company name, statistics counters and project cards.">
-          </figure>
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 21V3.8h13"/><path d="M2.8 21h5.4"/><path d="M14.5 3.8v4.4"/><rect x="12.6" y="8.2" width="3.9" height="3.2" rx=".8"/><path d="M5.5 7.4 9.6 3.8"/></svg>
-            </div>
-            <span class="platform">WordPress</span>
-          </div>
-          <h3>Construction company site</h3>
-          <p>
-            The contracting arm of the same group, on its own theme built from the
-            group design system — shared palette, type and components, so the two
-            sites read as one family while the company keeps its own logo, imagery
-            and voice.
-          </p>
-          <p>
-            Projects are dynamic, each with its own image gallery and a lightbox on
-            the project page; news and events are managed the same way. On top of
-            that: a sticky header with an accessible dropdown menu and a language
-            switch, animated statistic counters, a newsletter and contact form, a
-            three-column footer, and a proper link back to the parent group. Arabic
-            is fully right-to-left, with the Arabic face swapped in automatically
-            for Arabic content, and every setting sits in one Customizer panel.
-          </p>
-          <div class="badges"><span>PHP</span><span>RTL / AR — EN</span><span>Design system</span><span>Galleries</span><span>Customizer</span></div>
-          <div class="card-foot">
-            <a class="ghost-link" href="https://saudconstruction.com">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14.5v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6h4"/></svg>
-              Visit saudconstruction.com
-            </a>
-            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/saud-shehatha">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-              Code
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <figure class="shot">
-            <img src="assets/site-royal-wooden.jpg" width="1200" height="900" loading="lazy" decoding="async"
-                 alt="Homepage of the wooden joinery manufacturer site: full-screen photograph of a lit timber entrance behind the headline Crafted for Architecture.">
-          </figure>
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5.2" y="2.8" width="13.6" height="18.4" rx="1.2"/><path d="M12 2.8v18.4"/><path d="M9.4 12.6h.01M14.6 12.6h.01"/></svg>
-            </div>
-            <span class="platform">Astro</span>
-          </div>
-          <h3>Wooden joinery manufacturer site</h3>
-          <p>
-            An editorial site for a UAE manufacturer of wooden doors, windows and
-            bespoke architectural woodwork — the woodwork arm of the same group.
-            Built as a static Astro site so every page ships pre-rendered: the
-            homepage is 53&nbsp;KB of HTML over 34&nbsp;KB of CSS, with 2&nbsp;KB of
-            JavaScript doing all of the motion and no framework behind it.
-          </p>
-          <p>
-            Company details, product ranges, projects and process stages live in
-            typed data files, so editing copy never touches layout. Photography is
-            optimised to WebP with responsive srcsets at build time, the brand crest
-            is drawn as single-colour SVG that inverts cleanly across the ivory and
-            charcoal sections, and scroll reveals run on one IntersectionObserver
-            with full reduced-motion support. Per-page metadata, LocalBusiness
-            structured data and a generated sitemap ship with it.
-          </p>
-          <div class="badges"><span>Astro</span><span>TypeScript</span><span>Static output</span><span>Image optimisation</span><span>SEO</span><span>Accessibility</span></div>
-          <div class="card-foot">
-            <a class="ghost-link" href="https://znad-odoo-dev.github.io/royal-wooden/">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14.5v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6h4"/></svg>
-              View live site
-            </a>
-            <a class="ghost-link" href="https://github.com/Znad-Odoo-DEV/royal-wooden">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.22.69-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-              Code
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.2 20.2h17.6"/><path d="M5.5 20.2V9.4l6.5-4.6 6.5 4.6v10.8"/><path d="M9.4 20.2v-5.2h5.2v5.2"/><path d="M9.4 11.2h5.2"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>Construction project control</h3>
-          <p>
-            Five modules that hold a construction job to its own numbers. The bill of
-            quantities carries what the work was priced at, item by item and revision
-            by revision. The programme says when each priced item is meant to happen.
-            Progress records what was actually built, and measures it against both.
-          </p>
-          <p>
-            The comparison is the point: priced, programmed and measured are three
-            different figures for one item, and a project is in trouble the moment
-            they stop agreeing. Zones and trades sit on the project itself, so an item
-            can be read by where it is as well as by what it is.
-          </p>
-          <div class="badges"><span>BOQ &amp; revisions</span><span>Programme</span><span>Progress measurement</span><span>Analytic accounts</span></div>
-          <div class="card-foot">
-            <span class="ghost-link" aria-label="Source lives in a private client repository">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
-              SSC_LLC · private client repository
-            </span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.8h9l4 4v14.4H6z"/><path d="M14.6 2.8v4.4H19"/><path d="M9 12.6h6M9 16.4h4"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>Subcontracting &amp; payment certificates</h3>
-          <p>
-            Four modules covering the money going out. A subcontract carries its own
-            bill of quantities beside ours, so what an item was sold for sits next to
-            what is being paid for it, and the margin is a fact on the record rather
-            than a calculation somebody does later. Call-offs raised against the
-            agreement become LPOs.
-          </p>
-          <p>
-            Payment certificates close the loop: what a subcontractor claims, against
-            what was agreed and what the site actually measured. A claim that outruns
-            the measurement is visible before it is approved, not after it is paid.
-          </p>
-          <div class="badges"><span>Subcontract BOQ</span><span>Call-offs &amp; LPO</span><span>Payment certificates</span><span>Margin</span></div>
-          <div class="card-foot">
-            <span class="ghost-link" aria-label="Source lives in a private client repository">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
-              SSC_LLC · private client repository
-            </span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="card-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5h16M4 12h16M4 17.5h10"/><circle cx="18.4" cy="17.5" r="3.1"/><path d="m17.1 17.5 1 1 2-2.2"/></svg>
-            </div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3>Internal requests</h3>
-          <p>
-            One request model for what the sites and the office actually ask for —
-            leave, salary advance, material, payment — each with its own approval
-            route and its own record.
-          </p>
-          <p>
-            The second module is the half that usually goes missing: what an approved
-            request <em>produces</em>. An approved leave, advance or resignation
-            becomes the payroll document it implies, so the approval and its
-            consequence cannot drift apart. Granted but never paid, or paid but never
-            granted, is a state the data will not hold.
-          </p>
-          <div class="badges"><span>Approval routes</span><span>Payroll documents</span><span>Audit trail</span><span>Record rules</span></div>
-          <div class="card-foot">
-            <span class="ghost-link" aria-label="Source lives in a private client repository">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
-              SSC_LLC · private client repository
-            </span>
-          </div>
-        </article>
-
       </div>
     </div>
   </section>
