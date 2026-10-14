@@ -37,12 +37,13 @@
   <div class="nav-inner">
     <a class="brand" href="#top" aria-label="Ibrahim M Elznad — home">
       <span class="brand-mark" aria-hidden="true">IE</span>
-      <span class="brand-name">Ibrahim M Elznad<span>ERP / Odoo</span></span>
+      <span class="brand-name">Ibrahim M Elznad<span>Odoo techno-functional</span></span>
     </a>
 
     <nav class="links" id="links" aria-label="Sections">
-      <a href="#approach">Approach</a>
+      <a href="#nudge">Nudge</a>
       <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
       <a href="#upgrade">Upgrade</a>
       <a href="#config">Config</a>
       <a href="#method">Method</a>
@@ -67,8 +68,9 @@
 </header>
 
 <nav class="sheet" id="sheet" aria-label="Sections" aria-hidden="true">
-  <a href="#approach">Approach</a>
+  <a href="#nudge">Nudge</a>
   <a href="#work">Work</a>
+  <a href="#approach">Approach</a>
   <a href="#upgrade">Upgrade</a>
   <a href="#config">Config</a>
   <a href="#method">Method</a>
@@ -84,15 +86,16 @@
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-      <span class="chip"><span class="dot" aria-hidden="true"></span>Odoo 18 / 19 · Python · PostgreSQL</span>
+      <a class="chip" href="#nudge"><span class="dot" aria-hidden="true"></span>Coming soon: Nudge, an AI companion for Odoo</a>
 
       <h1>Ibrahim M<br>Elznad</h1>
-      <p class="role">ERP / Odoo Techno-Functional</p>
+      <p class="role">Odoo techno-functional · AI for Odoo</p>
 
       <p class="lede">
-        I build the systems that pay people and track their work. Three years of
-        sitting with the teams who do the job, modelling what they actually do,
-        and shipping it as native Odoo modules that run in production.
+        I build the systems that pay people and track their work, and an AI
+        companion that helps people use Odoo itself. Three years of sitting with
+        the teams who do the job, modelling what they actually do, and shipping it
+        as native Odoo modules that run in production.
       </p>
 
       <div class="cta-row">
@@ -118,9 +121,86 @@
 
       <dl class="stats">
         <div class="stat"><dt>Experience</dt><dd>3 years</dd></div>
-        <div class="stat"><dt>Platform</dt><dd>Odoo 18 / 19</dd></div>
-        <div class="stat"><dt>Code</dt><dd>Python · OWL · SQL</dd></div>
+        <div class="stat"><dt>Odoo</dt><dd>17, 18 and 19</dd></div>
+        <div class="stat"><dt>Code</dt><dd>Python, OWL, SQL</dd></div>
+        <div class="stat"><dt>AI</dt><dd>Claude, Gemini, Ollama</dd></div>
       </dl>
+    </div>
+  </section>
+
+
+  <!-- ================= FLAGSHIP ================= -->
+  <section class="flagship" id="nudge" aria-labelledby="nudge-title">
+    <div class="wrap flag-grid">
+      <div class="flag-copy">
+        <span class="status"><span class="dot" aria-hidden="true"></span>Coming soon to the Odoo Apps Store</span>
+        <h2 id="nudge-title">Nudge, an AI companion inside Odoo</h2>
+        <p class="flag-lede">
+          Press a shortcut on any Odoo screen and ask, in Arabic or English. Nudge
+          sees the record you are on, knows how this database is set up, and works
+          with your own rights, never beyond them. I designed and built it end to
+          end: seven modules, three modes.
+        </p>
+
+        <ul class="modes">
+          <li class="mode">
+            <span class="mode-word">Ask.</span>
+            <span class="mode-name">Talk mode</span>
+            <p>
+              Explains the screen you are on and walks you through it, with a pointer
+              that goes to the field or button to use. Answers how Odoo works from the
+              official documentation shipped with the module: 1,067 pages, searched in
+              PostgreSQL, nothing fetched from outside.
+            </p>
+          </li>
+          <li class="mode">
+            <span class="mode-word">Do.</span>
+            <span class="mode-name">Agent mode</span>
+            <p>
+              Finds, creates and changes records and presses buttons with your rights,
+              after a card that shows what will happen and waits for your yes. Many
+              records go through one plan, tried first and undone so the card can say
+              which will pass, with undo afterwards. Long work runs in the background;
+              scheduled tasks are asked for in words.
+            </p>
+          </li>
+          <li class="mode">
+            <span class="mode-word">Build.</span>
+            <span class="mode-name">Developer mode</span>
+            <p>
+              Writes automation rules, server actions, designed email templates,
+              fields, views and PDF reports. Each one is tried on a dummy record first,
+              and everything it builds can be undone.
+            </p>
+          </li>
+        </ul>
+
+        <dl class="facts">
+          <div><dt>AI providers</dt><dd>Claude, Gemini, any ChatGPT-compatible API, or Ollama on your own server</dd></div>
+          <div><dt>Odoo</dt><dd>17, 18 and 19, Community and Enterprise</dd></div>
+          <div><dt>Languages</dt><dd>Arabic and English, right to left</dd></div>
+          <div><dt>Tests</dt><dd>652 Python and 181 browser tests on 19 and 18; 646 on 17</dd></div>
+        </dl>
+
+        <p class="flag-note">
+          <strong>Reviewed for security before release.</strong> SQL is read-only
+          because the database transaction is, not because a parser said so. Python
+          the agent writes runs in Odoo's sandbox with a deadline, against a read-only
+          view of the records, in a savepoint that is rolled back. What a tool reads
+          from a record is framed as data, so an instruction hidden in a note is not
+          taken as a command. Budgets per person and per company are set by the
+          administrator.
+        </p>
+      </div>
+
+      <figure class="phone">
+        <video controls preload="none" playsinline width="720" height="1280"
+               poster="assets/nudge/nudge-poster.webp"
+               aria-label="Nudge: a 90-second tour of the three modes">
+          <source src="assets/nudge/nudge-reel-en.mp4" type="video/mp4">
+        </video>
+        <figcaption>A 90-second tour, with sound</figcaption>
+      </figure>
     </div>
   </section>
 
