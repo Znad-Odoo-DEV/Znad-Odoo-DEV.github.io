@@ -66,7 +66,7 @@
   if (filterBar && grid) {
     var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
     var status = document.getElementById("filter-status");
-    var apply = function (cat, label) {
+    var apply = function (cat, label, note) {
       var shown = [];
       cards.forEach(function (card) {
         var cats = (card.getAttribute("data-cats") || "").split(" ");
@@ -81,7 +81,7 @@
       if (status) {
         status.textContent = cat === "all"
           ? "Showing all " + shown.length + " projects."
-          : "Showing " + shown.length + (shown.length === 1 ? " project" : " projects") + " in " + label + ".";
+          : "Showing " + shown.length + (shown.length === 1 ? " project" : " projects") + " in " + label + "." + (note ? " " + note : "");
       }
     };
     filterBar.addEventListener("click", function (e) {
@@ -90,7 +90,7 @@
       each(filterBar.querySelectorAll("button[data-filter]"), function (b) {
         b.setAttribute("aria-pressed", b === btn ? "true" : "false");
       });
-      apply(btn.getAttribute("data-filter"), btn.textContent.trim());
+      apply(btn.getAttribute("data-filter"), btn.textContent.trim(), btn.getAttribute("data-note"));
     });
     apply("all", "All");
   }

@@ -374,7 +374,7 @@ a.chip:hover { border-color: var(--accent-line); color: var(--tx); }
 @media (prefers-reduced-motion: no-preference) {
   .hero-copy { animation: arrive .28s var(--ease) both; }
 }
-@keyframes arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes arrive { from { opacity: .4; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
 .stats {
   margin: 0;
@@ -513,7 +513,7 @@ html:not(.js) .filters { display: none; }
 }
 .filters button:hover { color: var(--tx); border-color: var(--line-strong); }
 .filters button[aria-pressed="true"] { background: var(--tx); color: var(--bg); border-color: var(--tx); }
-.filter-status { margin: 0 0 1rem; font-size: .86rem; color: var(--tx-mute); }
+.filter-status { margin: -0.6rem 0 1.2rem; font-size: .86rem; color: var(--tx-mute); min-height: 1.4em; }
 
 .grid-work { display: grid; gap: clamp(1rem, 2vw, 1.4rem); }
 @media (min-width: 860px) {
