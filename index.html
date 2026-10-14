@@ -352,6 +352,25 @@
           </div>
         </article>
 
+        <article class="card" id="inventory" data-cats="data odoo">
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20.5V9l9-5 9 5v11.5"/><path d="M7 20.5v-7.2h10v7.2"/><path d="M7 16.9h10"/></svg></div>
+            <span class="platform">Odoo 19</span>
+          </div>
+          <h3>Inventory restructure: one warehouse per site store</h3>
+          <p class="sum">Site stores turned into warehouses of their own, so forecast, incoming stock and replenishment answer per project, and the stores&rsquo; movements priced into journal entries for the accountant.</p>
+          <dl class="pbr">
+            <div><dt>Problem</dt><dd>Each site store was a location inside one warehouse per company. Odoo answers forecast, incoming and replenishment per warehouse, so 149 units of cement on the forecast could not say which site they were at.</dd></div>
+            <div><dt>What I built</dt><dd>A tool that creates a warehouse for each site store and makes the existing store location its stock, repointing operation types, routes and reorder rules, with no stock move touched. Its dry run does the whole conversion, compares every store, product and lot, and rolls back.</dd></div>
+            <div><dt>Result</dt><dd>Live on production: <strong>13 warehouses</strong>, 5 empty stores archived, not one quantity changed. 8,901 movements priced into 28 draft journal entries, with 1,298 lines flagged for a missing cost.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="Figures"><li><b>13</b><span>site warehouses</span></li><li><b>0</b><span>quantities changed</span></li><li><b>28</b><span>draft valuation entries</span></li><li><b>1,298</b><span>lines flagged for a cost</span></li></ul>
+          <div class="badges"><span>stock.warehouse</span><span>Replenishment</span><span>Stock valuation</span><span>Journal entries</span><span>Dry run by default</span></div>
+          <div class="card-foot">
+            <span class="ghost-link is-static"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>Private client repository</span>
+          </div>
+        </article>
+
         <article class="card" id="repair-workshop" data-cats="odoo">
           <div class="card-top">
             <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7.5" y="7.5" width="9" height="9" rx="1.6"/><path d="M10.5 3.5v3M13.5 3.5v3M10.5 17.5v3M13.5 17.5v3M3.5 10.5h3M3.5 13.5h3M17.5 10.5h3M17.5 13.5h3"/></svg></div>
@@ -453,7 +472,7 @@
           </div>
         </article>
 
-        <article class="card" id="joinery-site" data-cats="web">
+        <article class="card span-2" id="joinery-site" data-cats="web">
           <figure class="shot">
             <img src="assets/site-royal-wooden.jpg" width="1200" height="900" loading="lazy" decoding="async"
                  alt="Homepage of the wooden joinery manufacturer site: full-screen photograph of a lit timber entrance behind the headline Crafted for Architecture.">
