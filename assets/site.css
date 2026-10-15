@@ -408,9 +408,11 @@ html:not(.js) #burger { display: none; }
   .nav-case .brand-name { display: none; }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1360px) {
   .links { display: flex; }
   #burger { display: none; }
+}
+@media (min-width: 1560px) {
   .nav-cta {
     display: inline-flex; align-items: center; gap: var(--sp-2);
     min-height: var(--control-h); padding: 0 var(--sp-4); border-radius: var(--r-pill);
@@ -1052,3 +1054,20 @@ html[dir="rtl"] .canvasfield {
   .site-foot { background: #fff; border-top: 1px solid #cfd4dd; padding: 4mm 0 0; }
   .foot-grid { display: block; }
 }
+
+/* hero skill areas */
+.skills { margin: var(--sp-6) 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 var(--sp-8); }
+@media (min-width: 760px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.skills > div { padding: var(--sp-3) 0; border-top: 1px solid var(--border); min-width: 0; }
+.skills dt { font-size: var(--fs-xs); color: var(--text-mute); }
+.skills dd { margin: var(--sp-1) 0 0; font-size: var(--fs-sm); color: var(--text-soft); line-height: 1.5; }
+/* certifications */
+.certs { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); }
+@media (min-width: 760px) { .certs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cert { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); overflow: hidden; min-width: 0; }
+.cert-img { display: block; border-bottom: 1px solid var(--border); }
+.cert-img img { display: block; width: 100%; height: auto; }
+.cert-body { padding: var(--sp-4) var(--sp-5) var(--sp-5); }
+.cert h3 { font-size: 1.1rem; letter-spacing: -.02em; }
+.cert-kind { margin-top: var(--sp-2); color: var(--text-soft); font-size: var(--fs-sm); }
+.cert-meta { margin-top: var(--sp-1); color: var(--text-mute); font-size: var(--fs-sm); }
