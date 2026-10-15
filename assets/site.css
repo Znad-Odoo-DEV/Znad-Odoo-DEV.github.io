@@ -894,6 +894,80 @@ html:not(.js) .filters { display: none; }
 .more-grid span { display: block; margin-top: var(--sp-2); font-size: .88rem; color: var(--text-soft); line-height: 1.5; }
 
 /* ============================================================
+   FEATURE GUIDE (the Nudge case study): a table of contents beside the sections
+   ============================================================ */
+.guide { border-top: 1px solid var(--border); padding-block: clamp(var(--sp-10), 6vw, var(--sp-16)); }
+.guide-head { margin-bottom: clamp(var(--sp-6), 3vw, var(--sp-10)); }
+.guide-grid { display: grid; gap: clamp(var(--sp-6), 4vw, var(--sp-12)); align-items: start; }
+@media (min-width: 980px) { .guide-grid { grid-template-columns: 17rem minmax(0, 1fr); } }
+.guide-toc { font-size: var(--fs-sm); }
+@media (min-width: 980px) { .guide-toc { position: sticky; top: 6rem; max-height: calc(100vh - 7rem); overflow: auto; padding-inline-end: var(--sp-2); } }
+.toc-toggle {
+  display: none; width: 100%; justify-content: space-between; align-items: center;
+  min-height: var(--control-h); padding: 0 var(--sp-4); border-radius: var(--r-sm);
+  font: 500 var(--fs-sm)/1.2 var(--font-body); color: var(--text);
+  border: 1px solid var(--control-border); background: var(--control-bg); cursor: pointer;
+}
+.toc-toggle::after { content: ""; width: .5rem; height: .5rem; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); margin-top: -.2rem; opacity: .6; }
+.toc-toggle[aria-expanded="true"]::after { transform: rotate(-135deg); margin-top: .2rem; }
+.guide-toc ol { list-style: none; margin: 0; padding: 0; }
+.guide-toc > ol > li { margin-top: var(--sp-3); }
+.guide-toc > ol > li > a { display: block; font-weight: 600; color: var(--text); padding: var(--sp-1) 0; border-radius: var(--r-xs); }
+.guide-toc ol ol { margin-top: 2px; border-inline-start: 1px solid var(--border); }
+.guide-toc ol ol a {
+  display: flex; gap: var(--sp-2); align-items: baseline; padding: 3px var(--sp-3); color: var(--text-soft);
+  border-radius: 0 var(--r-xs) var(--r-xs) 0; line-height: 1.4;
+}
+.guide-toc ol ol a span { flex: none; font-family: var(--font-mono); font-size: var(--fs-2xs); color: var(--text-mute); min-width: 2.1em; }
+.guide-toc a:hover { color: var(--accent); background: var(--accent-wash); }
+@media (max-width: 979px) {
+  html.js .toc-toggle { display: flex; }
+  html.js .guide-toc > ol { display: none; margin-top: var(--sp-3); }
+  html.js .guide-toc.open > ol { display: block; }
+}
+.guide-body { min-width: 0; }
+.guide-section + .guide-section { margin-top: clamp(var(--sp-10), 6vw, var(--sp-16)); padding-top: clamp(var(--sp-8), 4vw, var(--sp-12)); border-top: 1px solid var(--border); }
+.guide-section > h2 { font-size: var(--fs-2xl); line-height: 1.1; scroll-margin-top: 6rem; }
+.guide-intro { margin-top: var(--sp-3); max-width: var(--measure); color: var(--text-soft); font-size: var(--fs-md); line-height: 1.7; }
+.feature {
+  margin-top: clamp(var(--sp-6), 3vw, var(--sp-8)); padding: clamp(var(--sp-5), 3vw, var(--sp-8));
+  border: 1px solid var(--card-border); border-radius: var(--card-radius); background: var(--card-bg);
+  display: grid; gap: var(--sp-3); scroll-margin-top: 5.5rem;
+}
+.feature:target { border-color: var(--accent-line); box-shadow: 0 0 0 3px var(--accent-wash); }
+.feature h3 { font-size: 1.25rem; letter-spacing: -.025em; line-height: var(--lh-snug); display: flex; gap: var(--sp-3); align-items: baseline; }
+.feature-no {
+  flex: none; font-family: var(--font-mono); font-size: var(--fs-xs); font-weight: 500; letter-spacing: 0;
+  color: var(--accent); background: var(--accent-wash); border: 1px solid var(--accent-line);
+  border-radius: var(--r-xs); padding: 1px var(--sp-2); line-height: 1.5;
+}
+.feature h4 { margin: var(--sp-2) 0 0; font: 600 var(--fs-xs)/1.3 var(--font-body); color: var(--text-mute); }
+.feature p { color: var(--text-soft); font-size: .96rem; line-height: 1.65; max-width: var(--measure); }
+.feature-what { color: var(--text); font-size: var(--fs-md); }
+.feature-steps { margin: 0; padding-inline-start: 1.3em; color: var(--text-soft); font-size: .95rem; line-height: 1.6; max-width: var(--measure); }
+.feature-steps li + li { margin-top: var(--sp-2); }
+.feature-steps li::marker { color: var(--accent); font-weight: 600; }
+.feature-media { margin: var(--sp-2) 0 0; }
+.feature-media img, .feature-media video {
+  width: 100%; height: auto; border: var(--media-border); border-radius: var(--media-radius);
+  box-shadow: var(--media-shadow); background: var(--bg-deep);
+}
+.feature-media.portrait { max-width: 19rem; }
+.feature-media:not(.portrait) { max-width: 38rem; }
+.feature-media figcaption { margin-top: var(--sp-2); font-size: var(--fs-xs); color: var(--text-mute); line-height: 1.5; max-width: var(--measure); }
+.feature-result strong, .feature-note strong { color: var(--text); font-weight: 600; }
+.feature-edition { font-size: var(--fs-xs); color: var(--text-mute); }
+/* a tall picture or clip sits beside the text where there is room */
+@media (min-width: 1180px) {
+  .feature.has-media { grid-template-columns: minmax(0, 1fr) 19rem; column-gap: clamp(var(--sp-6), 3vw, var(--sp-10)); }
+  .feature.has-media > * { grid-column: 1; }
+  .feature.has-media > .feature-media { grid-column: 2; grid-row: 1 / span 9; margin-top: 0; align-self: start; }
+  .feature.has-media > .feature-media:not(.portrait) { grid-column: 1 / -1; grid-row: auto; margin-top: var(--sp-2); }
+  .feature.has-media > .feature-media:not(.portrait) ~ * { grid-column: 1; }
+}
+@media print { .guide-toc, .feature-media video { display: none !important; } .feature { break-inside: avoid; } }
+
+/* ============================================================
    RIGHT TO LEFT: the Arabic pages
    Latin stays in Instrument Sans / Inter; Arabic glyphs fall through to IBM Plex Sans Arabic.
    Arabic script is never letter-spaced, and wants more line-height than Latin.

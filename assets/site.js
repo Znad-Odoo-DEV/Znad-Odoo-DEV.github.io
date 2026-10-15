@@ -121,6 +121,22 @@
     apply("all", "All");
   }
 
+  /* ---------- the guide's table of contents folds on a phone ---------- */
+  var toc = document.querySelector(".guide-toc");
+  var tocBtn = toc && toc.querySelector(".toc-toggle");
+  if (toc && tocBtn) {
+    tocBtn.addEventListener("click", function () {
+      var open = !toc.classList.contains("open");
+      toc.classList.toggle("open", open);
+      tocBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    toc.addEventListener("click", function (e) {
+      if (e.target.closest("a") && window.matchMedia("(max-width: 979px)").matches) {
+        toc.classList.remove("open"); tocBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
   /* ---------- copy to clipboard ---------- */
   var live = document.getElementById("copy-live");
   var announce = function (text) { if (live) { live.textContent = ""; setTimeout(function () { live.textContent = text; }, 30); } };
