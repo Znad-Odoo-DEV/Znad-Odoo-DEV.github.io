@@ -1,9 +1,31 @@
-/* Shared behaviour for index.html and projects/*.html. Everything here is an
+/* Shared behaviour for index.html, projects/*.html and the Arabic pages under ar/. Everything here is an
    enhancement: the pages read in full without it. */
 (function () {
   "use strict";
   var root = document.documentElement;
   var each = function (list, fn) { Array.prototype.forEach.call(list, fn); };
+
+  /* ---------- the words the page speaks, by its language ---------- */
+  var arCount = function (n) {
+    if (n === 0) { return "لا مشاريع"; }
+    if (n === 1) { return "مشروع واحد"; }
+    if (n === 2) { return "مشروعان"; }
+    if (n <= 10) { return n + " مشاريع"; }
+    return n + " مشروعاً";
+  };
+  var T = root.lang === "ar" ? {
+    menuOpen: "فتح القائمة", menuClose: "إغلاق القائمة",
+    showingAll: function (n) { return "تُعرض جميع المشاريع (" + n + ")."; },
+    showing: function (n, label) { return "تُعرض " + arCount(n) + " ضمن «" + label + "»."; },
+    copied: "تم النسخ", linkCopied: "تم نسخ الرابط",
+    pressCopy: "اضغط Ctrl+C لنسخ النص المحدد", toCopy: "الرابط للنسخ"
+  } : {
+    menuOpen: "Open menu", menuClose: "Close menu",
+    showingAll: function (n) { return "Showing all " + n + " projects."; },
+    showing: function (n, label) { return "Showing " + n + (n === 1 ? " project" : " projects") + " in " + label + "."; },
+    copied: "Copied", linkCopied: "Link copied",
+    pressCopy: "Press Ctrl+C to copy the selected text", toCopy: "Link to copy"
+  };
 
   /* ---------- theme ---------- */
   var themeBtn = document.getElementById("theme");
@@ -34,7 +56,7 @@
       sheet.setAttribute("aria-hidden", open ? "false" : "true");
       if (open) { sheet.removeAttribute("inert"); } else { sheet.setAttribute("inert", ""); }
       burger.setAttribute("aria-expanded", open ? "true" : "false");
-      burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      burger.setAttribute("aria-label", open ? T.menuClose : T.menuOpen);
       document.body.classList.toggle("nav-open", open);
     };
     setMenu(false);
@@ -84,8 +106,8 @@
       if (narrow.length % 2 === 1) { narrow[narrow.length - 1].classList.add("span-2"); }
       if (status) {
         status.textContent = cat === "all"
-          ? "Showing all " + shown.length + " projects."
-          : "Showing " + shown.length + (shown.length === 1 ? " project" : " projects") + " in " + label + "." + (note ? " " + note : "");
+          ? T.showingAll(shown.length)
+          : T.showing(shown.length, label) + (note ? " " + note : "");
       }
     };
     filterBar.addEventListener("click", function (e) {
@@ -115,7 +137,7 @@
     if (!field) {
       field = document.createElement("input");
       field.type = "text"; field.readOnly = true; field.className = "copy-fallback";
-      field.setAttribute("aria-label", "Link to copy");
+      field.setAttribute("aria-label", T.toCopy);
       holder.appendChild(field);
     }
     field.value = value;
@@ -140,14 +162,14 @@
       var value = btn.getAttribute("data-copy");
       var isLink = btn.classList.contains("copy-link");
       writeText(value).then(function () {
-        flash(btn, labelEl, idle, "Copied");
-        announce(isLink ? "Link copied" : "Copied");
+        flash(btn, labelEl, idle, T.copied);
+        announce(isLink ? T.linkCopied : T.copied);
       }, function () {
         if (showFallback(btn, value)) {
-          flash(btn, labelEl, idle, "Copied");
-          announce(isLink ? "Link copied" : "Copied");
+          flash(btn, labelEl, idle, T.copied);
+          announce(isLink ? T.linkCopied : T.copied);
         } else {
-          announce("Press Ctrl+C to copy the selected text");
+          announce(T.pressCopy);
         }
       });
     });
