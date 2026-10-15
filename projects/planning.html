@@ -81,7 +81,7 @@
           <span class="ghost-link is-static"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>Private client repository</span>
       </div>
       <div class="case-figs">
-        <ul class="figs" aria-label="Figures"><li><b>8</b><span>modules, one menu</span></li><li><b>782</b><span>bill items migrated</span></li><li><b>281</b><span>automated checks</span></li><li><b>88</b><span>Studio models retired</span></li></ul>
+        <ul class="figs" aria-label="Figures"><li><b>8</b><span>modules, one menu</span></li><li><b>782</b><span>bill items</span></li><li><b>281</b><span>automated checks</span></li><li><b>6</b><span>bills</span></li></ul>
       </div>
     </div>
   </section>
@@ -91,7 +91,7 @@
       <article class="case-main">
         <section>
           <h2>The problem</h2>
-          <p>The original was a Studio app. Its bill of quantities was held as 29 one-to-many fields pointing at 29 identical line models named after trades, with 12 bill totals typed by hand on the header. The programme had lines with no parent, and the percent-complete on a sector never agreed with the quantity done recorded somewhere else.</p>
+          <p>The bill of quantities, the programme and the percent-complete did not agree with each other. Bill totals were typed by hand on the header, the programme had lines with no parent, and the percent-complete on a sector never agreed with the quantity done recorded somewhere else.</p>
         </section>
 
         <section>
@@ -104,8 +104,8 @@
 
         <section>
           <h2>The result</h2>
-          <p>Live on production since September 2026. The migration ran dry first and printed, per bill section, which columns quantity, rate and description would be read from; then it wrote 105 work types, 98 zones, 6 bills with 782 items, 168 packages and 387 zone splits, every number identical to the staging run. The one bill whose stored Studio total had gone stale now takes its total from its lines.</p>
-          <p>A read-only check runs before any install: every standard screen the modules extend must still have the node they hook into, because a node that Studio moved fails the install instead of warning. 281 automated checks across six suites cover the modules. Afterwards, 88 Studio models (43,757 rows) were retired from production.</p>
+          <p>Live on production since September 2026: 6 bills with 782 items, 168 packages and their zone splits, with every total rebuilt from its lines.</p>
+          <p>A read-only check runs before any install: every standard screen the modules extend must still have the node they hook into, or the install fails instead of warning. 281 automated checks across six suites cover the modules.</p>
         </section>
       </article>
       <aside class="case-side" aria-label="Project details">
@@ -130,9 +130,9 @@
     <div class="wrap">
       <h2>More work</h2>
       <div class="more-grid">
-        <a href="studio-retirement.html"><b>Retiring Odoo Studio apps</b><span>Studio apps carried into native Odoo: 105,376 attendance rows, every store balance matched, 300+ models retired.</span></a>
         <a href="attendance.html"><b>Biometric attendance</b><span>Fingerprint punches turned into hours, overtime and project cost, read the way payroll needs them.</span></a>
         <a href="payroll.html"><b>Construction payroll</b><span>Attendance-driven payslips, UAE end of service to the fils, and a salary batch that posts like a salary.</span></a>
+        <a href="repair-workshop.html"><b>Electronics repair workshop</b><span>From the counter to the customer, one installable module per stage.</span></a>
       </div>
       <div class="cta-row">
         <a class="btn btn-ghost" href="../index.html#work"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-back"/></svg>Back to the portfolio</a>
@@ -157,7 +157,6 @@
         <ul>
           <li><a href="nudge.html">Nudge, an AI companion inside Odoo</a></li>
           <li><a href="payroll.html">Construction payroll</a></li>
-          <li><a href="studio-retirement.html">Retiring Odoo Studio apps</a></li>
           <li><a href="upgrade-18-to-19.html">Odoo 18 to 19 upgrade</a></li>
           <li><a href="../index.html#work">All projects</a></li>
         </ul>

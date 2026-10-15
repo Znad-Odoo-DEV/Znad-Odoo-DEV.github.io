@@ -305,11 +305,11 @@
           <h3><a href="projects/subcontracting.html">Subcontracting &amp; payment certificates</a></h3>
           <p class="sum">The money going out: a subcontract carries its own bill of quantities beside ours, and payment certificates set what is claimed against what was agreed and measured.</p>
           <dl class="pbr">
-            <div><dt>Problem</dt><dd>Studio stored its certificate totals instead of computing them, from a field its lines no longer had, so 40 of 206 certificates no longer matched their own items.</dd></div>
+            <div><dt>Problem</dt><dd>Certificate totals and their items disagreed: a stored total did not follow the lines it was meant to add up.</dd></div>
             <div><dt>What I built</dt><dd>A subcontract carries its own bill of quantities beside ours, so the margin is a fact on the record. Certificates set the claim against what was agreed and what the site measured. Contractor agreements became standard Purchase Agreements.</dd></div>
-            <div><dt>Result</dt><dd><strong>203 of 206</strong> certificates reconcile to quantity times rate; the other three differ by under 0.30. 64 agreements, 181 certificates and 177 vendor bills linked.</dd></div>
+            <div><dt>Result</dt><dd><strong>203 of 206</strong> certificates reconcile to quantity times rate; the other three differ by under 0.30.</dd></div>
           </dl>
-          <ul class="figs" aria-label="Figures"><li><b>203 / 206</b><span>certificates reconcile</span></li><li><b>64</b><span>agreements carried</span></li><li><b>177</b><span>vendor bills linked</span></li></ul>
+          <ul class="figs" aria-label="Figures"><li><b>203 / 206</b><span>certificates reconcile</span></li></ul>
           <div class="badges"><span>Subcontract BOQ</span><span>Purchase agreements</span><span>Payment certificates</span><span>Margin</span><span>Reconciliation</span></div>
           <div class="card-foot">
             <a class="ghost-link read-link" href="projects/subcontracting.html" aria-label="Read the case study: Subcontracting &amp; payment certificates">Read the case study<svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
@@ -326,11 +326,10 @@
           <h3><a href="projects/requests.html">Internal requests &amp; approvals</a></h3>
           <p class="sum">One request model for what the sites and the office ask for (leave, salary advance, material, payment), each with its own approval route, and the document an approval implies.</p>
           <dl class="pbr">
-            <div><dt>Problem</dt><dd>Requests lived in a Studio app with 27 automations and 50 server actions. Five of its eight reports printed a blank page, and deleting it would have cut every purchase order off from the request that asked for it.</dd></div>
+            <div><dt>Problem</dt><dd>Requests from the sites and the office were scattered, with no single approval path and no way back from a purchase order to the request that asked for it.</dd></div>
             <div><dt>What I built</dt><dd>A native request model with an approval route per type. An approved leave, advance or resignation becomes the payroll document it implies, and a purchase bridge keeps the trail from request to order, bill and payment.</dd></div>
-            <div><dt>Result</dt><dd>Live on production with <strong>1,150 requests</strong> carried. 578 of 582 purchase orders, 189 of 191 bills and 136 of 137 payments still trace back to their request.</dd></div>
+            <div><dt>Result</dt><dd>One request model with an approval path per type; each request traces to its purchase order, invoice and payment. Live on production.</dd></div>
           </dl>
-          <ul class="figs" aria-label="Figures"><li><b>1,150</b><span>requests carried</span></li><li><b>578 / 582</b><span>orders still traced</span></li><li><b>430</b><span>automated checks</span></li></ul>
           <div class="badges"><span>Approval routes</span><span>Payroll documents</span><span>Purchase trace</span><span>Audit trail</span><span>Record rules</span></div>
           <div class="card-foot">
             <a class="ghost-link read-link" href="projects/requests.html" aria-label="Read the case study: Internal requests &amp; approvals">Read the case study<svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
@@ -347,37 +346,15 @@
           <h3><a href="projects/planning.html">Construction progress &amp; planning suite</a></h3>
           <p class="sum">Eight modules that hold a construction job to its own numbers: what each item was priced at, when it is meant to happen, what has been built, and what it is being bought for.</p>
           <dl class="pbr">
-            <div><dt>Problem</dt><dd>The original was a Studio app: a bill of quantities spread over 29 identical line models named after trades, 12 bill totals typed by hand, and a percent-complete that never agreed with the quantity done recorded elsewhere.</dd></div>
+            <div><dt>Problem</dt><dd>The bill of quantities, the programme and the percent-complete did not agree with each other: a total typed by hand, and a percent-complete that never matched the quantity done recorded elsewhere.</dd></div>
             <div><dt>What I built</dt><dd>One application in the order a construction office works: projects and zones, bill of quantities, programme, progress measurement and subcontracts. A site engineer enters one number, a quantity, and item value, bill total, earned value and project percentage all follow, because none of them is stored twice.</dd></div>
-            <div><dt>Result</dt><dd>Live on production. <strong>6 bills and 782 items</strong> migrated with totals rebuilt from their lines, with 105 work types, 98 zones and 387 zone splits; 88 Studio models retired.</dd></div>
+            <div><dt>Result</dt><dd>Live on production. <strong>6 bills and 782 items</strong> with totals rebuilt from their lines.</dd></div>
           </dl>
-          <ul class="figs" aria-label="Figures"><li><b>8</b><span>modules, one menu</span></li><li><b>782</b><span>bill items migrated</span></li><li><b>281</b><span>automated checks</span></li></ul>
+          <ul class="figs" aria-label="Figures"><li><b>8</b><span>modules, one menu</span></li><li><b>782</b><span>bill items</span></li><li><b>281</b><span>automated checks</span></li></ul>
           <div class="badges"><span>BOQ &amp; revisions</span><span>Programme</span><span>Earned value</span><span>Progress measurement</span><span>Analytic accounts</span></div>
           <div class="card-foot">
             <a class="ghost-link read-link" href="projects/planning.html" aria-label="Read the case study: Construction progress &amp; planning suite">Read the case study<svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
             <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/projects/planning.html" aria-label="Copy the link to Construction progress &amp; planning suite"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">Copy link</span></button>
-            <span class="ghost-link is-static"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>Private client repository</span>
-          </div>
-        </article>
-
-        <article class="card wide" id="studio-retirement" data-cats="data">
-          <div class="card-top">
-            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="3.8" width="7.6" height="7.6" rx="1.4"/><rect x="13.6" y="12.6" width="7.6" height="7.6" rx="1.4"/><path d="M6.6 11.4v3.4a2 2 0 0 0 2 2h5"/><path d="m11.6 14.6 2 1.8-2 1.8"/></svg></div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <span class="kicker">Case study</span>
-          <h3><a href="projects/studio-retirement.html">Retiring Odoo Studio apps into native modules</a></h3>
-          <p class="sum">A construction group ran attendance, payroll, stores, requests, projects and contractor agreements on Odoo Studio. I carried each app into the native model Odoo already has for it, reconciled every figure against the source, then deleted the Studio models.</p>
-          <dl class="pbr">
-            <div><dt>Problem</dt><dd>Studio kept its logic in automations, server actions, computed fields and related paths, and stored totals that had drifted from their own lines. Every app was in daily use, and payroll still had to go out each month.</dd></div>
-            <div><dt>What I built</dt><dd>One re-runnable tool per app, a dry run by default, carrying data into <code>hr.attendance</code>, Inventory, Purchase Agreements and <code>hr.employee</code>; reconciliation against the source&rsquo;s live figures; then deletion the way Odoo deletes a module&rsquo;s models, committed phase by phase.</dd></div>
-            <div><dt>Result</dt><dd><strong>105,376 attendance rows</strong> rebuilt; every store matches Studio&rsquo;s balance with 0 differences at unit rounding; 5,479 payslips moved onto <code>hr.employee</code> with no orphans. Over 300 Studio models deleted from production.</dd></div>
-          </dl>
-          <ul class="figs" aria-label="Figures"><li><b>105,376</b><span>attendance rows rebuilt</span></li><li><b>1,338</b><span>stocked products carried</span></li><li><b>4,910</b><span>links repointed to hr.employee</span></li><li><b>300+</b><span>Studio models deleted</span></li></ul>
-          <div class="badges"><span>Data migration</span><span>Reconciliation</span><span>hr.attendance</span><span>Inventory</span><span>Purchase agreements</span><span>hr.employee</span><span>Dry run by default</span></div>
-          <div class="card-foot">
-            <a class="ghost-link read-link" href="projects/studio-retirement.html" aria-label="Read the case study: Retiring Odoo Studio apps into native modules">Read the case study<svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
-            <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/projects/studio-retirement.html" aria-label="Copy the link to Retiring Odoo Studio apps into native modules"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">Copy link</span></button>
             <span class="ghost-link is-static"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>Private client repository</span>
           </div>
         </article>
@@ -410,11 +387,11 @@
           <h3><a href="projects/payroll.html">Construction payroll</a></h3>
           <p class="sum">Payroll for a multi-company construction group: payslips driven by daily attendance, overtime priced at its own rates, labour cost split per project, and every deduction and settlement a site workforce produces.</p>
           <dl class="pbr">
-            <div><dt>Problem</dt><dd>Site workers and office staff across four companies were paid from Studio screens: end-of-service settlements typed by hand, and the salary run booked as a supplier bill, so payroll never showed as its own liability.</dd></div>
+            <div><dt>Problem</dt><dd>Site workers and office staff across four companies: end-of-service settlements were typed by hand, and the salary run was booked as a supplier bill, so payroll never showed as its own liability.</dd></div>
             <div><dt>What I built</dt><dd>Native modules for payslips, overtime split into regular and off-day hours at their own rates, per-project cost distribution, WPS and cash salary batches, salary attachments, advances, loans, fines and end of service, with an OWL dashboard and PDF payslips. End of service follows UAE Labour Law article 51; leave takes two approvals that each write the email HR and accounts need; the salary batch posts its own journal entry.</dd></div>
-            <div><dt>Result</dt><dd>Pays <strong>380 active employees</strong> every month. <strong>5,479 payslips</strong> moved onto the standard employee record with no orphans. Gratuity matches hand-checked settlements to the fils.</dd></div>
+            <div><dt>Result</dt><dd>Pays <strong>380 active employees</strong> every month across four companies. Gratuity matches hand-checked settlements to the fils.</dd></div>
           </dl>
-          <ul class="figs" aria-label="Figures"><li><b>380</b><span>active employees paid</span></li><li><b>5,479</b><span>payslips carried, 0 orphans</span></li><li><b>335 / 45</b><span>paid by WPS / in cash</span></li></ul>
+          <ul class="figs" aria-label="Figures"><li><b>380</b><span>active employees paid</span></li><li><b>335 / 45</b><span>paid by WPS / in cash</span></li><li><b>58</b><span>salary accounts mapped</span></li></ul>
           <div class="badges"><span>Python</span><span>OWL</span><span>QWeb</span><span>Multi-company</span><span>UAE Labour Law</span><span>WPS</span><span>Journal entries</span></div>
           <div class="card-foot">
             <a class="ghost-link read-link" href="projects/payroll.html" aria-label="Read the case study: Construction payroll">Read the case study<svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
@@ -703,7 +680,7 @@
           </div>
           <h3>Inventory</h3>
           <p>
-            One warehouse per site store, the existing site location re-parented as that warehouse’s Stock so its history stays where it was. The old Studio store app was carried into native Inventory.
+            One warehouse per site store, the existing site location re-parented as that warehouse’s Stock so its history stays where it was.
           </p>
           <p>
             Stock valuation accounts and an inventory valuation journal are in place, with the entries left in draft for the accountant to review before anything posts.
@@ -1001,7 +978,6 @@
           <li>Approvals</li>
           <li>Accounting</li>
           <li>HR &amp; Payroll</li>
-          <li>Studio</li>
           <li>Website</li>
           <li>Attendance</li>
           <li>Recruitment</li>
@@ -1088,7 +1064,6 @@
         <ul>
           <li><a href="projects/nudge.html">Nudge, an AI companion inside Odoo</a></li>
           <li><a href="projects/payroll.html">Construction payroll</a></li>
-          <li><a href="projects/studio-retirement.html">Retiring Odoo Studio apps</a></li>
           <li><a href="projects/upgrade-18-to-19.html">Odoo 18 to 19 upgrade</a></li>
           <li><a href="#work">All projects</a></li>
         </ul>
