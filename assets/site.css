@@ -1071,3 +1071,34 @@ html[dir="rtl"] .canvasfield {
 .cert h3 { font-size: 1.1rem; letter-spacing: -.02em; }
 .cert-kind { margin-top: var(--sp-2); color: var(--text-soft); font-size: var(--fs-sm); }
 .cert-meta { margin-top: var(--sp-1); color: var(--text-mute); font-size: var(--fs-sm); }
+
+/* ============================================================
+   HAIRLINE FIGURES (decorative, see assets/hairline-init.js)
+   The box is reserved up front (5:4, the library's ratio), so nothing shifts when a figure draws.
+   Colours come from the semantic tokens; --hl-plate is the surface the figure sits on.
+   ============================================================ */
+.hairline {
+  --hl-plate: var(--bg);
+  --hairline-plate: var(--hl-plate);
+  --hairline-hi: var(--accent);
+  --hairline-edge: var(--text-soft);
+  --hairline-mid: var(--text-mute);
+  --hairline-lo: var(--border-strong);
+  --hairline-stroke: .9;
+  display: none; aspect-ratio: 5 / 4; width: 100%; pointer-events: auto;
+}
+.hairline > svg { display: block; }
+/* beside the hero copy, in the empty corner; only where there is room, and never over text */
+@media (min-width: 1100px) {
+  .hairline.hl-corner {
+    display: block; position: absolute; top: 0; inset-inline-end: var(--sp-4);
+    width: clamp(17rem, 26vw, 24rem);
+  }
+  .hairline.hl-card { --hl-plate: var(--card-bg, var(--surface)); }
+}
+@media print { .hairline { display: none !important; } }
+.case-hero > .wrap, .contact-card { position: relative; }
+.hero-grid { position: relative; }
+@media (min-width: 1100px) {
+  .hairline.hl-card { top: var(--sp-6); width: clamp(15rem, 20vw, 18rem); }
+}
