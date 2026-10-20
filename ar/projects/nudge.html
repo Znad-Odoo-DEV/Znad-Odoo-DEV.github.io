@@ -1714,13 +1714,23 @@
       <section class="guide-section" id="g-H">
         <h2>H. الجديد في الإصدار الثاني</h2>
         <p class="guide-intro">ما أُضيف إلى Nudge بعد الأقسام السابقة: ميزات بلا ذكاء اصطناعي، وتقارير، وإعداد وفحوص، وأدوات المطوّر، والهاتف، والوحدات المرافقة للموقع وواتساب وتيليجرام.</p>
-        <article class="feature" id="H1">
+        <article class="feature has-media" id="H1">
           <h3><span class="feature-no">H1</span>إجابات محفوظة</h3>
           <p class="feature-what">عندما يضغط أحدهم إبهام التأييد على شرح ويوافق عليه مدير، يُجاب سؤال شخص آخر المماثل فورًا من الذاكرة دون استدعاء الذكاء الاصطناعي. تُوسَم الإجابة بأنها إجابة محفوظة ويرافقها زر لسؤال الذكاء الاصطناعي بدلًا منها.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>اضغط إبهام التأييد على شرح قدّمه Nudge لـ Raghad.</li><li>يوافق عليه مدير في Nudge ‣ What Nudge Knows ‣ Remembered Answers.</li><li>يطرح Ebrahim السؤال نفسه فتأتي الإجابة المحفوظة فورًا؛ اضغط Ask the AI instead للحصول على إجابة جديدة.</li></ol>
-          <!-- MEDIA:H1 -->
-          <!-- RESULT:H1 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H1-remembered-answer.webp" width="424" height="584" loading="lazy" decoding="async" alt="إجابات محفوظة: لقطة من التجربة">
+            <figcaption>إجابات محفوظة: لقطة من التجربة.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H1-remembered-answer-poster.webp" aria-label="إجابات محفوظة: تسجيل التجربة، 12 ثانية">
+              <source src="../assets/nudge/guide/video/H1-remembered-answer.mp4" type="video/mp4">
+            </video>
+            <figcaption>تسجيل التجربة · 12 ثانية</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، بعد إعجاب واحد أجاب Nudge السؤال نفسه لشخص ثانٍ فورًا بعبارة «إجابة محفوظة: لم يُسأل الذكاء الاصطناعي» مع زر «اسأل الذكاء الاصطناعي بدلًا من ذلك».</p>
           <p class="feature-note"><strong>ملاحظة</strong> لا تُحفظ إجابة غيّرت بيانات أو اقتبست قيمًا من قاعدة البيانات. يطفئ Settings ‣ Nudge ‣ Answer Memory هذه الميزة ويضبط Confidence Required (0.75 افتراضيًا).</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
@@ -1746,35 +1756,53 @@
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H3">
+        <article class="feature has-media" id="H3">
           <h3><span class="feature-no">H3</span>مهام بالقواعد بلا ذكاء اصطناعي</h3>
           <p class="feature-what">مهمة مجدولة تعدّ حقلًا رقميًا أو تجمعه أو تحسب متوسطه وتبلّغ بالنتيجة دون ذكاء اصطناعي. تعمل للقراءة فقط باسم صاحبها وتجيب في الشريط العلوي وبالبريد، مع رابط يفتح القائمة المصفّاة.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>افتح Nudge ‣ What Nudge Did ‣ Scheduled Tasks وأنشئ مهمة بخيار Done By: Rule (no AI).</li><li>اختر نوع السجل (نموذجًا يحق لك قراءته) ومصفّيًا وقيمة Measure: Count أو Sum أو Average لحقل رقمي، ويمكن إضافة تجميع.</li><li>حدّد متى يُبلَّغ: Always أو Above a Threshold أو Below a Threshold أو Changed Since the Last Run.</li></ol>
-          <!-- MEDIA:H3 -->
-          <!-- RESULT:H3 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H3-rule-task.webp" width="960" height="540" loading="lazy" decoding="async" alt="مهام بالقواعد بلا ذكاء اصطناعي: لقطة من التجربة">
+            <figcaption>مهام بالقواعد بلا ذكاء اصطناعي: لقطة من التجربة.</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، أجاب زر التشغيل الآن «Raghad: quotations waiting - الإجمالي: 11» مع رابط يفتح القائمة المصفّاة، والمهمة تُظهر تشغيلًا واحدًا، بلا ذكاء اصطناعي.</p>
           <p class="feature-note"><strong>ملاحظة</strong> تُحتسب ضمن حدّ المهام نفسه لكل شخص.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H4">
+        <article class="feature has-media" id="H4">
           <h3><span class="feature-no">H4</span>الوضع الخاص</h3>
           <p class="feature-what">مفتاح على مستوى الشركة يمنع كل استدعاء لمزوّد ذكاء اصطناعي خارجي قبل أن يغادر أي شيء الخادم. يُفضَّل المزوّدون على خادمك أنت (مثل Ollama على جهازك)، ويظهر قفل في اللوحة.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>افتح Settings ‣ Nudge ‣ Privacy وفعّل Private Mode: Never Send Data to an External AI Provider لشركتك.</li><li>على المزوّد الذي يعمل على جهازك فعّل Runs on Our Own Server.</li><li>افتح اللوحة: يظهر قفل، ويستمر عمل البحث السريع وأوامر الشرطة المائلة والجولات والإجابات المحفوظة.</li></ol>
-          <!-- MEDIA:H4 -->
-          <!-- RESULT:H4 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H4-private-mode.webp" width="960" height="536" loading="lazy" decoding="async" alt="الوضع الخاص: لقطة من التجربة">
+            <figcaption>الوضع الخاص: لقطة من التجربة.</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، تعرض إعدادات الخصوصية «الوضع الخاص: لا ترسل البيانات أبدًا إلى مزوّد ذكاء اصطناعي خارجي»، وتوضح أن البحث السريع والأوامر والجولات المسجلة والشرح بلا ذكاء اصطناعي والإجابات المحفوظة تبقى عاملة.</p>
           <p class="feature-note"><strong>ملاحظة</strong> الإملاء الصوتي بالمتصفح يرسل الصوت إلى الشركة المصنّعة للمتصفح؛ اختر مزوّد الذكاء الاصطناعي محرّكًا للصوت.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H5">
+        <article class="feature has-media" id="H5">
           <h3><span class="feature-no">H5</span>جولات مسجّلة</h3>
           <p class="feature-what">يسجّل مدير مهمة بالنقر عبرها، ثم يعيد أي شخص تشغيلها بالمؤشر. تُسمّى كل خطوة بقائمتها أو زرها أو حقلها أو تبويبها، لا بمكانها في الصفحة. وتأتي ثماني جولات جاهزة.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>يختار مدير Nudge Record a tour من قائمة المستخدم ويمرّ بالمهمة بالنقر.</li><li>يعيد أي شخص تشغيلها: اكتب /tour create a quotation (أو /جولة)، أو ابحث عنها في بحث اللوحة.</li><li>حرّر الجولات في Nudge ‣ Configuration ‣ Tours.</li></ol>
-          <!-- MEDIA:H5 -->
-          <!-- RESULT:H5 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H5-recorded-tour.webp" width="960" height="540" loading="lazy" decoding="async" alt="جولات مسجّلة: لقطة من التجربة">
+            <figcaption>جولات مسجّلة: لقطة من التجربة.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H5-recorded-tour-poster.webp" aria-label="جولات مسجّلة: تسجيل التجربة، 26 ثانية">
+              <source src="../assets/nudge/guide/video/H5-recorded-tour.mp4" type="video/mp4">
+            </video>
+            <figcaption>تسجيل التجربة · 26 ثانية</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، عرض الأمر /جولة الجولة المسجّلة «Raghad: quotations screen»، وقاد Nudge الخطوات «اضغط “المبيعات”» ثم «اضغط “الطلبات”» ثم «اضغط “عروض الأسعار”» واحدة تلو الأخرى، متقدمًا وحده عند كل نقرة.</p>
           <p class="feature-note"><strong>ملاحظة</strong> تُتخطّى الخطوة غير الموجودة في هذه القاعدة مع ملاحظة. وتظهر كل جولة جاهزة حيث يكون تطبيقها مثبّتًا فقط.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
@@ -1794,13 +1822,17 @@
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H7">
+        <article class="feature has-media" id="H7">
           <h3><span class="feature-no">H7</span>مطابقة ملف الاستيراد بلا ذكاء اصطناعي</h3>
           <p class="feature-what">يطابق أعمدة ملف CSV أو Excel مع حقول نموذج، دون ذكاء اصطناعي، ويجرّب الملف بالتشغيل التجريبي لاستيراد Odoo. تُسرد الأخطاء بحسب الصف والعمود ولا يُحفظ شيء.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>أرفق ملف CSV أو Excel لجهات اتصال واكتب /import (أو /استيراد)، أو اضغط Check a CSV or Excel file, without AI.</li><li>صحّح مطابقة الأعمدة على البطاقة.</li><li>اقرأ الأخطاء بحسب الصف والعمود، ثم خذ ملف CSV المصحَّح لشاشة Import القياسية.</li></ol>
-          <!-- MEDIA:H7 -->
-          <!-- RESULT:H7 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H7-import-matcher.webp" width="440" height="1020" loading="lazy" decoding="async" alt="مطابقة ملف الاستيراد بلا ذكاء اصطناعي: لقطة من التجربة">
+            <figcaption>مطابقة ملف الاستيراد بلا ذكاء اصطناعي: لقطة من التجربة.</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، طابق /استيراد الأعمدة الخمسة: الاسم (100%)، رقم الجوال مع رقم الهاتف (60%)، المدينة (100%)، الرقم الضريبي مع Tax ID (92%)، المسمى الوظيفي مع Job Position (92%)، وقال التشغيل التجريبي «لا مشكلة: 5 سجلات ستُستورد. لم يُحفظ شيء».</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
@@ -1866,24 +1898,44 @@
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H12">
+        <article class="feature has-media" id="H12">
           <h3><span class="feature-no">H12</span>من مستند إلى مسودة سجل</h3>
           <p class="feature-what">أرفق ملف PDF أو صورة أو ملف Excel أو CSV أو الصق بريدًا، واطلب فاتورة مورّد أو فاتورة عميل أو عرض سعر أو أمر شراء أو فرصة أو جهة اتصال. يقرأ الذكاء الاصطناعي الملف مرة واحدة، ثم يجد Odoo جهة الاتصال والمنتجات والضرائب والعملة ويحسب الإجماليات من جديد.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>أرفق فاتورة مورّد بصيغة PDF واكتب «اعمل فاتورة مورّد من هذا الملف».</li><li>اقرأ البطاقة: المسودة كاملة وفروقها.</li><li>أجب بنعم: تُنشأ المسودة ولا تُرحَّل أبدًا ومعها الملف. ويؤرشف Undo السجل أو يلغي المسودة.</li></ol>
-          <!-- MEDIA:H12 -->
-          <!-- RESULT:H12 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H12-document-to-draft.webp" width="424" height="584" loading="lazy" decoding="async" alt="من مستند إلى مسودة سجل: لقطة من التجربة">
+            <figcaption>من مستند إلى مسودة سجل: لقطة من التجربة.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H12-document-to-draft-poster.webp" aria-label="من مستند إلى مسودة سجل: تسجيل التجربة، 26 ثانية">
+              <source src="../assets/nudge/guide/video/H12-document-to-draft.mp4" type="video/mp4">
+            </video>
+            <figcaption>تسجيل التجربة · 26 ثانية</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، قرأ Nudge ملف PDF المرفق وعرض بطاقة بثلاثة أسطر ومجموع 970.00 مطابق للمستند، وبعد الموافقة أنشأ مسودة فاتورة المورد للمراجعة.</p>
           <p class="feature-note"><strong>ملاحظة</strong> يُرفض ملف PDF الممسوح ضوئيًا مع توضيح؛ وتحتاج الصورة مزوّدًا يقرأ الصور. ولا يحذف Undo شيئًا.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H13">
+        <article class="feature has-media" id="H13">
           <h3><span class="feature-no">H13</span>ملخص تاريخ السجل</h3>
           <p class="feature-what">يلخّص سجلًا من سجل المراسلات (chatter) والأنشطة والملفات والسجلات المحيطة به باسم السائل. الجواب خط زمني مؤرَّخ مع النقاط المفتوحة والمبالغ وآخر تواصل والخطوة التالية، وروابط Show me.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>افتح عرض سعر لـ Raghad واكتب «لخّص هذا السجل» في اللوحة.</li><li>أو اكتب @Nudge summarize في chatter مع Nudge: Discuss.</li><li>اقرأ الخط الزمني واتبع روابط Show me.</li></ol>
-          <!-- MEDIA:H13 -->
-          <!-- RESULT:H13 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H13-record-history.webp" width="424" height="584" loading="lazy" decoding="async" alt="ملخص تاريخ السجل: لقطة من التجربة">
+            <figcaption>ملخص تاريخ السجل: لقطة من التجربة.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H13-record-history-poster.webp" aria-label="ملخص تاريخ السجل: تسجيل التجربة، 20 ثانية">
+              <source src="../assets/nudge/guide/video/H13-record-history.mp4" type="video/mp4">
+            </video>
+            <figcaption>تسجيل التجربة · 20 ثانية</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، أجاب Nudge بأن العرض S00115 لـ Raghad Trading ما زال عرضًا ينتهي في 2026-11-19، وسرد ملاحظات اتصال العميل والنشاط المخطط، وختم بالخطوة التالية: تأكيد خصم 5% على المصابيح مع العميل.</p>
           <p class="feature-note"><strong>ملاحظة</strong> يُحفظ الملخص 15 دقيقة، ما لم يتغير chatter.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
@@ -1919,24 +1971,38 @@
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H16">
+        <article class="feature has-media" id="H16">
           <h3><span class="feature-no">H16</span>الملخص الصباحي</h3>
           <p class="feature-what">نقرة واحدة تنشئ مهمة يومية لكل شخص بأرقام تطبيقاته، يعدّها Odoo بصلاحياته هو. والذكاء الاصطناعي، إن وُجد، لا يكتب إلا بضع جمل حول الأرقام؛ وبدونه تصل الأرقام نفسها وحدها.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>افتح تفضيلات اللوحة واضغط Set up my digest.</li><li>اختر الساعة والمنطقة الزمنية.</li><li>اقرأه في الشريط العلوي وبالبريد كل صباح، واضغط Show me على رقم لفتح سجلاته.</li></ol>
-          <!-- MEDIA:H16 -->
-          <!-- RESULT:H16 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H16-morning-digest.webp" width="424" height="362" loading="lazy" decoding="async" alt="الملخص الصباحي: لقطة من التجربة">
+            <figcaption>الملخص الصباحي: لقطة من التجربة.</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، بدأ الملخص الصباحي بفقرة تقول إن الفواتير المتأخرة أبرز ما يلفت النظر: 8 فواتير بمجموع 104,199.00 دولار تنتظر الدفع و27 تسليمًا متأخرًا، ثم الأرقام مقسّمة حسب التطبيق.</p>
           <p class="feature-note"><strong>ملاحظة</strong> لا تُعدّ إلا التطبيقات المثبّتة والمجموعات التي ينتمي إليها الشخص؛ ويحصل المديرون على نظرة عامة أولًا.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H17">
+        <article class="feature has-media" id="H17">
           <h3><span class="feature-no">H17</span>رسوم بيانية في المحادثة</h3>
           <p class="feature-what">أعمدة أو خط أو دائرة تُرسم من الأرقام التي يحق للشخص قراءتها، تُطلب بكلمات من أي لهجة أو يختارها الذكاء الاصطناعي.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>اكتب «أرني المبيعات بحسب الشهر برسم بياني» في اللوحة.</li><li>اقرأ الرسم في المحادثة.</li><li>اضغط Open as report لمواصلة العمل عليه، أو Download PNG.</li></ol>
-          <!-- MEDIA:H17 -->
-          <!-- RESULT:H17 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H17-charts-in-chat.webp" width="424" height="584" loading="lazy" decoding="async" alt="رسوم بيانية في المحادثة: لقطة من التجربة">
+            <figcaption>رسوم بيانية في المحادثة: لقطة من التجربة.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H17-charts-in-chat-poster.webp" aria-label="رسوم بيانية في المحادثة: تسجيل التجربة، 38 ثانية">
+              <source src="../assets/nudge/guide/video/H17-charts-in-chat.mp4" type="video/mp4">
+            </video>
+            <figcaption>تسجيل التجربة · 38 ثانية</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، رسم Nudge «المبيعات حسب الشهر» أعمدةً (أغسطس 3,778.50؛ سبتمبر 98,360.00؛ أكتوبر 12,592.00) و«العروض حسب مندوب المبيعات» دائرةً، دون أي سطر «No answer came» تحتهما.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
@@ -2002,13 +2068,17 @@
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H21">
+        <article class="feature has-media" id="H21">
           <h3><span class="feature-no">H21</span>الإعداد الأول</h3>
           <p class="feature-what">على قاعدة بيانات لم يُعدّها أحد يُعرض على مدير النظام Set up this database with me. يسأل Nudge عن أمر واحد في كل مرة ويعرض بطاقة بالتغييرات بالضبط قبل كل خطوة.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>على قاعدة جديدة اضغط Set up this database with me، أو افتح Settings ‣ Nudge ‣ First Setup، أو قلها بجملة.</li><li>أجب عن سؤال واحد في كل مرة: الشركة والبلد والعملة واللغات والمنطقة الزمنية والشعار والتطبيقات والمستودعات والمستخدمون بدور والسنة المالية وصيغ الترقيم.</li><li>اقرأ بطاقة التغييرات بالضبط وأجب بنعم قبل كل خطوة.</li></ol>
-          <!-- MEDIA:H21 -->
-          <!-- RESULT:H21 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H21-first-setup.webp" width="960" height="561" loading="lazy" decoding="async" alt="الإعداد الأول: لقطة من التجربة">
+            <figcaption>الإعداد الأول: لقطة من التجربة.</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، يعرض قسم الإعداد الأول في إعدادات Nudge الرابط «جهّز قاعدة البيانات هذه معي».</p>
           <p class="feature-note"><strong>ملاحظة</strong> لا يُعرض إلا على قاعدة فيها شركة واحدة باسمها الافتراضي وبلا دليل حسابات ومستخدمين قليلين. وتسمّي بطاقة البلد وحدة التوطين المالي التي تحمّل دليل الحسابات.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
@@ -2064,13 +2134,17 @@
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
 
-        <article class="feature" id="H26">
+        <article class="feature has-media" id="H26">
           <h3><span class="feature-no">H26</span>فحص قبل الترقية</h3>
           <p class="feature-what">تقرير للقراءة فقط بما سينكسر أو يحتاج قرارًا عند الانتقال إلى الإصدار التالي: كائنات Studio والمنطق الذي تخفيه، والحقول المعاد تسميتها أو المحذوفة، وattrs وstates، والوحدات المخصصة بلا ترحيل.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>بصفتك مدير نظام افتح Nudge ‣ Health Check ‣ Before an Upgrade.</li><li>اختر السلسلة: 17 إلى 18، أو 18 إلى 19، أو 19 إلى 20.</li><li>اقرأ ما سينكسر أو يحتاج قرارًا.</li></ol>
-          <!-- MEDIA:H26 -->
-          <!-- RESULT:H26 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H26-before-upgrade.webp" width="960" height="662" loading="lazy" decoding="async" alt="فحص قبل الترقية: لقطة من التجربة">
+            <figcaption>فحص قبل الترقية: لقطة من التجربة.</figcaption>
+          </figure>
+          <h4>النتيجة</h4>
+          <p class="feature-result">في التجربة، أجاب تقرير الترقية من 19 إلى 20 بـ «0 حرجة، و9 للمراجعة، و5 للعلم»: ثماني وحدات مخصصة بلا مجلد ترحيل للإصدار الهدف و20 معرّفًا خارجيًا لوحدة غير موجودة، مع زر «أرني» لكل منها.</p>
           <p class="feature-note"><strong>ملاحظة</strong> بعض البنود تقول «تأكد على بيئة تجريبية»؛ وقائمة 20.0 فيها فحوص عامة فقط.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>

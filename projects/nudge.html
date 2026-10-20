@@ -1651,13 +1651,23 @@
       <section class="guide-section" id="g-H">
         <h2>H. New in release 2</h2>
         <p class="guide-intro">What Nudge gained after the sections above: features that need no AI, reports, setup and checks, developer tools, the phone, and the companion modules for the website, WhatsApp and Telegram.</p>
-        <article class="feature" id="H1">
+        <article class="feature has-media" id="H1">
           <h3><span class="feature-no">H1</span>Remembered answers</h3>
           <p class="feature-what">When someone presses the thumbs-up on an explanation and a manager approves it, the same question from another person is answered at once from memory, with no AI call. The answer is marked as a remembered answer and carries a button to ask the AI instead.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Press the thumbs-up on an explanation Nudge gave to Raghad.</li><li>A manager approves it in Nudge ‣ What Nudge Knows ‣ Remembered Answers.</li><li>Ebrahim asks the same question: the remembered answer comes at once; press Ask the AI instead to get a new one.</li></ol>
-          <!-- MEDIA:H1 -->
-          <!-- RESULT:H1 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H1-remembered-answer.webp" width="424" height="584" loading="lazy" decoding="async" alt="Remembered answers: screenshot of the trial">
+            <figcaption>H1.mp4: Raghad asks, the AI explains, thumbs-up answers &#x27;Thanks, noted&#x27;.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H1-remembered-answer-poster.webp" aria-label="Remembered answers: recording of the trial, 12 seconds">
+              <source src="../assets/nudge/guide/video/H1-remembered-answer.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 12 s</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, after one thumbs-up Nudge answered the same question of a second person at once with &#x27;A remembered answer: no AI was asked&#x27; and an &#x27;Ask the AI instead&#x27; button.</p>
           <p class="feature-note"><strong>Note</strong> An answer that changed data or quoted values of the database is never kept. Settings ‣ Nudge ‣ Answer Memory switches it off and sets Confidence Required (0.75 by default).</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -1683,35 +1693,53 @@
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H3">
+        <article class="feature has-media" id="H3">
           <h3><span class="feature-no">H3</span>Rule tasks without AI</h3>
           <p class="feature-what">A scheduled task that counts, sums or averages a number field and reports it, with no AI. It runs read-only as its owner and answers in the top bar and by email, with a link that opens the filtered list.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Open Nudge ‣ What Nudge Did ‣ Scheduled Tasks and create a task with Done By: Rule (no AI).</li><li>Pick the record type, a filter, and the Measure: Count, Sum or Average of a number field; optionally a grouping.</li><li>Choose when to report: Always, Above a Threshold, Below a Threshold or Changed Since the Last Run.</li></ol>
-          <!-- MEDIA:H3 -->
-          <!-- RESULT:H3 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H3-rule-task.webp" width="960" height="540" loading="lazy" decoding="async" alt="Rule tasks without AI: screenshot of the trial">
+            <figcaption>The rule task form.</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, Run Now answered «Raghad: quotations waiting - الإجمالي: 11» with a link that opens the filtered list, and the task shows 1 run, with no AI.</p>
           <p class="feature-note"><strong>Note</strong> It counts in the same limit of tasks per person.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H4">
+        <article class="feature has-media" id="H4">
           <h3><span class="feature-no">H4</span>Private mode</h3>
           <p class="feature-what">A company switch that stops every call to an outside AI provider before anything leaves the server. Providers on your own server (Ollama on your own machine, for instance) are preferred, and a lock shows in the panel.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Open Settings ‣ Nudge ‣ Privacy and tick Private Mode: Never Send Data to an External AI Provider for your company.</li><li>On the provider that runs on your own machine, tick Runs on Our Own Server.</li><li>Open the panel: a lock shows, and quick search, slash commands, tours and remembered answers keep working.</li></ol>
-          <!-- MEDIA:H4 -->
-          <!-- RESULT:H4 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H4-private-mode.webp" width="960" height="536" loading="lazy" decoding="async" alt="Private mode: screenshot of the trial">
+            <figcaption>The Privacy block in Arabic: the Private Mode checkbox.</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, Settings ‣ Nudge ‣ الخصوصية shows «الوضع الخاص: لا ترسل البيانات أبدًا إلى مزوّد ذكاء اصطناعي خارجي», and says quick search, slash commands, recorded tours, explanations without AI and remembered answers keep working.</p>
           <p class="feature-note"><strong>Note</strong> Voice typing by the browser still sends the sound to the maker of the browser: choose the AI provider as the engine of the voice.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H5">
+        <article class="feature has-media" id="H5">
           <h3><span class="feature-no">H5</span>Recorded tours</h3>
           <p class="feature-what">A manager records a task by clicking through it, and anyone replays it with the pointer. Each step is named by its menu, button, field or tab, never by its place on the page. Eight tours come ready.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>A Nudge manager chooses Record a tour in the user menu and goes through the task by clicking.</li><li>Anyone replays it: type /tour create a quotation, or find it in the search of the panel.</li><li>Edit the tours under Nudge ‣ Configuration ‣ Tours.</li></ol>
-          <!-- MEDIA:H5 -->
-          <!-- RESULT:H5 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H5-recorded-tour.webp" width="960" height="540" loading="lazy" decoding="async" alt="Recorded tours: screenshot of the trial">
+            <figcaption>The replay clip: the panel lists the tour from /جولة, the pointer and a bubble guide the three steps.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H5-recorded-tour-poster.webp" aria-label="Recorded tours: recording of the trial, 26 seconds">
+              <source src="../assets/nudge/guide/video/H5-recorded-tour.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 26 s</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, /جولة وريني شاشة عروض الأسعار offered the recorded tour «Raghad: quotations screen» and Nudge guided «اضغط “المبيعات”»، «اضغط “الطلبات”»، «اضغط “عروض الأسعار”» step by step, advancing by itself at each real click.</p>
           <p class="feature-note"><strong>Note</strong> A step this database does not have is skipped with a note. Each ready tour shows only where its app is installed.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -1731,13 +1759,17 @@
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H7">
+        <article class="feature has-media" id="H7">
           <h3><span class="feature-no">H7</span>Import matcher without AI</h3>
           <p class="feature-what">Matches the columns of a CSV or Excel file to the fields of a model, with no AI, and tries the file with Odoo's dry run of the import. Errors are listed by row and column and nothing is saved.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Attach a CSV or Excel file of contacts and type /import, or press Check a CSV or Excel file, without AI.</li><li>Correct the matching of the columns on the card.</li><li>Read the errors by row and column, then take the corrected CSV for the standard Import screen.</li></ol>
-          <!-- MEDIA:H7 -->
-          <!-- RESULT:H7 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H7-import-matcher.webp" width="440" height="1020" loading="lazy" decoding="async" alt="Import matcher without AI: screenshot of the trial">
+            <figcaption>The import card in the Arabic panel with the five columns matched to Name, Phone, City, Tax ID and Job Position with a percentage each.</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, /استيراد matched الاسم to الاسم (100%), رقم الجوال to رقم الهاتف (60%), المدينة to المدينة (100%), الرقم الضريبي to Tax ID (92%) and المسمى الوظيفي to Job Position (92%), and the dry run said «لا مشكلة: 5 سجلات ستُستورد. لم يُحفظ شيء».</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
@@ -1803,24 +1835,44 @@
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H12">
+        <article class="feature has-media" id="H12">
           <h3><span class="feature-no">H12</span>Document to draft record</h3>
           <p class="feature-what">Attach a PDF, a picture, an Excel or CSV file, or paste an email, and ask for a vendor bill, an invoice, a quotation, a purchase order, a lead or a contact. The AI reads the file once; Odoo finds the contact, products, taxes and currency and computes the totals again.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Attach a vendor bill as a PDF and write “make a vendor bill from this file”.</li><li>Read the card: the whole draft and its differences.</li><li>Answer yes: the draft is created, never posted, with the file attached. Undo archives the record or cancels the draft.</li></ol>
-          <!-- MEDIA:H12 -->
-          <!-- RESULT:H12 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H12-document-to-draft.webp" width="424" height="584" loading="lazy" decoding="async" alt="Document to draft record: screenshot of the trial">
+            <figcaption>The bill card read from the PDF.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H12-document-to-draft-poster.webp" aria-label="Document to draft record: recording of the trial, 26 seconds">
+              <source src="../assets/nudge/guide/video/H12-document-to-draft.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 26 s</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, Nudge read the attached PDF, showed a card with 3 lines and &quot;untaxed 970.00, taxes 0.00, total 970.00 / None: the totals are the document&#x27;s&quot;, and after yes answered &quot;Here is the draft bill to review.&quot;</p>
           <p class="feature-note"><strong>Note</strong> A scanned PDF is refused with a word about it; a picture needs a provider that can read images. Undo never deletes.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H13">
+        <article class="feature has-media" id="H13">
           <h3><span class="feature-no">H13</span>Summary of a record's history</h3>
           <p class="feature-what">Summarises a record from its chatter, activities, files and the records around it, as the person asking. The answer is a dated timeline with open points, money, last contact and next step, with Show me links.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Open a quotation of Raghad and write “Summarise this record” in the panel.</li><li>Or, with Nudge: Discuss, write @Nudge summarize in the chatter.</li><li>Read the timeline and follow the Show me links.</li></ol>
-          <!-- MEDIA:H13 -->
-          <!-- RESULT:H13 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H13-record-history.webp" width="424" height="584" loading="lazy" decoding="async" alt="Summary of a record&#x27;s history: screenshot of the trial">
+            <figcaption>The quotation form with the panel answering with a timeline summary of the record: lines, total, the customer call notes, the planned activity and a next step.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H13-record-history-poster.webp" aria-label="Summary of a record&#x27;s history: recording of the trial, 20 seconds">
+              <source src="../assets/nudge/guide/video/H13-record-history.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 20 s</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, Nudge answered &quot;Offer S00115, Raghad Trading (still an offer, expires 2026-11-19)&quot; and listed the customer call notes and the planned activity, ending with a Next step: &quot;Confirm the 5% lamp discount with the customer...&quot;.</p>
           <p class="feature-note"><strong>Note</strong> The summary is kept 15 minutes, unless the chatter changes.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -1856,24 +1908,38 @@
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H16">
+        <article class="feature has-media" id="H16">
           <h3><span class="feature-no">H16</span>Morning digest</h3>
           <p class="feature-what">One click makes a daily task per person with the numbers of their apps, counted by Odoo with their own rights. The AI, when there is one, only writes a few sentences around the numbers; without it the same numbers arrive alone.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Open the panel preferences and press Set up my digest.</li><li>Choose the hour and the time zone.</li><li>Read it in the top bar and by email each morning, and press Show me on a number to open its records.</li></ol>
-          <!-- MEDIA:H16 -->
-          <!-- RESULT:H16 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H16-morning-digest.webp" width="424" height="362" loading="lazy" decoding="async" alt="Morning digest: screenshot of the trial">
+            <figcaption>The morning digest preview in the panel: an AI paragraph around the numbers, then the At a glance, Sales, Purchases, Accounting and Inventory lines with counts and amounts.</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, the digest opened with &quot;Overdue customer invoices stand out most: 8 of them totaling $ 104,199.00 are waiting on payment, and 27 late deliveries add to the pressure...&quot; followed by the sectioned numbers.</p>
           <p class="feature-note"><strong>Note</strong> Only the apps installed and the groups the person belongs to are counted; managers get an overview first.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H17">
+        <article class="feature has-media" id="H17">
           <h3><span class="feature-no">H17</span>Charts in the chat</h3>
           <p class="feature-what">Bars, a line or a pie drawn from the figures the person may read, asked for in words of any dialect or chosen by the AI.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Write “show sales by month as a chart” in the panel.</li><li>Read the chart in the chat.</li><li>Press Open as report to keep working on it, or Download PNG.</li></ol>
-          <!-- MEDIA:H17 -->
-          <!-- RESULT:H17 -->
+          <figure class="feature-media portrait">
+            <img src="../assets/nudge/guide/H17-charts-in-chat.webp" width="424" height="584" loading="lazy" decoding="async" alt="Charts in the chat: screenshot of the trial">
+            <figcaption>The panel draws a bar chart &#x27;Sales by month&#x27; and then a pie &#x27;Offers by salesperson&#x27;, each with Open as report and Download PNG and no stray &#x27;No answer came&#x27; line.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/video/H17-charts-in-chat-poster.webp" aria-label="Charts in the chat: recording of the trial, 38 seconds">
+              <source src="../assets/nudge/guide/video/H17-charts-in-chat.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 38 s</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, Nudge drew &#x27;Sales by month&#x27; as bars (Aug 3,778.50; Sep 98,360.00; Oct 12,592.00) and &#x27;Offers by salesperson&#x27; as a pie, with no extra &#x27;No answer came&#x27; line under either chart.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
@@ -1939,13 +2005,17 @@
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H21">
+        <article class="feature has-media" id="H21">
           <h3><span class="feature-no">H21</span>First setup</h3>
           <p class="feature-what">On a database nobody has set up, an administrator is offered Set up this database with me. Nudge asks one thing at a time and shows a card with the exact changes before each.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>On a new database, press Set up this database with me, or open Settings ‣ Nudge ‣ First Setup, or say it in a sentence.</li><li>Answer one question at a time: company, country, currency, languages, time zone, logo, apps, warehouses, users with a role, fiscal year, number formats.</li><li>Read the card with the exact changes and answer yes before each step.</li></ol>
-          <!-- MEDIA:H21 -->
-          <!-- RESULT:H21 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H21-first-setup.webp" width="960" height="561" loading="lazy" decoding="async" alt="First setup: screenshot of the trial">
+            <figcaption>The First Setup block of the Nudge settings in Arabic with the link «جهّز قاعدة البيانات هذه معي».</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, Settings ‣ Nudge ‣ الإعداد الأول offers «جهّز قاعدة البيانات هذه معي».</p>
           <p class="feature-note"><strong>Note</strong> Offered only on a database with one company with the default name, no chart of accounts and few users. The country card names the fiscal localisation module that loads the chart of accounts.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -2001,13 +2071,17 @@
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
 
-        <article class="feature" id="H26">
+        <article class="feature has-media" id="H26">
           <h3><span class="feature-no">H26</span>Check before an upgrade</h3>
           <p class="feature-what">A read-only report of what will break or needs a decision when moving to the next version: Studio objects and the logic they hide, renamed or removed fields, attrs and states, custom modules without a migration.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>As an administrator, open Nudge ‣ Health Check ‣ Before an Upgrade.</li><li>Pick the series: 17 to 18, 18 to 19 or 19 to 20.</li><li>Read what will break or needs a decision.</li></ol>
-          <!-- MEDIA:H26 -->
-          <!-- RESULT:H26 -->
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/H26-before-upgrade.webp" width="960" height="662" loading="lazy" decoding="async" alt="Check before an upgrade: screenshot of the trial">
+            <figcaption>The Before-an-Upgrade report for 19 to 20 in the Arabic interface.</figcaption>
+          </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, the report for 19 to 20 answered «0 حرجة، و9 للمراجعة، و5 للعلم»: eight custom modules without a migration folder for the target series and «20 معرّف خارجي يخص وحدة غير موجودة في قاعدة البيانات», each with a Show me button.</p>
           <p class="feature-note"><strong>Note</strong> Some entries say “confirm on staging”; the 20.0 list holds generic checks only.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
