@@ -996,6 +996,8 @@ html[dir="rtl"] .mode p, html[dir="rtl"] .step p, html[dir="rtl"] .pbr dd, html[
 html[dir="rtl"] .phase p, html[dir="rtl"] .flag-note, html[dir="rtl"] .facts dd, html[dir="rtl"] .more-grid span, html[dir="rtl"] .side-box p { line-height: 1.8; }
 /* identifiers, figures, addresses: left to right inside the right-to-left text */
 html[dir="rtl"] code, html[dir="rtl"] .copy-fallback, html[dir="rtl"] .print-only { direction: ltr; unicode-bidi: isolate; }
+/* JetBrains Mono's "--" ligature drifts off a flag that opens an isolated run in Arabic text */
+html[dir="rtl"] code { font-variant-ligatures: none; }
 html[dir="rtl"] .figs b, html[dir="rtl"] .mail { direction: ltr; unicode-bidi: isolate; text-align: end; }
 html[dir="rtl"] .badges span { font-family: "JetBrains Mono", "IBM Plex Sans Arabic", ui-monospace, monospace; font-size: .8rem; line-height: 1.5; }
 html[dir="rtl"] .phase-no { direction: ltr; }
