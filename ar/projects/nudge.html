@@ -2044,7 +2044,7 @@
           <h3>السؤال ليس أمراً: شرح لا بطاقة تأكيد <span class="feature-new">جديد</span></h3>
           <p class="feature-what">سؤال «هل أؤكد هذا الأمر؟» يُجاب بشرح. وحدها عبارة الطلب تُنتج بطاقة تطلب تأكيدك، والضغط على الاقتراح يفتح بطاقة فيها «نعم، نفّذ» / «لا».</p>
           <h4>الخطوات</h4>
-          <ol class="feature-steps"><li>افتح أمر بيع في حالة عرض سعر وفعّل وضع Agent في Nudge.</li><li>اسأل: هل أؤكد هذا الأمر؟ تحصل على شرح دون بطاقة.</li><li>إن عرض Nudge اقتراحاً للتغيير فاضغط عليه: تظهر بطاقة ولا يحدث شيء حتى تجيب بـ «نعم، نفّذ».</li></ol>
+          <ol class="feature-steps"><li>افتح أمر بيع في حالة عرض سعر وفعّل وضع Agent في Nudge.</li><li>اسأل: هل أؤكد هذا الأمر؟ تحصل على شرح دون بطاقة.</li><li>يُعرض الزر الذي يسمّيه السؤال كاقتراح تحت الشرح: اضغط عليه فتظهر بطاقة، ولا يحدث شيء حتى تجيب بـ «نعم، نفّذ».</li></ol>
           <figure class="feature-media">
             <img src="../../assets/nudge/guide/R3-50-question-not-order-ar.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Nudge يجيب بالعربية على سؤال التأكيد في العرض S00109 بشرح، مع اقتراح «ضغط “تأكيد”: أمر البيع (S00109)».">
             <figcaption>Nudge يجيب بالعربية على سؤال التأكيد في العرض S00109 بشرح، مع اقتراح «ضغط “تأكيد”: أمر البيع (S00109)».</figcaption>
@@ -2061,7 +2061,6 @@
           </figure>
           <h4>النتيجة</h4>
           <p class="feature-result">في التجربة، أجاب Nudge على السؤال بشرح: «نعم، يمكنك تأكيد عرض السعر هذا (S00109) ...» مع الاقتراح «ضغط “تأكيد”: أمر البيع (S00109)». وعند الضغط عليه ظهرت بطاقة فيها «نعم، نفّذ» / «لا»، ولم يُضغط شيء وبقي العرض مسودة.</p>
-          <p class="feature-note"><strong>ملاحظة</strong> الجواب بالعربية ليس ثابتاً: يتغير مع المزوّد، ففي بعض التجارب أجاب Nudge بشرح دون بطاقة، وفي تجربة أخرى ظهرت بطاقة التأكيد مباشرة بعد السؤال. ما نعرضه هو التجربة المحفوظة.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Community وEnterprise</p>
         </article>
       </section>
@@ -2522,12 +2521,30 @@
           <p class="feature-what">مع Nudge: Studio قل بالكلام مَن يجب أن يوافق على زر ومتى؛ يقرأ Nudge قواعد الموافقة الموجودة أولًا، ويجد المجموعة أو الشخص، ويعرض القاعدة على بطاقة: النموذج والزر والموافقون والخطوة والشرط والرسالة التي تظهر على الزر.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>في وضع Dev: “Confirming a purchase order above 50,000 needs the finance manager's approval”.</li><li>اقرأ البطاقة واضغط Yes, do it.</li><li>لتسمية شخص بدل مجموعة: “Only Ebrahim, our finance manager, approves it”.</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../../assets/nudge/guide/F1-approval-rules.webp" width="413" height="624" loading="lazy" decoding="async" alt="قواعد الموافقة على الأزرار: لقطة من التجربة">
-            <figcaption>Studio على Enterprise: «تأكيد أمر شراء يتجاوز 50,000 يحتاج إلى موافقة مدير المالية» ← بطاقة قاعدة الموافقة (النموذج، الزر، مجموعة الموافقة، الخطوة، فقط عندما Total &gt; 50000) منفَّذة.</figcaption>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../../assets/nudge/guide/video/F1-approval-rules-ar-clip-poster.webp" aria-label="قواعد الموافقة على الأزرار: تسجيل التجربة، 100 ثانية">
+              <source src="../../assets/nudge/guide/video/F1-approval-rules-ar-clip.mp4" type="video/mp4">
+            </video>
+            <figcaption>تسجيل: بنى Nudge قاعدة موافقة على زر «تأكيد» لأوامر البيع فوق 9,000,000، ثم حُجب التأكيد على Osama وبعد موافقة المدير نجح. · 100 ثانية</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../../assets/nudge/guide/F1-approval-rules-ar-blocked.webp" width="1280" height="720" loading="lazy" decoding="async" alt="قواعد الموافقة على الأزرار: لقطة من التجربة">
+            <figcaption>عند ضغط Osama على «تأكيد» ظهرت الرسالة «توجد موافقة مفقودة» وبقي الأمر عرض سعر.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../../assets/nudge/guide/F1-approval-rules-ar-rule.webp" width="1280" height="720" loading="lazy" decoding="async" alt="قواعد الموافقة على الأزرار: لقطة من التجربة">
+            <figcaption>نافذة الزر تعرض القاعدة التي تنتظر الموافقة: المبلغ فوق 9,000,000 والمجموعة المعتمدة.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../../assets/nudge/guide/F1-approval-rules-ar-approve.webp" width="1280" height="720" loading="lazy" decoding="async" alt="قواعد الموافقة على الأزرار: لقطة من التجربة">
+            <figcaption>المدير يوافق من نافذة الزر، فتُسجَّل الموافقة في سجل الأمر.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../../assets/nudge/guide/F1-approval-rules-ar-confirmed.webp" width="1280" height="720" loading="lazy" decoding="async" alt="قواعد الموافقة على الأزرار: لقطة من التجربة">
+            <figcaption>بعد الموافقة ضغط Osama «تأكيد» مرة أخرى فتحوّل عرض السعر إلى أمر بيع.</figcaption>
           </figure>
           <h4>النتيجة</h4>
-          <p class="feature-result">في تجربة Enterprise (مع Claude) كتب Nudge: “I'll check what approval rules already exist on purchase orders, and who the finance manager is”، وطابق أقرب مجموعة لمدير الحسابات، وعرض “Create: approval rule on “Confirm Order” — Model: Purchase Order — Button: Confirm Order — Approval group: … — Step: 1 — Only for: Total &gt; 50000 — Shown on the button: Purchase orders above 50,000 need the finance manager's approval before confirming.” وبعد الموافقة وُجدت القاعدة على purchase.order / button_confirm بالشرط amount_total &gt; 50000، وأظهر طلب شراء فوق الحد “An approval is missing” على Confirm. وعندما قيل له إن شخصًا واحدًا بالاسم هو من يوافق، أعاد البطاقة بذلك الشخص موافقًا وبلا مجموعة.</p>
+          <p class="feature-result">في تجربة Enterprise (مع Claude) كتب Nudge: “I'll check what approval rules already exist on purchase orders, and who the finance manager is”، وطابق أقرب مجموعة لمدير الحسابات، وعرض “Create: approval rule on “Confirm Order” — Model: Purchase Order — Button: Confirm Order — Approval group: … — Step: 1 — Only for: Total &gt; 50000 — Shown on the button: Purchase orders above 50,000 need the finance manager's approval before confirming.” وبعد الموافقة وُجدت القاعدة على purchase.order / button_confirm بالشرط amount_total &gt; 50000، وأظهر طلب شراء فوق الحد “An approval is missing” على Confirm. وعندما قيل له إن شخصًا واحدًا بالاسم هو من يوافق، أعاد البطاقة بذلك الشخص موافقًا وبلا مجموعة. وفي التجربة بالواجهة العربية بنى Nudge قاعدة Studio على زر «تأكيد» لأوامر البيع التي يتجاوز إجماليها 9,000,000 (مجموعة base.group_system)؛ ضغط Osama «تأكيد» على أمر بقيمة 10.5 مليون فظهرت «توجد موافقة مفقودة» وبقي الأمر عرض سعر، ثم وافق Znad من نافذة الزر وسُجّلت «تمت الموافقة» في السجل، وعندما ضغط Osama «تأكيد» ثانيةً تحوّل الأمر إلى أمر بيع.</p>
           <p class="feature-note"><strong>ملاحظة</strong> يحتاج web_studio؛ ويُنصَّب Nudge: Studio تلقائيًا معه.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Enterprise فقط</p>
         </article>
@@ -3727,14 +3744,22 @@
           <p class="feature-what">مع Nudge: Odoo AI الذي يُنصَّب تلقائيًا على Enterprise مع تطبيق AI، يعرض الوكيل إجراءات الخادم المعلَّمة “Use in AI” وينفّذها بعد بطاقة.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>اسأل “Which AI actions can you run here?”</li><li>ثم “Find the AI action 'Read group' and run it to count our contacts per country”.</li><li>اضغط Yes, do it على البطاقة “Run the AI action …”.</li></ol>
-          <figure class="feature-media portrait">
-            <video controls preload="none" playsinline width="540" height="960" poster="../../assets/nudge/guide/video/rec_odoo_ai_take2-poster.webp" aria-label="إجراءات “Use in AI” في تطبيق Odoo AI (نسخة Enterprise): تسجيل التجربة، 35 ثانية">
-              <source src="../../assets/nudge/guide/video/rec_odoo_ai_take2.mp4" type="video/mp4">
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../../assets/nudge/guide/video/C19-odoo-ai-actions-ar-clip-poster.webp" aria-label="إجراءات “Use in AI” في تطبيق Odoo AI (نسخة Enterprise): تسجيل التجربة، 32 ثانية">
+              <source src="../../assets/nudge/guide/video/C19-odoo-ai-actions-ar-clip.mp4" type="video/mp4">
             </video>
-            <figcaption>تسجيل التجربة · 35 ثانية</figcaption>
+            <figcaption>تسجيل: سأل Nudge عن إجراءات الذكاء الاصطناعي التي يستطيع تشغيلها، فعرض بطاقة «Run the AI action Get Fields» على res.partner بانتظار الموافقة. · 32 ثانية</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../../assets/nudge/guide/C19-odoo-ai-actions-ar-2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="إجراءات “Use in AI” في تطبيق Odoo AI (نسخة Enterprise): لقطة من التجربة">
+            <figcaption>إجابة Nudge بالعربية عن الإجراءات المتاحة، وطلبه تشغيل «Get Fields» على جهة الاتصال.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../../assets/nudge/guide/C19-odoo-ai-actions-ar.webp" width="1280" height="720" loading="lazy" decoding="async" alt="إجراءات “Use in AI” في تطبيق Odoo AI (نسخة Enterprise): لقطة من التجربة">
+            <figcaption>بعد «نعم»: جدول حقول res.partner الذي أعاده الإجراء.</figcaption>
           </figure>
           <h4>النتيجة</h4>
-          <p class="feature-result">في تجربة Enterprise (مع Claude) عرض Nudge 6 من 12 إجراءً (Add tags وMove in folder وAdjust search وGet fields وCompute report measures وGet menu details)، ثم البطاقة “Run the AI action “AI: Read group”” والنتيجة: جدول جهات الاتصال بحسب الدولة (No country set 2,331؛ United Arab Emirates 296؛ China 6؛ Hong Kong 1؛ Italy 1؛ Qatar 1)، وأُنهي بـ “I haven't changed anything.”</p>
+          <p class="feature-result">في التجربة أدرج Nudge 6 من 12 إجراءً، ثم عرض بطاقة «Run the AI action “Get Fields”» على res.partner، وبعد «نعم» أعاد جدول حقول res.partner؛ ولم يُقرأ أو يُغيَّر أي سجل.</p>
           <p class="feature-edition">Odoo 17 و18 و19 · Enterprise فقط</p>
         </article>
         <article class="feature has-media" id="E6" data-sec="12">
@@ -3742,9 +3767,9 @@
           <p class="feature-what">مع Nudge: Odoo AI على Enterprise تصبح مصادر تطبيق AI ووكلاؤه متاحة لـ Nudge أيضًا، بجانب ملفات شركته ومفاتيح مزوّديه.</p>
           <h4>الخطوات</h4>
           <ol class="feature-steps"><li>نصّب تطبيق AI؛ يُنصَّب Nudge: Odoo AI تلقائيًا.</li><li>اسأل Nudge سؤالًا تجيب عنه مصادر تطبيق AI.</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../../assets/nudge/guide/E6-odoo-ai-sources-and-agents.webp" width="413" height="624" loading="lazy" decoding="async" alt="مصادر Odoo AI ووكلاؤه (نسخة Enterprise): لقطة من التجربة">
-            <figcaption>Enterprise: «أي إجراءات ذكاء اصطناعي يمكنك تشغيلها هنا؟» ← إجراءات خادم Odoo AI مسرودة بحسب المجموعة (Documents، Search and navigation…).</figcaption>
+          <figure class="feature-media">
+            <img src="../../assets/nudge/guide/E6-odoo-ai-sources-and-agents-ar.webp" width="1280" height="720" loading="lazy" decoding="async" alt="مصادر Odoo AI ووكلاؤه (نسخة Enterprise): لقطة من التجربة">
+            <figcaption>Nudge بالعربية يجيب عن «ما هي إجراءات الذكاء الاصطناعي التي يمكنك تشغيلها هنا؟» بسرد إجراءات «استخدام في الذكاء الاصطناعي»، 6 من 12 معروضة.</figcaption>
           </figure>
           <figure class="feature-media">
             <img src="../../assets/nudge/guide/E6-odoo-ai-sources-and-agents-ar-2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="مصادر Odoo AI ووكلاؤه (نسخة Enterprise): لقطة من التجربة">
