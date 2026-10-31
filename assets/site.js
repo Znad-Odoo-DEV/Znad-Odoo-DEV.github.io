@@ -121,6 +121,51 @@
     apply("all", "All");
   }
 
+
+  /* ---------- guide: search by title and section filter ---------- */
+  var gSearch = document.getElementById("guide-search");
+  if (gSearch) {
+    var gFilters = document.querySelectorAll(".guide-filter");
+    var gCards = Array.prototype.slice.call(document.querySelectorAll(".guide-body .feature"));
+    var gSecs = Array.prototype.slice.call(document.querySelectorAll(".guide-section"));
+    var gCount = document.getElementById("guide-count");
+    var gEmpty = document.getElementById("guide-empty");
+    var gSec = "0";
+    var gNorm = function (t) { return (t || "").toLowerCase().replace(/[ً-ٟـ]/g, ""); };
+    var gTitles = gCards.map(function (c) { var h = c.querySelector("h3"); return gNorm(h ? h.textContent : ""); });
+    var gApply = function () {
+      var q = gNorm(gSearch.value.trim()), shown = 0;
+      gCards.forEach(function (c, i) {
+        var ok = (gSec === "0" || c.getAttribute("data-sec") === gSec) && (!q || gTitles[i].indexOf(q) !== -1);
+        c.hidden = !ok; if (ok) shown++;
+      });
+      gSecs.forEach(function (s) { s.hidden = !s.querySelector(".feature:not([hidden])"); });
+      var total = gCount.getAttribute("data-total");
+      gCount.textContent = (q || gSec !== "0") ? gCount.getAttribute("data-fmt").replace("{n}", shown).replace("{t}", total) : gCount.textContent;
+      if (!q && gSec === "0") gCount.textContent = gCount.getAttribute("data-fmt").replace("{n}", total).replace("{t}", total);
+      gEmpty.hidden = shown !== 0;
+    };
+    gSearch.addEventListener("input", gApply);
+    gFilters.forEach(function (b) {
+      b.addEventListener("click", function () {
+        gSec = b.getAttribute("data-sec");
+        gFilters.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        gApply();
+      });
+    });
+    var gShowHash = function () {
+      var id = decodeURIComponent((location.hash || "").slice(1)); if (!id) return;
+      var t = document.getElementById(id);
+      if (t && (t.hidden || (t.closest && t.closest("[hidden]")))) {
+        gSearch.value = ""; gSec = "0";
+        gFilters.forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-sec") === "0" ? "true" : "false"); });
+        gApply(); t.scrollIntoView();
+      }
+    };
+    window.addEventListener("hashchange", gShowHash);
+    gShowHash();
+  }
+
   /* ---------- the guide's table of contents folds on a phone ---------- */
   var toc = document.querySelector(".guide-toc");
   var tocBtn = toc && toc.querySelector(".toc-toggle");

@@ -1104,3 +1104,27 @@ html[dir="rtl"] .canvasfield {
 @media (min-width: 1100px) {
   .hairline.hl-card { top: var(--sp-6); width: clamp(15rem, 20vw, 18rem); }
 }
+
+/* ---------- guide: search, section filters, "New" mark ---------- */
+.guide-tools { display: grid; gap: var(--sp-3); margin-bottom: clamp(var(--sp-6), 3vw, var(--sp-8)); }
+.guide-search input {
+  width: 100%; max-width: 32rem; box-sizing: border-box; padding: var(--sp-2) var(--sp-3);
+  font: inherit; font-size: var(--fs-sm); color: var(--text); background: var(--card-bg);
+  border: 1px solid var(--card-border); border-radius: var(--r-xs);
+}
+.guide-search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.guide-filters { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.guide-filter {
+  font: inherit; font-size: var(--fs-xs); line-height: 1.3; color: var(--text-soft); background: transparent;
+  border: 1px solid var(--border); border-radius: 999px; padding: var(--sp-1) var(--sp-3); cursor: pointer; max-width: 100%;
+}
+.guide-filter:hover { color: var(--accent); border-color: var(--accent-line); }
+.guide-filter[aria-pressed="true"] { color: var(--accent); background: var(--accent-wash); border-color: var(--accent-line); font-weight: 600; }
+.guide-filter:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.guide-count, .guide-empty { margin: 0; font-size: var(--fs-xs); color: var(--text-mute); }
+.guide-section[hidden], .feature[hidden], .guide-toc li[hidden] { display: none; }
+.feature-new {
+  flex: none; align-self: center; font-size: var(--fs-2xs); font-weight: 600; letter-spacing: .02em; color: var(--accent);
+  background: var(--accent-wash); border: 1px solid var(--accent-line); border-radius: var(--r-xs); padding: 0 var(--sp-2); line-height: 1.6;
+}
+.feature h3 { flex-wrap: wrap; }
