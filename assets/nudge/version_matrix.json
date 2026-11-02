@@ -1,0 +1,1379 @@
+{
+"A01": {
+"title": "The avatar in the corner",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A02": {
+"title": "The icon in the top bar",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A03": {
+"title": "The panel: new chat, history, preferences, stop",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A04": {
+"title": "Shortcut Ctrl + Shift + Space",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A05": {
+"title": "Hold to talk",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A06": {
+"title": "Spoken language: ع / EN, and both in one sentence",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A07": {
+"title": "Dictate into any Odoo field",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A08": {
+"title": "“Write in field X…”",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A09": {
+"title": "Answers read aloud",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A10": {
+"title": "Themes",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A11": {
+"title": "Arabic and English, dialects and Arabizi",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A12": {
+"title": "The eye: share the screen or not",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A13": {
+"title": "Pictures and files with a question",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A14": {
+"title": "Nudge: On / Off per user",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A15": {
+"title": "Search before any AI provider exists",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A16": {
+"title": "Slash commands",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A17": {
+"title": "Starter suggestions in an empty panel",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A18": {
+"title": "Thumbs up / down and “What was wrong?”",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"A19": {
+"title": "Talk / Agent / Dev, and “Nudge, do it”",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B01": {
+"title": "Reads the screen, unsaved values included",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B02": {
+"title": "“How would you like it?”: on the screen, in writing, do it for me",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B03": {
+"title": "Pointer tours on the screen",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B04": {
+"title": "Menu path tour",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B05": {
+"title": "Take me there",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B06": {
+"title": "Explain a field or a term (/explain)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B07": {
+"title": "Built-in Odoo 19 documentation",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B08": {
+"title": "Knows this database",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B09": {
+"title": "Reads custom module code (administrators)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B10": {
+"title": "Company files",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B11": {
+"title": "Setup advisor",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B12": {
+"title": "Assess the database",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B13": {
+"title": "Check a file before you import it",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B14": {
+"title": "Product search",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"B15": {
+"title": "Remembers a lesson when corrected",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C01": {
+"title": "Confirmation cards: Yes / No, ⚠ on what cannot be taken back",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C02": {
+"title": "Create records",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C03": {
+"title": "Update records",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C04": {
+"title": "Press buttons as the user",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C05": {
+"title": "Find any record by what you call it",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C06": {
+"title": "Search and read records",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C07": {
+"title": "Filter and group the list on screen",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C08": {
+"title": "Open a record",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C09": {
+"title": "Many records, one yes",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C10": {
+"title": "Undo on done cards",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C11": {
+"title": "Counts and sums",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C12": {
+"title": "Report in the chat or as a spreadsheet with a chart",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 the report stays in the chat and in My Reports, with no spreadsheet option.",
+"note_ar": "على Odoo 17 يبقى التقرير في المحادثة وفي My Reports، دون خيار جدول البيانات."
+},
+"C13": {
+"title": "Python (sandboxed, read-only, off by default)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C14": {
+"title": "SQL (one SELECT, administrators, switch)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C15": {
+"title": "Odoo setup for administrators",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C16": {
+"title": "Background work",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C17": {
+"title": "Scheduled tasks",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C18": {
+"title": "Material list or supplier PDF → products or the bill",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"C19": {
+"title": "Odoo AI “Use in AI” server actions (Enterprise)",
+"17": "no",
+"18": "no",
+"19": "yes",
+"ee": true
+},
+"C20": {
+"title": "Never deletes; archives instead",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D01": {
+"title": "Automation rules",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D02": {
+"title": "Server actions (code checked first)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D03": {
+"title": "Scheduled actions",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D04": {
+"title": "Email templates",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D05": {
+"title": "Designed emails: 4 styles, Arabic right-to-left, preview, test",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D06": {
+"title": "Email review button",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D07": {
+"title": "Buttons on a form",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D08": {
+"title": "New fields (x_ on the form, as Studio would)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D09": {
+"title": "View edits (XPath extension, diff on the card)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D10": {
+"title": "PDF reports",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D11": {
+"title": "Trial on a dummy record",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D12": {
+"title": "Undo what was built",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D13": {
+"title": "Delete what it built (only when asked by name)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"D14": {
+"title": "Read what runs automatically (/rules)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"E01": {
+"title": "@Nudge in the chatter of any record",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"E02": {
+"title": "@Nudge in Discuss channels",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"E03": {
+"title": "Lessons approved by a manager (Business Notes)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"E04": {
+"title": "Feedback list",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"E05": {
+"title": "Company files uploaded by managers",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"E06": {
+"title": "Odoo AI sources and agents (Enterprise)",
+"17": "no",
+"18": "no",
+"19": "yes",
+"ee": true
+},
+"F01": {
+"title": "Approval rules on buttons",
+"17": "no",
+"18": "partial",
+"19": "yes",
+"ee": true,
+"note": "Needs Enterprise Studio. It ships for Odoo 18 and has not been tried there yet.",
+"note_ar": "يحتاج Studio من إصدار Enterprise. وهو متوفر لـ Odoo 18 ولم يُجرَّب عليه بعد."
+},
+"F02": {
+"title": "Guidance inside Studio",
+"17": "no",
+"18": "partial",
+"19": "yes",
+"ee": true,
+"note": "Needs Enterprise Studio. It ships for Odoo 18 and has not been tried there yet.",
+"note_ar": "يحتاج Studio من إصدار Enterprise. وهو متوفر لـ Odoo 18 ولم يُجرَّب عليه بعد."
+},
+"G01": {
+"title": "Runs as the user",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G02": {
+"title": "Groups: User, Agent User, Manager, Settings",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G03": {
+"title": "Switches, off by default except Agent",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G04": {
+"title": "Audit log: Requests and Changes",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G05": {
+"title": "Conversations with their cost",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G06": {
+"title": "Budgets per person per day, per company per month",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G07": {
+"title": "Usage report",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G08": {
+"title": "Secrets never sent, keys admin-only, no telemetry",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G09": {
+"title": "A provider per mode",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G10": {
+"title": "Providers: Gemini, Groq, OpenRouter, Ollama, Claude, any OpenAI-compatible",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G11": {
+"title": "Database profile",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"G12": {
+"title": "Odoo 17 · 18 · 19, Community and Enterprise",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H01": {
+"title": "Remembered answers",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H02": {
+"title": "Explain the screen without AI: /why, /field, /here",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H03": {
+"title": "Rule tasks without AI",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H04": {
+"title": "Private mode",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H05": {
+"title": "Recorded tours",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H06": {
+"title": "Health check",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 the check for failing scheduled actions is not available; the other checks work.",
+"note_ar": "على Odoo 17 لا يتوفر فحص الإجراءات المجدولة الفاشلة؛ وبقية الفحوص تعمل."
+},
+"H07": {
+"title": "Import matcher without AI",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H08": {
+"title": "Common requests understood without AI, in every dialect",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H09": {
+"title": "Search by meaning on your own server",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H10": {
+"title": "Your Odoo in Claude Desktop (MCP)",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 the connection key never expires; on Odoo 18 and 19 you choose 1, 3 or 12 months.",
+"note_ar": "على Odoo 17 لا ينتهي مفتاح الاتصال؛ وعلى Odoo 18 و19 تختار 1 أو 3 أو 12 شهرًا."
+},
+"H11": {
+"title": "Website and portal assistant",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H12": {
+"title": "Document to draft record",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H13": {
+"title": "Summary of a record's history",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H14": {
+"title": "Draft a reply",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H15": {
+"title": "The AI over a selected list",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H16": {
+"title": "Morning digest",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H17": {
+"title": "Charts in the chat",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H18": {
+"title": "Report in any shape, kept in My Reports",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 the report stays in the chat and in My Reports, with no spreadsheet option.",
+"note_ar": "على Odoo 17 يبقى التقرير في المحادثة وفي My Reports، دون خيار جدول البيانات."
+},
+"H19": {
+"title": "Designed printed reports",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H20": {
+"title": "Approval flows from a sentence",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H21": {
+"title": "First setup",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H22": {
+"title": "Compliance checklist (GCC and Egypt)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H23": {
+"title": "Translate a module",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H24": {
+"title": "Your first week",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H25": {
+"title": "Who changed this, and undo it",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H26": {
+"title": "Check before an upgrade",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H27": {
+"title": "Shared recipes and the recipe marketplace",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H28": {
+"title": "Questions that keep coming back",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H29": {
+"title": "My Nudge Home, the first screen of the app",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H30": {
+"title": "Unusual figures",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H31": {
+"title": "Warnings before saving",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H32": {
+"title": "Why did it fail? (/debug)",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 /debug cannot say how many times a scheduled action failed in a row, or since when: Odoo 17 does not store it.",
+"note_ar": "على Odoo 17 لا يستطيع /debug أن يذكر عدد مرات فشل إجراء مجدول متتالية ولا منذ متى: فـ Odoo 17 لا يحفظ ذلك."
+},
+"H33": {
+"title": "Module scaffold",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H34": {
+"title": "Mobile-first panel",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H35": {
+"title": "Meeting audio summary",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H36": {
+"title": "Browser speech in private mode",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H37": {
+"title": "Website Builder",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 the company's phone, email and address go in a text block, because Odoo 17 has no contact snippet.",
+"note_ar": "على Odoo 17 يوضع هاتف الشركة وبريدها وعنوانها في كتلة نص، لأن Odoo 17 ليس فيه مقطع جهات الاتصال."
+},
+"H38": {
+"title": "Mail agent",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"H39": {
+"title": "Your Odoo on WhatsApp and Telegram",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-01": {
+"title": "Ask the data: figures for everyone, with the filter and a Show list button",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-02": {
+"title": "Did you mean: slips and near-misses offered back",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-03": {
+"title": "Arabic in Latin letters (Arabizi) and dialect typos understood by rules",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-04": {
+"title": "What is waiting for me today (rules-first agenda)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-05": {
+"title": "Save as reference: managers teach Nudge an answer, any language",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-06": {
+"title": "Answer cache: the second explanation costs zero tokens",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-07": {
+"title": "Prompt library: 50 ready prompts with variables",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-08": {
+"title": "Missed sentences: managers turn failures into commands",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-09": {
+"title": "Explain this report",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-10": {
+"title": "Waiting room instead of a refusal",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-11": {
+"title": "A question sent right after Yes/No waits and goes after",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-12": {
+"title": "Long conversations stay short and cheap (summary without AI)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-13": {
+"title": "A calmer interface: Odoo colour, RTL, density, shortcuts, 2-3 column Home",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-14": {
+"title": "Skills: Nudge loads only the know-how a question needs",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-15": {
+"title": "Odoo expert for Accounting: 8 skills, in English and Arabic",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-16": {
+"title": "Odoo expert for Inventory: 8 skills",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-17": {
+"title": "Documentation of your own Odoo version (17, 18, 19)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-18": {
+"title": "Skill proposals from approved lessons, tested weekly",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-19": {
+"title": "Signed skill marketplace and catalogue",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-20": {
+"title": "Plugins and tools per database",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-21": {
+"title": "Requests that come back become rules",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-22": {
+"title": "Plan card: several changes, one Yes",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-23": {
+"title": "Approval flows from a sentence: Agent hands over to Developer mode",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-24": {
+"title": "BOM or vendor PDF to products or a bill",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-25": {
+"title": "Made by Nudge: everything Developer mode built, one list",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-26": {
+"title": "Safer reads: text from outside waits for a confirmation",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-27": {
+"title": "E-invoicing readiness and deadline calendar (UAE, Saudi, Egypt, Oman)",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-28": {
+"title": "Signed Nudge feed for 48 countries, approved by you",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-29": {
+"title": "Certificate and credential expiry watch",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-30": {
+"title": "First Setup wizard with a monthly cost estimate",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-31": {
+"title": "MCP with OAuth 2.1: your Odoo in Claude Desktop, safely",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 the connection key never expires; on Odoo 18 and 19 you choose 1, 3 or 12 months.",
+"note_ar": "على Odoo 17 لا ينتهي مفتاح الاتصال؛ وعلى Odoo 18 و19 تختار 1 أو 3 أو 12 شهرًا."
+},
+"R3-32": {
+"title": "Connectors: Nudge reads other services (Calendar, etc.) with budgets",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-33": {
+"title": "WhatsApp and Telegram share the same line and rules",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-34": {
+"title": "Website assistant: says it is an AI, handover form hardened",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-35": {
+"title": "Website builder: SEO, Undo publish, edits by chat",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-36": {
+"title": "Token Dashboard: tokens, cost, cache hits and the no-AI share",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-37": {
+"title": "Latency and cost panel",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-38": {
+"title": "What each mode sends, and try search by meaning",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-39": {
+"title": "Economy model and prompt caching: less money per answer",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-40": {
+"title": "Fallback model and provider-busy notice",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-41": {
+"title": "Quality gate: 42 scripted scenarios per release",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-42": {
+"title": "Personal data masked before it reaches the AI",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-43": {
+"title": "Nudge Auditor: read-only, time-boxed outside auditor",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-44": {
+"title": "Allowed destinations: where Nudge may call",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-45": {
+"title": "Secrets never leave: passwords and keys hidden everywhere",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-46": {
+"title": "Agents: a sales assistant you configure, test and publish",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-47": {
+"title": "Agent in Discuss: mention it in a channel or chat with it directly",
+"17": "partial",
+"18": "partial",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 and 18 the agent answers when mentioned in its channel and in a direct chat, but is not offered in Discuss's Start a conversation search.",
+"note_ar": "على Odoo 17 و18 يجيب الوكيل عند ذكره في قناته وفي المحادثة المباشرة، لكنه لا يظهر في بحث Start a conversation في Discuss."
+},
+"R3-48": {
+"title": "Simpler menus: five entries, and advanced menus on request",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-49": {
+"title": "Write in a field: Talk fills the Job Position, many2one fields too",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-50": {
+"title": "Questions are not orders: an explanation, never a confirm card",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-51": {
+"title": "Agents answer the public on the website: published records only, office hours, a person on request",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-52": {
+"title": "The same agent on WhatsApp and Telegram for customers",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-53": {
+"title": "A budget per month and per visitor, topics kept off, thanks answered without AI",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-54": {
+"title": "Website Builder 2.0: the site is built from your own records",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 the company's phone, email and address go in a text block, because Odoo 17 has no contact snippet.",
+"note_ar": "على Odoo 17 يوضع هاتف الشركة وبريدها وعنوانها في كتلة نص، لأن Odoo 17 ليس فيه مقطع جهات الاتصال."
+},
+"R3-55": {
+"title": "Upload, Documents or import from Excel, then Show the records on the site",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-56": {
+"title": "Contact, WhatsApp button, Google map and opening hours from the company",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 the company's phone, email and address go in a text block, because Odoo 17 has no contact snippet.",
+"note_ar": "على Odoo 17 يوضع هاتف الشركة وبريدها وعنوانها في كتلة نص، لأن Odoo 17 ليس فيه مقطع جهات الاتصال."
+},
+"R3-57": {
+"title": "A quote request form that lands in CRM, behind guards",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-58": {
+"title": "Sector skills: construction, clinic, restaurant, real estate, Gulf SEO",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-59": {
+"title": "Site Check 2.0: content, structured data, WhatsApp, map, right to left, with Fix it",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-60": {
+"title": "Plugins: real estate listings with a search, and car workshop bookings",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"R3-61": {
+"title": "An online shop of real products",
+"17": "partial",
+"18": "yes",
+"19": "yes",
+"ee": false,
+"note": "On Odoo 17 creating shop products needs Settings or another app's manager rights: Odoo 17 has no Product Manager group.",
+"note_ar": "على Odoo 17 يحتاج إنشاء منتجات المتجر إلى صلاحية الإعدادات أو مدير تطبيق آخر: فـ Odoo 17 ليس فيه مجموعة Product Manager."
+},
+"SEC-01": {
+"title": "Nobody approves through Nudge what they may not approve",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"SEC-02": {
+"title": "Nudge cannot open another person's record",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"SEC-03": {
+"title": "Nudge cannot change what is not yours",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"SEC-04": {
+"title": "No rights on sales, no sales figures",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"SEC-05": {
+"title": "Another company's records stay out of reach",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+}
+}

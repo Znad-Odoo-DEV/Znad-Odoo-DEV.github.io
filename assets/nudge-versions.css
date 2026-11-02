@@ -1,0 +1,50 @@
+/* Odoo version buttons of the Nudge guide. Used only by projects/nudge.html and ar/projects/nudge.html.
+   Reads the tokens of site.css, so both themes and RTL follow the page. */
+.ver-slot { margin: var(--sp-4) 0 var(--sp-2); }
+html.js .ver-slot:not([data-ready]):not([hidden]) { min-height: 5.5rem; }
+.ver-slot[hidden] { display: none; }
+.ver-bar { display: grid; gap: var(--sp-2); max-width: 100%; }
+.ver-btns { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.ver-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
+  min-height: 2.75rem; padding: var(--sp-2) var(--sp-4); flex: 0 1 auto;
+  font: 600 var(--fs-sm)/1.2 var(--font-body); color: var(--text-soft); background: var(--surface);
+  border: 1px solid var(--border-strong); border-radius: var(--r-pill); cursor: pointer; white-space: nowrap;
+  unicode-bidi: isolate; direction: ltr;
+}
+.ver-btn:hover { color: var(--accent); border-color: var(--accent-line); }
+.ver-btn[aria-pressed="true"] { color: var(--accent); background: var(--accent-wash); border-color: var(--accent); }
+.ver-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ver-soon { font-size: var(--fs-2xs); font-weight: 500; color: var(--text-mute); border: 1px solid var(--border); border-radius: var(--r-pill); padding: 0 var(--sp-2); }
+.ver-note { margin: 0; font-size: var(--fs-xs); line-height: 1.5; color: var(--text-mute); }
+.ver-slot-guide { margin: 0 0 var(--sp-4); }
+@media (max-width: 520px) {
+  .ver-btns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ver-btn { width: 100%; padding-inline: var(--sp-3); }
+}
+
+/* what a version hides */
+.feature.ver-off, .guide-section.ver-off { display: none !important; }
+.feature-media[hidden], .feature-result[hidden], .feature > h4[hidden] { display: none; }
+#guide.ver-soon .guide-tools, #guide.ver-soon .guide-grid { display: none; }
+
+.ver-media { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--sp-3); min-width: 0; max-width: 100%; }
+.ver-ph { min-width: 0; width: 100%; box-sizing: border-box; }
+.ver-media figure { margin: 0; }
+.ver-media img, .ver-media video { display: block; width: 100%; height: auto; border-radius: var(--r-sm); border: 1px solid var(--border); background: var(--surface-2); }
+.ver-media figcaption { margin-top: var(--sp-2); font-size: var(--fs-xs); color: var(--text-mute); line-height: 1.5; }
+.ver-ph, .ver-soon-box {
+  display: grid; align-content: center; justify-items: center; gap: var(--sp-1); text-align: center;
+  padding: var(--sp-6) var(--sp-4); color: var(--text-soft); background: var(--surface-2);
+  border: 1px dashed var(--border-strong); border-radius: var(--r-sm);
+}
+.ver-ph { aspect-ratio: 16 / 9; min-height: 8rem; }
+.ver-ph b { font: 600 var(--fs-md)/1.3 var(--font-display); color: var(--accent); }
+.ver-ph span { font-size: var(--fs-xs); line-height: 1.5; color: var(--text-mute); max-width: 26ch; }
+.ver-soon-box { margin: var(--sp-6) 0; padding: clamp(var(--sp-8), 6vw, var(--sp-16)) var(--sp-4); }
+.ver-soon-box h3 { margin: 0; font-size: var(--fs-xl); color: var(--accent); }
+.ver-soon-box p { margin: 0; max-width: 46ch; color: var(--text-soft); line-height: 1.65; }
+.ver-soon-box[hidden] { display: none; }
+.feature .feature-vnote { border-inline-start: 3px solid var(--accent-line); padding-inline-start: var(--sp-3); }
+.feature-vnote strong { color: var(--text); font-weight: 600; }
+@media print { .ver-slot { display: none; } }
