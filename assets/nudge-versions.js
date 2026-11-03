@@ -2,7 +2,7 @@
    Plain script, no framework. Loaded only by the two Nudge pages (English and Arabic).
 
    Data, all under assets/nudge/:
-     versions.json       which versions exist, the edition tested, and "available": false for one that is "coming soon"
+     versions.json       which versions exist, the edition tested, "runs" (an edition it also runs on, not tested here), and "available": false for one that is "coming soon"
      version_matrix.json {"A01": {"17": "yes|no|partial", "18": ..., "19": "yes", "note": "...", "note_ar": "..."}}
      version_media.json  {"18": {"A01": {"en": ["assets/nudge/guide/18/A01.webm"], "ar": [...]}}}
                          an entry is a path, or {"src": "...", "poster": "...", "caption": "..."}; paths are from the site root
@@ -22,7 +22,7 @@
     mediaSoon: "لم يُصوَّر شرح هذه الميزة على Odoo {v} بعد.",
     soonTitle: "Odoo {v}: قريباً",
     soonBody: "دليل Nudge لإصدار Odoo {v} في الطريق. تظهر ميزاته هنا بعد اختباره.",
-    note: "Odoo {v}: اختُبر على نسخة {ed}، {n}.", noteSoon: "Odoo {v}: قريباً.",
+    note: "Odoo {v}: اختُبر على نسخة {ed}، {n}.", noteRuns: "Odoo {v}: اختُبر على نسخة {ed}، {n}، ويعمل على نسخة {run}.", noteSoon: "Odoo {v}: قريباً.",
     partial: "جزئيًا:", partialDefault: "تعمل هذه الميزة جزئيًا على Odoo {v}.", count: "{n}",
     redirected: "هذه الميزة غير متوفرة على Odoo {from}، فنعرض Odoo {to}.",
     shot: "{t}: لقطة شاشة على Odoo {v}", clip: "{t}: تسجيل على Odoo {v}",
@@ -34,7 +34,7 @@
     mediaSoon: "This feature has not been filmed on Odoo {v} yet.",
     soonTitle: "Odoo {v}: coming soon",
     soonBody: "The Nudge guide for Odoo {v} is on its way. Its features will appear here once they have been tested.",
-    note: "Odoo {v}: tested on the {ed} edition, {n}.", noteSoon: "Odoo {v}: coming soon.",
+    note: "Odoo {v}: tested on the {ed} edition, {n}.", noteRuns: "Odoo {v}: tested on {ed}, {n}, and running on {run}.", noteSoon: "Odoo {v}: coming soon.",
     partial: "Partly:", count: "{n}",
     redirected: "This feature is not part of Odoo {from}, so Odoo {to} is shown.",
     shot: "{t}: screenshot on Odoo {v}", clip: "{t}: recording on Odoo {v}",
@@ -47,7 +47,7 @@
     return n === 0 ? "لا ميزات" : n === 1 ? "ميزة واحدة" : n === 2 ? "ميزتان" : n + (n <= 10 ? " ميزات" : " ميزة");
   };
   /* in Arabic text a Latin value (Odoo 18, Community) is isolated so punctuation around it stays in place */
-  var iso = { v: 1, ed: 1, from: 1, to: 1 };
+  var iso = { v: 1, ed: 1, run: 1, from: 1, to: 1 };
   var odoo = { v: 1, from: 1, to: 1 };
   if (AR) Object.keys(T).forEach(function (k) {
     if (typeof T[k] === "string") T[k] = T[k].replace(/Odoo \{(v|from|to)\}/g, "{$1}");
@@ -322,7 +322,7 @@
       recount();
       bars.forEach(function (b) {
         b.btns.forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-v") === v ? "true" : "false"); });
-        b.note.textContent = (soon ? fmt(T.noteSoon, { v: v }) : fmt(T.note, { v: v, ed: (VER[v] && VER[v].edition) || "Community", n: feats(n) })) + (extra ? " " + extra : "");
+        b.note.textContent = (soon ? fmt(T.noteSoon, { v: v }) : fmt((VER[v] && VER[v].runs) ? T.noteRuns : T.note, { v: v, ed: (VER[v] && VER[v].edition) || "Community", run: VER[v] && VER[v].runs, n: feats(n) })) + (extra ? " " + extra : "");
       });
       var q = v === DEF ? "" : "?v=" + v;
       if (langLink && langHref) langLink.setAttribute("href", langHref.replace(/\?.*$/, "") + q);
