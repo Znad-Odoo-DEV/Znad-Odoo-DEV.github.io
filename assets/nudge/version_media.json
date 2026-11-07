@@ -2841,6 +2841,30 @@
    "result_en": "On Odoo 17, a site built from the 'Real estate with search filters' template shows a Property listings page with a search bar (For, Property type, City, Bedrooms, price): For = Rent and City = Dubai Marina gives 1 of the 4 listings (in Arabic too). With the car workshop plugin the Services page lists three services with 'Book this service'; the booking form was filled for a brake service, sent, and the visitor got the thanks page and the CRM lead 'Workshop booking: Raghad Nasser' with the car, service, day and message.",
    "result_ar": "على أودو 17، يعرض موقع مبني من قالب «عقارات مع فلاتر بحث» صفحة العقارات المعروضة مع شريط بحث (للـ، نوع العقار، المدينة، الغرف، السعر): إيجار + دبي مارينا يعطي عقارا واحدا من 4 (وبالعربية أيضا). ومع إضافة ورشة السيارات تعرض صفحة الخدمات ثلاث خدمات مع «احجز هذه الخدمة»؛ مُلئ نموذج الحجز لصيانة الفرامل وأُرسل فوصلت صفحة الشكر وظهرت الفرصة «حجز ورشة» في CRM بالسيارة والخدمة واليوم والرسالة."
   },
+  "RULES-01": {
+   "en": [
+    "assets/nudge/guide/v17/RULES-01_1.webp"
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/RULES-01_1_ar.webp"
+   ],
+   "result_en": "In the trial on Odoo 17 Labour and Tax Rules of the United Arab Emirates lists 14 groups of figures (overtime, minimum wage, end-of-service gratuity, VAT, excise tax and others); opened, the minimum wage shows 6000 per month and overtime 25% and 50%, each marked Official with its official page and date, with Change and History.",
+   "result_ar": "في التجربة على أودو 17 تعرض «قواعد العمل والضرائب في الإمارات» 14 مجموعة أرقام (العمل الإضافي والحد الأدنى للأجور ومكافأة نهاية الخدمة وضريبة القيمة المضافة والضريبة الانتقائية وغيرها)؛ وعند فتحها يظهر الحد الأدنى للأجور 6000 شهرياً والعمل الإضافي 25% و50%، كلٌّ موسوم «رسمي» مع صفحته الرسمية وتاريخه وزرَّي «تعديل» و«السجل».",
+   "partial_en": "only the UAE pack is loaded; no figure was changed in this take.",
+   "partial_ar": "حزمة الإمارات فقط محمّلة؛ ولم يُغيَّر أي رقم في هذا التصوير."
+  },
+  "RULES-02": {
+   "en": [
+    "assets/nudge/guide/v17/RULES-02_1.webp"
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/RULES-02_1_ar.webp"
+   ],
+   "result_en": "In the trial on Odoo 17 Country Packs lists 118 countries with their rules and checks; two are installed here (Kuwait and the United Arab Emirates, with Uninstall) and every other country has an Install button, like the languages of Windows.",
+   "result_ar": "في التجربة على أودو 17 تعرض «حزم الدول» 118 دولة بقواعدها وفحوصاتها؛ مثبّتتان هنا (الكويت والإمارات مع «إلغاء التثبيت») ولكل دولة أخرى زر «تثبيت»، كلغات ويندوز.",
+   "partial_en": "no pack was installed in this take.",
+   "partial_ar": "لم تُثبَّت أي حزمة في هذا التصوير."
+  },
   "SEC-01": {
    "en": [
     {
@@ -5988,6 +6012,46 @@
    "result_en": "In the trial on Odoo 18, a site with the Building materials shop template (the shop template of this contracting database) and Online shop on was built with four chosen products; after 'Build this website' the card 'Arrange the shop too?' listed 12 shop categories to create, product descriptions, 3 unpublished promo banners and the readiness check, and Yes, arrange the shop made the home page New arrivals show exactly the four chosen products priced in AED, with /shop listing them.",
    "result_ar": "في التجربة على أودو 18، بُني موقع بقالب متجر مواد البناء (قالب المتجر في قاعدة المقاولات هذه) مع تفعيل المتجر الإلكتروني وأربعة منتجات مختارة؛ وبعد «ابنِ هذا الموقع» عرضت بطاقة «هل أرتّب المتجر أيضًا؟» اثنتي عشرة فئة ستُنشأ والأوصاف و3 بانرات ترويجية غير منشورة وفحص الجاهزية، وجعل «نعم، رتّب المتجر» قسم «وصل حديثاً» في الصفحة الرئيسية يعرض المنتجات الأربعة المختارة فقط بأسعارها بالدرهم، وتعرضها صفحة /shop."
   },
+  "RULES-01": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v18/RULES-01_4.webp",
+     "caption": "History of the change"
+    },
+    {
+     "src": "assets/nudge/guide/v18/RULES-01_5.webp",
+     "caption": "Official figures: confirmation before the official ones return"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v18/RULES-01_4_ar.webp",
+    "assets/nudge/guide/v18/RULES-01_5_ar.webp"
+   ],
+   "result_en": "In the trial on Odoo 18 the Labour and Tax Rules of the United Arab Emirates listed every figure with its official page; the administrator changed the VAT Registration threshold from 375000 to 400000 with a reason and a source, History recorded the change, and Official figures put 375000 back. (On this build the whole VAT rule showed 'Set by the administrator' after the change.)",
+   "result_ar": "في التجربة على أودو 18 عرضت قواعد العمل والضرائب للإمارات كل رقم مع صفحته الرسمية؛ غيّر المسؤول حد التسجيل في ضريبة القيمة المضافة من 375000 إلى 400000 مع السبب والمصدر، وسجّل «السجل» التغيير، وأعاد «الأرقام الرسمية» 375000. (في هذا الإصدار ظهرت قاعدة الضريبة كلها «محدَّدة من المسؤول» بعد التغيير.)",
+   "partial_en": "the later official update showing Official figure differs was not filmed (the feed is off).",
+   "partial_ar": "لم يُصوَّر التحديث الرسمي اللاحق الذي يُظهر اختلاف الرقم الرسمي (التغذية متوقفة)."
+  },
+  "RULES-02": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v18/RULES-02_3.webp",
+     "caption": "Jordan installed"
+    },
+    {
+     "src": "assets/nudge/guide/v18/RULES-02_4.webp",
+     "caption": "Confirmation before uninstalling"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v18/RULES-02_3_ar.webp",
+    "assets/nudge/guide/v18/RULES-02_4_ar.webp"
+   ],
+   "result_en": "In the trial on Odoo 18 the Country Packs list holds 118 packs with their rules and checks, Saudi Arabia and the United Arab Emirates installed (the countries of the companies); the administrator installed the Jordan pack (9 rules, 4 checks) and uninstalled it again after the confirmation.",
+   "result_ar": "في التجربة على أودو 18 تضم قائمة حزم الدول 118 حزمة بقواعدها وفحوصها، والمثبّتة منها السعودية والإمارات (دولتا الشركات)؛ ثبّت المسؤول حزمة الأردن (9 قواعد و4 فحوص) ثم ألغى تثبيتها بعد التأكيد.",
+   "partial_en": "there is no company in Jordan on this database, so the notice that the pack is not installed and the manager's read-only view were not filmed.",
+   "partial_ar": "لا توجد شركة في الأردن في قاعدة البيانات هذه، فلم يُصوَّر التنبيه بأن الحزمة غير مثبتة ولا شاشة المدير للقراءة فقط."
+  },
   "SEC-01": {
    "en": [
     {
@@ -8599,6 +8663,38 @@
    ],
    "result_en": "On Odoo 20 Site Check on 'Film site EN 4b' listed 0 critical, 7 things to look at and 4 to know, grouped by area (Site content, Search engines): for example 4 pictures without a text alternative in Arabic, 9 pages without a main heading, 3 pages without a meta description, and 'The WhatsApp number is set but no page or footer links to it'. Fix it on the first finding showed exactly what Nudge would change (the four picture alt texts, as you, only filling what is empty, nothing deleted or published) and Apply filled them.",
    "result_ar": "على أودو 20 عرض «فحص الموقع» على الموقع العربي 0 حرجة و7 تستحق النظر و4 للعلم، مجمّعة بحسب المجال (محتوى الموقع، محركات البحث)، منها صور بلا نص بديل، وصفحات بلا عنوان رئيسي، و«رقم واتساب مضبوط لكن لا صفحة ولا تذييل يربط به». وأظهر «أصلحه» على أول نتيجة التغييرات بالضبط (النصوص البديلة للصور من أسماء سجلاتها، باسمك، يملأ الفارغ فقط ولا يحذف ولا ينشر) ثم «تطبيق»."
+  },
+  "RULES-01": {
+   "en": [
+    "assets/nudge/guide/v20/RULES-01_6.webp",
+    "assets/nudge/guide/v20/RULES-01_7.webp"
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/RULES-01_6_ar.webp",
+    "assets/nudge/guide/v20/RULES-01_7_ar.webp"
+   ],
+   "result_en": "In the trial on Odoo 20 Labour and Tax Rules of Germany listed 7 groups of figures (minimum wage 13.9 per hour, overtime limit 10 hours a day, retirement age 67, social insurance, VAT, withholding tax, working hours), each marked Official with its official page and date; the administrator changed the minimum wage to 14.5 with a reason and a source: the list then read 'Set by the administrator' with 14.5 against the official 13.9, History kept the change, and 'Official figures' (after a confirmation) put 13.9 back.",
+   "result_ar": "في التجربة على أودو 20 عرضت «قواعد العمل والضرائب في ألمانيا» 7 مجموعات أرقام (الحد الأدنى للأجور 13.9 للساعة وحد العمل الإضافي 10 ساعات يومياً وسن التقاعد 67 والتأمينات الاجتماعية وضريبة القيمة المضافة والضريبة المقتطعة وساعات العمل)، كلٌّ موسوم «رسمي» مع صفحته الرسمية وتاريخه؛ وغيّر المدير الحد الأدنى للأجور إلى 14.5 مع السبب والمصدر فظهر «حدده المدير» و14.5 مقابل الرقم الرسمي 13.9، وحفظ «السجل» التغيير، وأعاد «الأرقام الرسمية» (بعد تأكيد) 13.9.",
+   "partial_en": "the Germany pack was used; the manager's read-only view and the pending feed update were not filmed, and several labels of this screen stay in English in the Arabic interface.",
+   "partial_ar": "استُخدمت حزمة ألمانيا؛ ولم تُصوَّر شاشة المدير للقراءة فقط ولا تحديث التغذية المنتظر، وتبقى عدة تسميات في هذه الشاشة بالإنجليزية في الواجهة العربية."
+  },
+  "RULES-02": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/RULES-02_4.webp",
+     "caption": "Jordan installed: Uninstall shown"
+    },
+    {
+     "src": "assets/nudge/guide/v20/RULES-02_5.webp",
+     "caption": "After Uninstall"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/RULES-02_4_ar.webp",
+    "assets/nudge/guide/v20/RULES-02_5_ar.webp"
+   ],
+   "result_en": "In the trial on Odoo 20, Settings > Nudge > Compliance Packs leads to Country Packs: 118 countries, each with its number of rules and checks; one is installed on this database (Germany, the country of ZNAD Demo, with Uninstall) and every other country has an Install button, like the languages of Windows. Then Install on Jordan (9 rules, 4 checks) installed it (Installed ticked, the button became Uninstall) and Uninstall removed it again; the pack is not installed any more.",
+   "result_ar": "في التجربة على أودو 20 تقود «حزم الامتثال» في إعدادات Nudge إلى «حزم الدول»: 118 دولة لكلٍّ عدد قواعدها وفحوصاتها؛ مثبّتة واحدة في قاعدة البيانات هذه (ألمانيا، بلد شركة ZNAD Demo، مع «إلغاء التثبيت») ولكل دولة أخرى زر «تثبيت»، كلغات ويندوز. ثم ثبّت «تثبيت» على الأردن (9 قواعد و4 فحوصات) الحزمة فصارت مثبّتة (علامة «Installed» وصار الزر «Uninstall») وأزال «Uninstall» الحزمة من جديد؛ والحزمة غير مثبّتة الآن."
   },
   "SEC-01": {
    "en": [
