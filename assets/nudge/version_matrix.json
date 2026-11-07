@@ -4,6 +4,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A02": {
@@ -11,6 +12,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A03": {
@@ -18,6 +20,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A04": {
@@ -25,6 +28,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A05": {
@@ -32,6 +36,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A06": {
@@ -39,6 +44,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A07": {
@@ -46,6 +52,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "A08": {
@@ -53,6 +60,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A09": {
@@ -60,6 +68,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A10": {
@@ -67,6 +76,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A11": {
@@ -74,6 +84,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A12": {
@@ -81,6 +92,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A13": {
@@ -88,6 +100,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A14": {
@@ -95,6 +108,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A15": {
@@ -102,6 +116,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A16": {
@@ -109,6 +124,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A17": {
@@ -116,6 +132,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A18": {
@@ -123,6 +140,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "A19": {
@@ -130,6 +148,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B01": {
@@ -137,6 +156,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B02": {
@@ -144,6 +164,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B03": {
@@ -151,6 +172,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B04": {
@@ -158,6 +180,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B05": {
@@ -165,6 +188,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B06": {
@@ -172,6 +196,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B07": {
@@ -179,6 +204,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B08": {
@@ -186,6 +212,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B09": {
@@ -193,6 +220,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B10": {
@@ -200,6 +228,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B11": {
@@ -207,6 +236,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B12": {
@@ -214,6 +244,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B13": {
@@ -221,6 +252,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B14": {
@@ -228,6 +260,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "B15": {
@@ -235,6 +268,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C01": {
@@ -242,6 +276,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C02": {
@@ -249,6 +284,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C03": {
@@ -256,6 +292,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C04": {
@@ -263,6 +300,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C05": {
@@ -270,6 +308,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C06": {
@@ -277,6 +316,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C07": {
@@ -284,6 +324,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C08": {
@@ -291,6 +332,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C09": {
@@ -298,6 +340,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "C10": {
@@ -305,6 +348,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "C11": {
@@ -312,6 +356,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C12": {
@@ -319,6 +364,7 @@
 "17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false,
 "note": "On Odoo 17 the report stays in the chat and in My Reports, with no spreadsheet option.",
 "note_ar": "على Odoo 17 يبقى التقرير في المحادثة وفي My Reports، دون خيار جدول البيانات."
@@ -328,6 +374,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "C14": {
@@ -335,6 +382,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "C15": {
@@ -342,6 +390,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "C16": {
@@ -349,6 +398,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "C17": {
@@ -356,6 +406,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "C18": {
@@ -363,6 +414,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "C19": {
@@ -370,6 +422,7 @@
 "17": "no",
 "18": "no",
 "19": "yes",
+"20": "soon",
 "ee": true
 },
 "C20": {
@@ -377,6 +430,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D01": {
@@ -384,6 +438,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D02": {
@@ -391,6 +446,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D03": {
@@ -398,6 +454,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D04": {
@@ -405,6 +462,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D05": {
@@ -412,6 +470,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D06": {
@@ -419,6 +478,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D07": {
@@ -426,6 +486,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D08": {
@@ -433,6 +494,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D09": {
@@ -440,6 +502,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D10": {
@@ -447,6 +510,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D11": {
@@ -454,6 +518,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D12": {
@@ -461,6 +526,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D13": {
@@ -468,6 +534,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "D14": {
@@ -475,6 +542,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "E01": {
@@ -482,6 +550,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "E02": {
@@ -489,13 +558,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "E03": {
 "title": "Lessons approved by a manager (Business Notes)",
 "17": "yes",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "E04": {
@@ -503,6 +574,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "E05": {
@@ -510,6 +582,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "E06": {
@@ -517,6 +590,7 @@
 "17": "no",
 "18": "no",
 "19": "yes",
+"20": "soon",
 "ee": true
 },
 "F01": {
@@ -524,6 +598,7 @@
 "17": "no",
 "18": "partial",
 "19": "yes",
+"20": "soon",
 "ee": true,
 "note": "Needs Enterprise Studio. It ships for Odoo 18 and has not been tried there yet.",
 "note_ar": "يحتاج Studio من إصدار Enterprise. وهو متوفر لـ Odoo 18 ولم يُجرَّب عليه بعد."
@@ -533,6 +608,7 @@
 "17": "no",
 "18": "partial",
 "19": "yes",
+"20": "soon",
 "ee": true,
 "note": "Needs Enterprise Studio. It ships for Odoo 18 and has not been tried there yet.",
 "note_ar": "يحتاج Studio من إصدار Enterprise. وهو متوفر لـ Odoo 18 ولم يُجرَّب عليه بعد."
@@ -542,20 +618,23 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G02": {
 "title": "Groups: User, Agent User, Manager, Settings",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G03": {
 "title": "Switches, off by default except Agent",
 "17": "yes",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G04": {
@@ -563,6 +642,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G05": {
@@ -570,13 +650,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G06": {
 "title": "Budgets per person per day, per company per month",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "G07": {
@@ -584,27 +666,31 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G08": {
 "title": "Secrets never sent, keys admin-only, no telemetry",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "G09": {
 "title": "A provider per mode",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G10": {
 "title": "Providers: Gemini, Groq, OpenRouter, Ollama, Claude, any OpenAI-compatible",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G11": {
@@ -612,13 +698,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "G12": {
 "title": "Odoo 17 · 18 · 19, Community and Enterprise",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H01": {
@@ -626,6 +714,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H02": {
@@ -633,20 +722,23 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H03": {
 "title": "Rule tasks without AI",
 "17": "yes",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "H04": {
 "title": "Private mode",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H05": {
@@ -654,6 +746,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "H06": {
@@ -661,6 +754,7 @@
 "17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false,
 "note": "On Odoo 17 the check for failing scheduled actions is not available; the other checks work.",
 "note_ar": "على Odoo 17 لا يتوفر فحص الإجراءات المجدولة الفاشلة؛ وبقية الفحوص تعمل."
@@ -670,6 +764,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H08": {
@@ -677,29 +772,33 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H09": {
 "title": "Search by meaning on your own server",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "H10": {
 "title": "Your Odoo in Claude Desktop (MCP)",
 "17": "partial",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false,
 "note": "On Odoo 17 the connection key never expires; on Odoo 18 and 19 you choose 1, 3 or 12 months.",
 "note_ar": "على Odoo 17 لا ينتهي مفتاح الاتصال؛ وعلى Odoo 18 و19 تختار 1 أو 3 أو 12 شهرًا."
 },
 "H11": {
 "title": "Website and portal assistant",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H12": {
@@ -707,13 +806,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "H13": {
 "title": "Summary of a record's history",
 "17": "yes",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "H14": {
@@ -721,6 +822,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H15": {
@@ -728,6 +830,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H16": {
@@ -735,6 +838,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H17": {
@@ -742,6 +846,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H18": {
@@ -749,6 +854,7 @@
 "17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false,
 "note": "On Odoo 17 the report stays in the chat and in My Reports, with no spreadsheet option.",
 "note_ar": "على Odoo 17 يبقى التقرير في المحادثة وفي My Reports، دون خيار جدول البيانات."
@@ -758,13 +864,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H20": {
 "title": "Approval flows from a sentence",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H21": {
@@ -772,13 +880,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H22": {
 "title": "Compliance checklist (GCC and Egypt)",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "H23": {
@@ -786,6 +896,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H24": {
@@ -793,6 +904,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H25": {
@@ -800,6 +912,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H26": {
@@ -807,13 +920,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H27": {
 "title": "Shared recipes and the recipe marketplace",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "H28": {
@@ -821,6 +936,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H29": {
@@ -828,6 +944,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H30": {
@@ -835,6 +952,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H31": {
@@ -842,22 +960,25 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H32": {
 "title": "Why did it fail? (/debug)",
 "17": "partial",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false,
 "note": "On Odoo 17 /debug cannot say how many times a scheduled action failed in a row, or since when: Odoo 17 does not store it.",
 "note_ar": "على Odoo 17 لا يستطيع /debug أن يذكر عدد مرات فشل إجراء مجدول متتالية ولا منذ متى: فـ Odoo 17 لا يحفظ ذلك."
 },
 "H33": {
 "title": "Module scaffold",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H34": {
@@ -865,20 +986,23 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H35": {
 "title": "Meeting audio summary",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "H36": {
 "title": "Browser speech in private mode",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "H37": {
@@ -886,22 +1010,25 @@
 "17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false,
 "note": "On Odoo 17 the company's phone, email and address go in a text block, because Odoo 17 has no contact snippet.",
 "note_ar": "على Odoo 17 يوضع هاتف الشركة وبريدها وعنوانها في كتلة نص، لأن Odoo 17 ليس فيه مقطع جهات الاتصال."
 },
 "H38": {
 "title": "Mail agent",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "H39": {
 "title": "Your Odoo on WhatsApp and Telegram",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "R3-01": {
@@ -909,6 +1036,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-02": {
@@ -916,6 +1044,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-03": {
@@ -923,6 +1052,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-04": {
@@ -930,20 +1060,23 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-05": {
 "title": "Save as reference: managers teach Nudge an answer, any language",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "R3-06": {
 "title": "Answer cache: the second explanation costs zero tokens",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-07": {
@@ -951,6 +1084,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-08": {
@@ -958,6 +1092,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-09": {
@@ -965,13 +1100,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-10": {
 "title": "Waiting room instead of a refusal",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-11": {
@@ -979,13 +1116,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "R3-12": {
 "title": "Long conversations stay short and cheap (summary without AI)",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-13": {
@@ -993,6 +1132,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-14": {
@@ -1000,6 +1140,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-15": {
@@ -1007,6 +1148,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-16": {
@@ -1014,6 +1156,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-17": {
@@ -1021,6 +1164,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-18": {
@@ -1028,20 +1172,23 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-19": {
 "title": "Signed skill marketplace and catalogue",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "R3-20": {
 "title": "Plugins and tools per database",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-21": {
@@ -1049,6 +1196,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "R3-22": {
@@ -1056,13 +1204,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-23": {
 "title": "Approval flows from a sentence: Agent hands over to Developer mode",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-24": {
@@ -1070,13 +1220,15 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-25": {
 "title": "Made by Nudge: everything Developer mode built, one list",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-26": {
@@ -1084,41 +1236,47 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-27": {
 "title": "E-invoicing readiness and deadline calendar (UAE, Saudi, Egypt, Oman)",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "R3-28": {
 "title": "Signed Nudge feed for 48 countries, approved by you",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-29": {
 "title": "Certificate and credential expiry watch",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "RULES-01": {
 "title": "Labour and tax rules set by the administrator",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "RULES-02": {
 "title": "Country packs, installed like the languages of Windows",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-30": {
@@ -1126,43 +1284,49 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-31": {
 "title": "MCP with OAuth 2.1: your Odoo in Claude Desktop, safely",
 "17": "partial",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false,
 "note": "On Odoo 17 the connection key never expires; on Odoo 18 and 19 you choose 1, 3 or 12 months.",
 "note_ar": "على Odoo 17 لا ينتهي مفتاح الاتصال؛ وعلى Odoo 18 و19 تختار 1 أو 3 أو 12 شهرًا."
 },
 "R3-32": {
 "title": "Connectors: Nudge reads other services (Calendar, etc.) with budgets",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "R3-33": {
 "title": "WhatsApp and Telegram share the same line and rules",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "R3-34": {
 "title": "Website assistant: says it is an AI, handover form hardened",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-35": {
 "title": "Website builder: SEO, Undo publish, edits by chat",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-36": {
@@ -1170,6 +1334,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-37": {
@@ -1177,27 +1342,31 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-38": {
 "title": "What each mode sends, and try search by meaning",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-39": {
 "title": "Economy model and prompt caching: less money per answer",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-40": {
 "title": "Fallback model and provider-busy notice",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-41": {
@@ -1205,41 +1374,47 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "R3-42": {
 "title": "Personal data masked before it reaches the AI",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-43": {
 "title": "Nudge Auditor: read-only, time-boxed outside auditor",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-44": {
 "title": "Allowed destinations: where Nudge may call",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-45": {
 "title": "Secrets never leave: passwords and keys hidden everywhere",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "R3-46": {
 "title": "Agents: a sales assistant you configure, test and publish",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-47": {
@@ -1247,6 +1422,7 @@
 "17": "partial",
 "18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false,
 "note": "On Odoo 17 and 18 the agent answers when mentioned in its channel and in a direct chat, but is not offered in Discuss's Start a conversation search.",
 "note_ar": "على Odoo 17 و18 يجيب الوكيل عند ذكره في قناته وفي المحادثة المباشرة، لكنه لا يظهر في بحث Start a conversation في Discuss."
@@ -1256,6 +1432,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-49": {
@@ -1263,6 +1440,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-50": {
@@ -1270,27 +1448,31 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-51": {
 "title": "Agents answer the public on the website: published records only, office hours, a person on request",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-52": {
 "title": "The same agent on WhatsApp and Telegram for customers",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-53": {
 "title": "A budget per month and per visitor, topics kept off, thanks answered without AI",
 "17": "yes",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-54": {
@@ -1298,6 +1480,7 @@
 "17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false,
 "note": "On Odoo 17 the company's phone, email and address go in a text block, because Odoo 17 has no contact snippet.",
 "note_ar": "على Odoo 17 يوضع هاتف الشركة وبريدها وعنوانها في كتلة نص، لأن Odoo 17 ليس فيه مقطع جهات الاتصال."
@@ -1307,6 +1490,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-56": {
@@ -1314,6 +1498,7 @@
 "17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "partial",
 "ee": false,
 "note": "On Odoo 17 the company's phone, email and address go in a text block, because Odoo 17 has no contact snippet.",
 "note_ar": "على Odoo 17 يوضع هاتف الشركة وبريدها وعنوانها في كتلة نص، لأن Odoo 17 ليس فيه مقطع جهات الاتصال."
@@ -1323,20 +1508,23 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-58": {
 "title": "Sector skills: construction, clinic, restaurant, real estate, Gulf SEO",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-59": {
 "title": "Site Check 2.0: content, structured data, WhatsApp, map, right to left, with Fix it",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "R3-60": {
@@ -1344,6 +1532,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 },
 "R3-61": {
@@ -1351,36 +1540,41 @@
 "17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false,
 "note": "On Odoo 17 creating shop products needs Settings or another app's manager rights: Odoo 17 has no Product Manager group.",
 "note_ar": "على Odoo 17 يحتاج إنشاء منتجات المتجر إلى صلاحية الإعدادات أو مدير تطبيق آخر: فـ Odoo 17 ليس فيه مجموعة Product Manager."
 },
 "SEC-01": {
 "title": "Nobody approves through Nudge what they may not approve",
-"17": "yes",
+"17": "partial",
 "18": "yes",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "SEC-02": {
 "title": "Nudge cannot open another person's record",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "SEC-03": {
 "title": "Nudge cannot change what is not yours",
-"17": "yes",
-"18": "yes",
+"17": "partial",
+"18": "partial",
 "19": "yes",
+"20": "partial",
 "ee": false
 },
 "SEC-04": {
 "title": "No rights on sales, no sales figures",
 "17": "yes",
-"18": "yes",
+"18": "partial",
 "19": "yes",
+"20": "yes",
 "ee": false
 },
 "SEC-05": {
@@ -1388,6 +1582,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
+"20": "soon",
 "ee": false
 }
 }

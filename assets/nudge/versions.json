@@ -4,6 +4,6 @@
     "17": { "edition": "Community", "docPages": 862 },
     "18": { "edition": "Community", "docPages": 971 },
     "19": { "edition": "Community", "runs": "Enterprise", "docPages": 1067 },
-    "20": { "edition": "Community", "available": false }
+    "20": { "edition": "Community" }
   }
 }

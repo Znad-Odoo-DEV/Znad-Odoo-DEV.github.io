@@ -3,9 +3,10 @@
 
    Data, all under assets/nudge/:
      versions.json       which versions exist, the edition tested, "runs" (an edition it also runs on, not tested here), and "available": false for one that is "coming soon"
-     version_matrix.json {"A01": {"17": "yes|no|partial", "18": ..., "19": "yes", "note": "...", "note_ar": "..."}}
+     version_matrix.json {"A01": {"17": "yes|no|partial|soon" ("soon": shown with Coming soon media, not listed in the edition line), "18": ..., "19": "yes", "note": "...", "note_ar": "..."}}
      version_media.json  {"18": {"A01": {"en": ["assets/nudge/guide/18/A01.webm"], "ar": [...]}}}
-                         an entry is a path, or {"src": "...", "poster": "...", "caption": "..."}; paths are from the site root
+                         an entry is a path, or {"src": "...", "poster": "...", "caption": "..."}; paths are from the site root.
+                         Besides "en" and "ar" an id can carry result_en, result_ar and partial_en, partial_ar (the line shown on a partial feature)
 
    The article markup is written once, for the default version (19). For another version this script hides the
    features that do not work there, swaps the media for that version's media (or a "Coming soon" box), and writes
@@ -23,23 +24,23 @@
     soonTitle: "Odoo {v}: قريباً",
     soonBody: "دليل Nudge لإصدار Odoo {v} في الطريق. تظهر ميزاته هنا بعد اختباره.",
     note: "Odoo {v}: اختُبر على نسخة {ed}، {n}.", noteRuns: "Odoo {v}: اختُبر على نسخة {ed}، {n}، ويعمل على نسخة {run}.", noteSoon: "Odoo {v}: قريباً.",
-    partial: "جزئيًا:", partialDefault: "تعمل هذه الميزة جزئيًا على Odoo {v}.", count: "{n}",
+    partial: "جزئيًا على Odoo {v}:", partialDefault: "تعمل هذه الميزة جزئيًا على Odoo {v}.", count: "{n}",
     redirected: "هذه الميزة غير متوفرة على Odoo {from}، فنعرض Odoo {to}.",
     shot: "{t}: لقطة شاشة على Odoo {v}", clip: "{t}: تسجيل على Odoo {v}",
     sections: ["", "قسم واحد", "قسمين", "ثلاثة أقسام", "أربعة أقسام", "خمسة أقسام", "ستة أقسام", "سبعة أقسام",
       "ثمانية أقسام", "تسعة أقسام", "عشرة أقسام", "أحد عشر قسمًا", "اثني عشر قسمًا"],
-    and: " و", toc: "المحتويات"
+    and: " و", toc: "المحتويات", allPages: "كل"
   } : {
     group: "Odoo version", soon: "Coming soon", soonShort: "Soon",
     mediaSoon: "This feature has not been filmed on Odoo {v} yet.",
     soonTitle: "Odoo {v}: coming soon",
     soonBody: "The Nudge guide for Odoo {v} is on its way. Its features will appear here once they have been tested.",
     note: "Odoo {v}: tested on the {ed} edition, {n}.", noteRuns: "Odoo {v}: tested on {ed}, {n}, and running on {run}.", noteSoon: "Odoo {v}: coming soon.",
-    partial: "Partly:", count: "{n}",
+    partial: "Partial on Odoo {v}:", count: "{n}",
     redirected: "This feature is not part of Odoo {from}, so Odoo {to} is shown.",
     shot: "{t}: screenshot on Odoo {v}", clip: "{t}: recording on Odoo {v}",
     sections: ["none", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"],
-    and: " and ", toc: "Contents"
+    and: " and ", toc: "Contents", allPages: "all the"
   };
   /* Arabic number agreement: 1 ميزة واحدة, 2 ميزتان, 3-10 ميزات, 11+ ميزة */
   var feats = function (n) {
@@ -116,7 +117,7 @@
     cards.forEach(function (c) {
       var row = matrix[norm(c.id)], el = c.querySelector(".feature-edition");
       if (!row || !el) return;
-      var vs = order.filter(function (v) { return available(v) && row[v] && row[v] !== "no"; });
+      var vs = order.filter(function (v) { return available(v) && row[v] && row[v] !== "no" && row[v] !== "soon"; });
       if (!vs.length) return;
       var parts = el.textContent.split(" · ");
       var list = vs.length === 1 ? vs[0] : vs.slice(0, -1).join(AR ? " و" : ", ") + T.and + vs[vs.length - 1];
@@ -248,7 +249,9 @@
       if (old) old.remove();
       if (st !== "partial") return;
       var row = matrix[norm(c.id)] || {};
-      var txt = AR ? (row.note_ar || fmt(T.partialDefault, { v: v })) : row.note;
+      var own = media[v] && media[v][norm(c.id)];
+      own = own && own[AR ? "partial_ar" : "partial_en"];
+      var txt = own || (AR ? (row.note_ar || fmt(T.partialDefault, { v: v })) : row.note);
       if (!txt) return;
       var p = document.createElement("p");
       p.className = "feature-vnote";
@@ -312,8 +315,8 @@
       });
       /* the built-in documentation feature: its title and page count are those of the selected version */
       Array.prototype.slice.call(document.querySelectorAll("[data-vdoc]")).forEach(function (el) { el.textContent = v; });
-      var pg = (VER[v] && VER[v].docPages) || (VER[DEF] && VER[DEF].docPages);
-      Array.prototype.slice.call(document.querySelectorAll("[data-vpages]")).forEach(function (el) { if (pg) el.textContent = String(pg); });
+      var pg = VER[v] && VER[v].docPages;
+      Array.prototype.slice.call(document.querySelectorAll("[data-vpages]")).forEach(function (el) { el.textContent = pg ? String(pg) : T.allPages; });
       if (headP) headP.hidden = soon;
       if (gCount) gCount.setAttribute("data-total", String(n));
       soonBox.hidden = !soon;
