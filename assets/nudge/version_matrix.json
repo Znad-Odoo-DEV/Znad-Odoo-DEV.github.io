@@ -1107,6 +1107,20 @@
 "19": "yes",
 "ee": false
 },
+"RULES-01": {
+"title": "Labour and tax rules set by the administrator",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
+"RULES-02": {
+"title": "Country packs, installed like the languages of Windows",
+"17": "yes",
+"18": "yes",
+"19": "yes",
+"ee": false
+},
 "R3-30": {
 "title": "First Setup wizard with a monthly cost estimate",
 "17": "yes",
