@@ -467,8 +467,13 @@
      "caption": "Business Notes: the lesson Proposed"
     }
    ],
+   "ar": [
+    "assets/nudge/guide/v17/B15_1_ar.webp",
+    "assets/nudge/guide/v17/B15_2_ar.webp"
+   ],
    "result_en": "'Remember: our discount never goes above 10% on any quotation' was answered with 'I have recorded your rule regarding the 10% discount limit for future reference; a manager will review this, and it will be applied once approved', and Nudge > What Nudge Knows > Business Notes then listed the lesson 'our discount never goes above 10% on any quotation' as a Lesson in state Proposed, learnt from that sentence, with Approve and Refuse beside it. It was not approved, so no conversation is changed.",
-   "result_ar": ""
+   "result_ar": "«سجّل هالقاعدة: الخصم عنا ما بيتجاوز 10% على أي عرض سعر» بالواجهة العربية أُجيبت بتأكيد التسجيل («رح تنطبق على كل المحادثات بعد ما يوافق عليها مدير»)، وظهرت في Nudge > ملاحظات العمل كدرس بحالة «مقترح» بانتظار اعتماد المدير. لم يُعتمد الدرس فلم تتغير أي محادثة.",
+   "partial_ar": "نص الدرس المحفوظ بالإنجليزية."
   },
   "C01": {
    "en": [
@@ -796,8 +801,13 @@
      "caption": "Ask, read the card, press Yes"
     }
    ],
+   "ar": [
+    "assets/nudge/guide/v17/C17_1_ar.webp",
+    "assets/nudge/guide/v17/C17_2_ar.webp",
+    "assets/nudge/guide/v17/C17_3_ar.mp4"
+   ],
    "result_en": "On Odoo 17 'Every morning at 8, write me the RFQs waiting for my approval, with their vendor and total' showed the card 'Scheduled task: RFQs waiting for approval' (Only when there is: Purchase Order, state = to approve; When: every day at 8:00; Email: No; It may: Read, as you; a change it finds needed waits for your yes); after Yes the card read Done.",
-   "result_ar": "على أودو 17 أظهر «Every morning at 8, write me the RFQs waiting for my approval, with their vendor and total» بطاقة «Scheduled task: RFQs waiting for approval» (فقط عند وجود: أمر شراء، الحالة = بانتظار الموافقة؛ متى: كل يوم الساعة 8:00؛ البريد: لا؛ يجوز له: القراءة بصفتك؛ وأي تغيير يراه لازمًا ينتظر موافقتك)؛ وبعد النعم قرأت البطاقة «منتهي»."
+   "result_ar": "«كل صباح الساعة 8 اكتب لي طلبات عروض الأسعار المنتظرة موافقتي مع مورّد كل منها وإجماليه» بالواجهة العربية أظهرت بطاقة «مهمة مجدولة: طلبات الشراء المنتظرة موافقتي» (الاسم، في كل مرة، فقط عندما يوجد، متى: كل يوم الساعة 8:00، الإيميل: لا، يستطيع: القراءة باسمك) بتسميات عربية، وبعد «نعم، نفّذ» أنشأ Nudge المهمة وقال إن أول تشغيل في 9 نوفمبر."
   },
   "C18": {
    "en": [
@@ -814,8 +824,15 @@
      "caption": "Attach the PDF, ask, read the answer."
     }
    ],
+   "ar": [
+    "assets/nudge/guide/v17/C18_1_ar.webp",
+    "assets/nudge/guide/v17/C18_2_ar.webp",
+    "assets/nudge/guide/v17/C18_3_ar.mp4"
+   ],
    "result_en": "A material list (White sugar 50 kg sack, Basmati rice 25 kg, Instant coffee jars 200 g, Sunflower oil 18 L tin) with 'What do I have in stock of these?' was answered: White sugar 50 kg sack (FWS-005) 196 units on hand, Basmati rice 25 kg sack (FWS-001) 386, Instant coffee 200 g jar (FWS-025) 1,090, Sunflower oil 18 L tin (FWS-010) 177; each at both warehouses. The figures matched the stock in the database at that moment.",
-   "result_ar": ""
+   "result_ar": "في الواجهة العربية، ملف قائمة المواد (PDF) مع السؤال «ما الكمية الموجودة في المخزون من كل بند في هذه القائمة؟» أعطى جدولًا: Ground coffee 1 kg (FWS-024) 931 وحدة، Turmeric powder 1 kg (FWS-027) 1523، Sea salt 1 kg (FWS-030) 1438، Arabic coffee 500 g (FWS-023) 1253، مع المطلوب في القائمة، وتنبيه إلى أن الكركم والقهوة العربية طُوبقا بالمعنى والكود.",
+   "partial_en": "only the material list half is shown; the supplier-invoice half ('Find the bill of this') is not shown.",
+   "partial_ar": "يظهر نصف قائمة المواد فقط؛ ونصف فاتورة المورّد غير ظاهر."
   },
   "C20": {
    "en": [
@@ -1991,8 +2008,13 @@
      "caption": "Saved: answered from memory from now on"
     }
    ],
+   "ar": [
+    "assets/nudge/guide/v17/R3-05_2_ar.webp",
+    "assets/nudge/guide/v17/R3-05_3_ar.webp",
+    "assets/nudge/guide/v17/R3-05_4_ar.webp"
+   ],
    "result_en": "A manager asked 'How do I create a new pricelist for my customers?' on Sales Orders (the answer gave the Odoo 17 steps: Sales > Products > Pricelists), pressed Save as reference (window: question, answer, screen) and got 'Saved: the same question is answered from Nudge's memory from now on, with no AI.'",
-   "result_ar": "",
+   "result_ar": "مدير مبيعات سأل بالعربية «كيف أنشئ قائمة أسعار جديدة لعملائي؟» على شاشة أوامر البيع، ضغط «حفظ كمرجع» (نافذة: السؤال والإجابة واللغة والشاشة) فظهر «تم الحفظ: يُجاب السؤال نفسه من ذاكرة Nudge من الآن، دون ذكاء اصطناعي». ثم سُئل السؤال نفسه في محادثة جديدة فجاء فورًا «إجابة محفوظة: لم يُسأل الذكاء الاصطناعي — من ذاكرة Nudge، اعتمدها المدير في 08 نوفمبر 2026».",
    "partial_en": "the same question in Arabic was answered by the AI, not from memory.",
    "partial_ar": "أُجيب عن السؤال العربي نفسه من الذكاء الاصطناعي لا من الذاكرة."
   },
@@ -2924,6 +2946,72 @@
    ],
    "result_en": "In the trial on Odoo 17 signed in as a user with no Sales rights, 'What are our total sales this month?' got 'You do not have access to sales orders.' and 'Show me the list of quotations' got 'You do not have access to quotations.'; no sales figure appeared. The Arabic twin got the same two refusals in Arabic.",
    "result_ar": "في التجربة على أودو 17 عند الدخول بمستخدم بلا صلاحيات على المبيعات جاء الجواب على «ما هو إجمالي مبيعاتنا هذا الشهر؟» «ليست لديك صلاحية الوصول إلى أوامر البيع» وعلى «أرني قائمة عروض الأسعار» «ليست لديك صلاحية الوصول إلى عروض الأسعار»؛ ولم يظهر أي رقم مبيعات، وكان جواب التوأم الإنجليزي مماثلاً."
+  },
+  "G01": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v17/G01_1.webp",
+     "caption": "The refusal for a user without Sales rights"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/G01_1_ar.webp"
+   ],
+   "result_en": "On Odoo 17 Nudge runs with the rights of the person who asks. A Nudge User with no Sales rights asked 'how many quotations do we have?' and Nudge answered 'You do not have access to quotations.' No figure left the sales records.",
+   "result_ar": "على أودو 17 يعمل Nudge بصلاحيات من يسأله. سأل مستخدم Nudge بلا صلاحيات المبيعات «كم عدد عروض الأسعار عندنا؟» فأجاب Nudge «ليست لديك صلاحية الوصول إلى عروض الأسعار.» ولم يخرج أي رقم من سجلات المبيعات.",
+   "partial_en": "on Odoo 17 a plain Nudge User has no Agent mode, so the request to archive a product is not shown; the quotations question shows the refusal.",
+   "partial_ar": "على أودو 17 لا يملك مستخدم Nudge العادي وضع الوكيل، لذلك لا يظهر طلب أرشفة منتج؛ ويظهر الرفض في سؤال عروض الأسعار."
+  },
+  "H21": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v17/H21_1.webp",
+     "caption": "The First Setup block"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/H21_1_ar.webp"
+   ],
+   "result_en": "On Odoo 17 Settings > Nudge shows the First Setup block with two links, 'Choose a provider and see the cost' and 'Set up this database with me'.",
+   "result_ar": "على أودو 17 تعرض الإعدادات > Nudge كتلة «الإعداد الأول» برابطين: «اختر مزوداً وشاهد التكلفة» و«جهّز قاعدة البيانات هذه معي».",
+   "partial_en": "only the entry point is shown; the question-by-question setup is not run because this database is already set up.",
+   "partial_ar": "تظهر نقطة الدخول فقط؛ ولا يُشغَّل الإعداد سؤالاً بسؤال لأن قاعدة البيانات هذه مُعدّة مسبقاً."
+  },
+  "R3-49": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v17/R3-49_1.webp",
+     "caption": "Job Position filled, unsaved, with the tip"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/R3-49_1_ar.webp"
+   ],
+   "result_en": "On a new Employee form with the Work Information tab open, the request 'Write Human Resources Manager in the Job Position field' in Talk mode filled the Job Position field with the existing position Human Resources Manager, unsaved, with the tip 'I wrote here what you asked. Read it, then save.' (Undo / Done). Job Title got the same text through Odoo's own onchange.",
+   "result_ar": "في نموذج موظف جديد مع فتح تبويب «معلومات العمل»، وفي وضع Talk، ملأ الطلب «اكتب مدير الموارد البشرية بحقل المنصب الوظيفي» حقل «المنصب الوظيفي» بالمنصب الموجود «مدير الموارد البشرية» دون حفظ، مع التلميح «كتبت هنا ما طلبته. اقرأه ثم احفظ.» (تراجع / منتهي). وحصل «المسمى الوظيفي» على النص نفسه عبر onchange أودو."
+  },
+  "R3-41": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v17/R3-41_1.webp",
+     "caption": "The report: score 42/42 per mode, language and domain"
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-41_2.webp",
+     "caption": "The domains and the tokens of the largest requests by scenario"
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-41_3.mp4",
+     "caption": "Scrolling the report from the score tables to the largest requests"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/R3-41_1_ar.webp",
+    "assets/nudge/guide/v17/R3-41_2_ar.webp",
+    "assets/nudge/guide/v17/R3-41_3_ar.mp4"
+   ],
+   "result_en": "On a fresh Odoo 17 database the quality gate of Nudge 17.0.1.60.18 ran the 42 scripted scenarios and scored 42/42 (100%): talk 15, agent 20, dev 7; English 21, Arabic 13, Arabizi 8; largest request 22,536 tokens (mean 15,349); none skipped.",
+   "result_ar": "على قاعدة بيانات أودو 17 جديدة شغّلت بوابة الجودة للإصدار 17.0.1.60.18 السيناريوهات الـ42 المبرمجة وحصلت على 42/42 (100%): talk 15، agent 20، dev 7؛ إنجليزي 21، عربي 13، عربيزي 8؛ أكبر طلب 22,536 رمزًا (المتوسط 15,349)؛ ولم يُتخطَّ أي سيناريو."
   }
  },
  "18": {
@@ -3793,8 +3881,13 @@
     "assets/nudge/guide/v18/C17_2.webp",
     "assets/nudge/guide/v18/C17_4.mp4"
    ],
+   "ar": [
+    "assets/nudge/guide/v18/C17_1_ar.webp",
+    "assets/nudge/guide/v18/C17_2_ar.webp",
+    "assets/nudge/guide/v18/C17_4_ar.mp4"
+   ],
    "result_en": "In the trial, in Agent mode \"Every morning at 8, write me the RFQs waiting for my approval, with their vendor and total\" showed the Scheduled task card (Name, Each time, Only when there is: state in to approve, rfq, sent; When: every day at 8:00; Email: No; It may: Read, as you). After yes the task appeared under My scheduled tasks with Next Run 11/08/2026 08:00.",
-   "result_ar": "في التجربة ظهرت بطاقة المهمة المجدولة في وضع الوكيل (كل يوم الساعة 8:00 وللطلبات بحالة in to approve وrfq وsent دون بريد إلكتروني، تقرأ باسمك فقط)، وبعد الموافقة ظهرت المهمة في «مهامي المجدولة» وموعدها التالي 08/11/2026 08:00."
+   "result_ar": "بالواجهة العربية: «كل يوم الساعة 8 صباحاً اكتب لي طلبات عروض الأسعار المنتظرة موافقتي مع مورّد كل منها وإجماليه» أظهر بطاقة «مهمة مجدولة» (كل يوم الساعة 8:00، البريد: لا، القراءة باسمك فقط، أمر شراء بحالة to approve). بعد «نعم، نفّذ» ظهرت المهمة في «مهامي» والتشغيل القادم ٠٩ نوفمبر ٢٠٢٦ ٠٨:٠٠."
   },
   "C18": {
    "en": [
@@ -3802,8 +3895,13 @@
     "assets/nudge/guide/v18/C18_2.webp",
     "assets/nudge/guide/v18/C18_3.mp4"
    ],
+   "ar": [
+    "assets/nudge/guide/v18/C18_1_ar.webp",
+    "assets/nudge/guide/v18/C18_2_ar.webp",
+    "assets/nudge/guide/v18/C18_3_ar.mp4"
+   ],
    "result_en": "In the trial, material_list_site_a.pdf (5 lines) with \"What do I have in stock of these?\" in Agent mode answered line by line with the matching product and its stock per warehouse: Portland cement CEM I 42.5 50 kg bag OSC-001 1,213 (Main Yard Al Quoz 605, Al Waha Villas Site Store 437, Marina Tower Site Store 171), Washed sand OSC-006 1,723 t, Rebar T12 OSC-010 85 t, Hollow concrete block 200 mm OSC-015 2,223, Safety helmet OSC-026 2,930: the figures match the product list.",
-   "result_ar": "في التجربة أُرفقت قائمة المواد material_list_site_a.pdf (5 بنود) مع السؤال «What do I have in stock of these?» في وضع الوكيل، فأجاب Nudge بندًا بندًا بالمنتج المطابق ومخزونه في كل مستودع: الإسمنت OSC-001 (1,213)، الرمل المغسول OSC-006 (1,723 طن)، حديد T12 OSC-010 (85 طن)، البلوك 200 مم OSC-015 (2,223)، خوذة السلامة OSC-026 (2,930)، والأرقام مطابقة لقائمة المنتجات."
+   "result_ar": "بالواجهة العربية: أُرفق ملف قائمة المواد (PDF، 5 بنود) مع «شو عندي بالستوك من هي المواد؟» في وضع الوكيل، فأجاب Nudge بجدول: لكل بند المنتج الأقرب ومخزونه، مع المخزون لكل مستودع للإسمنت (605 / 437 / 171) والحديد T12 (73 + 12 = 85 طن). أرقام الإسمنت والرمل والحديد والبلوك مطابقة لقائمة المنتجات، والخوذ 2925 هو المتاح بعد الحجز (2930 في اليد)."
   },
   "C20": {
    "en": [
@@ -6128,6 +6226,66 @@
    "result_ar": "في التجربة على أودو 18، بصفة Noah Prescott (بلا صلاحيات على المبيعات)، أُجيب عن «ما إجمالي مبيعاتنا هذا الشهر؟» بـ«ليست لديك صلاحية الوصول إلى أوامر البيع» وعن «أرني قائمة عروض الأسعار» بـ«ليست لديك صلاحية الوصول إلى عروض الأسعار» دون أي رقم. وفي العربية حُفظ رفض عروض الأسعار فقط («ليست لديك صلاحية الوصول إلى عروض الأسعار»).",
    "partial_en": "the Arabic still for the first question is missing.",
    "partial_ar": "صورة السؤال الأول بالعربية غير متوفرة."
+  },
+  "G01": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v18/G01_1.webp",
+     "caption": "The refusal: no permission to change products"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v18/G01_1_ar.webp"
+   ],
+   "result_en": "On Odoo 18 a Nudge User with the Agent role but no Sales or product rights asked in Agent mode 'Archive the product Safety helmet, white'. Nudge found [OSC-026] and tried, then answered: 'I couldn't archive [OSC-026] Safety helmet, white. Your user doesn't have permission to change products, so nothing was changed. An administrator, or someone with product rights, can archive it.' The product stayed active.",
+   "result_ar": "على أودو 18 طلب مستخدم Nudge بدور الوكيل وبلا صلاحيات على المبيعات أو المنتجات في وضع الوكيل «أرشف المنتج Safety helmet, white»، فوجد Nudge المنتج [OSC-026] وحاول ثم أجاب: «لم أستطع أرشفة المنتج. حسابك لا يملك صلاحية تعديل المنتجات، ولم يتغير شيء. يمكنك طلب الصلاحية من المسؤول». وبقي المنتج غير مؤرشف.",
+   "partial_en": "in the Arabic interface the first line of the answer, before the refusal, is in English.",
+   "partial_ar": "في الواجهة العربية يأتي السطر الأول من الجواب، قبل الرفض، بالإنجليزية."
+  },
+  "R3-50": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v18/R3-50_1.webp",
+     "caption": "The question is answered by an explanation, no card"
+    },
+    {
+     "src": "assets/nudge/guide/v18/R3-50_2.webp",
+     "caption": "Only after clicking the suggestion: the card (not confirmed)"
+    },
+    {
+     "src": "assets/nudge/guide/v18/R3-50_3.mp4",
+     "caption": "Question, explanation, suggestion, card"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v18/R3-50_1_ar.webp",
+    "assets/nudge/guide/v18/R3-50_2_ar.webp"
+   ],
+   "result_en": "In Agent mode on the draft quotation S00050 (total 320,189.31 AED), 'should I confirm this order?' was answered with an explanation (total, customer and payment terms, fiscal position against VAT, what confirming does) and no card, with the suggestion 'Press Confirm: Sales Order (S00050)'. Clicking it opened the card with Yes, do it / No; nothing was pressed and the quotation stayed a draft.",
+   "result_ar": "في وضع الوكيل على عرض السعر S00050 (الإجمالي 320,189.31 درهم) أجاب Nudge على «هل أؤكد هذا الأمر؟» بشرح (الإجمالي والعميل وشروط السداد والوضع المالي مقابل الضريبة وما يفعله التأكيد) دون بطاقة، مع الاقتراح «ضغط “تأكيد”: أمر البيع (S00050)». عند الضغط عليه ظهرت بطاقة فيها «نعم، نفّذ» / «لا»؛ لم يُضغط شيء وبقي العرض مسودة."
+  },
+  "R3-41": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v18/R3-41_1.webp",
+     "caption": "The report: score 42/42 per mode, language and domain"
+    },
+    {
+     "src": "assets/nudge/guide/v18/R3-41_2.webp",
+     "caption": "The domains and the tokens of the largest requests by scenario"
+    },
+    {
+     "src": "assets/nudge/guide/v18/R3-41_3.mp4",
+     "caption": "Scrolling the report from the score tables to the largest requests"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v18/R3-41_1_ar.webp",
+    "assets/nudge/guide/v18/R3-41_2_ar.webp",
+    "assets/nudge/guide/v18/R3-41_3_ar.mp4"
+   ],
+   "result_en": "On a fresh Odoo 18 database the quality gate of Nudge 18.0.1.60.18 ran the 42 scripted scenarios and scored 42/42 (100%): talk 15, agent 20, dev 7; English 21, Arabic 13, Arabizi 8; largest request 22,666 tokens (mean 15,496); none skipped.",
+   "result_ar": "على قاعدة بيانات أودو 18 جديدة شغّلت بوابة الجودة للإصدار 18.0.1.60.18 السيناريوهات الـ42 المبرمجة وحصلت على 42/42 (100%): talk 15، agent 20، dev 7؛ إنجليزي 21، عربي 13، عربيزي 8؛ أكبر طلب 22,666 رمزًا (المتوسط 15,496)؛ ولم يُتخطَّ أي سيناريو."
   }
  },
  "20": {
@@ -8771,6 +8929,29 @@
    ],
    "result_en": "In the trial on Odoo 20 signed in as a user with no Sales rights, 'What are our total sales this month?' got 'You do not have access to sales orders.' and 'Show me the list of quotations' got 'You do not have access to quotations.'; no sales figure appeared. The Arabic twin got the same two refusals in Arabic.",
    "result_ar": "في التجربة على أودو 20 وبدخول مستخدم بلا أي صلاحية على المبيعات (Noah Prescott)، أجاب Nudge عن «كم إجمالي مبيعاتنا هذا الشهر؟» بـ«ليست لديك صلاحية الوصول إلى أوامر البيع.» وعن «اعرض لي قائمة عروض الأسعار» بـ«ليست لديك صلاحية الوصول إلى عروض الأسعار.» ولم يظهر أي رقم مبيعات. التوأم العربي حصل على الرفضين بالعربية."
+  },
+  "R3-41": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/R3-41_1.webp",
+     "caption": "The report: score 42/42 per mode, language and domain"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-41_2.webp",
+     "caption": "The domains and the tokens of the largest requests by scenario"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-41_3.mp4",
+     "caption": "Scrolling the report from the score tables to the largest requests"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/R3-41_1_ar.webp",
+    "assets/nudge/guide/v20/R3-41_2_ar.webp",
+    "assets/nudge/guide/v20/R3-41_3_ar.mp4"
+   ],
+   "result_en": "On a fresh Odoo 20 database the quality gate of Nudge 20.0.1.60.18 ran the 42 scripted scenarios and scored 42/42 (100%): talk 15, agent 20, dev 7; English 21, Arabic 13, Arabizi 8; largest request 22,598 tokens (mean 15,462); none skipped.",
+   "result_ar": "على قاعدة بيانات أودو 20 جديدة شغّلت بوابة الجودة للإصدار 20.0.1.60.18 السيناريوهات الـ42 المبرمجة وحصلت على 42/42 (100%): talk 15، agent 20، dev 7؛ إنجليزي 21، عربي 13، عربيزي 8؛ أكبر طلب 22,598 رمزًا (المتوسط 15,462)؛ ولم يُتخطَّ أي سيناريو."
   }
  }
 }
