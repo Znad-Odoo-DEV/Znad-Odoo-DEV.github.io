@@ -3012,6 +3012,97 @@
    ],
    "result_en": "On a fresh Odoo 17 database the quality gate of Nudge 17.0.1.60.18 ran the 42 scripted scenarios and scored 42/42 (100%): talk 15, agent 20, dev 7; English 21, Arabic 13, Arabizi 8; largest request 22,536 tokens (mean 15,349); none skipped.",
    "result_ar": "على قاعدة بيانات أودو 17 جديدة شغّلت بوابة الجودة للإصدار 17.0.1.60.18 السيناريوهات الـ42 المبرمجة وحصلت على 42/42 (100%): talk 15، agent 20، dev 7؛ إنجليزي 21، عربي 13، عربيزي 8؛ أكبر طلب 22,536 رمزًا (المتوسط 15,349)؛ ولم يُتخطَّ أي سيناريو."
+  },
+  "R3-61": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v17/R3-61_1.webp",
+     "caption": "The site form with Online shop on"
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-61_2.webp",
+     "caption": "The card: Arrange the shop too?"
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-61_3.webp",
+     "caption": "Home page New arrivals: the four chosen products"
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-61_4.webp",
+     "caption": "The /shop page with the four products"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/R3-61_1_ar.webp",
+    "assets/nudge/guide/v17/R3-61_2_ar.webp",
+    "assets/nudge/guide/v17/R3-61_3_ar.webp",
+    "assets/nudge/guide/v17/R3-61_4_ar.webp"
+   ],
+   "result_en": "On Odoo 17, a site with the Food products shop template and Online shop on was built with four chosen products (Cardamom Coffee Beans 500 g 42, Gift Box of Dates 1 kg 58, Extra Virgin Olive Oil 1 L 36, Saffron Rice Mix 2 kg 29, in AED); after 'Build this website' the card 'Arrange the shop too?' listed 11 shop categories to create, descriptions for 4 products, 3 unpublished promo banners and the readiness check (payment provider missing), and Yes, arrange the shop made the home page New arrivals show exactly the four chosen products with their prices, and /shop list them with the same prices (in Arabic too).",
+   "result_ar": "على أودو 17، بُني موقع بقالب متجر المنتجات الغذائية مع تفعيل المتجر الإلكتروني وأربعة منتجات مختارة (قهوة بالهيل 500 غ بـ 42، علبة تمور 1 كغ بـ 58، زيت زيتون بكر 1 لتر بـ 36، خليط أرز بالزعفران 2 كغ بـ 29 درهما)؛ وبعد «ابنِ هذا الموقع» عرضت بطاقة «هل أرتّب المتجر أيضًا؟» إحدى عشرة فئة ستُنشأ وأوصاف 4 منتجات و3 بانرات ترويجية غير منشورة وفحص الجاهزية (مزود الدفع ناقص)، وجعل «نعم، رتّب المتجر» قسم «وصل حديثاً» في الصفحة الرئيسية يعرض المنتجات الأربعة المختارة بأسعارها، وتعرضها صفحة /shop بالأسعار نفسها (وبالإنجليزية كذلك).",
+   "partial_en": "the four products were created by an administrator with Settings rights; a designer without Settings or another app manager right cannot create shop products on Odoo 17, and that case is not shown. Arranging a shop from products already chosen works.",
+   "partial_ar": "أنشأ المسؤول، وهو يملك صلاحية الإعدادات، المنتجات الأربعة؛ ولا يستطيع مصمم بلا صلاحية الإعدادات أو مدير تطبيق آخر إنشاء منتجات المتجر على أودو 17، وهذه الحالة غير معروضة. أما ترتيب المتجر من منتجات مختارة سلفًا فيعمل."
+  },
+  "SEC-05": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v17/SEC-05_1.webp",
+     "caption": "Asked for an order of the other company, Nudge cannot find it"
+    },
+    {
+     "src": "assets/nudge/guide/v17/SEC-05_2.webp",
+     "caption": "The other company's total: 0 rows, no figure"
+    },
+    {
+     "src": "assets/nudge/guide/v17/SEC-05_3.webp",
+     "caption": "The person allowed in both companies, switched to the other company, opens the order"
+    },
+    {
+     "src": "assets/nudge/guide/v17/SEC-05_4.mp4",
+     "caption": "The two questions as a person of the other company"
+    },
+    {
+     "src": "assets/nudge/guide/v17/SEC-05_5.mp4",
+     "caption": "Switching to the other company and opening the order"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/SEC-05_1_ar.webp",
+    "assets/nudge/guide/v17/SEC-05_2_ar.webp",
+    "assets/nudge/guide/v17/SEC-05_3_ar.webp",
+    "assets/nudge/guide/v17/SEC-05_4_ar.mp4",
+    "assets/nudge/guide/v17/SEC-05_5_ar.mp4"
+   ],
+   "result_en": "On Odoo 17, a person of one company only asked Nudge to show sales order S00052 (it belongs to the other company): Nudge answered that it cannot find it among the records the person may see, and for the total sales of the other company it showed 0 rows, so no figure and no customer name of that order appeared. A person allowed in both companies, switched to the other company in the company switcher, opened S00052. (A total of 0 rows means nothing is visible to this person, not that the other company has no sales.)",
+   "result_ar": "على أودو 17، سأل شخص من شركة واحدة فقط Nudge أن يعرض أمر البيع S00052 (يخص الشركة الأخرى)، فأجاب أنه لا يجده ضمن السجلات المسموح له بها، وعن إجمالي مبيعات الشركة الأخرى أظهر 0 سجل، فلم يظهر أي رقم ولا اسم عميل لذلك الأمر. أما الشخص المسموح له في الشركتين فبعد الانتقال إلى الشركة الأخرى من مبدّل الشركات فتح الأمر S00052. (إجمالي 0 سجل يعني أنه لا شيء ظاهر لهذا الشخص، لا أن الشركة الأخرى بلا مبيعات.)"
+  },
+  "A07": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v17/A07_1.webp",
+     "caption": "Ctrl + Alt + D in Job Position: the pill listens"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A07_3.webp",
+     "caption": "The words typed in the field"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A07_4.webp",
+     "caption": "Saved contact"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A07_5.mp4",
+     "caption": "Dictating into a field and saving"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v17/A07_1_ar.webp",
+    "assets/nudge/guide/v17/A07_3_ar.webp",
+    "assets/nudge/guide/v17/A07_4_ar.webp",
+    "assets/nudge/guide/v17/A07_5_ar.mp4"
+   ],
+   "result_en": "On Odoo 17, dictating into the Job Position field of a new contact with Ctrl+Alt+D typed 'purchasing manager' for the spoken words 'Purchasing Manager'; the pill showed 'I'm listening...' and the contact was saved with that job position. The words are right; the transcription comes back in lower case on this version. In the Arabic interface the spoken Arabic words «مدير المشتريات» were typed as «مدير المشتريات.».",
+   "result_ar": "على أودو 17، عند الإملاء في حقل «المنصب الوظيفي» لجهة اتصال جديدة بواجهة عربية بالضغط على Ctrl+Alt+D ونطق «مدير المشتريات»، ظهرت الفقاعة «أنا أسمعك…» وكُتب «مدير المشتريات.» في الحقل، ثم حُفظت جهة الاتصال بهذا المنصب."
   }
  },
  "18": {
@@ -6286,6 +6377,67 @@
    ],
    "result_en": "On a fresh Odoo 18 database the quality gate of Nudge 18.0.1.60.18 ran the 42 scripted scenarios and scored 42/42 (100%): talk 15, agent 20, dev 7; English 21, Arabic 13, Arabizi 8; largest request 22,666 tokens (mean 15,496); none skipped.",
    "result_ar": "على قاعدة بيانات أودو 18 جديدة شغّلت بوابة الجودة للإصدار 18.0.1.60.18 السيناريوهات الـ42 المبرمجة وحصلت على 42/42 (100%): talk 15، agent 20، dev 7؛ إنجليزي 21، عربي 13، عربيزي 8؛ أكبر طلب 22,666 رمزًا (المتوسط 15,496)؛ ولم يُتخطَّ أي سيناريو."
+  },
+  "SEC-05": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v18/SEC-05_1.webp",
+     "caption": "Asked for an order of the other company, Nudge cannot find it"
+    },
+    {
+     "src": "assets/nudge/guide/v18/SEC-05_2.webp",
+     "caption": "The other company's total: 0 rows, no figure"
+    },
+    {
+     "src": "assets/nudge/guide/v18/SEC-05_3.webp",
+     "caption": "The person allowed in both companies, switched to the other company, opens the order"
+    },
+    {
+     "src": "assets/nudge/guide/v18/SEC-05_4.mp4",
+     "caption": "The two questions as a person of the other company"
+    },
+    {
+     "src": "assets/nudge/guide/v18/SEC-05_5.mp4",
+     "caption": "Switching to the other company and opening the order"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v18/SEC-05_1_ar.webp",
+    "assets/nudge/guide/v18/SEC-05_2_ar.webp",
+    "assets/nudge/guide/v18/SEC-05_3_ar.webp",
+    "assets/nudge/guide/v18/SEC-05_4_ar.mp4",
+    "assets/nudge/guide/v18/SEC-05_5_ar.mp4"
+   ],
+   "result_en": "On Odoo 18, a person of one company only asked Nudge to show sales order S00055 (it belongs to the other company): Nudge answered that it cannot find it among the records the person may see, and for the total sales of the other company it showed 0 rows, so no figure and no customer name of that order appeared. A person allowed in both companies, switched to the other company in the company switcher, opened S00055. (A total of 0 rows means nothing is visible to this person, not that the other company has no sales.)",
+   "result_ar": "على أودو 18، سأل شخص من شركة واحدة فقط Nudge أن يعرض أمر البيع S00055 (يخص الشركة الأخرى)، فأجاب أنه لا يجده ضمن السجلات المسموح له بها، وعن إجمالي مبيعات الشركة الأخرى أظهر 0 سجل، فلم يظهر أي رقم ولا اسم عميل لذلك الأمر. أما الشخص المسموح له في الشركتين فبعد الانتقال إلى الشركة الأخرى من مبدّل الشركات فتح الأمر S00055. (إجمالي 0 سجل يعني أنه لا شيء ظاهر لهذا الشخص، لا أن الشركة الأخرى بلا مبيعات.)"
+  },
+  "A07": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v18/A07_1.webp",
+     "caption": "Ctrl + Alt + D in Job Position: the pill listens"
+    },
+    {
+     "src": "assets/nudge/guide/v18/A07_3.webp",
+     "caption": "The words typed in the field"
+    },
+    {
+     "src": "assets/nudge/guide/v18/A07_4.webp",
+     "caption": "Saved contact"
+    },
+    {
+     "src": "assets/nudge/guide/v18/A07_5.mp4",
+     "caption": "Dictating into a field and saving"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v18/A07_1_ar.webp",
+    "assets/nudge/guide/v18/A07_3_ar.webp",
+    "assets/nudge/guide/v18/A07_4_ar.webp",
+    "assets/nudge/guide/v18/A07_5_ar.mp4"
+   ],
+   "result_en": "On Odoo 18, dictating into the Job Position field of a new contact with Ctrl+Alt+D typed 'purchasing manager' for the spoken words 'Purchasing Manager'; the pill showed 'I'm listening...' and the contact was saved with that job position. The words are right; the transcription comes back in lower case on this version. In the Arabic interface the spoken Arabic words «مدير المشتريات» were typed as «مدير المشتريات».",
+   "result_ar": "على أودو 18، عند الإملاء في حقل «المنصب الوظيفي» لجهة اتصال جديدة بواجهة عربية بالضغط على Ctrl+Alt+D ونطق «مدير المشتريات»، ظهرت الفقاعة «أنا أسمعك…» وكُتب «مدير المشتريات» في الحقل، ثم حُفظت جهة الاتصال بهذا المنصب."
   }
  },
  "20": {
@@ -6905,14 +7057,12 @@
     }
    ],
    "ar": [
-    "assets/nudge/guide/v20/C15_2_ar.webp",
+    "assets/nudge/guide/v20/C15_3_ar.webp",
     "assets/nudge/guide/v20/C15_4_ar.webp",
     "assets/nudge/guide/v20/C15_5_ar.mp4"
    ],
-   "result_en": "In Agent mode as an administrator, 'Turn on Discounts' showed the settings card 'Change the settings: Sales / Discounts off -> on' and 'Give Noah Prescott the Inventory user access' showed the card 'Change: User Noah Prescott, Groups + Inventory / User' (it left a similar user alone); both cards were declined (No), nothing changed.",
-   "result_ar": "في وضع الوكيل كمسؤول، أظهر «Turn on Discounts» بطاقة «تغيير الإعدادات: المبيعات / Discounts من off إلى on»، وأظهر طلب منح صلاحية المخزون لمستخدم بطاقة «تعديل: المستخدم Noah Prescott، المجموعات + المخزون / مستخدم»؛ رُفضت البطاقتان («لا») فلم يتغيّر شيء.",
-   "partial_en": "the Arabic version shows the settings card and the user-rights card in stills only.",
-   "partial_ar": "في النسخة العربية تظهر بطاقة الإعدادات وبطاقة صلاحيات المستخدم في صور ثابتة فقط."
+   "result_en": "In Agent mode as an administrator, 'Turn on Discounts' showed the settings card 'Change the settings: Sales / Discounts off -> on' and a request to give a user the Inventory user access showed the card 'Change: User, Groups + Inventory / User' (it left a similar user alone); both cards were declined (No), nothing changed.",
+   "result_ar": "في وضع الوكيل كمسؤول، أظهر «Turn on Discounts» بطاقة «تغيير الإعدادات: المبيعات / Discounts من off إلى on»، وأظهر طلب منح صلاحية المخزون لمستخدم بطاقة «تعديل: المستخدم، المجموعات + المخزون / مستخدم»؛ رُفضت البطاقتان («لا») فلم يتغيّر شيء."
   },
   "C18": {
    "en": [
@@ -7788,8 +7938,31 @@
   },
   "H25": {
    "en": [
-    "assets/nudge/guide/v20/H25_1.webp"
-   ]
+    {
+     "src": "assets/nudge/guide/v20/H25_1.webp",
+     "caption": "Who changed this: the change list"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H25_2.webp",
+     "caption": "Restore card"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H25_3.webp",
+     "caption": "After Yes: restored, with Undo"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H25_4.mp4",
+     "caption": "Who changed this, and undo it"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/H25_1_ar.webp",
+    "assets/nudge/guide/v20/H25_2_ar.webp",
+    "assets/nudge/guide/v20/H25_3_ar.webp",
+    "assets/nudge/guide/v20/H25_4_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, with Discuss Tracking installed, /changes on a product listed who changed the Sales Price and when (44.0 to 42.0), and its Restore button prepared a card; after Yes the price went back to 42.0 and the card showed Done with Undo.",
+   "result_ar": "على أودو 20، مع تثبيت تطبيق تتبّع المناقشات، عرض الأمر /changes من غيّر سعر البيع ومتى (44.0 إلى 42.0)، وجهّز زر «استرجع القيمة القديمة» بطاقة؛ وبعد «نعم» عاد السعر إلى 42.0 وظهرت البطاقة «تم» مع «تراجع». الأمر بلا ذكاء اصطناعي."
   },
   "H26": {
    "en": [
@@ -8952,6 +9125,380 @@
    ],
    "result_en": "On a fresh Odoo 20 database the quality gate of Nudge 20.0.1.60.18 ran the 42 scripted scenarios and scored 42/42 (100%): talk 15, agent 20, dev 7; English 21, Arabic 13, Arabizi 8; largest request 22,598 tokens (mean 15,462); none skipped.",
    "result_ar": "على قاعدة بيانات أودو 20 جديدة شغّلت بوابة الجودة للإصدار 20.0.1.60.18 السيناريوهات الـ42 المبرمجة وحصلت على 42/42 (100%): talk 15، agent 20، dev 7؛ إنجليزي 21، عربي 13، عربيزي 8؛ أكبر طلب 22,598 رمزًا (المتوسط 15,462)؛ ولم يُتخطَّ أي سيناريو."
+  },
+  "C09": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/C09_1.webp",
+     "caption": "The card: one plan for 4 quotations"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C09_2.webp",
+     "caption": "After Yes: updated"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C09_3.mp4",
+     "caption": "One request, one card, one Yes"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/C09_1_ar.webp",
+    "assets/nudge/guide/v20/C09_2_ar.webp",
+    "assets/nudge/guide/v20/C09_3_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, 'Set the delivery date of all quotations assigned to one salesperson to next Monday' gave one card for 4 quotations (S00040, S00042, S00043, S00044): 'Promised Delivery 2026-11-09 09:00', '4 records: all go through, as tried just now'; after Yes the answer said the delivery date was set on all four. Arabic gave the same card and result.",
+   "result_ar": "على أودو 20، أعطى طلب «غيّر تاريخ التسليم في كل عروض الأسعار التي مسؤول مبيعاتها أحد المندوبين إلى يوم الاثنين القادم» بطاقة واحدة لأربعة عروض (S00040 وS00042 وS00043 وS00044): «تاريخ التسليم الموعود 2026-11-09»، «4 سجل: كلها ستنجح، حسب التجربة الآن»؛ وبعد «نعم، كلها» أكّد الرد تعديل العروض الأربعة. والإنجليزية بالنتيجة نفسها."
+  },
+  "C10": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/C10_1.webp",
+     "caption": "Undo on the done card"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C10_2.webp",
+     "caption": "The card shows Undone"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C10_3.mp4",
+     "caption": "Undo, and the dates are empty again"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/C10_1_ar.webp",
+    "assets/nudge/guide/v20/C10_2_ar.webp",
+    "assets/nudge/guide/v20/C10_3_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, Undo on the done card of the 4-quotation delivery-date change set the Promised Delivery of S00040, S00042, S00043 and S00044 back to empty (checked in the database) and the card showed 'Undone'. Arabic the same.",
+   "result_ar": "على أودو 20، أعاد زر «تراجع» على بطاقة تعديل تاريخ التسليم لأربعة عروض (S00040 وS00042 وS00043 وS00044) التاريخ إلى فارغ (تم التحقق في قاعدة البيانات) وظهرت على البطاقة «تم التراجع». والإنجليزية كذلك."
+  },
+  "C13": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/C13_1.webp",
+     "caption": "Answer: top three by average per line"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C13_2.mp4",
+     "caption": "Python for the Agent, asked and answered"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/C13_1_ar.webp",
+    "assets/nudge/guide/v20/C13_2_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, with Python for the Agent switched on, Nudge was asked for the three draft or sent quotations with the highest average amount per order line. It answered S00039 (2,160.11), S00043 (1,514.16) and S00050 (1,399.26), checked against the database; the sandbox refused a lambda and the model rewrote the code.",
+   "result_ar": "على أودو 20، مع تشغيل Python للوكيل، طُلب من Nudge أعلى ثلاثة عروض أسعار (مسودة أو مرسلة) بمتوسط مبلغ البند، فأجاب S00039 وS00043 وS00050 (بالعربية على أساس المبلغ قبل الضريبة: 1,815.22 و1,272.40 و1,175.85). الأرقام مطابقة لقاعدة البيانات؛ ورفض الصندوق المعزول lambda فأعاد النموذج كتابة الكود."
+  },
+  "C14": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/C14_1.webp",
+     "caption": "SQL answer"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C14_2.webp",
+     "caption": "/sql without AI"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C14_3.mp4",
+     "caption": "SQL for Administrators"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/C14_1_ar.webp",
+    "assets/nudge/guide/v20/C14_2_ar.webp",
+    "assets/nudge/guide/v20/C14_3_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, with SQL for Administrators on, 'Using SQL: the 5 customers with the most orders' answered with the five customers and their order counts, matching the database; '/sql SELECT name, city ...' ran at once without AI and returned 5 rows.",
+   "result_ar": "على أودو 20، مع تشغيل SQL للمديرين، أجاب Nudge عن أكثر 5 عملاء بعدد الطلبات من استعلام SELECT واحد (مطابق لقاعدة البيانات)، ونُفِّذ أمر /sql فورًا بلا ذكاء اصطناعي وأعاد 5 صفوف."
+  },
+  "C16": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/C16_1.webp",
+     "caption": "The request typed, before the clock"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C16_2.webp",
+     "caption": "Notification: Nudge needs your answer"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C16_3.webp",
+     "caption": "Done card with Undo"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C16_4.mp4",
+     "caption": "Request, notification, card, Yes"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/C16_1_ar.webp",
+    "assets/nudge/guide/v20/C16_3_ar.webp"
+   ],
+   "result_en": "On Odoo 20, 'Set the delivery date of all quotations assigned to one salesperson to next Monday' sent with the clock button raised the notification 'Nudge needs your answer ... Show me' and the avatar badge; the card read 'Change Promised Delivery: 2026-11-09 on 3 x Sales Order - 3 records: all go through, as tried just now', and after Yes the 3 quotations (S00049, S00047, S00046) were done with Undo offered.",
+   "result_ar": "على أودو 20، أظهر طلب «غيّر تاريخ التسليم في كل عروض الأسعار التي مسؤول مبيعاتها أحد المندوبين إلى يوم الاثنين القادم» المرسل بزر الساعة إشعار «Nudge يحتاج إلى إجابتك ... أرني»، ثم بطاقة «تعديل تاريخ التسليم الموعود: 2026-11-09 على 4 × Sales Order، 4 سجل: كلها ستنجح»، وبعد «نعم، كلها» ظهر «تم 4» مع «تراجع» وغُيّرت العروض الأربعة S00040 وS00042 وS00043 وS00044.",
+   "partial_en": "in Arabic the request and the done card are shown; the notification is not shown.",
+   "partial_ar": "بالعربية يظهر الطلب وبطاقة «تم»؛ ولا يظهر الإشعار."
+  },
+  "C17": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/C17_1.webp",
+     "caption": "The scheduled task card"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C17_2.webp",
+     "caption": "Preferences > My scheduled tasks"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C17_3.webp",
+     "caption": "The task form with Run Now"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C17_4.mp4",
+     "caption": "From the card to the task in Preferences"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/C17_1_ar.webp",
+    "assets/nudge/guide/v20/C17_2_ar.webp",
+    "assets/nudge/guide/v20/C17_3_ar.webp",
+    "assets/nudge/guide/v20/C17_4_ar.mp4"
+   ],
+   "result_en": "On Odoo 20 the card read 'Scheduled task: RFQs waiting for my approval - Only when there is: Purchase Order - state = to approve - When: Every day, at 8:00 - Email: No - It may: Read, as you. A change it finds needed waits for your yes.' After Yes the answer said it will run every morning at 8:00; Preferences > My scheduled tasks lists it (Kind: On a Schedule, Next Run Nov 9, 8:00 AM, Runs 0) and the task form shows Run Now. Arabic gave the same card and task.",
+   "result_ar": "على أودو 20 ظهرت البطاقة «مهمة مجدولة: طلبات الشراء المنتظرة موافقتي — فقط عندما يوجد: أمر شراء، state = to approve — متى: كل يوم، الساعة 8:00 — الإيميل: لا — يستطيع: القراءة باسمك. أي تعديل تراه لازمًا ينتظر موافقتك»، وبعد «نعم، نفّذ» أكّد الرد التشغيل كل صباح الساعة 8. وتعرضها «التفضيلات ← مهامي المجدولة» (النوع: حسب جدول زمني، التشغيل القادم ٩ نوفمبر ٨:٠٠ ص، الطلبات 0) ويظهر في نموذجها «شغّلها الآن»."
+  },
+  "H12": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/H12_1.webp",
+     "caption": "The attached PDF"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H12_2.webp",
+     "caption": "The bill card"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H12_3.webp",
+     "caption": "After Yes: the draft"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H12_4.mp4",
+     "caption": "From the PDF to the draft bill"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/H12_1_ar.webp",
+    "assets/nudge/guide/v20/H12_2_ar.webp",
+    "assets/nudge/guide/v20/H12_3_ar.webp",
+    "assets/nudge/guide/v20/H12_4_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, 'Make a vendor bill from this file' with a supplier-bill PDF attached gave a card: creates a vendor bill in draft, contact Golden Falcon Building Materials Demo (a new contact is created), reference GF-2026-0417, 3 lines, 'untaxed 4,620.00, taxes 0.00, total 4,620.00 / Differences with the document: None: the totals are the document's', file kept on the record. After Yes the draft was created (not posted) with Undo offered.",
+   "result_ar": "على أودو 20، أعطى «أنشئ فاتورة مورد من هذا الملف» مع ملف PDF مرفق بطاقة: فاتورة مورد كمسودة، جهة الاتصال Cedar Point Fittings Demo، المرجع CP-2026-0558، 3 أسطر، والإجماليات «قبل الضريبة 1,860.00، الضرائب 148.20، الإجمالي 2,008.20» مع قسم «الفروق مع المستند» (الضرائب: أودو 148.20 والمستند 0.00)، والملف محفوظ في السجل. وبعد «نعم، نفّذ» أُنشئت المسودة (لم تُرحَّل) مع «تراجع»."
+  },
+  "R3-11": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/R3-11_1.webp",
+     "caption": "The confirmation card (Create: Contact)"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-11_2.webp",
+     "caption": "The notice 'Sent when this answer ends'"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-11_3.webp",
+     "caption": "The held question answered"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-11_3.mp4",
+     "caption": "Yes, the question held, then answered"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/R3-11_1_ar.webp",
+    "assets/nudge/guide/v20/R3-11_2_ar.webp",
+    "assets/nudge/guide/v20/R3-11_3_ar.webp",
+    "assets/nudge/guide/v20/R3-11_3_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, in Agent mode 'Create a contact named ...' gave the confirmation card (Create: Contact); Yes was pressed and, while the answer was still being written, 'What is my last order?' was sent: the message showed the notice 'Sent when this answer ends' under it, then went out when the answer ended and was answered (S00045, with its customer, total and salesperson). The notice shows for about a fifth of a second. Arabic the same with 'يُرسل عند انتهاء هذه الإجابة'.",
+   "result_ar": "على أودو 20، وفي وضع الوكيل أعطى «أنشئ جهة اتصال باسم ...» بطاقة التأكيد (إنشاء: جهة اتصال)؛ ضُغط «نعم» وبينما كانت الإجابة تُكتب أُرسل السؤال «ما هو آخر طلب لدي؟»: ظهر تحته الإشعار «يُرسل عند انتهاء هذه الإجابة» ثم أُرسل عند انتهائها وأُجيب عنه. يظهر الإشعار نحو خُمس ثانية. والإنجليزية بالنتيجة نفسها."
+  },
+  "R3-21": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/R3-21_1.webp",
+     "caption": "Recurring Requests after Find Recurring Requests"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-21_2.webp",
+     "caption": "The proposal to decide"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-21_3.webp",
+     "caption": "After Accept: Accepted"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-21_4.mp4",
+     "caption": "From the repeated asks to the accepted rule"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/R3-21_1_ar.webp",
+    "assets/nudge/guide/v20/R3-21_2_ar.webp",
+    "assets/nudge/guide/v20/R3-21_3_ar.webp",
+    "assets/nudge/guide/v20/R3-21_4_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, five asks of one shape ('How many products have a sales price above 10 / 20 / 30 / 15 / 25') followed by Action > Find Recurring Requests gave the proposal 'How many products have a sales price above {list_price}' (5 times in 30 days, 1 person, Rule without AI, tool aggregate_records); Accept moved the status bar to Accepted.",
+   "result_ar": "على أودو 20، أعطت أسئلة متكررة من الشكل نفسه («كم منتجًا ... أعلى من 10 / 20 / 30 ...») ثم الإجراء «البحث عن الطلبات المتكررة» اقتراحًا «كم منتجًا تكلفته أعلى من {standard_price}» (7 مرات خلال 30 يومًا، شخص واحد، قاعدة دون ذكاء اصطناعي، الأداة aggregate_records)، وبعد «قبول» صارت الحالة «مقبولة»."
+  },
+  "R3-27": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/R3-27_1.webp",
+     "caption": "UAE checklist"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-27_2.webp",
+     "caption": "Compliance Deadlines"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-27_3.webp",
+     "caption": "Saudi checklist (ZATCA)"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-27_4.mp4",
+     "caption": "UAE checklist, deadlines, Saudi checklist"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/R3-27_1_ar.webp",
+    "assets/nudge/guide/v20/R3-27_2_ar.webp",
+    "assets/nudge/guide/v20/R3-27_3_ar.webp",
+    "assets/nudge/guide/v20/R3-27_4_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, running Compliance for a fictional UAE company gave the UAE checklist (1 critical, 3 to look at, 2 to know) with the e-invoicing rows, their official source, the last review date (2026-10-22) and 'confirm with the authority'; Compliance Deadlines then listed 'E-invoicing is mandatory from 1 January 2027' with 54 days left. A fictional Saudi company gave the ZATCA checklist, with phase 2 and its official source.",
+   "result_ar": "على أودو 20، أعطى تشغيل «الامتثال» لشركة إماراتية افتراضية قائمة الإمارات (1 حرجة و3 للمراجعة و2 للعلم) بصفوف الفوترة الإلكترونية ومصدرها الرسمي وتاريخ آخر مراجعة (2026-10-22) وعبارة «تأكد لدى الجهة المختصة»؛ وعرضت «مواعيد الامتثال» موعد 1 يناير 2027 ببقاء 54 يومًا. وأعطت شركة سعودية افتراضية قائمة ZATCA بالمرحلة الثانية ومصدرها الرسمي.",
+   "partial_en": "the dates are those of the day of the trial: the 30 October 2026 date had already passed, so only 1 January 2027 (54 days left) is listed.",
+   "partial_ar": "التواريخ هي تواريخ يوم التجربة: مضى موعد 30 أكتوبر 2026 فلا يُعرض إلا موعد 1 يناير 2027 (بقاء 54 يومًا)."
+  },
+  "R3-60": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/R3-60_3.webp",
+     "caption": "Visitor listings page with the search bar"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-60_5.webp",
+     "caption": "For = Rent, City = Dubai Marina: one listing"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-60_7.webp",
+     "caption": "The booking form, filled"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-60_9.webp",
+     "caption": "The CRM lead"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/R3-60_3_ar.webp",
+    "assets/nudge/guide/v20/R3-60_5_ar.webp",
+    "assets/nudge/guide/v20/R3-60_7_ar.webp",
+    "assets/nudge/guide/v20/R3-60_9_ar.webp"
+   ],
+   "result_en": "On Odoo 20, a site built from the 'Real estate with search filters' template (plugin) shows a Property listings page with a search bar (For, Property type, City, Bedrooms, price): For = Rent and City = Dubai Marina gives 1 of the 4 listings (in Arabic too). With the car workshop plugin the Services page lists three services with 'Book this service'; the booking form was filled for a brake service (already chosen by the link, in Arabic too), sent, and the visitor got the thanks page and the CRM lead 'Workshop booking' with the car, service, day and message.",
+   "result_ar": "على أودو 20، يعرض موقع مبني من قالب «عقارات مع فلاتر بحث» (الإضافة) صفحة العقارات المعروضة بشريط بحث (للـ، نوع العقار، المدينة، غرف النوم، السعر): للـ = إيجار والمدينة = دبي مارينا يعطي عقارا واحدا من أربعة (وبالإنجليزية كذلك). ومع إضافة ورشة السيارات تسرد صفحة الخدمات ثلاث خدمات مع «احجز هذه الخدمة»؛ مُلئ نموذج الحجز لصيانة الفرامل (والخدمة مختارة مسبقا من الرابط) وأُرسل فظهرت صفحة الشكر وفرصة CRM «حجز في الورشة» بالسيارة والخدمة واليوم والرسالة."
+  },
+  "R3-61": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/R3-61_1.webp",
+     "caption": "The site form with Online shop on"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-61_2.webp",
+     "caption": "The card: Arrange the shop too?"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-61_3.webp",
+     "caption": "Home page New arrivals: the four chosen products"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-61_4.webp",
+     "caption": "The /shop page with the four products first"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/R3-61_1_ar.webp",
+    "assets/nudge/guide/v20/R3-61_2_ar.webp",
+    "assets/nudge/guide/v20/R3-61_3_ar.webp",
+    "assets/nudge/guide/v20/R3-61_4_ar.webp"
+   ],
+   "result_en": "On Odoo 20, a site with the Building materials shop template and Online shop on was built with four chosen products (Steel Workbench 150 cm 190, Oak Coffee Table 129, Garden Gate Frame 245, Workshop Tool Cabinet 159, in EUR); after 'Build this website' the card 'Arrange the shop too?' listed 12 shop categories to create, product descriptions, 3 unpublished promo banners and the readiness check (payment provider missing), and Yes, arrange the shop made the home page New arrivals show exactly the four chosen products with their prices, and /shop list them first (in Arabic too).",
+   "result_ar": "على أودو 20، بُني موقع بقالب متجر مواد البناء مع تفعيل المتجر الإلكتروني وأربعة منتجات مختارة (طاولة عمل فولاذية 190، طاولة قهوة من البلوط 129، إطار بوابة حديقة 245، خزانة عدد الورشة 159 باليورو)؛ وبعد «ابنِ هذا الموقع» عرضت بطاقة «هل أرتّب المتجر أيضًا؟» اثنتي عشرة فئة ستُنشأ والأوصاف و3 بانرات ترويجية غير منشورة وفحص الجاهزية (مزود الدفع ناقص)، وجعل «نعم، رتّب المتجر» قسم «وصل حديثاً» في الصفحة الرئيسية يعرض المنتجات الأربعة المختارة بأسعارها، وتعرضها صفحة /shop أولا (وبالإنجليزية كذلك)."
+  },
+  "SEC-05": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/SEC-05_1.webp",
+     "caption": "Asked for an order of the other company, Nudge cannot find it"
+    },
+    {
+     "src": "assets/nudge/guide/v20/SEC-05_2.webp",
+     "caption": "The other company's total: 0 rows, no figure"
+    },
+    {
+     "src": "assets/nudge/guide/v20/SEC-05_3.webp",
+     "caption": "The person allowed in both companies, switched to the other company, opens the order"
+    },
+    {
+     "src": "assets/nudge/guide/v20/SEC-05_4.mp4",
+     "caption": "The two questions as a person of the other company"
+    },
+    {
+     "src": "assets/nudge/guide/v20/SEC-05_5.mp4",
+     "caption": "Switching to the other company and opening the order"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/SEC-05_1_ar.webp",
+    "assets/nudge/guide/v20/SEC-05_2_ar.webp",
+    "assets/nudge/guide/v20/SEC-05_3_ar.webp",
+    "assets/nudge/guide/v20/SEC-05_4_ar.mp4",
+    "assets/nudge/guide/v20/SEC-05_5_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, a person of one company only asked Nudge to show sales order S00055 (it belongs to the other company): Nudge answered that it cannot find it among the records the person may see, and for the total sales of the other company it showed 0 rows, so no figure and no customer name of that order appeared. A person allowed in both companies, switched to the other company in the company switcher, opened S00055. (A total of 0 rows means nothing is visible to this person, not that the other company has no sales.)",
+   "result_ar": "على أودو 20، سأل شخص من شركة واحدة فقط Nudge أن يعرض أمر البيع S00055 (يخص الشركة الأخرى)، فأجاب أنه لا يجده ضمن السجلات المسموح له بها، وعن إجمالي مبيعات الشركة الأخرى أظهر 0 سجل، فلم يظهر أي رقم ولا اسم عميل لذلك الأمر. أما الشخص المسموح له في الشركتين فبعد الانتقال إلى الشركة الأخرى من مبدّل الشركات فتح الأمر S00055. (إجمالي 0 سجل يعني أنه لا شيء ظاهر لهذا الشخص، لا أن الشركة الأخرى بلا مبيعات.)"
+  },
+  "A07": {
+   "en": [
+    {
+     "src": "assets/nudge/guide/v20/A07_1.webp",
+     "caption": "Ctrl + Alt + D in Job Position: the pill listens"
+    },
+    {
+     "src": "assets/nudge/guide/v20/A07_3.webp",
+     "caption": "The words typed in the field"
+    },
+    {
+     "src": "assets/nudge/guide/v20/A07_4.webp",
+     "caption": "Saved contact"
+    },
+    {
+     "src": "assets/nudge/guide/v20/A07_5.mp4",
+     "caption": "Dictating into a field and saving"
+    }
+   ],
+   "ar": [
+    "assets/nudge/guide/v20/A07_1_ar.webp",
+    "assets/nudge/guide/v20/A07_3_ar.webp",
+    "assets/nudge/guide/v20/A07_4_ar.webp",
+    "assets/nudge/guide/v20/A07_5_ar.mp4"
+   ],
+   "result_en": "On Odoo 20, dictating into the Job Position field of a new contact with Ctrl+Alt+D typed 'Purchasing Manager' for the spoken words 'Purchasing Manager'; the pill showed 'I'm listening...' and the contact was saved with that job position. In the Arabic interface the spoken Arabic words «مدير المشتريات» were typed as «مدير المشتريات».",
+   "result_ar": "على أودو 20، عند الإملاء في حقل «المنصب الوظيفي» لجهة اتصال جديدة بواجهة عربية بالضغط على Ctrl+Alt+D ونطق «مدير المشتريات»، ظهرت الفقاعة «أنا أسمعك…» وكُتب «مدير المشتريات» في الحقل، ثم حُفظت جهة الاتصال بهذا المنصب."
   }
  }
 }

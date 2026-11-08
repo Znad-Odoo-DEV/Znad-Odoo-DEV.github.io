@@ -52,7 +52,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "A08": {
@@ -340,7 +340,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "C10": {
@@ -348,7 +348,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "C11": {
@@ -374,7 +374,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "C14": {
@@ -382,7 +382,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "C15": {
@@ -390,7 +390,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "partial",
+"20": "yes",
 "ee": false
 },
 "C16": {
@@ -398,7 +398,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "partial",
 "ee": false
 },
 "C17": {
@@ -406,7 +406,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "C18": {
@@ -806,7 +806,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "H13": {
@@ -1116,7 +1116,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "R3-12": {
@@ -1196,7 +1196,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "R3-22": {
@@ -1244,7 +1244,7 @@
 "17": "partial",
 "18": "partial",
 "19": "yes",
-"20": "soon",
+"20": "partial",
 "ee": false
 },
 "R3-28": {
@@ -1532,7 +1532,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 },
 "R3-61": {
@@ -1540,7 +1540,7 @@
 "17": "partial",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false,
 "note": "On Odoo 17 creating shop products needs Settings or another app's manager rights: Odoo 17 has no Product Manager group.",
 "note_ar": "على Odoo 17 يحتاج إنشاء منتجات المتجر إلى صلاحية الإعدادات أو مدير تطبيق آخر: فـ Odoo 17 ليس فيه مجموعة Product Manager."
@@ -1582,7 +1582,7 @@
 "17": "yes",
 "18": "yes",
 "19": "yes",
-"20": "soon",
+"20": "yes",
 "ee": false
 }
 }
