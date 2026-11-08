@@ -9006,8 +9006,8 @@
    ],
    "result_en": "In the trial on Odoo 20 Labour and Tax Rules of Germany listed 7 groups of figures (minimum wage 13.9 per hour, overtime limit 10 hours a day, retirement age 67, social insurance, VAT, withholding tax, working hours), each marked Official with its official page and date; the administrator changed the minimum wage to 14.5 with a reason and a source: the list then read 'Set by the administrator' with 14.5 against the official 13.9, History kept the change, and 'Official figures' (after a confirmation) put 13.9 back.",
    "result_ar": "في التجربة على أودو 20 عرضت «قواعد العمل والضرائب في ألمانيا» 7 مجموعات أرقام (الحد الأدنى للأجور 13.9 للساعة وحد العمل الإضافي 10 ساعات يومياً وسن التقاعد 67 والتأمينات الاجتماعية وضريبة القيمة المضافة والضريبة المقتطعة وساعات العمل)، كلٌّ موسوم «رسمي» مع صفحته الرسمية وتاريخه؛ وغيّر المدير الحد الأدنى للأجور إلى 14.5 مع السبب والمصدر فظهر «حدده المدير» و14.5 مقابل الرقم الرسمي 13.9، وحفظ «السجل» التغيير، وأعاد «الأرقام الرسمية» (بعد تأكيد) 13.9.",
-   "partial_en": "the Germany pack was used; the manager's read-only view and the pending feed update are not shown, and several labels of this screen stay in English in the Arabic interface.",
-   "partial_ar": "استُخدمت حزمة ألمانيا؛ ولا تظهر شاشة المدير للقراءة فقط ولا تحديث التغذية المنتظر، وتبقى عدة تسميات في هذه الشاشة بالإنجليزية في الواجهة العربية."
+   "partial_en": "the Germany pack was used; the manager's read-only view and the pending feed update are not shown, and a few labels of this screen (window titles, names of the rules) stay in English in the Arabic interface.",
+   "partial_ar": "استُخدمت حزمة ألمانيا؛ ولا تظهر شاشة المدير للقراءة فقط ولا تحديث التغذية المنتظر، وتبقى بعض التسميات في هذه الشاشة (عناوين النوافذ وأسماء القواعد) بالإنجليزية في الواجهة العربية."
   },
   "RULES-02": {
    "en": [
