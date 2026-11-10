@@ -754,12 +754,22 @@
           <p class="feature-what">Attach the Excel or CSV file and Nudge tries it the way the Test button of the Import screen does, without saving: every row is checked and each problem comes back with its row and column, explained, with the fix.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Press the paperclip and attach the .xlsx or .csv.</li><li>Ask “Check this file before I import it into Contacts” or “Why does this not import into contacts?”</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../assets/nudge/guide/B13-file-check-before-import.webp" width="413" height="624" loading="lazy" decoding="async" alt="Check a file before you import it: screenshot of the trial">
-            <figcaption>A CSV checked before import: the failing row and column named (country 'Atlantis' for Northwind Interiors) with two ways to fix it.</figcaption>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/B13_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Check a file before you import it: screenshot of the trial">
+            <figcaption>The CSV attached to the Nudge panel on the Customers list.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/B13_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Check a file before you import it: screenshot of the trial">
+            <figcaption>The check before import: Row 3, column Country ('Atlantis') cannot be found, with how to fix it.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/v19/B13-poster.webp" aria-label="Check a file before you import it: recording of the trial, 41 seconds">
+              <source src="../assets/nudge/guide/v19/B13.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 41 s</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial Nudge answered: “To import these customers, you need to fix the country_id for “Northwind Interiors.” The record fails because “Atlantis” does not exist in your country list. You have two options: 1. Correct the file… 2. Create the country… under Contacts &gt; Configuration &gt; Countries. All other rows appear valid.”</p>
+          <p class="feature-result">In the trial, Nudge tested the attached CSV for Contacts and found 1 error: Row 3, column 'Country' ('Atlantis') is not a known country; fix it in the file or create the country first.</p>
           <p class="feature-note"><strong>Note</strong> On the Import screen with the screen shared, Nudge also sees the errors shown there.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -1901,12 +1911,18 @@
           <p class="feature-what">Nudge answers in the language you write in, whatever the language of your screen: formal Arabic, a Levantine, Egyptian or Gulf dialect, Arabizi, or English.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Write as you speak: “شو هي هالشاشة وشو لازم أعمل هون؟”</li><li>Or in English: “What am I looking at, and what should I do next?”</li><li>The answer comes in the same language.</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../assets/nudge/guide/A11-arabic-and-english.webp" width="413" height="624" loading="lazy" decoding="async" alt="Arabic and English, dialects and Arabizi: screenshot of the trial">
-            <figcaption>An Arabic question about the Sales settings answered in Arabic, in the Arabic Odoo interface.</figcaption>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/A11_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Arabic and English, dialects and Arabizi: screenshot of the trial">
+            <figcaption>Asking 'What am I looking at, and what should I do next?' on the Quotations list: the answer explains the screen and gives three next steps.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/v19/A11-poster.webp" aria-label="Arabic and English, dialects and Arabizi: recording of the trial, 25 seconds">
+              <source src="../assets/nudge/guide/v19/A11.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 25 s</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the Arabic trial, “/كم عرض سعر عند كل بائع؟” came back as “Marc Demo: 17 عرض سعر — Mitchell Admin: 12 عرض سعر”, and the dialect questions of the whole round (“خدني على فواتير الموردين”, “شيّكلي هالملف قبل ما استورده”) were understood and answered in Arabic.</p>
+          <p class="feature-result">In the trial, when asked 'What am I looking at, and what should I do next?' on the Quotations list, Nudge answered in English: it explained the list and gave three next steps (open a row, create a new quotation, filter or search).</p>
           <p class="feature-note"><strong>Note</strong> Free, small models make language mistakes, in Arabic especially; a stronger model answers better.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -2447,11 +2463,21 @@
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Attach a recording (m4a, mp3, ogg, wav or webm, up to 10 MB) or record the meeting in the panel.</li><li>Ask for the summary.</li><li>Read the decisions and action items, and answer yes to each draft you want.</li></ol>
           <figure class="feature-media">
-            <img src="../assets/nudge/guide/H35-meeting-audio.webp" width="960" height="319" loading="lazy" decoding="async" alt="Meeting audio summary: screenshot of the trial">
-            <figcaption>The Meeting audio setting: a recording is summarised and forgotten within one hour, and the transcript is kept nowhere.</figcaption>
+            <img src="../assets/nudge/guide/v19/H35_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Meeting audio summary: screenshot of the trial">
+            <figcaption>A meeting recording attached in the Nudge panel with the request to summarise it.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/H35_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Meeting audio summary: screenshot of the trial">
+            <figcaption>The summary with the decision and three action items, and Nudge offering to turn them into tasks.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/v19/H35-poster.webp" aria-label="Meeting audio summary: recording of the trial, 19 seconds">
+              <source src="../assets/nudge/guide/v19/H35.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 19 s</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial, the Meeting audio setting says “Needs a provider that accepts audio, and ffmpeg on the server for voice notes.” Only the setting was shown; a meeting summary was not tried live.</p>
+          <p class="feature-result">In the trial, Nudge summarised the attached meeting: one decision (10% off on lease renewal) and three action items with owner and date, then asked which project to turn them into tasks.</p>
           <p class="feature-note"><strong>Note</strong> Needs an AI provider that accepts audio, or the words the browser heard while recording when that is allowed. The recording is forgotten after one hour and the transcript is kept nowhere.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -2678,14 +2704,22 @@
           <p class="feature-what">“Set the salesperson of all of Raghad's quotations to Ebrahim”: one plan and one card, not a card per record. Nudge rehearses the plan and undoes it first, so the card says how many go through and why the others do not. Yes, all of them / Only the … that go through / No.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Write the change for a group of records: “Set the delivery date of all of Raghad's quotations to next Monday”.</li><li>Read the card: the records, the change, “N records: all go through, as tried just now”.</li><li>Press Yes, all of them, Only the … that go through, or No.</li></ol>
-          <figure class="feature-media portrait">
-            <video controls preload="none" playsinline width="540" height="960" poster="../assets/nudge/guide/video/rec_many-poster.webp" aria-label="Many records, one yes: recording of the trial, 28 seconds">
-              <source src="../assets/nudge/guide/video/rec_many.mp4" type="video/mp4">
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C09_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Many records, one yes: screenshot of the trial">
+            <figcaption>One plan card for Raghad's quotations in Quotation Sent status, with the change and the Yes / No buttons.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C09_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Many records, one yes: screenshot of the trial">
+            <figcaption>After Yes: 2 done with Undo, and Nudge's confirmation.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/v19/C09-poster.webp" aria-label="Many records, one yes: recording of the trial, 78 seconds">
+              <source src="../assets/nudge/guide/v19/C09.mp4" type="video/mp4">
             </video>
-            <figcaption>Recording of the trial · 28 s</figcaption>
+            <figcaption>Recording of the trial · 78 s</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial the card read: “Change Salesperson: Ebrahim on 17 × Sales Order — 17 records: all go through, as tried just now. — Yes, all of them / No”. After the yes: “I have updated the salesperson to Ebrahim for all 17 of Raghad's offers.”, and S00033…S00049 all carried Ebrahim.</p>
+          <p class="feature-result">In the trial, Nudge prepared one plan for S00044 and S00040: Delivery Date to 2026-11-16, '2 records: all go through, as tried just now'; after Yes: '2 done' with Undo, and the change can be undone.</p>
           <p class="feature-note"><strong>Note</strong> Each record is done in its own savepoint: one that fails does not stop the others. Beyond 20 records the plan runs in the background. Records per Plan: 200 by default, 1000 at most (Settings ‣ Nudge).</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -3366,12 +3400,26 @@
           <p class="feature-what">Administrators of the Settings group, when SQL for Administrators is on, can ask for one SELECT: a join or a report no other tool gives. Read only, enforced by the database itself (the transaction is set read-only); 50 rows, 10 seconds, in a savepoint rolled back at the end. /sql runs a statement you write yourself, without AI.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Administrator: Settings ‣ Nudge ‣ SQL for Administrators.</li><li>Ask “Using SQL: the 5 customers with the most orders”.</li><li>Or type “/sql SELECT name, city FROM res_partner WHERE city IS NOT NULL ORDER BY name LIMIT 5”.</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../assets/nudge/guide/C14-sql.webp" width="413" height="624" loading="lazy" decoding="async" alt="SQL (one SELECT, administrators, switch): screenshot of the trial">
-            <figcaption>'Using SQL: the 5 customers with the most orders' → the top five with their order counts.</figcaption>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C14_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="SQL (one SELECT, administrators, switch): screenshot of the trial">
+            <figcaption>Settings &gt; Nudge: SQL for Administrators is switched on.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C14_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="SQL (one SELECT, administrators, switch): screenshot of the trial">
+            <figcaption>'Using SQL: the 5 customers with the most orders' answered with the top five and their order counts.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C14_3.webp" width="1280" height="720" loading="lazy" decoding="async" alt="SQL (one SELECT, administrators, switch): screenshot of the trial">
+            <figcaption>The /sql command with a SELECT returns a small table of names and cities.</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/v19/C14-poster.webp" aria-label="SQL (one SELECT, administrators, switch): recording of the trial, 80 seconds">
+              <source src="../assets/nudge/guide/v19/C14.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 80 s</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial, “Using SQL: the 5 customers with the most orders” answered: “1. Gemini Furniture — 17 orders 2. Acme Corporation — 5 orders 3. Ready Mat — 2 orders 4. Joel Willis — 2 orders 5. Azure Interior — 1 order”. The /sql statement above ran at once (0.0 s) without AI.</p>
+          <p class="feature-result">In the trial, with SQL for Administrators on, 'Using SQL: the 5 customers with the most orders' gave Daniel Carter 7, Palm Gate Clinic Demo 5, Lara 5, a fourth customer 4 and Golden Falcon Technologies Demo 4; '/sql SELECT name, city ... LIMIT 5' returned five rows at once.</p>
           <p class="feature-note"><strong>Note</strong> Never users, parameters or providers; secrets are hidden by column and by value; every query is in the log.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
