@@ -154,15 +154,28 @@
   },
   "A15": {
    "en": [
-    "assets/nudge/guide/v17/A15_1.webp",
-    "assets/nudge/guide/v17/A15_2.webp"
+    {
+     "src": "assets/nudge/guide/v17/A15_1.webp",
+     "caption": "With no AI provider: a search for \"warehouses\" lists the matching screen and Odoo documentation"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A15_2.webp",
+     "caption": "\"/product\" shows product cards with price, cost and stock per warehouse"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A15_3.webp",
+     "caption": "\"/doc\" opens the matching Odoo documentation pages"
+    },
+    "assets/nudge/guide/v17/A15.mp4"
    ],
    "ar": [
     "assets/nudge/guide/v17/A15_1_ar.webp",
-    "assets/nudge/guide/v17/A15_2_ar.webp"
+    "assets/nudge/guide/v17/A15_2_ar.webp",
+    "assets/nudge/guide/v17/A15_3_ar.webp",
+    "assets/nudge/guide/v17/A15_ar.mp4"
    ],
-   "result_en": "'warehouses' was answered (after choosing 'In writing') with how to reach Inventory > Configuration > Warehouses, and '/product basmati' listed the two basmati products with price, cost and stock without an AI call. The Arabic words 'المستودعات' and '/منتج basmati' did the same.",
-   "result_ar": "أُجيب عن «warehouses» (بعد اختيار «كتابةً») بطريقة الوصول إلى المخزون > الإعدادات > المستودعات، وعرض «/product basmati» منتجَي البسمتي بسعرهما وتكلفتهما ومخزونهما دون استدعاء الذكاء الاصطناعي. وأدّت «المستودعات» و«/منتج basmati» بالعربية الغرض نفسه."
+   "result_en": "With no AI provider set up, Nudge still answers searches: \"warehouses\" lists the Warehouses screen plus Odoo documentation, \"/product basmati\" returns two product cards (93.00 AED, 386 units and 118.00 AED, 141 units) and \"/doc landed costs\" returns documentation pages, with no AI answer.",
+   "result_ar": "دون مزود ذكاء اصطناعي ما زال Nudge يجيب عن البحث: «المستودعات» تعرض أربع شاشات من المخزون وصفحات توثيق Odoo، و«/منتج basmati» تعرض بطاقتي منتج (93.00 AED و386 وحدة، و118.00 AED و141 وحدة)، و«/doc landed costs» تعرض صفحات التوثيق، دون أي إجابة ذكاء اصطناعي."
   },
   "A16": {
    "en": [
@@ -1868,14 +1881,26 @@
    "en": [
     {
      "src": "assets/nudge/guide/v17/H35_1.webp",
-     "caption": "The Meeting audio setting"
-    }
+     "caption": "A meeting recording is attached in the Nudge panel."
+    },
+    {
+     "src": "assets/nudge/guide/v17/H35_2.webp",
+     "caption": "Nudge summarizes the meeting: the decision and the action items with who and when."
+    },
+    {
+     "src": "assets/nudge/guide/v17/H35_3.webp",
+     "caption": "Follow-ups are prepared as drafts; each waits for a Yes."
+    },
+    "assets/nudge/guide/v17/H35.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v17/H35_1_ar.webp"
+    "assets/nudge/guide/v17/H35_1_ar.webp",
+    "assets/nudge/guide/v17/H35_2_ar.webp",
+    "assets/nudge/guide/v17/H35_3_ar.webp",
+    "assets/nudge/guide/v17/H35_ar.mp4"
    ],
-   "result_en": "The Meeting audio setting says a recording attached or made in the panel is summarised and then forgotten within one hour, the transcript is kept nowhere, and it needs a provider that accepts audio and ffmpeg on the server. Only the setting was shown; a meeting was not summarised.",
-   "result_ar": "يقول إعداد «اجتماع صوتي» إن التسجيل المرفق أو المُنجَز في اللوحة يُلخَّص ثم يُنسى خلال ساعة ولا يُحفظ النص في أي مكان، وإنه يحتاج مزوّدًا يقبل الصوت و ffmpeg على الخادم. عُرض الإعداد فقط ولم يُلخَّص أي اجتماع.",
+   "result_en": "A short meeting recording gives its decision (10% discount on lease renewal) and action items with owner and date (contracts by 2026-11-12, AC visit 2026-11-15, minutes 2026-11-11), then a plan of 2 drafts, a task and a calendar event, each waiting for a Yes.",
+   "result_ar": "ملخص اجتماع مسجّل: القرار خصم 10% عند تجديد الإيجار، وبنود العمل مع المسؤول والموعد (12-11-2026 و14-11-2026)، ثم خطة من 3 خطوات (مهمتان وحدث تقويم) تنتظر كل منها موافقتك. | English: a recorded meeting gives the 10% decision and dated action items, then a 3-step plan waiting for Yes.",
    "partial_en": "only the setting is shown; no recording was summarised.",
    "partial_ar": "يظهر الإعداد فقط؛ ولم يُلخَّص أي تسجيل."
   },
@@ -2239,13 +2264,28 @@
   },
   "R3-19": {
    "en": [
-    "assets/nudge/guide/v17/R3-19_1.webp"
+    {
+     "src": "assets/nudge/guide/v17/R3-19_1.webp",
+     "caption": "Skill Catalogue: six skills, each signed by Nudge"
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-19_2.webp",
+     "caption": "Installing a signed skill: the review reads \"Signed by Nudge\" and shows the skill in full"
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-19_3.webp",
+     "caption": "Importing an unsigned file: a warning and the skill in full before anything is created"
+    },
+    "assets/nudge/guide/v17/R3-19.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v17/R3-19_1_ar.webp"
+    "assets/nudge/guide/v17/R3-19_1_ar.webp",
+    "assets/nudge/guide/v17/R3-19_2_ar.webp",
+    "assets/nudge/guide/v17/R3-19_3_ar.webp",
+    "assets/nudge/guide/v17/R3-19_ar.mp4"
    ],
-   "result_en": "In the trial on Odoo 17 Nudge > Configuration > Recipes shows the buttons Export a recipe, Import a recipe and Publish our recipes and a Skill Catalogue that is empty ('No skill in the catalogue').",
-   "result_ar": "في التجربة على أودو 17 تعرض «الوصفات» أزرار «تصدير وصفة» و«استيراد وصفة» و«انشر وصفاتنا» و«فهرس المهارات» فارغاً («لا مهارة في الفهرس»).",
+   "result_en": "The Skill Catalogue lists its 6 skills, all signed by Nudge. Installing one opens a review that says \"Signed by Nudge\" and shows the skill text in full; an unsigned file shows a warning first and its skill in full, and nothing is imported until a system administrator confirms.",
+   "result_ar": "يعرض كتالوج المهارات ست مهارات كلها موقّعة من Nudge. يفتح التثبيت مراجعة تقول «موقّعة من Nudge» مع نص المهارة كاملاً، وعند استيراد ملف غير موقّع يظهر تحذير ونص المهارة كاملاً، ولا يُستورد شيء قبل موافقة مدير النظام.",
    "partial_en": "the signed catalogue is empty on this database.",
    "partial_ar": "كتالوج الوصفات الموقّعة فارغ في قاعدة البيانات هذه."
   },
@@ -2570,13 +2610,23 @@
   },
   "R3-42": {
    "en": [
-    "assets/nudge/guide/v17/R3-42_1.webp"
+    {
+     "src": "assets/nudge/guide/v17/R3-42_1.webp",
+     "caption": "Redact Personal Data Before Sending is on; the preview shows the e-mail, phone and IBAN replaced by tokens."
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-42_2.webp",
+     "caption": "The e-mail Nudge writes shows the real IBAN back."
+    },
+    "assets/nudge/guide/v17/R3-42.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v17/R3-42_1_ar.webp"
+    "assets/nudge/guide/v17/R3-42_1_ar.webp",
+    "assets/nudge/guide/v17/R3-42_2_ar.webp",
+    "assets/nudge/guide/v17/R3-42_ar.mp4"
    ],
-   "result_en": "In the trial on Odoo 17 the Personal Data block holds Redact Personal Data Before Sending (off here) with a sample text and the preview of what would be sent: the e-mail, phone and IBAN become EMAIL_1, PHONE_1 and IBAN_1 with the table of what each stands for.",
-   "result_ar": "في التجربة على أودو 17 تضم كتلة «البيانات الشخصية» مفتاح «إخفاء البيانات الشخصية قبل الإرسال» (مُطفأ هنا) مع نص تجريبي ومعاينة ما سيُرسَل: يتحول البريد والهاتف وIBAN إلى EMAIL_1 وPHONE_1 وIBAN_1 مع جدول ما يمثله كل رمز.",
+   "result_en": "With redaction on, the e-mail, phone and IBAN are sent as EMAIL_1, PHONE_1 and IBAN_1; the e-mail Nudge writes shows the real IBAN AE07 0331 2345 6789 0123 456 again.",
+   "result_ar": "مع تفعيل الإخفاء يُرسل البريد والهاتف والآيبان كرموز، وتعرض مسودة البريد الآيبان الحقيقي AE07 0331 2345 6789 0123 456. | English: tokens go out, the real IBAN returns in the draft.",
    "partial_en": "the switch is off; the answer with the real values is not shown.",
    "partial_ar": "المفتاح متوقف؛ ولا تظهر الإجابة بعد إرجاع القيم الحقيقية."
   },
@@ -3843,15 +3893,28 @@
   },
   "C09": {
    "en": [
-    "assets/nudge/guide/v18/C09_1.webp",
-    "assets/nudge/guide/v18/C09_2.webp"
+    {
+     "src": "assets/nudge/guide/v18/C09_1.webp",
+     "caption": "Asking Nudge to set the delivery date of all of Raghad's quotations to next Monday."
+    },
+    {
+     "src": "assets/nudge/guide/v18/C09_2.webp",
+     "caption": "One plan card lists the two quotations and the change and says all of them go through."
+    },
+    {
+     "src": "assets/nudge/guide/v18/C09_3.webp",
+     "caption": "After one Yes: 2 done, with Undo."
+    },
+    "assets/nudge/guide/v18/C09.mp4"
    ],
    "ar": [
     "assets/nudge/guide/v18/C09_1_ar.webp",
-    "assets/nudge/guide/v18/C09_2_ar.webp"
+    "assets/nudge/guide/v18/C09_2_ar.webp",
+    "assets/nudge/guide/v18/C09_3_ar.webp",
+    "assets/nudge/guide/v18/C09_ar.mp4"
    ],
-   "result_en": "In the trial, \"Set the salesperson of all quotations assigned to Raghad to Ebrahim\" in Agent mode made one card: Nudge found Raghad's two open quotations (S00042, S00043; her other 11 records are confirmed sales orders and were left alone) and proposed Salesperson: Ebrahim on both, with one Yes. After the yes both carried Ebrahim.",
-   "result_ar": "قدّم Nudge بطاقة واحدة لطلب تغيير مسؤول المبيعات في كل عروض أسعار Raghad إلى Ebrahim في وضع الوكيل: «تعديل مندوب المبيعات: Ebrahim على 2 × Sales Order» (S00042 وS00043)، و«2 سجل: كلها ستنجح، حسب التجربة الآن»، وبعد الموافقة «نعم، كلها» حمل العرضان اسم Ebrahim."
+   "result_en": "Nudge showed one plan card for S00043 and S00042: Delivery Date to 2026-11-16, '2 records: all go through, as tried just now'; after Yes it said '2 done' with an Undo button.",
+   "result_ar": "ظهرت بطاقة خطة واحدة للعرضين S00043 وS00042: تاريخ التسليم 16-11-2026، «2 سجل: كلها ستنجح، حسب التجربة الآن»، وبعد «نعم، كلها» ظهر «تم 2» مع زر «تراجع»."
   },
   "C10": {
    "en": [
@@ -5108,14 +5171,25 @@
    "en": [
     {
      "src": "assets/nudge/guide/v18/H35_1.webp",
-     "caption": "The Meeting audio setting"
+     "caption": "A meeting recording attached in the Nudge panel with the request to summarise it."
+    },
+    {
+     "src": "assets/nudge/guide/v18/H35_2.webp",
+     "caption": "The summary, the decision (10% off lease renewals) and three action items with owner and date."
+    },
+    {
+     "src": "assets/nudge/guide/v18/H35_3.webp",
+     "caption": "After 'Yes, go ahead', a card with three draft tasks and a Yes button; nothing is created until you answer."
     }
    ],
    "ar": [
-    "assets/nudge/guide/v18/H35_1_ar.webp"
+    "assets/nudge/guide/v18/H35_1_ar.webp",
+    "assets/nudge/guide/v18/H35_2_ar.webp",
+    "assets/nudge/guide/v18/H35_3_ar.webp",
+    "assets/nudge/guide/v18/H35_ar.mp4"
    ],
-   "result_en": "The Meeting audio setting says a recording attached or made in the panel is summarised and then forgotten within one hour, the transcript is kept nowhere, and it needs a provider that accepts audio and ffmpeg on the server. Only the setting was shown; a meeting was not summarised.",
-   "result_ar": "يقول إعداد «اجتماع صوتي» إن التسجيل المرفق أو المُنجَز في اللوحة يُلخَّص ثم يُنسى خلال ساعة ولا يُحفظ النص في أي مكان، وإنه يحتاج مزوّدًا يقبل الصوت و ffmpeg على الخادم. عُرض الإعداد فقط ولم يُلخَّص أي اجتماع.",
+   "result_en": "Nudge summarised a short meeting recording: one decision (10% off on lease renewals) and three action items (send the revised contracts - Raghad, Thursday; book the AC visit for apartment 1204 - Ebrahim; share the minutes - tomorrow), then prepared 'Create 3 draft tasks' waiting for a Yes.",
+   "result_ar": "لخّص Nudge تسجيل الاجتماع: قرار واحد (منح المستأجرين خصم 10% على تجديد العقد) وثلاثة بنود عمل مع المسؤول والموعد، ثم جهّز مهمة بحجز زيارة صيانة المكيف للشقة 1204 تنتظر موافقتك.",
    "partial_en": "only the setting is shown; no recording was summarised.",
    "partial_ar": "يظهر الإعداد فقط؛ ولم يُلخَّص أي تسجيل."
   },
@@ -5887,14 +5961,20 @@
    "en": [
     {
      "src": "assets/nudge/guide/v18/R3-42_1.webp",
-     "caption": "Settings: Personal Data with the sample text"
+     "caption": "Settings > Nudge > Personal Data: the preview turns the sample into EMAIL_1, PHONE_1 and IBAN_1."
+    },
+    {
+     "src": "assets/nudge/guide/v18/R3-42_2.webp",
+     "caption": "The reminder e-mail in the answer, with the real IBAN back in place."
     }
    ],
    "ar": [
-    "assets/nudge/guide/v18/R3-42_1_ar.webp"
+    "assets/nudge/guide/v18/R3-42_1_ar.webp",
+    "assets/nudge/guide/v18/R3-42_2_ar.webp",
+    "assets/nudge/guide/v18/R3-42_ar.mp4"
    ],
-   "result_en": "The Personal Data block explains the redaction and its sample text shows an email address, a phone number and an IBAN becoming 'EMAIL_1, PHONE_1, IBAN_1', with the real values coming back only into the answer; the switch is off here.",
-   "result_ar": "تشرح كتلة «البيانات الشخصية» الإخفاء، ويُظهر نصها التجريبي أن البريد الإلكتروني ورقم الهاتف وIBAN تصير «EMAIL_1, PHONE_1, IBAN_1» وتعود القيم الحقيقية إلى الإجابة فقط؛ والمفتاح مُطفأ هنا.",
+   "result_en": "With 'Redact Personal Data Before Sending' on, the sample text becomes 'Raghad: EMAIL_1, PHONE_1, IBAN_1'; the e-mail Nudge wrote shows the real IBAN AE07 0331 2345 6789 0123 456 again.",
+   "result_ar": "عند تفعيل «إخفاء البيانات الشخصية قبل الإرسال» يتحول النص التجريبي إلى «Raghad: EMAIL_1, PHONE_1, IBAN_1»، ويظهر في الرسالة التي كتبها Nudge رقم الآيبان الحقيقي AE07 0331 2345 6789 0123 456.",
    "partial_en": "the preview is shown, but the switch is off, so no real request was masked.",
    "partial_ar": "تظهر المعاينة لكن المفتاح متوقف، فلم يُخفَ أي طلب حقيقي."
   },
@@ -6591,25 +6671,53 @@
   },
   "A14": {
    "en": [
-    "assets/nudge/guide/v20/A14_3.webp",
-    "assets/nudge/guide/v20/A14_4.webp"
+    {
+     "src": "assets/nudge/guide/v20/A14_1.webp",
+     "caption": "The user menu shows \"Nudge: On\""
+    },
+    {
+     "src": "assets/nudge/guide/v20/A14_2.webp",
+     "caption": "After switching it off the Nudge avatar and top-bar icon are gone"
+    },
+    {
+     "src": "assets/nudge/guide/v20/A14_3.webp",
+     "caption": "Switched back on: the avatar returns"
+    },
+    "assets/nudge/guide/v20/A14.mp4"
    ],
    "ar": [
+    "assets/nudge/guide/v20/A14_1_ar.webp",
+    "assets/nudge/guide/v20/A14_2_ar.webp",
     "assets/nudge/guide/v20/A14_3_ar.webp",
-    "assets/nudge/guide/v20/A14_4_ar.webp"
+    "assets/nudge/guide/v20/A14_ar.mp4"
    ],
-   "result_en": "The user menu shows 'Nudge: On'; pressing it removed the avatar and the top-bar icon for this user, and 'Nudge: Off' in the same menu brought them back.",
-   "result_ar": "تعرض قائمة المستخدم «Nudge: يعمل»؛ وعند الضغط عليها اختفت الأيقونتان لهذا المستخدم فقط، وأعادتهما «Nudge: متوقف» من القائمة نفسها."
+   "result_en": "Nudge can be switched off from the user menu: pressing \"Nudge: On\" removes the avatar bubble and top-bar icon on the same page, the menu then reads \"Nudge: Off\", and pressing it again brings the avatar back.",
+   "result_ar": "يمكن إيقاف Nudge من قائمة المستخدم: الضغط على «Nudge: يعمل» يُخفي فقاعة الأفاتار وأيقونة الشريط العلوي في الصفحة نفسها، ثم تعرض القائمة «Nudge: متوقف»، وبالضغط عليها يعود الأفاتار."
   },
   "A15": {
    "en": [
-    "assets/nudge/guide/v20/A15_1.webp"
+    {
+     "src": "assets/nudge/guide/v20/A15_1.webp",
+     "caption": "With no AI provider: a search for \"warehouses\" lists the matching screen and Odoo documentation"
+    },
+    {
+     "src": "assets/nudge/guide/v20/A15_2.webp",
+     "caption": "\"/product\" shows product cards with price, cost and stock"
+    },
+    {
+     "src": "assets/nudge/guide/v20/A15_3.webp",
+     "caption": "\"/doc\" opens the matching Odoo documentation pages"
+    },
+    "assets/nudge/guide/v20/A15.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v20/A15_1_ar.webp"
+    "assets/nudge/guide/v20/A15_1_ar.webp",
+    "assets/nudge/guide/v20/A15_2_ar.webp",
+    "assets/nudge/guide/v20/A15_3_ar.webp",
+    "assets/nudge/guide/v20/A15_ar.mp4"
    ],
-   "result_en": "With no AI involved, /product Bolt returned the product card [ASF-011] Bolt M8 x 40, box of 100: price 8.50 EUR, cost 4.50 EUR, 2336 units on hand (Hannover Raw Materials 1527, Finished Goods Hall 809), as in the database.",
-   "result_ar": "دون أي ذكاء اصطناعي أعاد /منتج Bolt بطاقة المنتج [ASF-011] Bolt M8 x 40, box of 100: السعر 8.50 يورو والتكلفة 4.50 يورو و2336 وحدة في المخزون (Hannover Raw Materials 1527 وFinished Goods Hall 809)؛ وهي الأرقام نفسها في قاعدة البيانات."
+   "result_en": "With no AI provider set up, Nudge still answers searches: \"warehouses\" lists the Warehouses screen and Odoo documentation pages, \"/product frame\" returns two product cards (Garden Gate Frame 245.00 EUR, 0 units; Metal gate frame 245.00 EUR, 244 units at Hannover Raw Materials) and \"/doc landed costs\" returns documentation pages, with no AI answer.",
+   "result_ar": "دون مزود ذكاء اصطناعي يجيب Nudge عن البحث: «المستودعات» تعرض خمس شاشات من المخزون وصفحات توثيق Odoo، و«/منتج frame» تعرض بطاقتي منتج (Garden Gate Frame بسعر 245.00 يورو وصفر وحدة، وMetal gate frame بسعر 245.00 يورو و244 وحدة في Hannover Raw Materials)، و«/doc landed costs» تعرض صفحات التوثيق، دون إجابة ذكاء اصطناعي."
   },
   "A16": {
    "en": [
@@ -7859,10 +7967,11 @@
    "ar": [
     "assets/nudge/guide/v20/H18_1_ar.webp",
     "assets/nudge/guide/v20/H18_2_ar.webp",
-    "assets/nudge/guide/v20/H18_3_ar.mp4"
+    "assets/nudge/guide/v20/H18_3_ar.webp",
+    "assets/nudge/guide/v20/H18_ar.mp4"
    ],
    "result_en": "In Agent mode 'a pivot of my confirmed sales by customer for the last 30 days' showed a card 'Confirmed sales by customer (last 30 days)' (pivot table, kept in Nudge > My Reports, only you see it, not on the home page, not a spreadsheet); after Yes, do it it said Done and 'I saved the pivot ... You will find it under Nudge > My Reports'.",
-   "result_ar": "في وضع Agent جاء جواب الصيغة الإنجليزية «جدول محوري ...» فأظهر بطاقة حفظ في تقاريري (جدول محوري، لا في الصفحة الرئيسية، لا كجدول بيانات)؛ بعد «نعم» ظهر «تم» ورسالة «تم حفظ التقرير «مبيعاتي المؤكدة حسب العميل - آخر 30 يومًا». تجده في Nudge > My Reports». الصيغة العربية الأولى «جدول محوري لمبيعاتي ...» أعطت قائمة فقط، فاستُعملت «احفظ في تقاريري جدولًا محوريًا ...»."
+   "result_ar": "طلب المستخدم جدولًا محوريًا لفواتير العملاء حسب العميل لآخر 30 يومًا، فعرض Nudge بطاقة «حفظ التقرير» وبعد «نعم، نفّذ» ظهر «تم» وفُتح التقرير من «تقاريري» جدولًا محوريًا بالبيانات: Oliver Grant 64.26 € وSarah Bennett 1,056.72 € والإجمالي 1,120.98 €."
   },
   "H19": {
    "en": [
@@ -8100,13 +8209,27 @@
   },
   "H35": {
    "en": [
-    "assets/nudge/guide/v20/H35_1.webp"
+    {
+     "src": "assets/nudge/guide/v20/H35_1.webp",
+     "caption": "A meeting recording is attached to the request."
+    },
+    {
+     "src": "assets/nudge/guide/v20/H35_2.webp",
+     "caption": "Nudge summarizes the meeting with the action items, owner and date."
+    },
+    {
+     "src": "assets/nudge/guide/v20/H35_3.webp",
+     "caption": "The action items become one plan of three task drafts waiting for a Yes."
+    },
+    "assets/nudge/guide/v20/H35.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v20/H35_1_ar.webp"
+    "assets/nudge/guide/v20/H35_1_ar.webp",
+    "assets/nudge/guide/v20/H35_2_ar.webp",
+    "assets/nudge/guide/v20/H35_3_ar.webp"
    ],
-   "result_en": "The Meeting audio setting says a recording attached or made in the panel is summarised and forgotten within one hour, the transcript is kept nowhere, and it needs a provider that accepts audio and ffmpeg on the server. A meeting was not summarised.",
-   "result_ar": "يقول إعداد «اجتماع صوتي» إن التسجيل المرفق أو المُنجَز في اللوحة يُلخَّص ثم يُنسى خلال ساعة ولا يُحفظ النص في أي مكان، ويحتاج مزوّدًا يقبل الصوت وffmpeg على الخادم. لم يُلخَّص اجتماع.",
+   "result_en": "A 20-second meeting recording gives the 10% lease-renewal discount decision and three dated action items (2026-11-12, 2026-11-15, 2026-11-11), then a plan of 3 task drafts in Oak Desk Range 2026 waiting for Yes.",
+   "result_ar": "ملخص اجتماع مسجّل: خصم 10% عند تجديد العقد وثلاثة بنود عمل بمسؤولها وموعدها (2026-11-12 و2026-11-14 و2026-11-11)، ثم خطة من 3 مهام تنتظر الموافقة. | English: summary with decision and 3 dated items, then a 3-task plan waiting for Yes.",
    "partial_en": "only the setting is shown; no recording was summarised.",
    "partial_ar": "يظهر الإعداد فقط؛ ولم يُلخَّص أي تسجيل."
   },
@@ -8192,10 +8315,10 @@
    "ar": [
     "assets/nudge/guide/v20/R3-01_1_ar.webp",
     "assets/nudge/guide/v20/R3-01_2_ar.webp",
-    "assets/nudge/guide/v20/R3-01_3_ar.mp4"
+    "assets/nudge/guide/v20/R3-01_ar.mp4"
    ],
    "result_en": "As Raghad (a user without the Agent group), 'How many quotations do we have?' on Sales > Quotations answered '8 quotations. Showing: Sales Order: Status is Quotation or Quotation Sent, 8 rows.' with a Show list button, and Show list opened the same 8 rows. No AI call (0 tokens).",
-   "result_ar": "كراغد (مستخدمة بلا مجموعة الوكيل)، أجاب «كم عرض سعر عندنا؟» في المبيعات > عروض الأسعار: «عندك 50 سجلاً في المجموع» مع التفصيل: عروض أسعار مفتوحة 8 (2 عرض سعر و6 تم إرسال عرض السعر)، 38 أمر بيع مؤكد، 4 ملغاة، مع زر «عرض القائمة» الذي فتح قائمة الأوامر. الصياغة العربية مرّت على المزوّد فجاء الجواب مفصّلًا وليس العدد 8 وحده."
+   "result_ar": "سؤال «كم عرض سعر عندنا؟» يُجاب بـ 12 دون استدعاء ذكاء اصطناعي، وزر «عرض القائمة» يفتح 12 سطرًا بالفلتر نفسه. | English: answered by rules with 12, the button opens the same 12 rows."
   },
   "R3-02": {
    "en": [
@@ -8248,15 +8371,23 @@
   },
   "R3-06": {
    "en": [
-    "assets/nudge/guide/v20/R3-06_1.webp",
-    "assets/nudge/guide/v20/R3-06_2.webp"
+    {
+     "src": "assets/nudge/guide/v20/R3-06_1.webp",
+     "caption": "A question answered once in Talk mode"
+    },
+    {
+     "src": "assets/nudge/guide/v20/R3-06_2.webp",
+     "caption": "Usage grouped by kind: the Cached Answer row costs 0 tokens"
+    },
+    "assets/nudge/guide/v20/R3-06.mp4"
    ],
    "ar": [
     "assets/nudge/guide/v20/R3-06_1_ar.webp",
-    "assets/nudge/guide/v20/R3-06_2_ar.webp"
+    "assets/nudge/guide/v20/R3-06_2_ar.webp",
+    "assets/nudge/guide/v20/R3-06_ar.mp4"
    ],
-   "result_en": "On Odoo 20 Settings > Answer Cache is on, and Knowledge > Cached Answers is empty (no answer cached yet), with the explanation of what is kept and the Empty the cache button. The cost-free second answer was not asked: it needs a paid ask.",
-   "result_ar": "على أودو 20 ذاكرة الإجابات المؤقتة مفعّلة في الإعدادات، وقائمة الإجابات المخزنة فارغة حالياً مع شرح ما يُحفظ وزر إفراغ الذاكرة. لم يُسأل سؤال لإظهار الإجابة الثانية المجانية لأنه يكلّف مالاً."
+   "result_en": "A second administrator asking the same question is served from the answer cache: Usage grouped by Kind shows a Cached Answer row with 0 tokens, 0.000000 cost.",
+   "result_ar": "سؤال ثانٍ مطابق من مدير آخر يُجاب من ذاكرة الإجابات: يظهر الاستهلاك مجمّعًا حسب النوع صفّ «إجابة مخزنة مؤقتًا» (سجلان) بصفر رمز وصفر تكلفة."
   },
   "R3-07": {
    "en": [
@@ -8781,10 +8912,11 @@
     }
    ],
    "ar": [
-    "assets/nudge/guide/v20/R3-45_1_ar.webp"
+    "assets/nudge/guide/v20/R3-45_1_ar.webp",
+    "assets/nudge/guide/v20/R3-45_ar.mp4"
    ],
    "result_en": "On Settings > Technical > System Parameters, asking Nudge for the value of the system parameter that signs links declined to read it out, explained that the screen already hides sensitive values and offered safe options (check it exists, rotate it on purpose); no value appeared in the answer.",
-   "result_ar": "من الإعدادات > التقنية > معايير النظام، عند سؤال Nudge عن قيمة معيار النظام الذي توقَّع به الروابط أجاب بأنه لن يعرض قيمته لأنها حساسة، واقترح بدائل آمنة (التحقق من وجوده، تدويره عن قصد)؛ ولم تظهر أي قيمة في الجواب. والسؤال بالعربية أُجيب بالطريقة نفسها.",
+   "result_ar": "على شاشة معايير النظام سأل المستخدم Nudge عن قيمة database.secret فأجاب أنها مفتاح سري لتأمين التوقيعات والجلسات ولا يمكن عرضه أو قراءته لأسباب أمنية، ولم تظهر القيمة.",
    "partial_en": "the Request Size step is not shown.",
    "partial_ar": "لا تظهر خطوة حجم الطلب."
   },
@@ -9038,20 +9170,27 @@
   "SEC-01": {
    "en": [
     {
-     "src": "assets/nudge/guide/v20/SEC-01_9.webp",
-     "caption": "Undo What Was Built: the confirmation"
+     "src": "assets/nudge/guide/v20/SEC-01_1.webp",
+     "caption": "A salesperson who is not an approver presses Confirm on a 62,000 order: Odoo refuses and asks for approval"
     },
     {
-     "src": "assets/nudge/guide/v20/SEC-01_10.webp",
-     "caption": "After the undo"
-    }
+     "src": "assets/nudge/guide/v20/SEC-01_2.webp",
+     "caption": "Asking Nudge to set the approval field: it refuses, the field cannot be written directly"
+    },
+    {
+     "src": "assets/nudge/guide/v20/SEC-01_3.webp",
+     "caption": "The manager approves and confirms: the order becomes a Sales Order, approved by Ebrahim"
+    },
+    "assets/nudge/guide/v20/SEC-01.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v20/SEC-01_9_ar.webp",
-    "assets/nudge/guide/v20/SEC-01_10_ar.webp"
+    "assets/nudge/guide/v20/SEC-01_1_ar.webp",
+    "assets/nudge/guide/v20/SEC-01_2_ar.webp",
+    "assets/nudge/guide/v20/SEC-01_3_ar.webp",
+    "assets/nudge/guide/v20/SEC-01_ar.mp4"
    ],
-   "result_en": "On Odoo 20 an approval flow was built through Nudge in Developer mode from one sentence ('Confirming a sales order above 5,000,000 needs the sales manager'; the limit was set high so no other order of the shared database is touched): four fields, Request approval / Approve / Refuse buttons, and a rule that stops confirming. Clara Whitfield (Sales: Own Documents Only) pressed Confirm on S00102 (5,471,620.00 EUR) and was refused: 'S00102 needs the approval of Sales / Administrator (above 5,000,000.00 EUR) before it can be confirmed. Press Request approval; they approve it from the form.' She pressed Request approval (activities for the approvers), then asked Nudge to set the approval field to approved: Nudge said it is in Talk mode and cannot change data, the field is read-only and filled by the approval flow. Ebrahim, an approver, saw Approve and Refuse, pressed Approve then Confirm and the order became a sales order.",
-   "result_ar": "على أودو 20 بُني عبر Nudge في وضع المطوّر مسار موافقة من جملة واحدة («تأكيد أمر بيع فوق 5,000,000 يحتاج مدير المبيعات»؛ رُفع الحد عمدًا حتى لا يتأثر أي أمر آخر في قاعدة البيانات المشتركة): أربعة حقول وأزرار «طلب الموافقة» و«اعتماد» و«رفض» وقاعدة توقف التأكيد. ضغطت Clara Whitfield (المبيعات: مستنداتها فقط) «تأكيد» على S00103 (5,471,620.00 EUR) فرُفض: «S00103 يحتاج موافقة المبيعات / المدير (فوق 5,000,000.00 EUR) قبل أن يُسمح بـ مؤكدة. اضغط «طلب الموافقة» وهم يوافقون من النموذج.» ثم ضغطت «طلب الموافقة» (أنشطة للموافقين) وطلبت من Nudge كتابة approved في حقل الموافقة فلم يكتبه لأن الحقل للقراءة فقط ويملؤه مسار الموافقة. وظهر لـ Ebrahim (المعتمد) زرّا اعتماد ورفض، فاعتمد ثم أكّد فصار الأمر أمر بيع."
+   "result_en": "A salesperson without approval rights cannot confirm a 62,000.00 EUR order (Odoo says it needs approval); Nudge in Agent mode refuses to set the approval field, and only after the manager presses Approve does Confirm work and the order become a Sales Order, approved by Ebrahim.",
+   "result_ar": "لا تستطيع موظفة مبيعات بلا صلاحية اعتماد تأكيد أمر بقيمة 62,000.00 يورو (يطلب Odoo الموافقة)، ويرفض Nudge في وضع الوكيل كتابة حقل الموافقة، وبعد أن يضغط المدير «اعتماد» ينجح التأكيد ويصبح أمر بيع معتمدًا من Ebrahim."
   },
   "SEC-02": {
    "en": [
@@ -9077,19 +9216,26 @@
    "en": [
     {
      "src": "assets/nudge/guide/v20/SEC-03_1.webp",
-     "caption": "Change the customer: steps in words, no card"
+     "caption": "A salesperson who sees only her own quotation opens Nudge in Agent mode"
     },
     {
      "src": "assets/nudge/guide/v20/SEC-03_2.webp",
-     "caption": "Change the quantity: steps in words, no card"
-    }
+     "caption": "Asking to change a colleague's order: Nudge cannot find it"
+    },
+    {
+     "src": "assets/nudge/guide/v20/SEC-03_3.webp",
+     "caption": "A second change request gets the same answer and no confirmation card"
+    },
+    "assets/nudge/guide/v20/SEC-03.mp4"
    ],
    "ar": [
     "assets/nudge/guide/v20/SEC-03_1_ar.webp",
-    "assets/nudge/guide/v20/SEC-03_2_ar.webp"
+    "assets/nudge/guide/v20/SEC-03_2_ar.webp",
+    "assets/nudge/guide/v20/SEC-03_3_ar.webp",
+    "assets/nudge/guide/v20/SEC-03_ar.mp4"
    ],
-   "result_en": "The same user asked 'Change the customer of sales order S00004 to Noor Bay Workshops Demo' and then 'Change the quantity of the line on sales order S00004 to 5': a plain Nudge User has no Agent mode, so Nudge answered with the manual steps in words, showed no confirmation card and changed nothing (the customer is still Crescent Hall Offices Demo and the line quantities are unchanged). The Arabic version answered the same way.",
-   "result_ar": "عند طلب «غيّر عميل أمر البيع S00004 إلى Noor Bay Workshops Demo» ثم «غيّر كمية السطر في أمر البيع S00004 إلى 5»: لا يملك مستخدم Nudge العادي وضع الوكيل، فأجاب Nudge بالخطوات اليدوية كتابةً دون بطاقة تأكيد ودون أي تغيير (العميل ما زال Crescent Hall Offices Demo وكميات السطور كما هي). والنسخة العربية أجابت بالطريقة نفسها.",
+   "result_en": "A salesperson restricted to her own documents asks Nudge in Agent mode to change a colleague's sales order (S00005): both requests are answered that the order cannot be found in her system (only her S00104 is visible) and no confirmation card appears.",
+   "result_ar": "موظفة مبيعات صلاحيتها مستنداتها فقط تطلب من Nudge في وضع الوكيل تعديل أمر بيع لزميلتها (S00005): يجيب في الحالتين بأنه لا يجد الأمر في نظامها (الظاهر لها S00105 فقط) ولا تظهر بطاقة تأكيد.",
    "partial_en": "a plain Nudge User has no Agent mode, so the change request is answered with words or manual steps; nothing was changed.",
    "partial_ar": "مستخدم Nudge العادي ليس لديه وضع الوكيل، فيُجاب طلب التغيير بالكلام أو بخطوات يدوية؛ ولم يتغير شيء."
   },
@@ -9138,23 +9284,24 @@
    "en": [
     {
      "src": "assets/nudge/guide/v20/C09_1.webp",
-     "caption": "The card: one plan for 4 quotations"
+     "caption": "One plan card: set the delivery date of Raghad's 3 draft quotations to next Monday."
     },
     {
      "src": "assets/nudge/guide/v20/C09_2.webp",
-     "caption": "After Yes: updated"
+     "caption": "After Yes: 3 done with Undo; Promised Delivery shows Nov 16 on those three rows."
     },
     {
-     "src": "assets/nudge/guide/v20/C09_3.mp4",
-     "caption": "One request, one card, one Yes"
-    }
+     "src": "assets/nudge/guide/v20/C09_3.webp",
+     "caption": "Undo puts the dates back."
+    },
+    "assets/nudge/guide/v20/C09.mp4"
    ],
    "ar": [
     "assets/nudge/guide/v20/C09_1_ar.webp",
     "assets/nudge/guide/v20/C09_2_ar.webp",
     "assets/nudge/guide/v20/C09_3_ar.mp4"
    ],
-   "result_en": "On Odoo 20, 'Set the delivery date of all quotations assigned to one salesperson to next Monday' gave one card for 4 quotations (S00040, S00042, S00043, S00044): 'Promised Delivery 2026-11-09 09:00', '4 records: all go through, as tried just now'; after Yes the answer said the delivery date was set on all four. Arabic gave the same card and result.",
+   "result_en": "One card changes the delivery date of 3 draft quotations (S00099, S00095, S00093) to 2026-11-16; '3 records: all go through, as tried just now'; after Yes it says '3 done' with Undo, and Undo restores them.",
    "result_ar": "على أودو 20، أعطى طلب «غيّر تاريخ التسليم في كل عروض الأسعار التي مسؤول مبيعاتها أحد المندوبين إلى يوم الاثنين القادم» بطاقة واحدة لأربعة عروض (S00040 وS00042 وS00043 وS00044): «تاريخ التسليم الموعود 2026-11-09»، «4 سجل: كلها ستنجح، حسب التجربة الآن»؛ وبعد «نعم، كلها» أكّد الرد تعديل العروض الأربعة. والإنجليزية بالنتيجة نفسها."
   },
   "C10": {
@@ -9202,24 +9349,24 @@
    "en": [
     {
      "src": "assets/nudge/guide/v20/C14_1.webp",
-     "caption": "SQL answer"
+     "caption": "SQL for Administrators is switched on in Settings > Nudge."
     },
     {
      "src": "assets/nudge/guide/v20/C14_2.webp",
-     "caption": "/sql without AI"
+     "caption": "'Using SQL: the 5 customers with the most orders' returns the ranking."
     },
     {
-     "src": "assets/nudge/guide/v20/C14_3.mp4",
-     "caption": "SQL for Administrators"
+     "src": "assets/nudge/guide/v20/C14_3.webp",
+     "caption": "A /sql SELECT returns a table of name and city."
     }
    ],
    "ar": [
     "assets/nudge/guide/v20/C14_1_ar.webp",
     "assets/nudge/guide/v20/C14_2_ar.webp",
-    "assets/nudge/guide/v20/C14_3_ar.mp4"
+    "assets/nudge/guide/v20/C14_3_ar.webp"
    ],
-   "result_en": "On Odoo 20, with SQL for Administrators on, 'Using SQL: the 5 customers with the most orders' answered with the five customers and their order counts, matching the database; '/sql SELECT name, city ...' ran at once without AI and returned 5 rows.",
-   "result_ar": "على أودو 20، مع تشغيل SQL للمديرين، أجاب Nudge عن أكثر 5 عملاء بعدد الطلبات من استعلام SELECT واحد (مطابق لقاعدة البيانات)، ونُفِّذ أمر /sql فورًا بلا ذكاء اصطناعي وأعاد 5 صفوف."
+   "result_en": "With SQL for Administrators on, 'Using SQL: the 5 customers with the most orders' returns Raghad 6, Ebrahim 5, Osama 5, Oliver Grant 5, Hilltop Row Offices 4; a /sql SELECT returns a 5-row name/city table.",
+   "result_ar": "مع تفعيل SQL للمديرين أجاب Nudge عن أكثر 5 زبائن طلبات: Michael Ross 6 وRaghad 6 وأسامة 5 وOliver Grant 5 وEbrahim 5، وأعاد أمر /sql جدول الاسم والمدينة من 5 صفوف. | English: top-5 ranking and a 5-row SQL table."
   },
   "C16": {
    "en": [
@@ -9242,10 +9389,12 @@
    ],
    "ar": [
     "assets/nudge/guide/v20/C16_1_ar.webp",
-    "assets/nudge/guide/v20/C16_3_ar.webp"
+    "assets/nudge/guide/v20/C16_2_ar.webp",
+    "assets/nudge/guide/v20/C16_3_ar.webp",
+    "assets/nudge/guide/v20/C16_ar.mp4"
    ],
    "result_en": "On Odoo 20, 'Set the delivery date of all quotations assigned to one salesperson to next Monday' sent with the clock button raised the notification 'Nudge needs your answer ... Show me' and the avatar badge; the card read 'Change Promised Delivery: 2026-11-09 on 3 x Sales Order - 3 records: all go through, as tried just now', and after Yes the 3 quotations (S00049, S00047, S00046) were done with Undo offered.",
-   "result_ar": "على أودو 20، أظهر طلب «غيّر تاريخ التسليم في كل عروض الأسعار التي مسؤول مبيعاتها أحد المندوبين إلى يوم الاثنين القادم» المرسل بزر الساعة إشعار «Nudge يحتاج إلى إجابتك ... أرني»، ثم بطاقة «تعديل تاريخ التسليم الموعود: 2026-11-09 على 4 × Sales Order، 4 سجل: كلها ستنجح»، وبعد «نعم، كلها» ظهر «تم 4» مع «تراجع» وغُيّرت العروض الأربعة S00040 وS00042 وS00043 وS00044.",
+   "result_ar": "في وضع الوكيل أُرسل الطلب بزر الساعة فأُغلقت اللوحة وجاء إشعار «Nudge يحتاج إلى إجابتك»؛ عرضت البطاقة تعديل تاريخ التسليم على عرضي أسعار (S00048 وS00041) إلى 16-11-2026، وبعد «نعم، كلها» ظهر «تم 2» مع «تراجع» وإشعار «Nudge أنهى»، وتغيّر التاريخ في قائمة عروض الأسعار.",
    "partial_en": "in Arabic the request and the done card are shown; the notification is not shown.",
    "partial_ar": "بالعربية يظهر الطلب وبطاقة «تم»؛ ولا يظهر الإشعار."
   },
