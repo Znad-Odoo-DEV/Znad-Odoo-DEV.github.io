@@ -2656,13 +2656,18 @@
   },
   "R3-45": {
    "en": [
-    "assets/nudge/guide/v17/R3-45_1.webp"
+    {
+     "src": "assets/nudge/guide/v17/R3-45_1.webp",
+     "caption": "Asked for the value of database.secret, Nudge declines: secrets and keys are restricted"
+    },
+    "assets/nudge/guide/v17/R3-45.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v17/R3-45_1_ar.webp"
+    "assets/nudge/guide/v17/R3-45_1_ar.webp",
+    "assets/nudge/guide/v17/R3-45_ar.mp4"
    ],
-   "result_en": "In the trial on Odoo 17 the Nudge Security and Keys and Budget settings tell the administrators when a provider key is older than the chosen number of days and the managers when a company has spent a share of its monthly budget; keys never appear on a screen.",
-   "result_ar": "في التجربة على أودو 17 تخبر إعدادات الأمان و«المفاتيح والميزانية» المسؤولين حين يتجاوز عمر مفتاح المزوّد عدد الأيام المختار، والمديرين حين تنفق الشركة نسبة من ميزانيتها الشهرية؛ ولا تظهر المفاتيح في أي شاشة.",
+   "result_en": "In the trial, asked for the value of database.secret on System Parameters, Nudge answered that it cannot show it because secrets and keys are restricted; the value was never displayed.",
+   "result_ar": "في الإعدادات > معايير النظام، سؤال Nudge «ما هي قيمة database.secret؟» أُجيب بالرفض لأن الإعدادات الحساسة والمفاتيح محمية، ولم تُعرض القيمة.",
    "partial_en": "the settings are shown; Nudge was not asked for a password.",
    "partial_ar": "تظهر الإعدادات فقط؛ ولم يُطلب من Nudge سر."
   },
@@ -2722,14 +2727,21 @@
    "en": [
     {
      "src": "assets/nudge/guide/v17/R3-50_1.webp",
-     "caption": "A question gets an explanation, not a confirm card"
-    }
+     "caption": "Asking 'should I confirm this order?' gives an explanation and a suggestion chip, no card"
+    },
+    {
+     "src": "assets/nudge/guide/v17/R3-50_2.webp",
+     "caption": "Pressing the chip opens the card with Yes, do it and No; nothing is done yet"
+    },
+    "assets/nudge/guide/v17/R3-50.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v17/R3-50_1_ar.webp"
+    "assets/nudge/guide/v17/R3-50_1_ar.webp",
+    "assets/nudge/guide/v17/R3-50_2_ar.webp",
+    "assets/nudge/guide/v17/R3-50_ar.mp4"
    ],
-   "result_en": "On Odoo 17 in Agent mode 'How do I confirm a quotation?' was answered with an explanation (open the quotation, press Confirm, it becomes a Sales Order) and a link to the 17.0 documentation: no confirm card appeared and nothing was pressed. Arabic: 'كيف أؤكد عرض سعر؟' answered the same way.",
-   "result_ar": "على أودو 17 وفي وضع الوكيل أُجيب عن «How do I confirm a quotation?» بشرح (افتح عرض السعر واضغط تأكيد فيتحول إلى أمر بيع) مع رابط توثيق 17.0: لم تظهر بطاقة تأكيد ولم يُضغط شيء. بالعربية: «كيف أؤكد عرض سعر؟» وأُجيب بالطريقة نفسها."
+   "result_en": "In the trial, on draft quotation S00046 (5,704.44 AED), 'should I confirm this order?' got an explanation and the chip 'Press Confirm: Sales Order (S00046)'; pressing it opened a card with Yes, do it / No and the order stayed a quotation.",
+   "result_ar": "على عرض السعر S00046 (5,704.44 درهم)، سؤال «هل أؤكد هذا الطلب؟» أُجيب بشرح واقتراح «ضغط تأكيد» دون بطاقة؛ والضغط عليه فتح بطاقة «نعم، نفّذ / لا» وبقي الطلب عرض سعر."
   },
   "R3-51": {
    "en": [
@@ -2950,20 +2962,26 @@
   "SEC-01": {
    "en": [
     {
-     "src": "assets/nudge/guide/v17/SEC-01_8.webp",
-     "caption": "Undo confirmation"
+     "src": "assets/nudge/guide/v17/SEC-01_1.webp",
+     "caption": "A salesperson who is not an approver cannot confirm a 62,000 AED order: approval needed"
     },
     {
-     "src": "assets/nudge/guide/v17/SEC-01_9.webp",
-     "caption": "Flow removed through Nudge"
-    }
+     "src": "assets/nudge/guide/v17/SEC-01_2.webp",
+     "caption": "Asked to set the approval field to approved, Nudge declines: only an approver can"
+    },
+    {
+     "src": "assets/nudge/guide/v17/SEC-01_3.webp",
+     "caption": "After the manager approved, the order is a Sales Order"
+    },
+    "assets/nudge/guide/v17/SEC-01.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v17/SEC-01_8_ar.webp",
-    "assets/nudge/guide/v17/SEC-01_9_ar.webp"
+    "assets/nudge/guide/v17/SEC-01_1_ar.webp",
+    "assets/nudge/guide/v17/SEC-01_2_ar.webp",
+    "assets/nudge/guide/v17/SEC-01_3_ar.webp"
    ],
-   "result_en": "In the trial on Odoo 17 the approval flow was built from a sentence in Developer mode (fields, Request approval/Approve/Refuse buttons and two rules). A salesperson with only own documents (Sales: Own Documents Only) pressing Confirm on a 6,132,000 AED order was refused with 'S00103 needs the approval of Sales / Administrator (above 5,000,000.00 AED) before it can be confirmed. Press Request approval'. Asked to set the approval field to approved, Nudge said it cannot (the field is read-only and only the buttons write it). The manager pressed Request approval, Approve, then Confirm and the order became a Sales Order.",
-   "result_ar": "في التجربة على أودو 17 بُني مسار الموافقة من جملة في وضع المطوّر (حقول وأزرار طلب الموافقة والاعتماد والرفض وقاعدتان). عندما ضغط مندوب مبيعات يرى مستنداته فقط «تأكيد» على أمر بقيمة 6,132,000 AED رُفض التأكيد برسالة تقول إن الأمر يحتاج موافقة المبيعات / المدير فوق 5,000,000.00 AED وأن عليه الضغط على «طلب الموافقة». وعندما طلب من Nudge كتابة «approved» في حقل الموافقة لم يفعل لأن الحقل للقراءة فقط وتكتبه الأزرار وحدها. ثم ضغط المدير «طلب الموافقة» و«اعتماد» ثم «تأكيد» فصار الأمر أمر بيع.",
+   "result_en": "In the trial, confirming order S00115 (62,000.00 AED) as a non-approver was refused ('needs the approval of Sales / Administrator, above 50,000.00 AED'); Nudge declined to set the approval; after the manager pressed Approve the order was confirmed.",
+   "result_ar": "عند محاولة غير المعتمِد تأكيد الطلب S00121 (62,000.00 AED) ظهرت «العملية غير صالحة» لحاجته إلى موافقة؛ ورفض Nudge تغيير حالة الموافقة؛ وبعد اعتماد المدير تأكد الطلب.",
    "partial_en": "the salesperson has no Agent mode on this version, so the question was asked in Talk mode (Nudge says it cannot write the field).",
    "partial_ar": "لا يملك مندوب المبيعات وضع الوكيل في هذا الإصدار، فطُرح السؤال في وضع الحديث (يقول Nudge إنه لا يستطيع كتابة الحقل)."
   },
@@ -6755,15 +6773,27 @@
   },
   "A19": {
    "en": [
-    "assets/nudge/guide/v20/A19_2.webp",
-    "assets/nudge/guide/v20/A19_3.webp"
+    {
+     "src": "assets/nudge/guide/v20/A19_1.webp",
+     "caption": "In Talk, the question 'How do I add a discount?' first asks how you would like the answer"
+    },
+    {
+     "src": "assets/nudge/guide/v20/A19_2.webp",
+     "caption": "'Nudge, do it' moves the switch from Talk to Agent"
+    },
+    {
+     "src": "assets/nudge/guide/v20/A19_3.webp",
+     "caption": "In Agent the same question offers a third choice, 'Do it for me'"
+    }
    ],
    "ar": [
+    "assets/nudge/guide/v20/A19_1_ar.webp",
     "assets/nudge/guide/v20/A19_2_ar.webp",
-    "assets/nudge/guide/v20/A19_3_ar.webp"
+    "assets/nudge/guide/v20/A19_3_ar.webp",
+    "assets/nudge/guide/v20/A19_ar.mp4"
    ],
-   "result_en": "In Agent mode (the mode pill and the 'Tell Nudge what to do' box) 'How many quotations do we have right now?' was answered '8 quotations' (checked in the database: 2 draft + 6 sent for ZNAD Demo), with a Show list button.",
-   "result_ar": "في وضع الوكيل (شارة الوضع وصندوق «قل لـ Nudge ماذا يفعل») أُجيب عن «كم عدد عروض الأسعار لدينا الآن؟» بـ 8 عروض (تم التحقق في قاعدة البيانات: 2 مسودة و6 مرسلة لشركة ZNAD Demo) مع زر عرض القائمة."
+   "result_en": "In the trial, 'How do I add a discount?' in Talk offered 'On the screen, with the pointer' and 'In writing'; 'Nudge, do it' switched the panel to Agent, where the same question also offered 'Do it for me'.",
+   "result_ar": "في الواجهة العربية عرض السؤال «كيف أضيف خصمًا؟» خيارَي «على الشاشة، بالمؤشر» و«كتابة»؛ و«Nudge, نفّذها» حوّل المفتاح إلى الوكيل وفتح إعدادات المبيعات، وفي وضع الوكيل أضافت البطاقة خيار «نفّذها عني»."
   },
   "B01": {
    "en": [
@@ -7160,25 +7190,26 @@
   "C15": {
    "en": [
     {
+     "src": "assets/nudge/guide/v20/C15_1.webp",
+     "caption": "The card asks to turn Discounts on in Sales settings, with Yes, do it and No"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C15_2.webp",
+     "caption": "After the yes the card reads Done"
+    },
+    {
      "src": "assets/nudge/guide/v20/C15_3.webp",
-     "caption": "User rights card"
+     "caption": "Sales settings: Discounts is now ticked"
     },
-    {
-     "src": "assets/nudge/guide/v20/C15_4.webp",
-     "caption": "After No: nothing changed"
-    },
-    {
-     "src": "assets/nudge/guide/v20/C15_5.mp4",
-     "caption": "Both cards, declined"
-    }
+    "assets/nudge/guide/v20/C15.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v20/C15_3_ar.webp",
-    "assets/nudge/guide/v20/C15_4_ar.webp",
-    "assets/nudge/guide/v20/C15_5_ar.mp4"
+    "assets/nudge/guide/v20/C15_1_ar.webp",
+    "assets/nudge/guide/v20/C15_2_ar.webp",
+    "assets/nudge/guide/v20/C15_3_ar.webp"
    ],
-   "result_en": "In Agent mode as an administrator, 'Turn on Discounts' showed the settings card 'Change the settings: Sales / Discounts off -> on' and a request to give a user the Inventory user access showed the card 'Change: User, Groups + Inventory / User' (it left a similar user alone); both cards were declined (No), nothing changed.",
-   "result_ar": "في وضع الوكيل كمسؤول، أظهر «Turn on Discounts» بطاقة «تغيير الإعدادات: المبيعات / Discounts من off إلى on»، وأظهر طلب منح صلاحية المخزون لمستخدم بطاقة «تعديل: المستخدم، المجموعات + المخزون / مستخدم»؛ رُفضت البطاقتان («لا») فلم يتغيّر شيء."
+   "result_en": "In the trial, 'Turn on Discounts' showed the card Sales / Discounts off to on; after Yes, do it it read Done and Settings > Sales showed Discounts ticked.",
+   "result_ar": "في الواجهة العربية، «فعّل الخصومات» أظهرت بطاقة تغيير الإعدادات (المبيعات / Discounts: off ← on)، وبعد الموافقة صارت «تم» وظهر خيار «الخصومات» مؤشَّرًا في إعدادات المبيعات (كلمات Discounts وoff وon تبقى بالإنجليزية في البطاقة)."
   },
   "C18": {
    "en": [
@@ -9331,19 +9362,26 @@
    "en": [
     {
      "src": "assets/nudge/guide/v20/C13_1.webp",
-     "caption": "Answer: top three by average per line"
+     "caption": "Settings > Nudge: 'Python for the Agent' switched on"
     },
     {
-     "src": "assets/nudge/guide/v20/C13_2.mp4",
-     "caption": "Python for the Agent, asked and answered"
-    }
+     "src": "assets/nudge/guide/v20/C13_2.webp",
+     "caption": "Asked for quotations with a margin below 10%: none, the lowest is about 28%"
+    },
+    {
+     "src": "assets/nudge/guide/v20/C13_3.webp",
+     "caption": "The follow-up for below 30% lists four quotations with their margins and totals"
+    },
+    "assets/nudge/guide/v20/C13.mp4"
    ],
    "ar": [
     "assets/nudge/guide/v20/C13_1_ar.webp",
-    "assets/nudge/guide/v20/C13_2_ar.mp4"
+    "assets/nudge/guide/v20/C13_2_ar.webp",
+    "assets/nudge/guide/v20/C13_3_ar.webp",
+    "assets/nudge/guide/v20/C13_ar.mp4"
    ],
-   "result_en": "On Odoo 20, with Python for the Agent switched on, Nudge was asked for the three draft or sent quotations with the highest average amount per order line. It answered S00039 (2,160.11), S00043 (1,514.16) and S00050 (1,399.26), checked against the database; the sandbox refused a lambda and the model rewrote the code.",
-   "result_ar": "على أودو 20، مع تشغيل Python للوكيل، طُلب من Nudge أعلى ثلاثة عروض أسعار (مسودة أو مرسلة) بمتوسط مبلغ البند، فأجاب S00039 وS00043 وS00050 (بالعربية على أساس المبلغ قبل الضريبة: 1,815.22 و1,272.40 و1,175.85). الأرقام مطابقة لقاعدة البيانات؛ ورفض الصندوق المعزول lambda فأعاد النموذج كتابة الكود."
+   "result_en": "In the trial with Python for the Agent on, 'margin below 10%' answered none (lowest about 28%); below 30% gave S00046 29.50% (6,824.82 EUR), S00039 29.46% (8,640.45 EUR), S00038 29.26% (6,529.51 EUR), S00003 28.02% (8,429.96 EUR).",
+   "result_ar": "في الواجهة العربية: لا توجد عروض هامشها أقل من 10%؛ وأقل من 30% أربعة: S00046 ‏(29.50%) وS00039 ‏(29.46%) وS00038 ‏(29.26%) وS00003 ‏(28.02%)."
   },
   "C14": {
    "en": [
