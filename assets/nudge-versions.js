@@ -293,13 +293,22 @@
         trialResult(c, v);
       });
       total = n;
-      var live = 0;
+      /* a section can show in two parts (implementer, functional, technical): its filter and its count go by data-sec */
+      var liveSec = {};
       secs.forEach(function (s) {
         var any = !!s.querySelector(".feature:not(.ver-off)");
         s.classList.toggle("ver-off", !any);
-        if (any) live++;
-        var f = guide.querySelector('.guide-filter[data-sec="' + s.getAttribute("data-sec") + '"]');
-        if (f) f.hidden = !any;
+        var k = s.getAttribute("data-sec");
+        liveSec[k] = liveSec[k] || any;
+      });
+      var live = 0;
+      Object.keys(liveSec).forEach(function (k) {
+        if (liveSec[k]) live++;
+        var f = guide.querySelector('.guide-filter[data-sec="' + k + '"]');
+        if (f) f.hidden = !liveSec[k];
+      });
+      Array.prototype.slice.call(guide.querySelectorAll(".guide-part")).forEach(function (p) {
+        p.classList.toggle("ver-off", !p.querySelector(".guide-section:not(.ver-off)"));
       });
       Array.prototype.slice.call(guide.querySelectorAll(".guide-toc a[href^='#']")).forEach(function (a) {
         var t = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));

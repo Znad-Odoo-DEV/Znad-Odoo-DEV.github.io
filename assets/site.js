@@ -140,6 +140,9 @@
         c.hidden = !ok; if (ok) shown++;
       });
       gSecs.forEach(function (s) { s.hidden = !s.querySelector(".feature:not([hidden])"); });
+      Array.prototype.slice.call(document.querySelectorAll(".guide-part")).forEach(function (p) {
+        p.hidden = !p.querySelector(".guide-section:not([hidden])");
+      });
       var total = gCount.getAttribute("data-total");
       gCount.textContent = (q || gSec !== "0") ? gCount.getAttribute("data-fmt").replace("{n}", shown).replace("{t}", total) : gCount.textContent;
       if (!q && gSec === "0") gCount.textContent = gCount.getAttribute("data-fmt").replace("{n}", total).replace("{t}", total);
