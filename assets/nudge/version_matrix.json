@@ -965,7 +965,7 @@
 },
 "H32": {
 "title": "Why did it fail? (/debug)",
-"17": "partial",
+"17": "yes",
 "18": "partial",
 "19": "yes",
 "20": "yes",

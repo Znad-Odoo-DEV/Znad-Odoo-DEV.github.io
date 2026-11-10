@@ -451,10 +451,19 @@
     {
      "src": "assets/nudge/guide/v17/B14_2.webp",
      "caption": "The answer"
+    },
+    {
+     "src": "assets/nudge/guide/v17/B14_4.webp",
+     "caption": "/stock: each warehouse its own quantity"
     }
    ],
-   "result_en": "'Do we have Arabic coffee 500 g?' on the Products screen answered 'Yes ... Arabic coffee 500 g (reference FWS-023) ... 1,253 units available' (1,253 on hand and a list price of 42.00 in the database).",
-   "result_ar": ""
+   "ar": [
+    "assets/nudge/guide/v17/B14_1_ar.webp",
+    "assets/nudge/guide/v17/B14_2_ar.webp",
+    "assets/nudge/guide/v17/B14_3_ar.webp"
+   ],
+   "result_en": "'Do we have Arabic coffee 500 g?' on the Products screen answered 'Yes ... Arabic coffee 500 g (reference FWS-023) ... 1,253 units available' (1,253 on hand and a list price of 42.00 in the database). '/stock coffee' and the product card show each warehouse its own quantity, Al Khabaisi Warehouse 532 and Jebel Ali Warehouse 721, as the database holds, instead of the company total repeated in every warehouse.",
+   "result_ar": "أجاب سؤال «هل لدينا Arabic coffee 500 g في المخزون؟» في شاشة المنتجات بأن القهوة العربية (FWS-023) متوفرة برصيد 1,253 وحدة، وتعرض بطاقة المنتج والأمر /stock كمية كل مستودع على حدة: Al Khabaisi Warehouse ‏532 وJebel Ali Warehouse ‏721، كما في قاعدة البيانات، بدل تكرار إجمالي الشركة في كل مستودع."
   },
   "B15": {
    "en": [
@@ -1823,10 +1832,11 @@
     "assets/nudge/guide/v17/H32_1.webp",
     "assets/nudge/guide/v17/H32_2.webp"
    ],
+   "ar": [
+    "assets/nudge/guide/v17/H32_1_ar.webp"
+   ],
    "result_en": "In Developer mode on the server action 'Demo failing action' (it writes a field that does not exist), '/debug Demo failing action' read it: its code, 'res.partner has no field x_follow_up_flag', the right it runs with, and a dummy run that failed with ValueError Invalid field 'x_follow_up_flag', everything discarded. Asked to fix it, Nudge showed the card 'Fix the code' with the difference (the write replaced by a note, the original kept as an archived action) and Yes, do it / No; the card was not confirmed.",
-   "result_ar": "",
-   "partial_en": "",
-   "partial_ar": ""
+   "result_ar": "في وضع المطوّر، على إجراء خادم يكتب حقلاً غير موجود، قرأه أمر /debug في الواجهة العربية: ما هو، وشيفرته، وخطأ «res.partner has no field 'x_follow_up_flag'»، وبصفة من يعمل. وتبقى الأسماء والأرقام والاقتباسات بترتيبها داخل الأسطر العربية، ويأخذ كل سطر من التقرير اتجاهه."
   },
   "H33": {
    "en": [
@@ -6329,9 +6339,7 @@
     "assets/nudge/guide/v18/G01_1_ar.webp"
    ],
    "result_en": "On Odoo 18 a Nudge User with the Agent role but no Sales or product rights asked in Agent mode 'Archive the product Safety helmet, white'. Nudge found [OSC-026] and tried, then answered: 'I couldn't archive [OSC-026] Safety helmet, white. Your user doesn't have permission to change products, so nothing was changed. An administrator, or someone with product rights, can archive it.' The product stayed active.",
-   "result_ar": "على أودو 18 طلب مستخدم Nudge بدور الوكيل وبلا صلاحيات على المبيعات أو المنتجات في وضع الوكيل «أرشف المنتج Safety helmet, white»، فوجد Nudge المنتج [OSC-026] وحاول ثم أجاب: «لم أستطع أرشفة المنتج. حسابك لا يملك صلاحية تعديل المنتجات، ولم يتغير شيء. يمكنك طلب الصلاحية من المسؤول». وبقي المنتج غير مؤرشف.",
-   "partial_en": "in the Arabic interface the first line of the answer, before the refusal, is in English.",
-   "partial_ar": "في الواجهة العربية يأتي السطر الأول من الجواب، قبل الرفض، بالإنجليزية."
+   "result_ar": "على أودو 18 طلب مستخدم Nudge بدور الوكيل وبلا صلاحيات على المنتجات في وضع الوكيل «أرشف المنتج Safety helmet, white»، فأجاب Nudge بالعربية كاملاً: «عذراً، ليس لديك الصلاحية لأرشفة أو تعديل المنتجات في النظام. يمكنك مراجعة المسؤول لإجراء ذلك.» ولم يتغير شيء."
   },
   "R3-50": {
    "en": [
