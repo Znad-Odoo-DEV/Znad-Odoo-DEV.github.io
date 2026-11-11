@@ -790,16 +790,16 @@
   "C15": {
    "en": [
     {
+     "src": "assets/nudge/guide/v17/C15_1.webp",
+     "caption": "Asked to turn on Discounts, Nudge shows the setting change Sales / Discounts off to on"
+    },
+    {
+     "src": "assets/nudge/guide/v17/C15_2.webp",
+     "caption": "After Yes, do it the card turns Done"
+    },
+    {
      "src": "assets/nudge/guide/v17/C15_3.webp",
-     "caption": "The sensitive access card"
-    },
-    {
-     "src": "assets/nudge/guide/v17/C15_4.webp",
-     "caption": "Declined, nothing changed"
-    },
-    {
-     "src": "assets/nudge/guide/v17/C15_5.mp4",
-     "caption": "The access request, the card and No"
+     "caption": "Sales settings now show Discounts ticked"
     }
    ],
    "ar": [
@@ -807,7 +807,7 @@
     "assets/nudge/guide/v17/C15_4_ar.webp",
     "assets/nudge/guide/v17/C15_5_ar.mp4"
    ],
-   "result_en": "In Agent mode as an administrator, 'Turn on Discounts' showed the card 'Change the settings: Sales / Discounts, off to on' (Yes, do it / No); No pressed, Nudge answered it did not turn Discounts on. 'Give Raghad the Inventory user access' showed the sensitive card 'Change: User, Raghad, Groups, Inventory / User' (warning mark); No pressed, nothing changed. Both were declined on purpose, so no setting or access right changed. With only 'Raghad' there are two users of that name and Nudge asked which one.",
+   "result_en": "Administrator asks 'Turn on Discounts': the card shows Sales / Discounts off to on, Yes do it turns it Done, and Sales settings then show Discounts ticked (Grant discounts on sales order lines).",
    "result_ar": "في وضع الوكيل كمسؤول: «Turn on Discounts» أظهرت بطاقة «Change the settings: المبيعات / Discounts، off إلى on» (نعم، نفّذ / لا)؛ ضُغط لا وأجاب Nudge أنه لم يفعّل الخصومات. و«اعطي المستخدم Raghad صلاحية مستخدم بالمخزون» أظهرت بطاقة حساسة «Change: المستخدم، Raghad، المجموعات، المخزون / المستخدم» (علامة تحذير)؛ ضُغط لا ولم يتغيّر شيء. رُفض الطلبان عمدًا فلم يتغيّر إعداد ولا صلاحية. يوجد مستخدمان باسم Raghad فسأل Nudge أيهما."
   },
   "C16": {
@@ -885,13 +885,22 @@
    "en": [
     {
      "src": "assets/nudge/guide/v17/C20_1.webp",
-     "caption": "The answer: archive instead of delete"
-    }
+     "caption": "Asked to delete a contact, Nudge declines and offers to archive it"
+    },
+    {
+     "src": "assets/nudge/guide/v17/C20_2.webp",
+     "caption": "The archive card shows Active Yes to No before anything changes"
+    },
+    {
+     "src": "assets/nudge/guide/v17/C20_3.webp",
+     "caption": "After Yes, do it the product carries the Archived ribbon"
+    },
+    "assets/nudge/guide/v17/C20.mp4"
    ],
    "ar": [
     "assets/nudge/guide/v17/C20_1_ar.webp"
    ],
-   "result_en": "On Odoo 17 'Delete this contact' on a contact form was answered that Nudge cannot delete contacts directly and points to archiving instead (Action menu > Archive; it offers to prepare the change); nothing was deleted. The Arabic request gave the same answer, offering to archive.",
+   "result_en": "Nudge refuses to delete a contact and offers to archive it; asked to archive the product Filming Item EN it shows the card Active Yes to No, Yes do it turns it Done (read again: as asked) and the product form shows the Archived ribbon.",
    "result_ar": "على أودو 17 أُجيب عن «Delete this contact» في نموذج جهة اتصال بأن Nudge لا يستطيع حذف جهات الاتصال مباشرة ويقترح الأرشفة بدلًا من ذلك (قائمة الإجراءات > أرشفة، ويعرض تجهيز التعديل)؛ ولم يُحذف شيء. وبالعربية جاءت النتيجة نفسها مع عرض الأرشفة."
   },
   "D01": {
@@ -7926,20 +7935,27 @@
   "H10": {
    "en": [
     {
-     "src": "assets/nudge/guide/v20/H10_4.webp",
-     "caption": "The key dialog"
+     "src": "assets/nudge/guide/v20/H10_1.webp",
+     "caption": "External Assistants ticked in Nudge settings"
     },
     {
-     "src": "assets/nudge/guide/v20/H10_6.webp",
-     "caption": "The Test answers: it works, 13 tools"
-    }
+     "src": "assets/nudge/guide/v20/H10_2.webp",
+     "caption": "A key is made and shown once with the warning"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H10_3.webp",
+     "caption": "The Test box answers: it works, as Raghad, 13 tools offered"
+    },
+    "assets/nudge/guide/v20/H10.mp4"
    ],
    "ar": [
+    "assets/nudge/guide/v20/H10_1_ar.webp",
+    "assets/nudge/guide/v20/H10_2_ar.webp",
     "assets/nudge/guide/v20/H10_3_ar.webp",
-    "assets/nudge/guide/v20/H10_4_ar.webp"
+    "assets/nudge/guide/v20/H10_ar.mp4"
    ],
-   "result_en": "With Open Nudge to External Assistants switched on and Ebrahim in the External Assistant group, the External Assistants page showed the server address and the connection text for Claude Desktop; 'Make a Key (legacy)' opened the dialog (name, valid for, only from), the key was made (shown once, with the warning that assistants that can sign in need no key) and pasting it in the Test box answered 'It works. Nudge answered, protocol 2025-06-18, as Ebrahim. 13 tools are offered to this person.'",
-   "result_ar": "مع تفعيل «فتح Nudge للمساعدين الخارجيين» ووجود Ebrahim في مجموعة المساعد الخارجي، عرضت صفحة «المساعدون الخارجيون» عنوان الخادم ونص الاتصال لـ Claude Desktop، وفتح «أنشئ مفتاحاً (قديم)» الحوار (الاسم، صالح لمدة، فقط من). وفي الإنجليزية أُنشئ المفتاح وأجاب اختباره «يعمل: أجاب Nudge … 13 أداة معروضة لهذا الشخص».",
+   "result_en": "With Open Nudge to External Assistants ticked, a key named Claude Desktop (valid 3 months) is made and shown once; pasted in the Test box it answers 'It works. Nudge answered, protocol 2025-06-18, as Raghad. 13 tools are offered to this person.'",
+   "result_ar": "بعد تفعيل «افتح Nudge للمساعدين الخارجيين» يُنشأ مفتاح باسم Claude Desktop صالح 3 أشهر ويظهر مرة واحدة؛ وعند لصقه في خانة الاختبار تأتي النتيجة: يعمل، بصفة Raghad، تُعرض 13 أداة لهذا الشخص.",
    "partial_en": "no outside assistant was connected.",
    "partial_ar": "لم يُربط مساعد خارجي، وتتوقف النسخة العربية قبل إنشاء المفتاح."
   },
@@ -8092,30 +8108,50 @@
   "H20": {
    "en": [
     {
-     "src": "assets/nudge/guide/v20/H20_3.webp",
-     "caption": "After Yes"
+     "src": "assets/nudge/guide/v20/H20_1.webp",
+     "caption": "The approval flow card for sales orders is built and tried on a test order"
     },
     {
-     "src": "assets/nudge/guide/v20/H20_4.webp",
-     "caption": "The Request approval button on a quotation"
+     "src": "assets/nudge/guide/v20/H20_2.webp",
+     "caption": "Confirming a 60,000 order is refused until it is approved"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H20_3.webp",
+     "caption": "After Request approval and Approve, the order is confirmed as a Sales Order"
     }
    ],
    "ar": [
-    "assets/nudge/guide/v20/H20_3_ar.webp",
-    "assets/nudge/guide/v20/H20_4_ar.webp"
+    "assets/nudge/guide/v20/H20_1_ar.webp",
+    "assets/nudge/guide/v20/H20_2_ar.webp",
+    "assets/nudge/guide/v20/H20_3_ar.webp"
    ],
-   "result_en": "In Dev mode 'Confirming a sales order above 50,000 needs the sales manager' gave the card 'Create: approval flow for Sales Order' (four fields Approval, Approved by, Approval level, Approved amount; actions request / approve / refuse; a rule that stops confirming an order above 50,000 before it is approved; a rule that keeps the approval fields writable by the buttons only; buttons Request approval, Approve, Refuse; level 1 = Sales / Administrator; amounts in the company currency); after Yes it was built and a quotation shows the new Request approval button.",
-   "result_ar": "في وضع Dev أنتجت الجملة «تأكيد أمر بيع فوق 50,000 بدو موافقة مدير المبيعات» بطاقة «إنشاء: مسار موافقة لـ أمر البيع» (حقول: الموافقة، وافق عليه، مستوى الموافقة، المبلغ المعتمد؛ إجراءات الطلب والموافقة والرفض؛ قاعدة تمنع تأكيد أي أمر بيع فوق 50,000 قبل الموافقة؛ قاعدة تجعل كتابة حقول الموافقة بالأزرار فقط؛ أزرار «طلب الموافقة» و«اعتماد» و«رفض»؛ المستوى 1)؛ وبعد Yes بُني كله."
+   "result_en": "Above 50,000 EUR a sales order cannot be confirmed without approval: Confirm on a 60,000.00 EUR order is refused ('needs the approval of Sales / Administrator'), Request approval notifies the approvers, the approver presses Approve, and the order then confirms to a Sales Order.",
+   "result_ar": "فوق 50,000 EUR لا يُؤكَّد أمر البيع دون موافقة: تأكيد أمر بقيمة 60,000.00 EUR يُرفض («يحتاج موافقة المبيعات / المدير»)، و«طلب الموافقة» يُنبّه المعتمدين، ثم يضغط المعتمد «اعتماد» فيتحول الأمر إلى أمر بيع."
   },
   "H21": {
    "en": [
-    "assets/nudge/guide/v20/H21_1.webp"
+    {
+     "src": "assets/nudge/guide/v20/H21_1.webp",
+     "caption": "Set up this database with me: Nudge lists the steps still open"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H21_2.webp",
+     "caption": "A card lists the exact time zone changes before anything is applied"
+    },
+    {
+     "src": "assets/nudge/guide/v20/H21_3.webp",
+     "caption": "After Yes, do it the card shows Done with Undo"
+    },
+    "assets/nudge/guide/v20/H21.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v20/H21_1_ar.webp"
+    "assets/nudge/guide/v20/H21_1_ar.webp",
+    "assets/nudge/guide/v20/H21_2_ar.webp",
+    "assets/nudge/guide/v20/H21_3_ar.webp",
+    "assets/nudge/guide/v20/H21_ar.mp4"
    ],
-   "result_en": "Settings > Nudge shows the First Setup block with two links, 'Choose a provider and see the cost' and 'Set up this database with me' (in Arabic «جهّز قاعدة البيانات هذه معي»). Only the entry point is shown; the question-by-question setup was not run on this populated database.",
-   "result_ar": "تعرض إعدادات Nudge كتلة «الإعداد الأول» برابطين: «اختر مزوّدًا وشاهد التكلفة» و«جهّز قاعدة البيانات هذه معي». الظاهر هو نقطة الدخول فقط؛ لم تُشغَّل أسئلة الإعداد على قاعدة البيانات هذه المعبأة بالبيانات."
+   "result_en": "'Set up this database with me' opens the Nudge panel, which sees an already configured database and lists what is left (currency, time zone, company logo, apps, fiscal year, number and date formats); for Europe/Berlin a card shows the company time zone and the user's Asia/Dubai to Europe/Berlin, and after Yes, do it it shows Done with Undo.",
+   "result_ar": "«جهّز قاعدة البيانات هذه معي» يفتح لوحة Nudge التي تعرض الخطوات المتبقية (العملة، المنطقة الزمنية، الشعار، التطبيقات، السنة المالية، صيغة الأرقام والتواريخ)؛ وتظهر بطاقة بالتغييرات (Europe/Berlin للشركة ولمستخدمك من Asia/Dubai) وبعد «نعم، نفّذ» تظهر «تم» مع «تراجع»."
   },
   "H22": {
    "en": [
