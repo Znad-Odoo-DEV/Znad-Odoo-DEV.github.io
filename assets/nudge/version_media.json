@@ -142,15 +142,28 @@
   },
   "A14": {
    "en": [
-    "assets/nudge/guide/v17/A14_3.webp",
-    "assets/nudge/guide/v17/A14_4.webp"
+    {
+     "src": "assets/nudge/guide/v17/A14_1.webp",
+     "caption": "User menu shows 'Nudge: On' with the avatar at the bottom right"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A14_2.webp",
+     "caption": "Same page after switching off: avatar and top-bar icon are gone"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A14_3.webp",
+     "caption": "Switched back on: the avatar and icon return"
+    },
+    "assets/nudge/guide/v17/A14.mp4"
    ],
    "ar": [
+    "assets/nudge/guide/v17/A14_1_ar.webp",
+    "assets/nudge/guide/v17/A14_2_ar.webp",
     "assets/nudge/guide/v17/A14_3_ar.webp",
-    "assets/nudge/guide/v17/A14_4_ar.webp"
+    "assets/nudge/guide/v17/A14_ar.mp4"
    ],
-   "result_en": "The user menu shows 'Nudge: On'; pressing it removed the avatar and the top-bar icon for this user, and 'Nudge: Off' in the same menu brought them back.",
-   "result_ar": "تعرض قائمة المستخدم «Nudge: يعمل»؛ وعند الضغط عليها اختفت الأيقونتان لهذا المستخدم فقط، وأعادتهما «Nudge: متوقف» من القائمة نفسها."
+   "result_en": "From the user menu, 'Nudge: On' hides the avatar bubble and top-bar icon on the same Quotations page; the menu then reads 'Nudge: Off' and pressing it brings them back.",
+   "result_ar": "من قائمة المستخدم، «Nudge: يعمل» يُخفي الصورة الرمزية وأيقونة الشريط العلوي في الصفحة نفسها؛ ثم تظهر «Nudge: متوقف» والضغط عليها يعيدهما."
   },
   "A15": {
    "en": [
@@ -213,15 +226,27 @@
   },
   "A19": {
    "en": [
-    "assets/nudge/guide/v17/A19_2.webp",
-    "assets/nudge/guide/v17/A19_3.webp"
+    {
+     "src": "assets/nudge/guide/v17/A19_1.webp",
+     "caption": "In Talk mode Nudge explains how to add a discount, with the Talk | Agent | Dev switch under the box"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A19_2.webp",
+     "caption": "Typing 'Nudge, do it' switches the panel to Agent mode"
+    },
+    {
+     "src": "assets/nudge/guide/v17/A19_3.webp",
+     "caption": "Agent mode offers: On the screen, In writing, Do it for me"
+    }
    ],
    "ar": [
+    "assets/nudge/guide/v17/A19_1_ar.webp",
     "assets/nudge/guide/v17/A19_2_ar.webp",
-    "assets/nudge/guide/v17/A19_3_ar.webp"
+    "assets/nudge/guide/v17/A19_3_ar.webp",
+    "assets/nudge/guide/v17/A19_ar.mp4"
    ],
-   "result_en": "In Agent mode 'How many quotations does Raghad have?' answered 'Raghad has 2 quotations' (S00044 and S00040, as in the database). In Arabic, 'كم عدد عروض الأسعار لدينا الآن؟' was answered with 6 quotations in the Quotation state, as in the database.",
-   "result_ar": "في وضع الوكيل أجاب Nudge عن «How many quotations does Raghad have?» بأن لدى Raghad عرضَي سعر (S00044 وS00040، كما في قاعدة البيانات). وبالعربية أُجيب عن «كم عدد عروض الأسعار لدينا الآن؟» بـ 6 عروض في حالة عرض سعر، كما في قاعدة البيانات."
+   "result_en": "On quotation S00046, 'How do I add a discount?' is answered step by step in Talk mode; typing 'Nudge, do it' switches the panel to Agent, which offers three choices: On the screen with the pointer, In writing, Do it for me.",
+   "result_ar": "على عرض السعر S00046 يُجاب سؤال «كيف أضيف خصمًا؟» بالعربية في وضع الحوار؛ وكتابة «Nudge, نفّذها» تحوّل اللوحة إلى وضع الوكيل الذي يعرض ثلاثة خيارات: على الشاشة بالمؤشر / كتابةً / نفّذها عني."
   },
   "B01": {
    "en": [
@@ -7419,19 +7444,26 @@
    "en": [
     {
      "src": "assets/nudge/guide/v20/D10_1.webp",
-     "caption": "The card before Yes"
+     "caption": "Nudge proposes the Quotation Summary report: customer, date, order lines, in the Print menu"
     },
     {
      "src": "assets/nudge/guide/v20/D10_2.webp",
-     "caption": "The report created"
-    }
+     "caption": "The report is created and Nudge confirms where to find it"
+    },
+    {
+     "src": "assets/nudge/guide/v20/D10_3.webp",
+     "caption": "Quotation Summary now appears in the quotation's Print menu"
+    },
+    "assets/nudge/guide/v20/D10.mp4"
    ],
    "ar": [
     "assets/nudge/guide/v20/D10_1_ar.webp",
-    "assets/nudge/guide/v20/D10_2_ar.webp"
+    "assets/nudge/guide/v20/D10_2_ar.webp",
+    "assets/nudge/guide/v20/D10_3_ar.webp",
+    "assets/nudge/guide/v20/D10_ar.mp4"
    ],
-   "result_en": "In Dev mode 'Make a PDF report for the quotation with the customer, the date and the order lines' gave the card 'Create: report Quotation Summary' (Sales Order; shows order reference, customer name, order date; lines Product, Description, Quantity, Unit Price, Subtotal; in the Print menu; QWeb template code); after Yes the report was created. Not printed.",
-   "result_ar": "في وضع Dev أنتجت الجملة «اعمل تقرير PDF لعرض السعر فيه الزبون والتاريخ وبنود الطلب» بطاقة «إنشاء: تقرير تقرير عرض السعر» (أمر البيع؛ مرجع الطلب والعميل وتاريخ الطلب؛ بنود الطلب: الوصف، الكمية، سعر الوحدة، الناتج الفرعي؛ في قائمة الطباعة؛ مع كود القالب)؛ وبعد Yes أُنشئ التقرير. لم يُطبع. كتلة الكود معكوسة الاتجاه (علة معروفة)."
+   "result_en": "Asked in plain words for a PDF report of the quotation, Nudge proposed 'Quotation Summary' (customer, date, order lines), created it after Yes, and it appears in the Print menu next to 'Quotation / Order' on quotation S00039.",
+   "result_ar": "بطلب بالعربية اقترح Nudge «تقرير عرض السعر» (العميل والتاريخ وبنود الطلب)، وأنشأه بعد الموافقة وظهر في قائمة الطباعة لعرض السعر S00001."
   },
   "D11": {
    "en": [
@@ -7689,33 +7721,73 @@
   },
   "G10": {
    "en": [
-    "assets/nudge/guide/v20/G10_1.webp"
+    {
+     "src": "assets/nudge/guide/v20/G10_1.webp",
+     "caption": "AI Providers: Gemini, LM Studio, Groq, OpenRouter, Ollama, Claude and an OpenAI-compatible provider"
+    },
+    {
+     "src": "assets/nudge/guide/v20/G10_2.webp",
+     "caption": "Test Connection answers 'Connection successful' (API key masked)"
+    },
+    {
+     "src": "assets/nudge/guide/v20/G10_3.webp",
+     "caption": "Fetch Models lists the provider's models, each with a Use button"
+    },
+    "assets/nudge/guide/v20/G10.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v20/G10_1_ar.webp"
+    "assets/nudge/guide/v20/G10_1_ar.webp",
+    "assets/nudge/guide/v20/G10_2_ar.webp",
+    "assets/nudge/guide/v20/G10_3_ar.webp",
+    "assets/nudge/guide/v20/G10_ar.mp4"
    ],
-   "result_en": "On Odoo 20 the AI Providers list shows 6 ready providers: three Google Gemini models, Ollama, LM Studio and Anthropic Claude, each with its protocol and model.",
-   "result_ar": "على أودو 20 تعرض قائمة مزودي الذكاء الاصطناعي 6 مزودين جاهزين: ثلاثة نماذج Google Gemini وOllama وLM Studio وAnthropic Claude مع البروتوكول والنموذج لكل منها."
+   "result_en": "Nudge lists nine AI providers (Gemini, LM Studio, Groq, OpenRouter, Ollama, Claude, OpenAI-compatible); on Gemini 3.1 Flash-Lite the key is masked, Test Connection says 'Connection successful.' and Fetch Models finds 62 models, each with a Use button.",
+   "result_ar": "قائمة من تسعة مزوّدين للذكاء الاصطناعي؛ في Gemini 3.1 Flash-Lite المفتاح مخفي، واختبار الاتصال يردّ «تم الاتصال بنجاح»، وجلب النماذج يجد 62 نموذجًا لكلٍّ منها زر «استخدام»."
   },
   "G11": {
    "en": [
-    "assets/nudge/guide/v20/G11_1.webp"
+    {
+     "src": "assets/nudge/guide/v20/G11_1.webp",
+     "caption": "Database Profile: what Nudge read (Odoo 20 Community, 169 modules, custom modules)"
+    },
+    {
+     "src": "assets/nudge/guide/v20/G11_2.webp",
+     "caption": "A manager writes a correction on the Sales configuration"
+    },
+    {
+     "src": "assets/nudge/guide/v20/G11_3.webp",
+     "caption": "After Read the Database Again, the correction is kept in the new profile"
+    },
+    "assets/nudge/guide/v20/G11.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v20/G11_1_ar.webp"
+    "assets/nudge/guide/v20/G11_1_ar.webp",
+    "assets/nudge/guide/v20/G11_2_ar.webp",
+    "assets/nudge/guide/v20/G11_3_ar.webp",
+    "assets/nudge/guide/v20/G11_ar.mp4"
    ],
-   "result_en": "On Odoo 20 the Database Profile lists the reading Nudge took at installation (202 pieces of the database's structure, 3,984 ms).",
-   "result_ar": "على أودو 20 يعرض ملف قاعدة البيانات القراءة التي أجراها Nudge عند التثبيت (202 جزءاً من بنية قاعدة البيانات، 3,984 مللي ثانية)."
+   "result_en": "Nudge shows what it read from the database (Odoo 20.0 Community, 169 modules, 204 pieces); a manager's correction on Sales ('quotations are valid for 30 days in every company') is still there after pressing Read the Database Again.",
+   "result_ar": "يعرض Nudge ما قرأه من قاعدة البيانات (204 جزءًا)؛ وتصحيح المدير على المبيعات («عروض الأسعار صالحة 30 يومًا في كل الشركات») يبقى بعد «إعادة قراءة قاعدة البيانات»."
   },
   "G12": {
    "en": [
-    "assets/nudge/guide/v20/G12_1.webp"
+    {
+     "src": "assets/nudge/guide/v20/G12_1.webp",
+     "caption": "Settings > About: Odoo 20.0 (Community Edition)"
+    },
+    {
+     "src": "assets/nudge/guide/v20/G12_2.webp",
+     "caption": "Apps filtered on Nudge: the Nudge app and its add-ons, Enterprise ones marked"
+    },
+    "assets/nudge/guide/v20/G12.mp4"
    ],
    "ar": [
-    "assets/nudge/guide/v20/G12_1_ar.webp"
+    "assets/nudge/guide/v20/G12_1_ar.webp",
+    "assets/nudge/guide/v20/G12_2_ar.webp",
+    "assets/nudge/guide/v20/G12_ar.mp4"
    ],
-   "result_en": "On Odoo 20 (Community or Enterprise) the Apps list filtered on Nudge shows 15 Nudge modules, from the core app to Website Builder, Connectors, MCP Server, Spreadsheets and Documents; Enterprise-only ones carry Activate.",
-   "result_ar": "على أودو 20 تعرض قائمة التطبيقات المرشّحة بـ Nudge خمسة عشر وحدة Nudge، من التطبيق الأساسي إلى منشئ المواقع والموصّلات وخادم MCP وجداول البيانات والمستندات، وتحمل وحدات Enterprise زر تفعيل."
+   "result_en": "Settings > About shows Odoo 20.0 (Community Edition); searching Apps for Nudge lists 15 apps, with Nudge for Odoo AI, for Studio and for Documents marked Enterprise.",
+   "result_ar": "الإعدادات > حول: «أودو 20.0 (الإصدار المجتمعي)»؛ والبحث عن Nudge في التطبيقات يعرض 15 تطبيقًا، ثلاثة منها إضافات معلَّمة Enterprise."
   },
   "H01": {
    "en": [
