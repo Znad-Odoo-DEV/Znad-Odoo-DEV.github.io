@@ -1343,12 +1343,20 @@
           <p class="feature-what">Nudge / User talks and sees their own conversations. Nudge / Agent User can also ask for the work and reads their own log. Nudge / Manager sees every conversation and its cost, the providers, the profile, and writes Business Notes. The Settings group creates providers and keys. “Nudge for All Internal Users” gives everyone the User group at once.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Settings ‣ Users ‣ open a user ‣ Nudge: pick User, Agent User or Manager.</li><li>Or Settings ‣ Nudge ‣ Nudge for All Internal Users.</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../assets/nudge/guide/G2-groups.webp" width="900" height="1003" loading="lazy" decoding="async" alt="Groups: User, Agent User, Manager, Settings: screenshot of the trial">
-            <figcaption>The user form's Access Rights tab with the Nudge role (Manager) among the other apps' roles.</figcaption>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/G2_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Groups: User, Agent User, Manager, Settings: screenshot of the trial">
+            <figcaption>Settings &gt; Groups searched for Nudge lists the Nudge groups</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/G2_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Groups: User, Agent User, Manager, Settings: screenshot of the trial">
+            <figcaption>A user form shows the Nudge dropdown (Manager)</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/G2_3.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Groups: User, Agent User, Manager, Settings: screenshot of the trial">
+            <figcaption>Nudge settings: the switch to give Nudge to all internal users</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial's Settings capture the switch “Nudge for All Internal Users” was listed among the Nudge settings (off on that database).</p>
+          <p class="feature-result">In the trial, Searching Groups for Nudge lists seven groups (User, Agent User, Agent Service User, External Assistant, Manager, Nudge Auditor, advanced menus); a user form shows the Nudge dropdown set to Manager; Nudge settings &gt; Access shows the 'Nudge for All Internal Users' switch, off.</p>
           <p class="feature-note"><strong>Note</strong> The administrator is a Manager after installation.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -1404,13 +1412,15 @@
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Manager: Nudge ‣ Conversations.</li><li>Open one to read it; Archive it when needed.</li></ol>
           <figure class="feature-media">
-            <img src="../assets/nudge/guide/G5-conversations.webp" width="1100" height="1080" loading="lazy" decoding="async" alt="Conversations with their cost: screenshot of the trial">
-            <figcaption>The Conversations list: user, model, messages, input and output tokens and cost for each.</figcaption>
+            <img src="../assets/nudge/guide/v19/G5_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Conversations with their cost: screenshot of the trial">
+            <figcaption>Conversations sorted by cost, highest first</figcaption>
           </figure>
           <figure class="feature-media">
-            <img src="../assets/nudge/guide/G5-conversations-2.webp" width="1100" height="1080" loading="lazy" decoding="async" alt="Conversations with their cost: screenshot of the trial">
-            <figcaption>One conversation opened: its user, provider, model, token counts and its messages.</figcaption>
+            <img src="../assets/nudge/guide/v19/G5_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Conversations with their cost: screenshot of the trial">
+            <figcaption>One conversation opened: provider, model, tokens in and out, and its cost</figcaption>
           </figure>
+          <h4>Result</h4>
+          <p class="feature-result">In the trial, Conversations sorted by cost, highest first; the top one shows provider Anthropic Claude, model claude-sonnet-5-5, 74,866 input tokens, 281 output tokens and a cost of 0.141410, with the cost of each message.</p>
           <p class="feature-note"><strong>Note</strong> Users see only their own conversations.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -1433,12 +1443,16 @@
           <p class="feature-what">Nudge ‣ Usage: every call to a provider, conversation or speech, with tokens and cost, grouped by person, day, month, model or company.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Manager: Nudge ‣ Usage.</li><li>Group by Day, Person or Model from the search bar.</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../assets/nudge/guide/G7-usage-report.webp" width="900" height="1561" loading="lazy" decoding="async" alt="Usage report: screenshot of the trial">
-            <figcaption>The Usage report for this month grouped by day: requests, tokens and cost per day.</figcaption>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/G7_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Usage report: screenshot of the trial">
+            <figcaption>Usage grouped by person, then day, with tokens and cost</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/G7_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Usage report: screenshot of the trial">
+            <figcaption>Usage by person for the month, with filters and grouping options</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial, grouped by day the report read “08 Oct 2026 (83 calls) 2,455,403 tokens 0.000000” and “13 Oct 2026 (43 calls) 1,315,074 tokens 0.377903”; by model, “claude-sonnet-5-5 (4) 0.278452” and “gemini-3.5-flash-lite (38) 0.000000”. Single lines read like “Conversation — claude-sonnet-5-5 — 19,619 tokens — 0.051513”.</p>
+          <p class="feature-result">In the trial, Usage for this month grouped by person then day: Ebrahim 2,556,948 tokens in total, and 11 Nov alone 692,794 tokens at a cost of 0.475922, with each usage row below.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
         <article class="feature has-media" id="G9" data-role="impl" data-sec="10">
@@ -2877,14 +2891,22 @@
           <p class="feature-what">Attach a list of materials and Nudge finds every likely product for each line, names need not match the catalogue, with the quantity per warehouse. Attach a supplier's invoice and “Find the bill of this” opens the bill, purchase order or RFQ it belongs to, saying what it matched on.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Paperclip ‣ the PDF.</li><li>Agent mode: “What do I have in stock of these?” or “Find the bill of this”.</li></ol>
-          <figure class="feature-media portrait">
-            <video controls preload="none" playsinline width="540" height="960" poster="../assets/nudge/guide/video/rec_pdf-poster.webp" aria-label="Material list or supplier PDF → products or the bill: recording of the trial, 18 seconds">
-              <source src="../assets/nudge/guide/video/rec_pdf.mp4" type="video/mp4">
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C18_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Material list or supplier PDF → products or the bill: screenshot of the trial">
+            <figcaption>A material-list PDF attached: each line with its product code and stock on hand</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C18_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Material list or supplier PDF → products or the bill: screenshot of the trial">
+            <figcaption>A supplier invoice PDF attached: Nudge finds the matching purchase order and says no bill exists yet</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/v19/C18-poster.webp" aria-label="Material list or supplier PDF → products or the bill: recording of the trial, 62 seconds">
+              <source src="../assets/nudge/guide/v19/C18.mp4" type="video/mp4">
             </video>
-            <figcaption>Recording of the trial · 18 s</figcaption>
+            <figcaption>Recording of the trial · 62 s</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial, material_list_site_b.pdf with “What do I have in stock of these?” answered: “1. Office Chair Black: 10 units on hand ([FURN_0269]). 2. Customizable Desk: Available in multiple variants… Stock ranges from 45 to 70 units depending on the variant you need… 3. Pipe 1/2 inch: 120 units on hand ([PIPE-12]).”</p>
+          <p class="feature-result">In the trial, with a material-list PDF Nudge listed each line with its product code and quantity on hand (e.g. Door lock cylinder 1,304, AC filter 2,399, LED bulb 2,475, Basin mixer 1,001); with a supplier invoice PDF (47,350.85 AED) it found purchase order P00030 by vendor and amount and said no vendor bill exists yet.</p>
           <p class="feature-note"><strong>Note</strong> A scanned PDF holds no text: Nudge asks for a photo of it.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -2893,12 +2915,26 @@
           <p class="feature-what">Whoever asks, Nudge does not delete records: it archives or cancels instead, and says so.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Ask “Delete this contact”; Nudge offers to archive it.</li><li>Ask “Archive the product Office Chair Black”; the card shows the change to Active.</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../assets/nudge/guide/C20-never-deletes.webp" width="424" height="584" loading="lazy" decoding="async" alt="Never deletes; archives instead: screenshot of the trial">
-            <figcaption>Asked to &#x27;Delete this contact&#x27;, Nudge answers that it cannot delete contacts directly and points to Archive in the Actions menu.</figcaption>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C20_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Never deletes; archives instead: screenshot of the trial">
+            <figcaption>Asked to delete a contact, Nudge refuses and points to Archive</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C20_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Never deletes; archives instead: screenshot of the trial">
+            <figcaption>Archive request shows a confirmation card: Active Yes to No</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/C20_3.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Never deletes; archives instead: screenshot of the trial">
+            <figcaption>After confirming, the product form shows the Archived ribbon</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <video controls preload="none" playsinline width="1280" height="720" poster="../assets/nudge/guide/v19/C20-poster.webp" aria-label="Never deletes; archives instead: recording of the trial, 48 seconds">
+              <source src="../assets/nudge/guide/v19/C20.mp4" type="video/mp4">
+            </video>
+            <figcaption>Recording of the trial · 48 s</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial, “Archive the product Office Chair Black” was refused because the user lacked the right (see G1); nothing was deleted or archived.</p>
+          <p class="feature-result">In the trial, asked to delete a contact, Nudge said it cannot delete and pointed to Archive; asked to archive Office Chair Black it showed the card 'Change: Product, Active Yes to No', after Yes the card read Done and the product form showed the Archived ribbon.</p>
           <p class="feature-note"><strong>Note</strong> In Developer mode, what Nudge itself built can be deleted when asked by name (D13).</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
@@ -3860,12 +3896,16 @@
           <p class="feature-what">Nudge ‣ What Nudge Did ‣ Requests lists what people asked Nudge to do, with every step, the model, tokens and cost, whether it ran in the background, and a Stop for a manager. Changes lists every record created or changed and every button pressed: who, what was written, what the person was shown and what they answered. It cannot be edited or deleted from the interface.</p>
           <h4>Steps</h4>
           <ol class="feature-steps"><li>Manager: Nudge ‣ What Nudge Did ‣ Requests; open a line for its steps.</li><li>Nudge ‣ What Nudge Did ‣ Changes; filter by person, model or date.</li></ol>
-          <figure class="feature-media portrait">
-            <img src="../assets/nudge/guide/G4-audit-log.webp" width="900" height="1561" loading="lazy" decoding="async" alt="Audit log: Requests and Changes: screenshot of the trial">
-            <figcaption>What Nudge Did ‣ Requests: date, asked by, request, steps, changes, model, input/output tokens, cost and state (Done / Stopped / Failed).</figcaption>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/G4_1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Audit log: Requests and Changes: screenshot of the trial">
+            <figcaption>One request opened: who asked, model, tokens, cost and its steps</figcaption>
+          </figure>
+          <figure class="feature-media">
+            <img src="../assets/nudge/guide/v19/G4_2.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Audit log: Requests and Changes: screenshot of the trial">
+            <figcaption>Changes list filtered: who changed what, with no way to edit or delete</figcaption>
           </figure>
           <h4>Result</h4>
-          <p class="feature-result">In the trial the Requests list had the columns Date, Asked By, Request, In the Background, Steps, Changes, Model, Input Tokens, Output Tokens, Cost, State, with rows such as “Send me a test — 1 step — 1 change — gemini-3.5-flash-lite — 61,843 / 54 tokens — 0.000000 — Done”. Changes held lines like “Create: email “Modern Offer Email” — mail.template — Done”, “Button: Send a test of “Modern Offer Email” to you — Done” and a failed “prepare_email_review — Failed”.</p>
+          <p class="feature-result">In the trial, a request opened shows who asked, model claude-sonnet-5-5, 3 calls, 76,937 input and 486 output tokens, cost 0.059529 and its two steps (read, create); the Changes list filtered by 'Website' shows the change made by Ebrahim on ir.ui.view, with no New or Delete button.</p>
           <p class="feature-note"><strong>Note</strong> Agent users read the log of what Nudge did for them; managers read all.</p>
           <p class="feature-edition">Odoo 17, 18 and 19 · Community and Enterprise</p>
         </article>
