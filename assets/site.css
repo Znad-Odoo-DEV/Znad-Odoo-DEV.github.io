@@ -874,6 +874,10 @@ html:not(.js) .filters { display: none; }
 .case-media { margin: 0; }
 .case-media img { width: 100%; height: auto; border: var(--media-border); border-radius: var(--media-radius); box-shadow: var(--media-shadow); }
 .case-media figcaption { margin-top: var(--sp-3); font-size: var(--fs-sm); color: var(--text-mute); }
+.case-main h3 { margin-top: var(--sp-6); font-size: var(--fs-lg); line-height: 1.25; }
+.case-main section > .case-media { margin-top: var(--sp-6); }
+.case-media.pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); max-width: 36rem; }
+.case-media.pair figcaption { grid-column: 1 / -1; margin-top: 0; }
 .case-side { display: grid; gap: var(--sp-4); }
 @media (min-width: 980px) { .case-side { position: sticky; top: 6.5rem; } }
 .side-box { border: 1px solid var(--card-border); border-radius: var(--r-md); background: var(--card-bg); padding: var(--sp-5); }
