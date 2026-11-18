@@ -307,49 +307,27 @@
           </div>
         </article>
 
-        <article class="card" id="inventory" data-cats="data odoo">
-          <div class="card-top">
-            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20.5V9l9-5 9 5v11.5"/><path d="M7 20.5v-7.2h10v7.2"/><path d="M7 16.9h10"/></svg></div>
-            <span class="platform">Odoo 19</span>
-          </div>
-          <h3><a href="projects/inventory.html">إعادة هيكلة المخزون: مستودع لكل مخزن موقع</a></h3>
-          <p class="sum">مخازن المواقع تحولت إلى مستودعات قائمة بذاتها، فصارت التوقعات والمخزون الوارد وإعادة التزويد تجيب لكل مشروع، وسُعّرت حركات المخازن في قيود محاسبية للمحاسب.</p>
-          <dl class="pbr">
-            <div><dt>المشكلة</dt><dd>كان كل مخزن موقع موقعاً داخل مستودع واحد لكل شركة. يجيب Odoo عن التوقعات والوارد وإعادة التزويد لكل مستودع، فلم تستطع 149 وحدة إسمنت في التوقعات أن تقول في أي موقع هي.</dd></div>
-            <div><dt>ما بنيته</dt><dd>أداة تنشئ مستودعاً لكل مخزن موقع وتجعل موقع المخزن الحالي مخزونه، وتعيد توجيه أنواع العمليات والمسارات وقواعد إعادة الطلب، من دون المساس بأي حركة مخزون. ويُجري تشغيلها التجريبي التحويل كاملاً، ويقارن كل مخزن ومنتج ودفعة، ثم يتراجع.</dd></div>
-            <div><dt>النتيجة</dt><dd>يعمل على الإنتاج: <strong>13 مستودعاً</strong>، و5 مخازن فارغة مؤرشفة، ولم تتغير كمية واحدة. وسُعّرت 8,901 حركة في 28 قيداً محاسبياً مسوّداً، مع 1,298 سطراً مُعلَّماً لتكلفة ناقصة.</dd></div>
-          </dl>
-          <ul class="figs" aria-label="أرقام"><li><b>13</b><span>مستودع موقع</span></li><li><b>0</b><span>كمية تغيرت</span></li><li><b>28</b><span>قيد تقييم مسوّداً</span></li></ul>
-          <div class="badges"><span>stock.warehouse</span><span>إعادة التزويد</span><span>تقييم المخزون</span><span>قيود محاسبية</span><span>تشغيل تجريبي افتراضياً</span></div>
-          <div class="card-foot">
-            <a class="ghost-link read-link" href="projects/inventory.html" aria-label="اقرأ دراسة الحالة: إعادة هيكلة المخزون: مستودع لكل مخزن موقع">اقرأ دراسة الحالة<svg class="i i-flip" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
-            <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/ar/projects/inventory.html" aria-label="نسخ رابط إعادة هيكلة المخزون: مستودع لكل مخزن موقع"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">نسخ الرابط</span></button>
-            <span class="ghost-link is-static"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>مستودع خاص بالعميل</span>
-          </div>
-        </article>
-
-        <article class="card" id="item-master-review" data-cats="data web odoo">
+        <article class="card" id="inventory" data-cats="data web odoo">
           <figure class="shot">
             <img src="../assets/item-master-review/ar-card.webp" width="1200" height="900" loading="lazy" decoding="async"
                  alt="كتالوج موقع مراجعة المواد: لوحة فلاتر وبطاقات منتجات بصورها وعدد متغيراتها.">
           </figure>
           <div class="card-top">
-            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h10.5l3.5 3.5v13.5H5z"/><path d="M8.5 9.5h7M8.5 13h4.5"/><path d="m12.8 17.2 1.6 1.6 3.2-3.4"/></svg></div>
-            <span class="platform">Cloudflare + Odoo 19</span>
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20.5V9l9-5 9 5v11.5"/><path d="M7 20.5v-7.2h10v7.2"/><path d="M7 16.9h10"/></svg></div>
+            <span class="platform">Odoo 19 + Cloudflare</span>
           </div>
-          <h3><a href="projects/item-master-review.html">مراجعة المواد: فريق الموقع يدقّق الكتالوج بعد تنظيفه</a></h3>
-          <p class="sum">كتالوج من 8,190 مادة نُظّف إلى 1,681 منتجاً في Odoo مع 8,010 متغيرات، ثم وُضع أمام أمناء المخازن ومشرفي العمال والمهندسين الذين يستعملونه. يراجعون كل مادة من هواتفهم ويرسلون اقتراحات، ولا يصل شيء إلى Odoo قبل موافقة المسؤول.</p>
-          <p class="state">يعمل لفريق المراجعة · نوفمبر 2026</p>
+          <h3><a href="projects/inventory.html">إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف</a></h3>
+          <p class="sum">مخازن المواقع تحولت إلى مستودعات قائمة بذاتها، فصارت التوقعات والمخزون الوارد وإعادة التزويد تجيب لكل مشروع، وسُعّرت حركاتها للمحاسب. ثم الكتالوج خلفها: 8,190 مادة نُظّفت إلى 1,681 منتجاً في Odoo مع 8,010 متغيرات، يراجعها من هواتفهم أمناء المخازن ومشرفو العمال والمهندسون الذين يطلبونها، ولا يصل شيء إلى Odoo قبل موافقة المسؤول.</p>
           <dl class="pbr">
-            <div><dt>المشكلة</dt><dd>تركت سنوات من بنود الشراء كتالوج مجموعة مقاولات وأعمال MEP بـ 8,190 مادة منفردة: الشريط نفسه بعشرات الأسماء، والمقاسات وعدد العبوة داخل الاسم، وخدمات مسجّلة كسلع. التنظيف على المكتب نصف العمل؛ فمن يطلب المواد ويستلمها يجب أن يؤكده، وأكثرهم ليسوا مستخدمين في Odoo.</dd></div>
-            <div><dt>ما بنيته</dt><dd>أولاً التنظيف: 16 جولة جمعت المواد في قوالب منتجات بخصائص ومتغيرات، قالب لكل نوع مادة، مع بقاء كل اسم قديم على متغيره. ثم موقع مراجعة على Cloudflare يدخله كل شخص بحساب أنشأه المسؤول ومربوط بسجلّه كموظف. كل تعديل أو صورة أو دمج أو فصل هو اقتراح؛ يوافق عليه المسؤول، ثم يكتب سكربت المقبولَ منها في Odoo وينشر كل اقتراح في سجل المنتج باسم الموظف الذي أرسله.</dd></div>
-            <div><dt>النتيجة</dt><dd>يعمل لفريق المراجعة بالعربية والإنجليزية، ومصمّم للهاتف: <strong>1,681 منتجاً</strong> و820 صورة و62 قسم عمل ضمن 18 تخصصاً. تنجح 35 فحصاً للواجهة البرمجية، ويرافقه دليل استخدام من 10 صفحات بكل لغة.</dd></div>
+            <div><dt>المشكلة</dt><dd>كان كل مخزن موقع موقعاً داخل مستودع واحد لكل شركة، فلم تستطع 149 وحدة إسمنت في التوقعات أن تقول في أي موقع هي. وتركت سنوات من بنود الشراء 8,190 مادة منفردة: الشريط نفسه بعشرات الأسماء، والمقاسات داخل الاسم، وخدمات مسجّلة كسلع. ومن يطلبون هذه المواد، وأكثرهم بلا حساب في Odoo، عليهم أن يؤكدوا أي تنظيف.</dd></div>
+            <div><dt>ما بنيته</dt><dd>أداة تمنح كل مخزن موقع مستودعه الخاص، وتعيد توجيه أنواع العمليات والمسارات وقواعد إعادة الطلب من دون المساس بأي حركة مخزون، مع تسعير حركات المخازن في قيود محاسبية مسوّدة للمحاسب. ثم 16 جولة تنظيف جمعت المواد في قوالب منتجات بمتغيرات، وموقع مراجعة على Cloudflare يرسل منه فريق الموقع اقتراحات يوافق عليها المسؤول قبل أن يكتبها سكربت في Odoo باسم الموظف الذي أرسل كلاً منها.</dd></div>
+            <div><dt>النتيجة</dt><dd>يعمل على الإنتاج: <strong>13 مستودعاً</strong>، ولم تتغير كمية واحدة، وسُعّرت 8,901 حركة في 28 قيداً مسوّداً. وموقع المراجعة يعمل للفريق بالعربية والإنجليزية: <strong>1,681 منتجاً</strong> و820 صورة و35 فحصاً للواجهة البرمجية.</dd></div>
           </dl>
-          <ul class="figs" aria-label="أرقام"><li><b>8,190</b><span>مادة قديمة</span></li><li><b>1,681</b><span>منتجاً للمراجعة</span></li><li><b>8,010</b><span>متغيرات</span></li></ul>
-          <div class="badges"><span>Cloudflare Workers</span><span>D1 (SQLite)</span><span>JavaScript بلا إطار</span><span>عربي وإنجليزي</span><span>Odoo 19</span><span>متغيرات المنتجات</span><span>تنظيف بيانات</span><span>مسار موافقة</span></div>
+          <ul class="figs" aria-label="أرقام"><li><b>13</b><span>مستودع موقع</span></li><li><b>0</b><span>كمية تغيرت</span></li><li><b>1,681</b><span>منتجاً من 8,190 مادة</span></li></ul>
+          <div class="badges"><span>stock.warehouse</span><span>تقييم المخزون</span><span>متغيرات المنتجات</span><span>تنظيف بيانات</span><span>Cloudflare Workers</span><span>D1 (SQLite)</span><span>مسار موافقة</span><span>تشغيل تجريبي افتراضياً</span></div>
           <div class="card-foot">
-            <a class="ghost-link read-link" href="projects/item-master-review.html" aria-label="اقرأ دراسة الحالة: مراجعة المواد: فريق الموقع يدقّق الكتالوج بعد تنظيفه">اقرأ دراسة الحالة<svg class="i i-flip" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
-            <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/ar/projects/item-master-review.html" aria-label="نسخ رابط مراجعة المواد: فريق الموقع يدقّق الكتالوج بعد تنظيفه"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">نسخ الرابط</span></button>
+            <a class="ghost-link read-link" href="projects/inventory.html" aria-label="اقرأ دراسة الحالة: إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف">اقرأ دراسة الحالة<svg class="i i-flip" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+            <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/ar/projects/inventory.html" aria-label="نسخ رابط إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">نسخ الرابط</span></button>
             <span class="ghost-link is-static"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>مستودع خاص بالعميل</span>
           </div>
         </article>

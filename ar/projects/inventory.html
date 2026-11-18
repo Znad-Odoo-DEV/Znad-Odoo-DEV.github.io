@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>إعادة هيكلة المخزون: مستودع لكل مخزن موقع | إبراهيم محمد الزناد</title>
-<meta name="description" content="مخازن المواقع تحولت إلى مستودعات قائمة بذاتها، فصارت التوقعات والمخزون الوارد وإعادة التزويد تجيب لكل مشروع، وسُعّرت حركات المخازن في قيود محاسبية للمحاسب.">
+<title>إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف | إبراهيم محمد الزناد</title>
+<meta name="description" content="مخازن المواقع تحولت إلى مستودعات قائمة بذاتها، فصارت التوقعات والمخزون الوارد وإعادة التزويد تجيب لكل مشروع، وسُعّرت حركاتها للمحاسب. ثم الكتالوج خلفها: 8,190 مادة نُظّفت إلى 1,681 منتجاً في Odoo مع 8,010 متغيرات، يراجعها من هواتفهم أمناء المخازن ومشرفو العمال والمهندسون الذين يطلبونها، ولا يصل شيء إلى Odoo قبل موافقة المسؤول.">
 <meta name="author" content="إبراهيم محمد الزناد">
 <meta name="theme-color" content="#0a0b0e" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
@@ -14,18 +14,18 @@
 <link rel="alternate" hreflang="x-default" href="https://znad-odoo-dev.github.io/projects/inventory.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="إبراهيم محمد الزناد">
-<meta property="og:title" content="إعادة هيكلة المخزون: مستودع لكل مخزن موقع">
-<meta property="og:description" content="ثلاثة عشر مستودع موقع على قاعدة بيانات حيّة، لم تتغير كمية واحدة، والمخزون مسعَّر للدفاتر.">
+<meta property="og:title" content="إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف">
+<meta property="og:description" content="ثلاثة عشر مستودع موقع لم تتغير فيها كمية واحدة، ثم 8,190 مادة قديمة صارت 1,681 منتجاً في Odoo يراجعها من يطلبها.">
 <meta property="og:url" content="https://znad-odoo-dev.github.io/ar/projects/inventory.html">
 <meta property="og:locale" content="ar_AE">
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:image" content="https://znad-odoo-dev.github.io/assets/og/ar/inventory.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="إعادة هيكلة المخزون: مستودع لكل مخزن موقع: ثلاثة عشر مستودع موقع على قاعدة بيانات حيّة، لم تتغير كمية واحدة، والمخزون مسعَّر للدفاتر.">
+<meta property="og:image:alt" content="إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف: ثلاثة عشر مستودع موقع لم تتغير فيها كمية واحدة، ثم 8,190 مادة قديمة صارت 1,681 منتجاً في Odoo يراجعها من يطلبها.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="إعادة هيكلة المخزون: مستودع لكل مخزن موقع">
-<meta name="twitter:description" content="ثلاثة عشر مستودع موقع على قاعدة بيانات حيّة، لم تتغير كمية واحدة، والمخزون مسعَّر للدفاتر.">
+<meta name="twitter:title" content="إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف">
+<meta name="twitter:description" content="ثلاثة عشر مستودع موقع لم تتغير فيها كمية واحدة، ثم 8,190 مادة قديمة صارت 1,681 منتجاً في Odoo يراجعها من يطلبها.">
 <meta name="twitter:image" content="https://znad-odoo-dev.github.io/assets/og/ar/inventory.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230a0b0e'/%3E%3Cpath d='M28 28h8v44h-8z' fill='%23f0a73a'/%3E%3Cpath d='M46 28h8v30a14 14 0 0 1-14 14v-8a6 6 0 0 0 6-6z' fill='%23f0a73a'/%3E%3C/svg%3E">
 <meta name="color-scheme" content="light dark">
@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CreativeWork","name":"إعادة هيكلة المخزون: مستودع لكل مخزن موقع","description":"مخازن المواقع تحولت إلى مستودعات قائمة بذاتها، فصارت التوقعات والمخزون الوارد وإعادة التزويد تجيب لكل مشروع، وسُعّرت حركات المخازن في قيود محاسبية للمحاسب.","url":"https://znad-odoo-dev.github.io/ar/projects/inventory.html","image":"https://znad-odoo-dev.github.io/assets/og/ar/inventory.png","author":{"@type":"Person","name":"إبراهيم محمد الزناد","url":"https://znad-odoo-dev.github.io/ar/"},"keywords":"stock.warehouse, إعادة التزويد, تقييم المخزون, قيود محاسبية, تشغيل تجريبي افتراضياً","inLanguage":"ar"}
+{"@context":"https://schema.org","@type":"CreativeWork","name":"إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف","description":"مخازن المواقع تحولت إلى مستودعات قائمة بذاتها، فصارت التوقعات والمخزون الوارد وإعادة التزويد تجيب لكل مشروع، وسُعّرت حركاتها للمحاسب. ثم الكتالوج خلفها: 8,190 مادة نُظّفت إلى 1,681 منتجاً في Odoo مع 8,010 متغيرات، يراجعها من هواتفهم أمناء المخازن ومشرفو العمال والمهندسون الذين يطلبونها، ولا يصل شيء إلى Odoo قبل موافقة المسؤول.","url":"https://znad-odoo-dev.github.io/ar/projects/inventory.html","image":"https://znad-odoo-dev.github.io/assets/og/ar/inventory.png","author":{"@type":"Person","name":"إبراهيم محمد الزناد","url":"https://znad-odoo-dev.github.io/ar/"},"keywords":"stock.warehouse, إعادة التزويد, تقييم المخزون, قيود محاسبية, تشغيل تجريبي افتراضياً, متغيرات المنتجات, تنظيف بيانات, Cloudflare Workers, D1 (SQLite), JavaScript بلا إطار, عربي وإنجليزي, مسار موافقة","inLanguage":"ar"}
 </script>
 <script>
 (function () { var d = document.documentElement; d.classList.add("js");
@@ -68,19 +68,19 @@
 <main id="main">
   <section class="case-hero" id="top">
     <div class="wrap">
-      <nav class="crumbs" aria-label="مسار التنقل"><a href="../index.html">الأعمال</a><span aria-hidden="true">/</span><a href="../index.html#work">المشاريع</a><span aria-hidden="true">/</span><span aria-current="page">مستودع لكل مخزن موقع</span></nav>
+      <nav class="crumbs" aria-label="مسار التنقل"><a href="../index.html">الأعمال</a><span aria-hidden="true">/</span><a href="../index.html#work">المشاريع</a><span aria-hidden="true">/</span><span aria-current="page">المخزون وكتالوج المواد</span></nav>
       <p class="print-only">https://znad-odoo-dev.github.io/ar/projects/inventory.html</p>
       <div class="case-meta">
-        <span class="platform">Odoo 19</span>
+        <span class="platform">Odoo 19 + Cloudflare</span>
       </div>
-      <h1>إعادة هيكلة المخزون: مستودع لكل مخزن موقع</h1>
-      <p class="case-sum">مخازن المواقع تحولت إلى مستودعات قائمة بذاتها، فصارت التوقعات والمخزون الوارد وإعادة التزويد تجيب لكل مشروع، وسُعّرت حركات المخازن في قيود محاسبية للمحاسب.</p>
+      <h1>إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف</h1>
+      <p class="case-sum">مخازن المواقع تحولت إلى مستودعات قائمة بذاتها، فصارت التوقعات والمخزون الوارد وإعادة التزويد تجيب لكل مشروع، وسُعّرت حركاتها للمحاسب. ثم الكتالوج خلفها: 8,190 مادة نُظّفت إلى 1,681 منتجاً في Odoo مع 8,010 متغيرات، يراجعها من هواتفهم أمناء المخازن ومشرفو العمال والمهندسون الذين يطلبونها، ولا يصل شيء إلى Odoo قبل موافقة المسؤول.</p>
       <div class="share-row">
-          <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/ar/projects/inventory.html" aria-label="نسخ رابط إعادة هيكلة المخزون: مستودع لكل مخزن موقع"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">نسخ الرابط</span></button>
+          <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/ar/projects/inventory.html" aria-label="نسخ رابط إعادة بناء المخزون: مستودع لكل مخزن موقع وكتالوج مواد نظيف"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">نسخ الرابط</span></button>
           <span class="ghost-link is-static"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>مستودع خاص بالعميل</span>
       </div>
       <div class="case-figs">
-        <ul class="figs" aria-label="أرقام"><li><b>13</b><span>مستودع موقع</span></li><li><b>0</b><span>كمية تغيرت</span></li><li><b>28</b><span>قيد تقييم مسوّداً</span></li><li><b>1,298</b><span>سطراً مُعلَّماً لتكلفة</span></li></ul>
+        <ul class="figs" aria-label="أرقام"><li><b>13</b><span>مستودع موقع</span></li><li><b>0</b><span>كمية تغيرت</span></li><li><b>8,190</b><span>مادة قديمة</span></li><li><b>1,681</b><span>منتجاً للمراجعة</span></li></ul>
       </div>
     </div>
   </section>
@@ -91,30 +91,72 @@
         <section>
           <h2>المشكلة</h2>
           <p>كان كل مخزن موقع موقعاً داخل المستودع الوحيد لشركته. يجيب Odoo عن التوقعات والمخزون الوارد و«التسليم إلى» في أمر الشراء وإعادة التزويد لكل مستودع، فكانت توقعات الإسمنت تعرض 149 وحدة في المخزون من دون طريقة لمعرفة أي موقع هي فيه.</p>
+          <p>وكان للكتالوج خلف تلك المخازن مشكلته أيضاً. المجموعة تعمل في المقاولات وأعمال MEP والنجارة والعقارات، واشترت لسنوات من كتالوج واحد. صار كل بند شراء مادة قائمة بذاتها: 8,190 مادة، فيها الشريط اللاصق نفسه بعشرات الأسماء، والمقاسات وعدد العبوة مكتوبة داخل الاسم، وخدمات مسجّلة كسلع.</p>
+          <p>القائمة النظيفة المصنوعة على المكتب تبقى تخميناً. أمناء المخازن ومشرفو العمال والمهندسون الذين يطلبون هذه المواد ويستلمونها يعرفون أي الأسماء هي الشيء نفسه، وأكثرهم بلا حساب في Odoo.</p>
         </section>
 
-        <section>
-          <h2>ما بنيته</h2>
+        <section id="warehouses">
+          <h2>مستودع لكل مخزن موقع</h2>
           <p>مستودع لكل مخزن موقع. يمنح Odoo 19 كل مستودع جديد موقع مخزون جديداً دائماً ويرفض موقع إعادة تزويد بجانب آخر، فتنشئ الأداة المستودع بالطريقة العادية، ثم تعيد ربط موقع المخزن الحالي تحته كمخزونه، وتعيد توجيه كل نوع عملية ومسار وقاعدة إعادة طلب سمّت الموقع الفارغ الجديد، ثم تحذفه. لا تُمس أي حركة مخزون أو كمية؛ وتبقى التكلفة لكل شركة، وما تزال تكلفة المشروع تأتي من الحساب التحليلي عند الاستهلاك.</p>
           <p>يُجري التشغيل التجريبي التحويل كاملاً، ويقارن لقطة لكل مخزن ومنتج ودفعة قبل التحويل وبعده، ثم يتراجع. وأُثبت على نسخة محلية أولاً: شراء يُستلم في موقعه، وقاعدة إعادة طلب تشتري لكمية موقعها، واستهلاك، وتحويل من موقع إلى موقع، وتشغيل ثانٍ لم يغير شيئاً. وأُلغي أولاً تحويلان قديمان كانا ما يزالان يحجزان مخزوناً في مخزن فارغ، ليمكن أرشفته.</p>
-        </section>
 
-        <section>
-          <h2>تقييم المخزون للدفاتر</h2>
+          <h3>تقييم المخزون للدفاتر</h3>
           <p>كان على المخازن أن تصل إلى الحسابات أيضاً. تقيّم كل شركة مخزونها دورياً ولا يكاد منتج يملك تكلفة قياسية، فعرض تقرير للقراءة فقط أولاً ما سيقيّده كل حركة: الاستلامات إلى مخزون الموقع مقابل بضاعة مستلمة غير مفوترة، والاستهلاك إلى مصروف الفئة مع الحساب التحليلي للمشروع، ولا قيد للتحويل بين المواقع، والمخزون المنتقل بين الشركات عبر حساب عبور.</p>
           <p>التكلفة هي آخر سعر شراء مؤكد، ثم السعر القياسي؛ والسطر الذي لا يملك أياً منهما يُعلَّم، ولا يُقيَّد بصفر أبداً. وكان الخيار قيوداً مسوّدة في Odoo ليراجعها المحاسب: 28 قيداً، واحد لكل شركة وشهر، في دفتر تقييم المخزون، مع الأسئلة المفتوحة مكتوبة بجانبها.</p>
+        </section>
+
+        <section id="item-master">
+          <h2>كتالوج مواد نظيف يدقّقه فريق الموقع</h2>
+          <figure class="case-media">
+            <img src="../../assets/item-master-review/ar-catalogue.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="كتالوج موقع المراجعة بالعربية مفلتراً على قسم Pipe Fittings: لوحة فلاتر على اليمين فيها الفلاتر السريعة ونوع المنتج والاستخدام والتخصص، وبطاقات منتجات بصورها وعدد متغيراتها.">
+            <figcaption>الكتالوج مفلتراً على قسم عمل واحد. الاستخدام والتخصص والقسم محددة من أسماء المواد، لأن الفئات القديمة لم تكن موثوقة.</figcaption>
+          </figure>
+
+          <h3>التنظيف</h3>
+          <p>ست عشرة جولة على تصدير قاعدة البيانات القديمة، كل جولة ملف خطة يُراجَع قبل أن يُكتب أي شيء. قالب واحد لكل نوع مادة: كل الأكواع تحت Elbow، وكل الأشرطة اللاصقة تحت Tape، والنوع في خاصية Type، والمقاس والمادة واللون والماركة والعبوة خصائص. فُصلت الخدمات عن السلع، وبقيت الوحدات العقارية منتجات مستقلة. ذهبت الأسماء المتشابهة إلى المالك في قوائم نعم أو لا قبل دمجها. أُرشفت النسخ القديمة ولم يُحذف شيء، ويحتفظ كل متغير بأسماء المواد القديمة التي حلّ محلها.</p>
+          <figure class="case-media">
+            <img src="../../assets/item-master-review/ar-item.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="مادة في موقع المراجعة بترتيب نموذج منتج Odoo: اسم المنتج Tape مع صورته، ونوع المنتج سلعة، والفئة تُختار من قائمة وتحتها خانة لفئة جديدة، والاستخدام والتخصص والقسم ووحدة القياس.">
+            <figcaption>المادة كما يراها فريق الموقع، بترتيب نموذج المنتج في Odoo. تُختار الفئة من الموجود، أو تُكتب تحت القائمة إن لم تكن فيها.</figcaption>
+          </figure>
+
+          <h3>موقع المراجعة</h3>
+          <p>يقدّم Cloudflare Worker الواجهة البرمجية والواجهة الأمامية، وتحفظ D1 المواد والمستخدمين والاقتراحات والصور. الواجهة الأمامية وحدات ES بسيطة بلا خطوة بناء وبلا إطار عمل، بالعربية والإنجليزية مع اتجاه من اليمين لليسار، ومصممة للهاتف في الموقع.</p>
+          <p>يستطيع المراجع تغيير الاسم أو النوع أو الفئة أو الاستخدام أو التخصص أو القسم أو الوحدة، وتغيير قيم الخصائص، وإضافة صورة، وتعليم متغيرات تخص مادة أخرى، واختيار مواد متطابقة واقتراح دمجها، أو تعليم المادة كمراجَعة لا تحتاج تغييراً. ويذكّره شريط في كل صفحة بأن ما يرسله يحمل اسمه.</p>
+          <figure class="case-media">
+            <img src="../../assets/item-master-review/ar-variants.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="تبويب الخصائص والمتغيرات لمادة Tape: خطوط خصائص للعرض واللون والماركة والنوع والعبوة بقيمها، وتحتها قائمة المتغيرات مع الأسماء القديمة لكل متغير.">
+            <figcaption>الخصائص والمتغيرات. يُظهر كل متغير أسماء المواد القديمة التي جاء منها، فيعرف أمين المخزن ما طلبه.</figcaption>
+          </figure>
+          <p>لا يكتب شخصان يعدّلان المادة نفسها أحدهما فوق الآخر. لكل مادة رقم مراجعة؛ يُرفض الحفظ المبني على رقم قديم، ويُبلَّغ الشخص الثاني بمن عدّلها أولاً.</p>
+
+          <h3>الموافقة، ثم Odoo</h3>
+          <p>لا يغيّر أي اقتراح الكتالوج بنفسه. يرى المسؤول كل اقتراح قبل وبعد، مع سبب المراجع، فيوافق أو يرفض مع ملاحظة تعود إليه. تُصدَّر الاقتراحات المقبولة ومعها الموظف صاحب كل منها؛ وسكربت يعمل داخل Odoo يطبّقها وينشر كل اقتراح في سجل المنتج مرتبطاً بذلك الموظف، فيبقى التاريخ مع المنتج.</p>
+          <figure class="case-media">
+            <img src="../../assets/item-master-review/ar-review.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="قائمة اقتراحات المسؤول: اقتراح بانتظار الموافقة من مستخدم تجريبي يغيّر اسم 2 UV LAMP إلى UV Lamp، مع السبب وخانة ملاحظة وزرّي الموافقة والرفض.">
+            <figcaption>قائمة المسؤول: ما الذي يتغير، ولماذا، ونقرة واحدة للموافقة أو الرفض.</figcaption>
+          </figure>
+
+          <h3>الدخول والمساعدة</h3>
+          <p>لا يُظهر الموقع شيئاً قبل تسجيل الدخول، والمسؤول وحده ينشئ الحسابات. تُجزَّأ كلمات المرور بـ PBKDF2-SHA256، والجلسة ملف تعريف HttpOnly وSameSite=Strict، وكل كتابة تحتاج ترويسة من المصدر نفسه، ومحاولات الدخول محدودة لكل عنوان واسم مستخدم.</p>
+          <p>يجيب مساعد المساعدة عن 24 سؤالاً جاهزاً عن الموقع باللغتين، من دون أي استدعاء لذكاء اصطناعي؛ وتُحفظ الأسئلة التي لا يعرف جوابها للمسؤول. وزر واتساب يوصل إلى المسؤول لسؤال أو شكوى.</p>
+          <figure class="case-media pair">
+            <img src="../../assets/item-master-review/ar-phone-list.webp" width="585" height="1266" loading="lazy" decoding="async" alt="الكتالوج على الهاتف بالعربية: خانة البحث وزر الفلاتر وشارة القسم المختار وبطاقات المنتجات.">
+            <img src="../../assets/item-master-review/ar-phone-item.webp" width="585" height="1266" loading="lazy" decoding="async" alt="مادة على الهاتف بالعربية: منتج Tape بصورته وحقوله في عمود واحد.">
+            <figcaption>على الهاتف، حيث تجري أكثر المراجعة.</figcaption>
+          </figure>
         </section>
 
         <section>
           <h2>النتيجة</h2>
           <p>يعمل على الإنتاج: 13 مستودعاً، و5 مخازن فارغة مؤرشفة، ولم تتغير كمية واحدة ولا حركة (على بيئة الاختبار قورن 1,897 سطر كمية و10,298 سطر حركة قبل التحويل وبعده). وصارت التوقعات والوارد وإعادة التزويد تجيب لكل موقع.</p>
           <p>سُعّرت 8,901 حركة مخزن في 28 قيداً محاسبياً مسوّداً، مع 1,298 سطر مخزون مُعلَّماً بلا تكلفة لتسعّرها المشتريات.</p>
+          <p>وموقع المراجعة يعمل على Cloudflare للفريق: 1,681 منتجاً مع 8,010 متغيرات، و820 صورة، و62 قسم عمل ضمن 18 تخصصاً للفلاتر. يظهر عدد اقتراحات كل شخص في صفحة الفريق، فيرى المسؤول من يراجع. وتغطي 35 فحصاً للواجهة البرمجية الدخول والصلاحيات والتعارضات وكل أنواع الاقتراحات.</p>
+          <p>يرافقه دليل استخدام من 10 صفحات بالعربية والإنجليزية، مبني من لقطات نسخة محلية. واللقطات هنا من تلك النسخة أيضاً، بحساب مستخدم تجريبي.</p>
         </section>
       </article>
       <aside class="case-side" aria-label="تفاصيل المشروع">
         <div class="side-box">
           <h2>التقنيات</h2>
-          <div class="badges"><span>stock.warehouse</span><span>إعادة التزويد</span><span>تقييم المخزون</span><span>قيود محاسبية</span><span>تشغيل تجريبي افتراضياً</span></div>
+          <div class="badges"><span>stock.warehouse</span><span>إعادة التزويد</span><span>تقييم المخزون</span><span>قيود محاسبية</span><span>تشغيل تجريبي افتراضياً</span><span>متغيرات المنتجات</span><span>تنظيف بيانات</span><span>Cloudflare Workers</span><span>D1 (SQLite)</span><span>JavaScript بلا إطار</span><span>عربي وإنجليزي</span><span>مسار موافقة</span></div>
         </div>
         <div class="side-box">
           <h2>تريد شيئاً مثل هذا؟</h2>

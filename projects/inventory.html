@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Inventory restructure: one warehouse per site store | Ibrahim M Elznad</title>
-<meta name="description" content="Site stores turned into warehouses of their own, so forecast, incoming stock and replenishment answer per project, and the stores’ movements priced into journal entries for the accountant.">
+<title>Inventory overhaul: one warehouse per site store and a clean item master | Ibrahim M Elznad</title>
+<meta name="description" content="Site stores turned into warehouses of their own, so forecast, incoming stock and replenishment answer per project, and their movements priced for the accountant. Then the catalogue behind them: 8,190 items cleaned into 1,681 Odoo products with 8,010 variants, checked on the phone by the storekeepers, foremen and engineers who order them, and nothing reaches Odoo before the admin approves it.">
 <meta name="author" content="Ibrahim M Elznad">
 <meta name="theme-color" content="#0a0b0e" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
@@ -14,18 +14,18 @@
 <link rel="alternate" hreflang="x-default" href="https://znad-odoo-dev.github.io/projects/inventory.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ibrahim M Elznad">
-<meta property="og:title" content="Inventory restructure: one warehouse per site store">
-<meta property="og:description" content="Thirteen site warehouses on a live database, not one quantity changed, and the stock priced for the books.">
+<meta property="og:title" content="Inventory overhaul: one warehouse per site store and a clean item master">
+<meta property="og:description" content="Thirteen site warehouses with not one quantity changed, then 8,190 old items cleaned into 1,681 Odoo products and checked by the people who order them.">
 <meta property="og:url" content="https://znad-odoo-dev.github.io/projects/inventory.html">
 <meta property="og:locale" content="en_GB">
 <meta property="og:locale:alternate" content="ar_AE">
 <meta property="og:image" content="https://znad-odoo-dev.github.io/assets/og/inventory.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Inventory restructure: one warehouse per site store: Thirteen site warehouses on a live database, not one quantity changed, and the stock priced for the books.">
+<meta property="og:image:alt" content="Inventory overhaul: one warehouse per site store and a clean item master: Thirteen site warehouses with not one quantity changed, then 8,190 old items cleaned into 1,681 Odoo products and checked by the people who order them.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Inventory restructure: one warehouse per site store">
-<meta name="twitter:description" content="Thirteen site warehouses on a live database, not one quantity changed, and the stock priced for the books.">
+<meta name="twitter:title" content="Inventory overhaul: one warehouse per site store and a clean item master">
+<meta name="twitter:description" content="Thirteen site warehouses with not one quantity changed, then 8,190 old items cleaned into 1,681 Odoo products and checked by the people who order them.">
 <meta name="twitter:image" content="https://znad-odoo-dev.github.io/assets/og/inventory.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230a0b0e'/%3E%3Cpath d='M28 28h8v44h-8z' fill='%23f0a73a'/%3E%3Cpath d='M46 28h8v30a14 14 0 0 1-14 14v-8a6 6 0 0 0 6-6z' fill='%23f0a73a'/%3E%3C/svg%3E">
 <meta name="color-scheme" content="light dark">
@@ -36,7 +36,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&amp;text=%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9&amp;display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CreativeWork","name":"Inventory restructure: one warehouse per site store","description":"Site stores turned into warehouses of their own, so forecast, incoming stock and replenishment answer per project, and the stores’ movements priced into journal entries for the accountant.","url":"https://znad-odoo-dev.github.io/projects/inventory.html","image":"https://znad-odoo-dev.github.io/assets/og/inventory.png","author":{"@type":"Person","name":"Ibrahim M Elznad","url":"https://znad-odoo-dev.github.io/"},"keywords":"stock.warehouse, Replenishment, Stock valuation, Journal entries, Dry run by default"}
+{"@context":"https://schema.org","@type":"CreativeWork","name":"Inventory overhaul: one warehouse per site store and a clean item master","description":"Site stores turned into warehouses of their own, so forecast, incoming stock and replenishment answer per project, and their movements priced for the accountant. Then the catalogue behind them: 8,190 items cleaned into 1,681 Odoo products with 8,010 variants, checked on the phone by the storekeepers, foremen and engineers who order them, and nothing reaches Odoo before the admin approves it.","url":"https://znad-odoo-dev.github.io/projects/inventory.html","image":"https://znad-odoo-dev.github.io/assets/og/inventory.png","author":{"@type":"Person","name":"Ibrahim M Elznad","url":"https://znad-odoo-dev.github.io/"},"keywords":"stock.warehouse, Replenishment, Stock valuation, Journal entries, Dry run by default, Product variants, Data clean-up, Cloudflare Workers, D1 (SQLite), Vanilla JS, Arabic & English, Approval flow"}
 </script>
 <script>
 (function () { var d = document.documentElement; d.classList.add("js");
@@ -69,19 +69,19 @@
 <main id="main">
   <section class="case-hero" id="top">
     <div class="wrap">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Portfolio</a><span aria-hidden="true">/</span><a href="../index.html#work">Work</a><span aria-hidden="true">/</span><span aria-current="page">One warehouse per site store</span></nav>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Portfolio</a><span aria-hidden="true">/</span><a href="../index.html#work">Work</a><span aria-hidden="true">/</span><span aria-current="page">Inventory &amp; item master</span></nav>
       <p class="print-only">https://znad-odoo-dev.github.io/projects/inventory.html</p>
       <div class="case-meta">
-        <span class="platform">Odoo 19</span>
+        <span class="platform">Odoo 19 + Cloudflare</span>
       </div>
-      <h1>Inventory restructure: one warehouse per site store</h1>
-      <p class="case-sum">Site stores turned into warehouses of their own, so forecast, incoming stock and replenishment answer per project, and the stores&rsquo; movements priced into journal entries for the accountant.</p>
+      <h1>Inventory overhaul: one warehouse per site store and a clean item master</h1>
+      <p class="case-sum">Site stores turned into warehouses of their own, so forecast, incoming stock and replenishment answer per project, and their movements priced for the accountant. Then the catalogue behind them: 8,190 items cleaned into 1,681 Odoo products with 8,010 variants, checked on the phone by the storekeepers, foremen and engineers who order them, and nothing reaches Odoo before the admin approves it.</p>
       <div class="share-row">
-          <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/projects/inventory.html" aria-label="Copy the link to Inventory restructure: one warehouse per site store"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">Copy link</span></button>
+          <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/projects/inventory.html" aria-label="Copy the link to Inventory overhaul: one warehouse per site store and a clean item master"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">Copy link</span></button>
           <span class="ghost-link is-static"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>Private client repository</span>
       </div>
       <div class="case-figs">
-        <ul class="figs" aria-label="Figures"><li><b>13</b><span>site warehouses</span></li><li><b>0</b><span>quantities changed</span></li><li><b>28</b><span>draft valuation entries</span></li><li><b>1,298</b><span>lines flagged for a cost</span></li></ul>
+        <ul class="figs" aria-label="Figures"><li><b>13</b><span>site warehouses</span></li><li><b>0</b><span>quantities changed</span></li><li><b>8,190</b><span>old items</span></li><li><b>1,681</b><span>products to review</span></li></ul>
       </div>
     </div>
   </section>
@@ -92,30 +92,72 @@
         <section>
           <h2>The problem</h2>
           <p>Each site store was a location inside the one warehouse of its company. Odoo answers forecast, incoming stock, a purchase order&rsquo;s Deliver To and replenishment per warehouse, so the forecast for cement showed 149 units on hand and no way to tell which site they were at.</p>
+          <p>The catalogue behind those stores had its own trouble. The group works in contracting, MEP, joinery and real estate, and had bought from one catalogue for years. Each purchase line had become an item of its own: 8,190 of them, with the same adhesive tape under dozens of names, sizes and pack counts written into the name, and services filed as goods.</p>
+          <p>A clean list made at a desk is still a guess. The storekeepers, foremen and engineers who order and receive these materials know which names are the same thing, and most of them have no Odoo account.</p>
         </section>
 
-        <section>
-          <h2>What I built</h2>
+        <section id="warehouses">
+          <h2>One warehouse per site store</h2>
           <p>One warehouse per site store. Odoo 19 always gives a new warehouse a fresh stock location and refuses a replenishment location beside another, so the tool creates the warehouse normally, re-parents the store&rsquo;s existing location under it as its stock, repoints every operation type, route and reorder rule that named the new empty one, and removes it. No stock move or quantity is touched; cost stays per company, and project cost still comes from the analytic account on consumption.</p>
           <p>The dry run performs the whole conversion, compares a snapshot of every store, product and lot before and after, and rolls back. It was proven on a local copy first: a purchase received on its site, a reorder rule buying for its own site&rsquo;s quantity, consumption and a site-to-site transfer, and a second run that changed nothing. Two old transfers still reserving stock in an empty store were cancelled first, so it could be archived.</p>
-        </section>
 
-        <section>
-          <h2>Stock valuation for the books</h2>
+          <h3>Stock valuation for the books</h3>
           <p>The stores also had to reach the accounts. Every company values stock periodically and almost no product had a standard cost, so a read-only report first showed what each movement would post: receipts to site inventory against goods received not invoiced, consumption to the category&rsquo;s expense with the project&rsquo;s analytic account, no entry for a transfer between sites, and stock moving between companies through a transit account.</p>
           <p>Cost is the last confirmed purchase price, then the standard price; a line with neither is flagged, never posted at zero. The choice was draft entries in Odoo for the accountant to review: 28 of them, one per company and month, in an Inventory Valuation journal, with the open questions written down beside them.</p>
+        </section>
+
+        <section id="item-master">
+          <h2>A clean item master, checked on site</h2>
+          <figure class="case-media">
+            <img src="../assets/item-master-review/en-catalogue.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="The review site's catalogue filtered to the Pipe Fittings section: a filter panel on the left with quick filters, product type, usage and trade, and product cards with photos and variant counts.">
+            <figcaption>The catalogue filtered to one work section. Usage, trade and section are set from the item names, because the old categories could not be trusted.</figcaption>
+          </figure>
+
+          <h3>The clean-up</h3>
+          <p>Sixteen rounds over the export of the old database, each one a plan file checked before anything was written. One template per kind of item: every elbow under Elbow, every adhesive tape under Tape, with the kind in a Type attribute and size, material, colour, brand and pack as attributes. Services were split from goods, and property units kept as products of their own. Similar names went to the owner as yes or no lists before they were merged. Older versions were archived, never deleted, and every variant keeps the old item names it replaced.</p>
+          <figure class="case-media">
+            <img src="../assets/item-master-review/en-item.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="An item on the review site laid out like the Odoo product form: product name Tape with its photo, product type Goods, category picked from a list with a field under it for a new one, usage, trade, section and unit of measure.">
+            <figcaption>An item as the field team sees it, laid out like the Odoo product form. A category is picked from the existing ones, or written under the list when it is missing.</figcaption>
+          </figure>
+
+          <h3>The review site</h3>
+          <p>A Cloudflare Worker serves the API and the front end, and D1 holds the items, users, suggestions and photos. The front end is plain ES modules with no build step and no framework, in Arabic and English with a right-to-left layout, made for a phone on site.</p>
+          <p>A reviewer can change the name, type, category, usage, trade, section or unit, change attribute values, add a photo, tick variants that belong to another item, select items that are the same and propose a merge, or mark an item reviewed with nothing to change. A bar on every page reminds them that what they send carries their name.</p>
+          <figure class="case-media">
+            <img src="../assets/item-master-review/en-variants.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="The Attributes and Variants tab of the Tape item: attribute lines for width, colour, brand, type and pack with their values, and below them the variant list with the old item names of each variant.">
+            <figcaption>Attributes and variants. Each variant shows the old item names it came from, so a storekeeper recognises what they ordered.</figcaption>
+          </figure>
+          <p>Two people editing the same item do not overwrite each other. Every item carries a revision; a save made on an old one is refused, and the second person is told who changed it first.</p>
+
+          <h3>Approval, then Odoo</h3>
+          <p>Nothing a reviewer sends changes the catalogue by itself. The admin sees each suggestion as before and after, with the reviewer&rsquo;s reason, and approves or rejects it with a note back. Approved suggestions are exported with the employee behind each one; a script run inside Odoo applies them and posts every suggestion in the product&rsquo;s chatter, linked to that employee, so the history stays with the product.</p>
+          <figure class="case-media">
+            <img src="../assets/item-master-review/en-review.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="The admin's suggestion queue: a pending suggestion from a demo user renaming 2 UV LAMP to UV Lamp, with the reason, a note field and Approve and Reject buttons.">
+            <figcaption>The admin&rsquo;s queue: what changes, why, and one click to approve or reject.</figcaption>
+          </figure>
+
+          <h3>Access and help</h3>
+          <p>The site shows nothing before sign-in, and only the admin makes accounts. Passwords are hashed with PBKDF2-SHA256, the session is an HttpOnly, SameSite=Strict cookie, every write needs a same-origin header, and sign-in attempts are limited per address and username.</p>
+          <p>A help assistant answers 24 ready questions about the site in both languages, with no AI call behind it; the questions it cannot answer are kept for the admin. A WhatsApp button reaches the admin for a question or a complaint.</p>
+          <figure class="case-media pair">
+            <img src="../assets/item-master-review/en-phone-list.webp" width="585" height="1266" loading="lazy" decoding="async" alt="The catalogue on a phone: search box, filters button, the active section chip and product cards.">
+            <img src="../assets/item-master-review/en-phone-item.webp" width="585" height="1266" loading="lazy" decoding="async" alt="An item on a phone: the Tape product with its photo and the fields stacked in one column.">
+            <figcaption>On a phone, where most of the reviewing happens.</figcaption>
+          </figure>
         </section>
 
         <section>
           <h2>The result</h2>
           <p>Live on production: 13 warehouses, 5 empty stores archived, and not one quantity or movement changed (on staging, 1,897 quantity lines and 10,298 movement lines were compared before and after). Forecast, incoming and replenishment now answer per site.</p>
           <p>8,901 store movements priced into 28 draft journal entries, with 1,298 stock lines flagged as having no cost for purchasing to price.</p>
+          <p>The review site is live on Cloudflare for the team: 1,681 products with 8,010 variants, 820 photos, and 62 work sections across 18 trades for the filters. Each person&rsquo;s count of suggestions shows on a team page, so the admin sees who is reviewing. 35 API checks cover sign-in, rights, conflicts and every kind of suggestion.</p>
+          <p>A 10-page user guide in Arabic and English comes with it, built from screenshots of a local copy. The screenshots here come from that copy too, signed in as a demo user.</p>
         </section>
       </article>
       <aside class="case-side" aria-label="Project details">
         <div class="side-box">
           <h2>Stack</h2>
-          <div class="badges"><span>stock.warehouse</span><span>Replenishment</span><span>Stock valuation</span><span>Journal entries</span><span>Dry run by default</span></div>
+          <div class="badges"><span>stock.warehouse</span><span>Replenishment</span><span>Stock valuation</span><span>Journal entries</span><span>Dry run by default</span><span>Product variants</span><span>Data clean-up</span><span>Cloudflare Workers</span><span>D1 (SQLite)</span><span>Vanilla JS</span><span>Arabic &amp; English</span><span>Approval flow</span></div>
         </div>
         <div class="side-box">
           <h2>Want something like this?</h2>
