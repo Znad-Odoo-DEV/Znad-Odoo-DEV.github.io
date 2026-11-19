@@ -332,6 +332,32 @@
           </div>
         </article>
 
+        <article class="card" id="maintenance-requests" data-cats="web data">
+          <figure class="shot">
+            <img src="../assets/maintenance-requests/ar-card.webp" width="1200" height="900" loading="lazy" decoding="async"
+                 alt="مبنى في نظام الصيانة وشققه على شكل بطاقات، وأمامه نموذج طلب المستأجر مفتوحاً على هاتف.">
+          </figure>
+          <div class="card-top">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><path d="M14 14h2.5v2.5M20 14v2M14 20h6v-2"/></svg></div>
+            <span class="platform">Cloudflare + Odoo 19</span>
+          </div>
+          <h3><a href="projects/maintenance-requests.html">طلبات الصيانة: رمز QR في كل شقة</a></h3>
+          <p class="sum">نظام صيانة لست بنايات سكنية. يمسح المستأجر الرمز داخل شقته ويرسل الطلب من هاتفه، فيُحفظ أولاً ثم يصل إلى مشرف المبنى عبر واتساب. وتحتفظ كل شقة بطلباتها ونماذجها الموقّعة وتقييماتها وتكاليفها، على الخطة المجانية من Cloudflare.</p>
+          <p class="state">يعمل لفريق الصيانة · نوفمبر 2026</p>
+          <dl class="pbr">
+            <div><dt>المشكلة</dt><dd>مجموعة استثمارية تؤجّر شققاً في ست بنايات في دبي والشارقة. حين يتعطل شيء كان المستأجر يتصل أو يراسل من يعرفه، ولم يكن شيء يسجّل ماذا أُنجز في أي شقة ولا بكم، ولم يكن ممكناً جمع تكلفة صيانة مبنى. والمستأجرون بلا حسابات، وميزانية البرنامج لا شيء في الشهر.</dd></div>
+            <div><dt>ما بنيته</dt><dd>Worker على Cloudflare مع قاعدة D1 وواجهة JavaScript بسيطة. لكل شقة رمز QR برابط سري؛ يحفظ نموذج المستأجر الطلب ثم يفتح واتساب على رقم المشرف والرسالة جاهزة. يطبع الفريق نموذج A4 يوقّعه الطرفان، ويعود ملف PDF أو صورة من الهاتف قبل أن يُغلق الطلب، ويقيّم المستأجر العمل بالنجوم من رمز ثانٍ على النموذج نفسه.</dd></div>
+            <div><dt>النتيجة</dt><dd>يعمل بالعربية والإنجليزية مع <strong>6 بنايات و556 شقة</strong> جاءت من متغيرات المنتجات في Odoo، وجرس إشعارات وتنبيهات Push، وتقارير تكاليف في Excel، ومساعد بـ 40 إجابة، و106 فحوص للواجهة البرمجية. بلا أي اشتراك شهري.</dd></div>
+          </dl>
+          <ul class="figs" aria-label="أرقام"><li><b>556</b><span>شقة برمز QR</span></li><li><b>6</b><span>بنايات</span></li><li><b>0</b><span>خدمات مدفوعة</span></li></ul>
+          <div class="badges"><span>Cloudflare Workers</span><span>D1 (SQLite)</span><span>JavaScript بلا إطار</span><span>عربي وإنجليزي</span><span>رموز QR</span><span>واتساب</span><span>تنبيهات Push</span><span>تطبيق قابل للتثبيت</span><span>Odoo 19</span></div>
+          <div class="card-foot">
+            <a class="ghost-link read-link" href="projects/maintenance-requests.html" aria-label="اقرأ دراسة الحالة: طلبات الصيانة: رمز QR في كل شقة">اقرأ دراسة الحالة<svg class="i i-flip" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+            <button class="copy-link" type="button" data-copy="https://znad-odoo-dev.github.io/ar/projects/maintenance-requests.html" aria-label="نسخ رابط طلبات الصيانة: رمز QR في كل شقة"><svg class="i no" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><svg class="i ok" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span class="label">نسخ الرابط</span></button>
+            <span class="ghost-link is-static"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>مستودع خاص بالعميل</span>
+          </div>
+        </article>
+
         <article class="card" id="azita-sj-trading" data-cats="odoo">
           <div class="card-top">
             <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7.5h14.5"/><path d="m15 4 3.5 3.5L15 11"/><path d="M20 16.5H5.5"/><path d="m9 13-3.5 3.5L9 20"/></svg></div>
